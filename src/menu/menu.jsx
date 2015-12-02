@@ -15,6 +15,7 @@ import ThemeManager from '../styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 /***********************
@@ -85,7 +86,7 @@ const NestedMenuItem = React.createClass({
   },
 
   getStyles() {
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         userSelect: 'none',
         cursor: 'pointer',
@@ -112,7 +113,7 @@ const NestedMenuItem = React.createClass({
         cursor: 'default',
         color: this.state.muiTheme.rawTheme.palette.disabledColor,
       },
-    };
+    });
 
     return styles;
   },
@@ -306,7 +307,7 @@ const Menu = React.createClass({
   },
 
   getStyles() {
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         backgroundColor: this.getTheme().containerBackgroundColor,
         paddingTop: this.getSpacing().desktopGutterMini,
@@ -327,7 +328,7 @@ const Menu = React.createClass({
       item: {
         height: 34,
       },
-    };
+    });
 
     return styles;
   },

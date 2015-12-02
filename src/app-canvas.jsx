@@ -5,6 +5,7 @@ import ThemeManager from './styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const AppCanvas = React.createClass({
@@ -40,12 +41,12 @@ const AppCanvas = React.createClass({
   },
 
   render() {
-    let styles = {
+    let styles = StyleSheet.create({
       height: '100%',
       backgroundColor: this.state.muiTheme.rawTheme.palette.canvasColor,
       WebkitFontSmoothing: 'antialiased',
       direction: 'ltr',
-    };
+    });
 
     let newChildren = React.Children.map(this.props.children, (currentChild) => {
       if (!currentChild) { // If undefined, skip it

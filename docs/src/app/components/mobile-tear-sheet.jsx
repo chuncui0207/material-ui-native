@@ -4,6 +4,7 @@ const {StylePropable} = Mixins;
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const MobileTearSheet = React.createClass({
@@ -25,7 +26,7 @@ const MobileTearSheet = React.createClass({
 
   render() {
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         float: 'left',
         marginBottom: 24,
@@ -46,7 +47,7 @@ const MobileTearSheet = React.createClass({
         marginTop: -10,
         width: 360,
       },
-    };
+    });
 
     return (
       <View style={this.prepareStyles(styles.root)}>

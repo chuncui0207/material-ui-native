@@ -6,6 +6,7 @@ const {StyleResizable, StylePropable} = Mixins;
 const {Colors, Typography} = Styles;
 const {
   View,
+  StyleSheet,
 } = React;
 
 const ColorsPage = React.createClass({
@@ -13,7 +14,7 @@ const ColorsPage = React.createClass({
   mixins: [StyleResizable, StylePropable],
 
   getStyles() {
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         //null
       },
@@ -49,7 +50,7 @@ const ColorsPage = React.createClass({
       colorGroupWhenLarge: {
         width: '25%',
       },
-    };
+    });
 
     if (this.isDeviceSize(StyleResizable.statics.Sizes.LARGE)) {
       styles.colorGroup = this.mergeStyles(styles.colorGroup, styles.colorGroupWhenLarge);
@@ -137,12 +138,12 @@ const ColorsPage = React.createClass({
     if (contrastRatio < 7) fgColor = Colors.fullWhite;
     if (colorTitle) blockTitle = <span style={this.getStyles().name}>{colorTitle}</span>;
 
-    let styles = {
+    let styles = StyleSheet.create({
       backgroundColor: bgColor,
       color: fgColor,
       listStyle: 'none',
       padding: '15px',
-    };
+    });
 
     return (
       <li style={styles}>

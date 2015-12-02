@@ -126,7 +126,7 @@ const RaisedButton = React.createClass({
   getStyles() {
 
     let amount = (this.props.primary || this.props.secondary) ? 0.4 : 0.08;
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         display: 'inline-block',
         minWidth: this.props.fullWidth ? '100%' : this.getThemeButton().minWidth,
@@ -170,7 +170,7 @@ const RaisedButton = React.createClass({
       overlayWhenHovered: {
         backgroundColor: ColorManipulator.fade(this._getLabelColor(), amount),
       },
-    };
+    });
     return styles;
   },
 

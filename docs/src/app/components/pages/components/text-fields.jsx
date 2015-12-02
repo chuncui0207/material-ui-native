@@ -10,6 +10,7 @@ import CodeBlock from '../../code-example/code-block';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const TextFieldsPage = React.createClass({
@@ -30,7 +31,7 @@ const TextFieldsPage = React.createClass({
   },
 
   getStyles() {
-    let styles = {
+    let styles = StyleSheet.create({
       group: {
         width: '100%',
         float: 'left',
@@ -39,7 +40,7 @@ const TextFieldsPage = React.createClass({
       textfield: {
         marginTop: 24,
       },
-    };
+    });
 
     if (this.isDeviceSize(StyleResizable.statics.Sizes.LARGE)) {
       styles.group.width = '50%';

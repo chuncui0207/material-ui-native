@@ -6,6 +6,7 @@ import ThemeManager from './styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const Avatar = React.createClass({
@@ -68,7 +69,7 @@ const Avatar = React.createClass({
       ...other,
     } = this.props;
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         height: size,
         width: size,
@@ -76,7 +77,7 @@ const Avatar = React.createClass({
         borderRadius: '50%',
         display: 'inline-block',
       },
-    };
+    });
 
     if (src) {
       const borderColor = this.state.muiTheme.avatar.borderColor;

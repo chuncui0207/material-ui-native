@@ -2,6 +2,10 @@ import React from 'react-native';
 import {Link} from 'react-router';
 import {Paper, Mixins, Styles} from 'material-ui';
 
+const {
+  StyleSheet,
+} = React;
+
 let {StylePropable, StyleResizable} = Mixins;
 let {Colors, Spacing, Transitions, Typography} = Styles;
 
@@ -34,7 +38,7 @@ let HomeFeature = React.createClass({
   getStyles() {
     let desktopGutter = Spacing.desktopGutter;
     let desktopKeylineIncrement = Spacing.desktopKeylineIncrement;
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         transition: Transitions.easeOut(),
         maxWidth: '300px',
@@ -74,7 +78,7 @@ let HomeFeature = React.createClass({
       rootWhenMediumAndFirstChild: {
         marginLeft: '0px',
       },
-    };
+    });
 
     if (this.isDeviceSize(StyleResizable.statics.Sizes.MEDIUM) ||
         this.isDeviceSize(StyleResizable.statics.Sizes.LARGE)) {

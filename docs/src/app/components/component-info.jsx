@@ -8,6 +8,7 @@ const DefaultRawTheme = Styles.LightRawTheme;
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const ComponentInfo = React.createClass({
@@ -50,7 +51,7 @@ const ComponentInfo = React.createClass({
   getStyles() {
     let desktopGutter = Spacing.desktopGutter;
     let borderColor = this.state.muiTheme.rawTheme.palette.borderColor;
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         //.mui-font-style-subhead-1
         fontSize: '15px',
@@ -118,7 +119,7 @@ const ComponentInfo = React.createClass({
       descWhenLastChild: {
         borderBottom: 'none',
       },
-    };
+    });
 
     styles.header = this.mergeStyles(styles.root, styles.header);
 

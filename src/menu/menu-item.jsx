@@ -7,6 +7,7 @@ import ThemeManager from '../styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const Types = {
@@ -105,7 +106,7 @@ const MenuItem = React.createClass({
     const marginRight = isRtl ? 'marginLeft' : 'marginRight';
     const paddingLeft = isRtl ? 'paddingRight' : 'paddingLeft';
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         userSelect: 'none',
         cursor: 'pointer',
@@ -157,7 +158,7 @@ const MenuItem = React.createClass({
         cursor: 'default',
         color: this.state.muiTheme.rawTheme.palette.disabledColor,
       },
-    };
+    });
 
     return styles;
   },

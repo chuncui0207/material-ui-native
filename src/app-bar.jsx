@@ -10,6 +10,7 @@ import PropTypes from './utils/prop-types';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const AppBar = React.createClass({
@@ -91,7 +92,7 @@ const AppBar = React.createClass({
     let themeVariables = this.state.muiTheme.appBar;
     let iconButtonSize = this.state.muiTheme.button.iconButtonSize;
     let flatButtonSize = 36;
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         position: 'relative',
         zIndex: 5,
@@ -134,7 +135,7 @@ const AppBar = React.createClass({
         backgroundColor: 'transparent',
         marginTop: (iconButtonSize - flatButtonSize) / 2 + 2,
       },
-    };
+    });
 
     return styles;
   },

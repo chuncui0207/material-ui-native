@@ -18,6 +18,7 @@ import {SelectableContainerEnhance} from 'material-ui/hoc/selectable-enhance';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const {
@@ -42,7 +43,7 @@ import CodeBlock from '../../code-example/code-block';
 let SelectableList = SelectableContainerEnhance(List);
 
 const Typography = Styles.Typography;
-let styles = {
+let styles = StyleSheet.create({
   headline: {
     fontSize: '24px',
     lineHeight: '32px',
@@ -65,7 +66,7 @@ let styles = {
     padding: '24px',
     marginBottom: '32px',
   },
-};
+});
 
 function wrapState(ComposedComponent) {
   const StateWrapper = React.createClass({

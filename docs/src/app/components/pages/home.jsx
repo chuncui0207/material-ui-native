@@ -10,6 +10,7 @@ const DefaultRawTheme = Styles.LightRawTheme;
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const HomePage = React.createClass({
@@ -36,7 +37,7 @@ const HomePage = React.createClass({
   },
 
   _getHomePageHero() {
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         backgroundColor: Colors.cyan500,
         overflow: 'hidden',
@@ -85,7 +86,7 @@ const HomePage = React.createClass({
         paddingTop: 16,
         marginBottom: 12,
       },
-    };
+    });
 
     styles.h2 = this.mergeStyles(styles.h1, styles.h2);
 

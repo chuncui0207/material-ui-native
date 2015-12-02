@@ -6,6 +6,7 @@ import ThemeManager from '../styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const Table = React.createClass({
@@ -77,7 +78,7 @@ const Table = React.createClass({
   },
 
   getStyles() {
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         backgroundColor: this.getTheme().backgroundColor,
         padding: '0 ' + this.state.muiTheme.rawTheme.spacing.desktopGutter + 'px',
@@ -95,7 +96,7 @@ const Table = React.createClass({
         height: (this.props.fixedHeader || this.props.fixedFooter) ? 'auto' : this.props.height,
         overflow: 'auto',
       },
-    };
+    });
 
     return styles;
   },

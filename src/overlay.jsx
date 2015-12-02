@@ -8,6 +8,7 @@ import ThemeManager from './styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const Overlay = React.createClass({
@@ -79,7 +80,7 @@ const Overlay = React.createClass({
   },
 
   getStyles() {
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         position: 'fixed',
         height: '100%',
@@ -108,7 +109,7 @@ const Overlay = React.createClass({
           Transitions.easeOut('0ms', 'left') + ',' +
           Transitions.easeOut('400ms', 'opacity'),
       },
-    };
+    });
     return styles;
   },
 

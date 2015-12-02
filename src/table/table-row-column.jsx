@@ -3,6 +3,10 @@ import StylePropable from '../mixins/style-propable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  StyleSheet,
+} = React;
+
 const TableRowColumn = React.createClass({
 
   mixins: [StylePropable],
@@ -57,7 +61,7 @@ const TableRowColumn = React.createClass({
 
   getStyles() {
     let theme = this.getTheme();
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         paddingLeft: theme.spacing,
         paddingRight: theme.spacing,
@@ -68,7 +72,7 @@ const TableRowColumn = React.createClass({
         whiteSpace: 'nowrap',
         textOverflow: 'ellipsis',
       },
-    };
+    });
 
     if (React.Children.count(this.props.children) === 1 && !isNaN(this.props.children)) {
       styles.textAlign = 'right';

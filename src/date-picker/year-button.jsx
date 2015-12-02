@@ -6,6 +6,7 @@ import ThemeManager from '../styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const YearButton = React.createClass({
@@ -66,7 +67,7 @@ const YearButton = React.createClass({
       ...other,
     } = this.props;
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         boxSizing: 'border-box',
         WebkitTapHighlightColor: 'rgba(0,0,0,0)',
@@ -93,7 +94,7 @@ const YearButton = React.createClass({
         transform: 'scale(0)',
         backgroundColor: this.getTheme().selectColor,
       },
-    };
+    });
 
     if (this.state.hover) {
       styles.label.color = this.getTheme().selectTextColor;

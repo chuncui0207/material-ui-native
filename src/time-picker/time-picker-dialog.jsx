@@ -8,6 +8,10 @@ import FlatButton from '../flat-button';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  StyleSheet,
+} = React;
+
 const TimePickerDialog = React.createClass({
 
   mixins: [StylePropable, WindowListenable],
@@ -69,7 +73,7 @@ const TimePickerDialog = React.createClass({
       ...other,
     } = this.props;
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         fontSize: 14,
         color: this.getTheme().clockColor,
@@ -80,7 +84,7 @@ const TimePickerDialog = React.createClass({
       body: {
         padding:0,
       },
-    };
+    });
 
     let actions = [
       <FlatButton

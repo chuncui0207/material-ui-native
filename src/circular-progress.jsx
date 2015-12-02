@@ -8,6 +8,7 @@ import ThemeManager from './styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const CircularProgress = React.createClass({
@@ -136,7 +137,7 @@ const CircularProgress = React.createClass({
 
     if (margin < 0) margin = 0;
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         position: 'relative',
         margin: margin + 'px',
@@ -164,7 +165,7 @@ const CircularProgress = React.createClass({
         strokeLinecap: 'round',
         transition: Transitions.create('all', '1.5s', null, 'ease-in-out'),
       },
-    };
+    });
 
     AutoPrefix.set(styles.wrapper, 'transitionTimingFunction', 'linear');
 

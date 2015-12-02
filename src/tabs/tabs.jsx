@@ -9,6 +9,7 @@ import ThemeManager from '../styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const Tabs = React.createClass({
@@ -97,7 +98,7 @@ const Tabs = React.createClass({
     } = this.props;
 
     let themeVariables = this.state.muiTheme.tabs;
-    let styles = {
+    let styles = StyleSheet.create({
       tabItemContainer: {
         margin: 0,
         padding: 0,
@@ -107,7 +108,7 @@ const Tabs = React.createClass({
         whiteSpace: 'nowrap',
         display: 'table',
       },
-    };
+    });
 
     let valueLink = this.getValueLink(this.props);
     let tabValue = valueLink.value;

@@ -18,6 +18,7 @@ const DefaultRawTheme = Styles.LightRawTheme;
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const Master = React.createClass({
@@ -131,7 +132,7 @@ const Master = React.createClass({
   },
 
   _getTabs() {
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         backgroundColor: Colors.cyan500,
         position: 'fixed',
@@ -173,7 +174,7 @@ const Master = React.createClass({
         height: 64,
       },
 
-    };
+    });
 
     let materialIcon = this.state.tabIndex !== '0' ? (
       <EnhancedButton

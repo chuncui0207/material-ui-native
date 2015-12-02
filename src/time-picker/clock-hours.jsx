@@ -8,6 +8,7 @@ import ThemeManager from '../styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 function rad2deg(rad) {
@@ -194,7 +195,7 @@ const ClockHours = React.createClass({
   },
 
   render() {
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         height: '100%',
         width: '100%',
@@ -209,7 +210,7 @@ const ClockHours = React.createClass({
         width: '100%',
         pointerEvents: 'auto',
       },
-    };
+    });
 
     let hours = this._getSelected();
     let numbers = this._getHourNumbers();

@@ -16,7 +16,7 @@ const PaperPage = React.createClass({
   mixins: [StyleResizable],
 
   getStyles() {
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         height: '100px',
         width: '100px',
@@ -32,7 +32,7 @@ const PaperPage = React.createClass({
         lineHeight: '80px',
         height: '100%',
       },
-    };
+    });
 
     if (this.isDeviceSize(StyleResizable.statics.Sizes.MEDIUM)) {
       styles.group.width = '33%';

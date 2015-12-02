@@ -5,6 +5,7 @@ import ThemeManager from '../styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const ClockPointer = React.createClass({
@@ -86,7 +87,7 @@ const ClockPointer = React.createClass({
 
     let angle = this.getAngle();
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         height: '30%',
         background: this.getTheme().accentColor,
@@ -108,7 +109,7 @@ const ClockPointer = React.createClass({
         left: -6,
         borderRadius: '100%',
       },
-    };
+    });
 
     if (!this.state.inner) {
       styles.root.height = '40%';

@@ -11,6 +11,10 @@ const {
   Typography,
 } = Styles;
 
+const {
+  StyleSheet,
+} = React;
+
 import CodeBlock from './code-block';
 const ThemeManager = Styles.ThemeManager;
 const DefaultRawTheme = Styles.LightRawTheme;
@@ -60,7 +64,7 @@ const CodeExample = React.createClass({
     let borderColor = palette.borderColor;
     let canvasColor = palette.canvasColor;
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         backgroundColor: canvasColor,
         marginBottom: 32,
@@ -83,7 +87,7 @@ const CodeExample = React.createClass({
         width: layoutSideBySide ? '45%' : null,
         float: layoutSideBySide ? 'right' : null,
       },
-    };
+    });
 
     return (
       <Paper style={styles.root}>

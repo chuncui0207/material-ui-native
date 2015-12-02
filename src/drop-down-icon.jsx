@@ -9,6 +9,7 @@ import ThemeManager from './styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const DropDownIcon = React.createClass({
@@ -74,7 +75,7 @@ const DropDownIcon = React.createClass({
   getStyles() {
     let spacing = this.state.muiTheme.rawTheme.spacing;
     let iconWidth = 48;
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         display: 'inline-block',
         width: iconWidth + 'px !important',
@@ -94,7 +95,7 @@ const DropDownIcon = React.createClass({
         height: spacing.desktopDropDownMenuItemHeight,
         lineHeight: spacing.desktopDropDownMenuItemHeight + 'px',
       },
-    };
+    });
     return styles;
   },
 

@@ -4,6 +4,10 @@ import Tooltip from '../tooltip';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  StyleSheet,
+} = React;
+
 const TableHeaderColumn = React.createClass({
 
   mixins: [StylePropable],
@@ -51,7 +55,7 @@ const TableHeaderColumn = React.createClass({
 
   getStyles() {
     let theme = this.getTheme();
-    let styles = {
+    let styles = StyleSheet.create({
       root:  {
         fontWeight: 'normal',
         fontSize: 12,
@@ -68,7 +72,7 @@ const TableHeaderColumn = React.createClass({
         boxSizing: 'border-box',
         marginTop: theme.height / 2,
       },
-    };
+    });
 
     return styles;
   },

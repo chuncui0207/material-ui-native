@@ -7,6 +7,10 @@ import CodeExample from '../../code-example/code-example';
 import LinkedStateMixin from 'react-addons-linked-state-mixin';
 import CodeBlock from '../../code-example/code-block';
 
+const {
+  StyleSheet,
+} = React;
+
 const SelectFieldsPage = React.createClass({
 
   mixins: [StyleResizable, LinkedStateMixin],
@@ -21,11 +25,11 @@ const SelectFieldsPage = React.createClass({
   },
 
   getStyles() {
-    let styles = {
+    let styles = StyleSheet.create({
       textfield: {
         marginTop: 24,
       },
-    };
+    });
 
     return styles;
   },

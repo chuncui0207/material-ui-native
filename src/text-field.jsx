@@ -157,7 +157,7 @@ const TextField = React.createClass({
       errorColor,
     } = this.constructor.getRelevantContextKeys(this.state.muiTheme);
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         fontSize: 16,
         lineHeight: '24px',
@@ -223,7 +223,7 @@ const TextField = React.createClass({
         transform: 'scaleX(0)',
         transition: Transitions.easeOut(),
       },
-    };
+    });
 
     styles.error = this.mergeAndPrefix(styles.error, props.errorStyle);
     styles.underline = this.mergeAndPrefix(styles.underline, props.underlineStyle);

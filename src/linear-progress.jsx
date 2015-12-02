@@ -7,6 +7,7 @@ import ThemeManager from './styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const LinearProgress = React.createClass({
@@ -118,7 +119,7 @@ const LinearProgress = React.createClass({
   },
 
   getStyles() {
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         position: 'relative',
         height: 4,
@@ -134,7 +135,7 @@ const LinearProgress = React.createClass({
       },
       barFragment1: {},
       barFragment2: {},
-    };
+    });
 
     if (this.props.mode === 'indeterminate') {
       styles.barFragment1 = {

@@ -8,6 +8,7 @@ import ThemeManager from '../styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const DayButton = React.createClass({
@@ -69,7 +70,7 @@ const DayButton = React.createClass({
       ...other,
     } = this.props;
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         boxSizing: 'border-box',
         WebkitTapHighlightColor: 'rgba(0,0,0,0)',
@@ -95,7 +96,7 @@ const DayButton = React.createClass({
         transition: Transition.easeOut(),
         backgroundColor: this.getTheme().selectColor,
       },
-    };
+    });
 
     if (this.state.hover) {
       styles.label.color = this.getTheme().selectTextColor;

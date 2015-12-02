@@ -6,6 +6,7 @@ import ThemeManager from '../styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const SubheaderMenuItem = React.createClass({
@@ -59,7 +60,7 @@ const SubheaderMenuItem = React.createClass({
   getStyles() {
     let gutterMini = this.getSpacing().desktopGutterMini;
     let subheaderHeight = this.getSpacing().desktopSubheaderHeight;
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         boxSizing: 'border-box',
         fontSize: '13px',
@@ -79,7 +80,7 @@ const SubheaderMenuItem = React.createClass({
         paddingTop: 0,
         marginTop: 0,
       },
-    };
+    });
 
     return styles;
   },

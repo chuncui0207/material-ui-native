@@ -5,6 +5,7 @@ import ClearFix from '../clearfix';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const CalendarMonth = React.createClass({
@@ -20,11 +21,11 @@ const CalendarMonth = React.createClass({
   },
 
   render() {
-    let styles = {
+    let styles = StyleSheet.create({
       lineHeight: '32px',
       textAlign: 'center',
       padding: '16px 14px 0 14px',
-    };
+    });
 
     return (
       <View style={styles}>

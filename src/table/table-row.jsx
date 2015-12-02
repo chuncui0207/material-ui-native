@@ -3,6 +3,10 @@ import StylePropable from '../mixins/style-propable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  StyleSheet,
+} = React;
+
 const TableRow = React.createClass({
 
   mixins: [StylePropable],
@@ -80,7 +84,7 @@ const TableRow = React.createClass({
       cellBgColor = theme.stripeColor;
     }
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         borderBottom: '1px solid ' + this.getTheme().borderColor,
         color: this.getTheme().textColor,
@@ -88,7 +92,7 @@ const TableRow = React.createClass({
       cell: {
         backgroundColor: cellBgColor,
       },
-    };
+    });
 
     if (!this.props.displayBorder) {
       styles.root.borderBottom = '';

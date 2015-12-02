@@ -5,6 +5,10 @@ import TableHeaderColumn from './table-header-column';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  StyleSheet,
+} = React;
+
 const TableHeader = React.createClass({
 
   mixins: [StylePropable],
@@ -60,11 +64,11 @@ const TableHeader = React.createClass({
   },
 
   getStyles() {
-    let styles = {
+    let styles = StyleSheet.create({
       root:  {
         borderBottom: '1px solid ' + this.getTheme().borderColor,
       },
-    };
+    });
 
     return styles;
   },

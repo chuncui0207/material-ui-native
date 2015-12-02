@@ -14,6 +14,7 @@ import ThemeManager from './styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const EnhancedSwitch = React.createClass({
@@ -134,7 +135,7 @@ const EnhancedSwitch = React.createClass({
     let spacing = this.state.muiTheme.rawTheme.spacing;
     let switchWidth = 60 - spacing.desktopGutterLess;
     let labelWidth = 'calc(100% - 60px)';
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         position: 'relative',
         cursor: this.props.disabled ? 'default' : 'pointer',
@@ -185,7 +186,7 @@ const EnhancedSwitch = React.createClass({
         top: -12,
         left: -12,
       },
-    };
+    });
 
     return styles;
   },

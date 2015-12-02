@@ -9,6 +9,7 @@ import ThemeManager from './styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const Checkbox = React.createClass({
@@ -66,7 +67,7 @@ const Checkbox = React.createClass({
 
   getStyles() {
     let checkboxSize = 24;
-    let styles = {
+    let styles = StyleSheet.create({
       icon: {
         height: checkboxSize,
         width: checkboxSize,
@@ -105,7 +106,7 @@ const Checkbox = React.createClass({
       label: {
         color: this.props.disabled ? this.getTheme().labelDisabledColor : this.getTheme().labelColor,
       },
-    };
+    });
 
     return styles;
   },

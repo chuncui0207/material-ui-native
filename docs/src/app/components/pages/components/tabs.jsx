@@ -9,6 +9,7 @@ import CodeBlock from '../../code-example/code-block';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 export default class TabsPage extends React.Component {
@@ -121,7 +122,7 @@ export default class TabsPage extends React.Component {
 
     let padding = 400;
 
-    let styles = {
+    let styles = StyleSheet.create({
       contentContainerStyle: {
         marginLeft: -padding,
       },
@@ -161,7 +162,7 @@ export default class TabsPage extends React.Component {
       slide: {
         padding: 10,
       },
-    };
+    });
 
     return (
       <ComponentDoc

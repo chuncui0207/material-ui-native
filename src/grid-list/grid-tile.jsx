@@ -6,6 +6,7 @@ import ThemeManager from '../styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const GridTile = React.createClass({
@@ -74,7 +75,7 @@ const GridTile = React.createClass({
     const actionPos = this.props.actionIcon ? this.props.actionPosition : null;
     const gutterLess = spacing.desktopGutterLess;
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         position: 'relative',
         display: 'block',
@@ -119,7 +120,7 @@ const GridTile = React.createClass({
         position: 'relative',
         left: '50%',
       },
-    };
+    });
     return styles;
   },
 

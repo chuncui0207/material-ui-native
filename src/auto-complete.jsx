@@ -10,6 +10,7 @@ import MenuDivider from './menus/menu-divider';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const AutoComplete = React.createClass({
@@ -100,7 +101,7 @@ const AutoComplete = React.createClass({
       ...other,
     } = this.props;
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         display: 'inline-block',
         position: 'relative',
@@ -119,7 +120,7 @@ const AutoComplete = React.createClass({
         display: 'block',
         width: this.props.fullWidth ? '100%' : 256,
       },
-    };
+    });
 
     let textFieldProps = {
       style: this.mergeAndPrefix(styles.input, style),

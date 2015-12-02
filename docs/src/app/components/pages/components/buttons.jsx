@@ -23,6 +23,7 @@ import CodeBlock from '../../code-example/code-block';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 export default class ButtonPage extends React.Component {
@@ -292,7 +293,7 @@ export default class ButtonPage extends React.Component {
   }
 
   getStyles() {
-    let styles = {
+    let styles = StyleSheet.create({
       container: {
         textAlign: 'center',
         marginBottom: '16px',
@@ -356,7 +357,7 @@ export default class ButtonPage extends React.Component {
         fontWeight: Typography.fontWeightNormal,
         color: Typography.textDarkBlack,
       },
-    };
+    });
     styles.exampleButtonIcon = extend(styles.exampleFlatButtonIcon, styles.exampleButtonIcon);
     return styles;
   }

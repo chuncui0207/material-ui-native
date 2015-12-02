@@ -10,6 +10,7 @@ import Popover from '../popover/popover';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const IconMenu = React.createClass({
@@ -113,7 +114,7 @@ const IconMenu = React.createClass({
 
     const {open, anchorEl} = this.state;
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         display: 'inline-block',
         position: 'relative',
@@ -122,7 +123,7 @@ const IconMenu = React.createClass({
       menu: {
         position:'relative',
       },
-    };
+    });
 
     let mergedRootStyles = this.prepareStyles(styles.root, style);
     let mergedMenuStyles = this.mergeStyles(styles.menu, menuStyle);

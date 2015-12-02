@@ -4,6 +4,7 @@ import {Menu, Mixins, Styles} from 'material-ui';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 let {Spacing, Colors} = Styles;
@@ -25,7 +26,7 @@ let PageWithNav = React.createClass({
 
   getStyles() {
     let subNavWidth = Spacing.desktopKeylineIncrement * 3 + 'px';
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         paddingTop: Spacing.desktopKeylineIncrement + 'px',
       },
@@ -52,7 +53,7 @@ let PageWithNav = React.createClass({
         borderLeft: 'solid 1px ' + Colors.grey300,
         minHeight: '800px',
       },
-    };
+    });
 
     if (this.isDeviceSize(StyleResizable.statics.Sizes.MEDIUM) ||
         this.isDeviceSize(StyleResizable.statics.Sizes.LARGE)) {

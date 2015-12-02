@@ -9,6 +9,7 @@ import ThemeManager from './styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const RadioButton = React.createClass({
@@ -58,7 +59,7 @@ const RadioButton = React.createClass({
   },
 
   getStyles() {
-    let styles = {
+    let styles = StyleSheet.create({
       icon: {
         height: this.getTheme().size,
         width: this.getTheme().size,
@@ -95,7 +96,7 @@ const RadioButton = React.createClass({
       label: {
         color: this.props.disabled ? this.getTheme().labelDisabledColor : this.getTheme().labelColor,
       },
-    };
+    });
 
     return styles;
   },

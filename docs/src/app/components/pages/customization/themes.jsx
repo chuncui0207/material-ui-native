@@ -29,6 +29,7 @@ const {
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const {StylePropable, StyleResizable} = Mixins;
@@ -73,7 +74,7 @@ const ThemesPage = React.createClass({
   getStyles() {
     let canvasColor = this.state.muiTheme.rawTheme.palette.canvasColor;
     let borderColor = this.state.muiTheme.rawTheme.palette.borderColor;
-    let styles = {
+    let styles = StyleSheet.create({
       group: {
         float: 'left',
         width: '100%',
@@ -145,7 +146,7 @@ const ThemesPage = React.createClass({
       inlineCode: {
         backgroundColor: '#F8F8F8',
       },
-    };
+    });
 
     if (this.isDeviceSize(StyleResizable.statics.Sizes.MEDIUM)) {
       styles.group.width = '33%';

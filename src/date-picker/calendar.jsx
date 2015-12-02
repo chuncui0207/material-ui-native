@@ -15,6 +15,7 @@ import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const Calendar = React.createClass({
@@ -92,7 +93,7 @@ const Calendar = React.createClass({
     let weekCount = DateTime.getWeekArray(this.state.displayDate).length;
     let toolbarInteractions = this._getToolbarInteractions();
     let isLandscape = this.props.mode === 'landscape';
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         fontSize: 12,
       },
@@ -135,7 +136,7 @@ const Calendar = React.createClass({
         textAlign: 'center',
         margin: '0 2px',
       },
-    };
+    });
 
     const weekTitleDayStyle = this.prepareStyles(styles.weekTitleDay);
     const {

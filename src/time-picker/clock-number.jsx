@@ -3,6 +3,10 @@ import StylePropable from '../mixins/style-propable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  StyleSheet,
+} = React;
+
 const ClockNumber = React.createClass({
 
   mixins: [StylePropable],
@@ -96,7 +100,7 @@ const ClockNumber = React.createClass({
       [-37, 50],
     ];
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         display: 'inline-block',
         position: 'absolute',
@@ -112,7 +116,7 @@ const ClockNumber = React.createClass({
         pointerEvents: 'none',
         boxSizing: 'border-box',
       },
-    };
+    });
 
     if (this.props.isSelected) {
       styles.root.backgroundColor = this.getTheme().accentColor;

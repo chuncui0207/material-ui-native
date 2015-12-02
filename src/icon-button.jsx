@@ -10,6 +10,10 @@ import Children from './utils/children';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
+const {
+  StyleSheet,
+} = React;
+
 const IconButton = React.createClass({
 
   mixins: [
@@ -98,7 +102,7 @@ const IconButton = React.createClass({
       disabledColor,
     } = this.constructor.getRelevantContextKeys(this.state.muiTheme);
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         position: 'relative',
         boxSizing: 'border-box',
@@ -126,7 +130,7 @@ const IconButton = React.createClass({
         color: disabledColor,
         fill: disabledColor,
       },
-    };
+    });
 
     return styles;
   },

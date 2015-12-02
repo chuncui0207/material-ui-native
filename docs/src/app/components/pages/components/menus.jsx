@@ -16,6 +16,10 @@ import Code from 'menus-code';
 import CodeExample from '../../code-example/code-example';
 import CodeBlock from '../../code-example/code-block';
 
+const {
+  StyleSheet,
+} = React;
+
 export default class MenusPage extends React.Component {
 
   render() {
@@ -205,7 +209,7 @@ export default class MenusPage extends React.Component {
       },
     ];
 
-    let styles = {
+    let styles = StyleSheet.create({
       menu: {
         marginRight: 32,
         marginBottom: 32,
@@ -218,7 +222,7 @@ export default class MenusPage extends React.Component {
         clear: 'both',
         border: 'none',
       },
-    };
+    });
 
     return (
       <ComponentDoc

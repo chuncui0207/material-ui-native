@@ -2,18 +2,19 @@ import React from 'react-native';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 const TabTemplate = React.createClass({
 
   render() {
-    let styles = {
+    let styles = StyleSheet.create({
       'height': 0,
       'overflow': 'hidden',
       'width': '100%',
       'position': 'relative',
       'textAlign': 'initial',
-    };
+    });
 
     if (this.props.selected) {
       delete styles.height;

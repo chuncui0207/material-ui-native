@@ -5,6 +5,10 @@ import Transitions from '../styles/transitions';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  StyleSheet,
+} = React;
+
 const ClockButton = React.createClass({
 
   mixins: [StylePropable],
@@ -63,7 +67,7 @@ const ClockButton = React.createClass({
       className,
       ...other} = this.props;
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         position: 'absolute',
         bottom: 65,
@@ -91,7 +95,7 @@ const ClockButton = React.createClass({
         transition: Transitions.easeOut(),
         backgroundColor: this.getTheme().accentColor,
       },
-    };
+    });
 
     if (this.props.selected) {
       styles.label.color = this.getTheme().selectTextColor;

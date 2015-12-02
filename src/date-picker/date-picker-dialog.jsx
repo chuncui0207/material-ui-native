@@ -11,6 +11,10 @@ import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 import DateTime from '../utils/date-time';
 
+const {
+  StyleSheet,
+} = React;
+
 const DatePickerDialog = React.createClass({
 
   mixins: [
@@ -115,7 +119,7 @@ const DatePickerDialog = React.createClass({
       calendarTextColor,
     } = this.constructor.getRelevantContextKeys(this.state.muiTheme);
 
-    let styles = {
+    let styles = StyleSheet.create({
       root: {
         fontSize: 14,
         color: calendarTextColor,
@@ -132,7 +136,7 @@ const DatePickerDialog = React.createClass({
       actions: {
         marginRight: 8,
       },
-    };
+    });
 
     let actions = [
       <FlatButton
