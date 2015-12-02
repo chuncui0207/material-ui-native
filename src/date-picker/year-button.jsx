@@ -4,6 +4,10 @@ import EnhancedButton from '../enhanced-button';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 const YearButton = React.createClass({
 
   mixins: [StylePropable],

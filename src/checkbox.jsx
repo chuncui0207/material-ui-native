@@ -7,6 +7,9 @@ import CheckboxChecked from './svg-icons/toggle/check-box';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
+const {
+  View,
+} = React;
 
 const Checkbox = React.createClass({
 

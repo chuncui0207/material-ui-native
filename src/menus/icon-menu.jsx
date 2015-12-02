@@ -8,6 +8,10 @@ import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 import Popover from '../popover/popover';
 
+const {
+  View,
+} = React;
+
 const IconMenu = React.createClass({
 
   mixins: [StylePropable],

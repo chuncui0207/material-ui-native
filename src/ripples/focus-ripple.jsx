@@ -9,6 +9,9 @@ import ScaleInTransitionGroup from '../transition-groups/scale-in';
 
 const pulsateDuration = 750;
 
+const {
+  View,
+} = React;
 
 const FocusRipple = React.createClass({
 

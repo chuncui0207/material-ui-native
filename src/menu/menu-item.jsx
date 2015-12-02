@@ -5,6 +5,10 @@ import Toggle from '../toggle';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 const Types = {
   LINK: 'LINK',
   SUBHEADER: 'SUBHEADER',

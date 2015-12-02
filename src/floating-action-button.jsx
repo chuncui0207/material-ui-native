@@ -10,6 +10,10 @@ import Children from './utils/children';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 let getZDepth = function(disabled) {
   let zDepth = disabled ? 0 : 2;
   return {

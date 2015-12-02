@@ -7,6 +7,10 @@ import Code from 'paper-code';
 import CodeExample from '../../code-example/code-example';
 import CodeBlock from '../../code-example/code-block';
 
+const {
+  View,
+} = React;
+
 const PaperPage = React.createClass({
 
   mixins: [StyleResizable],

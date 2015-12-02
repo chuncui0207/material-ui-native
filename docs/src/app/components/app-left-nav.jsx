@@ -3,6 +3,10 @@ import {MenuItem, LeftNav, Mixins, Styles} from 'material-ui';
 const {Colors, Spacing, Typography} = Styles;
 const {StylePropable} = Mixins;
 
+const {
+  View,
+} = React;
+
 const menuItems = [
     {route: 'get-started', text: 'Get Started'},
     {route: 'customization', text: 'Customization'},

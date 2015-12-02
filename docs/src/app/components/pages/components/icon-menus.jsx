@@ -18,6 +18,10 @@ import Code from 'icon-menus-code';
 import CodeExample from '../../code-example/code-example';
 import CodeBlock from '../../code-example/code-block';
 
+const {
+  View,
+} = React;
+
 export default class IconMenus extends React.Component {
 
   constructor(props) {

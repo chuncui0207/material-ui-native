@@ -6,6 +6,10 @@ const {Typography, Spacing} = Styles;
 const ThemeManager = Styles.ThemeManager;
 const DefaultRawTheme = Styles.LightRawTheme;
 
+const {
+  View,
+} = React;
+
 const ComponentInfo = React.createClass({
 
   mixins: [StyleResizable, StylePropable],

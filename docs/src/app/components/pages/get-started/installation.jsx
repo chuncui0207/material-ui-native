@@ -6,6 +6,10 @@ const {Typography} = Styles;
 const ThemeManager = Styles.ThemeManager;
 const DefaultRawTheme = Styles.LightRawTheme;
 
+const {
+  View,
+} = React;
+
 const Installation = React.createClass({
 
   contextTypes : {

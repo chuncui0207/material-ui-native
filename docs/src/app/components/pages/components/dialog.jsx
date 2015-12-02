@@ -5,6 +5,10 @@ import Code from 'dialog-code';
 import CodeExample from '../../code-example/code-example';
 import CodeBlock from '../../code-example/code-block';
 
+const {
+  View,
+} = React;
+
 export default class DialogPage extends React.Component {
 
   constructor() {

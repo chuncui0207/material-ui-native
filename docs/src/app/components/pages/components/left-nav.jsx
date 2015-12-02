@@ -5,6 +5,10 @@ import Code from 'left-nav-code';
 import CodeExample from '../../code-example/code-example';
 import CodeBlock from '../../code-example/code-block';
 
+const {
+  View,
+} = React;
+
 export default class LeftNavPage extends React.Component {
 
   constructor() {

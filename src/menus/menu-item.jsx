@@ -10,6 +10,10 @@ import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 import Menu from './menu';
 
+const {
+  View,
+} = React;
+
 const nestedMenuStyle = {position:'relative'};
 const MenuItem = React.createClass({
 

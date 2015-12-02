@@ -10,6 +10,10 @@ import Paper from './paper';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 function validateLabel(props, propName, componentName) {
   if (!props.children && !props.label) {
     return new Error('Required prop label or children was not ' +

@@ -5,6 +5,10 @@ import Code from 'date-picker-code';
 import CodeExample from '../../code-example/code-example';
 import CodeBlock from '../../code-example/code-block';
 
+const {
+  View,
+} = React;
+
 if (!window.Intl) {
   require('intl');
   require('intl/locale-data/jsonp/fr');

@@ -7,6 +7,9 @@ import TextField from '../text-field';
 import ThemeManager from '../styles/theme-manager';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 
+const {
+  View,
+} = React;
 
 const DatePicker = React.createClass({
 

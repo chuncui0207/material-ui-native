@@ -4,7 +4,9 @@ import {Styles} from 'material-ui';
 const {Typography} = Styles;
 const ThemeManager = Styles.ThemeManager;
 const DefaultRawTheme = Styles.LightRawTheme;
-
+const {
+  View,
+} = React;
 const Examples = React.createClass({
 
   contextTypes : {

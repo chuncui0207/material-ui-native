@@ -2,6 +2,10 @@ import React from 'react-native';
 import {History} from 'react-router';
 import {Menu, Mixins, Styles} from 'material-ui';
 
+const {
+  View,
+} = React;
+
 let {Spacing, Colors} = Styles;
 let {StyleResizable, StylePropable} = Mixins;
 

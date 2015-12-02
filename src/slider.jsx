@@ -6,6 +6,10 @@ import FocusRipple from './ripples/focus-ripple';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 /**
   * Verifies min/max range.
   * @param   {Object} props         Properties of the React component.
@@ -304,8 +308,8 @@ const Slider = React.createClass({
           onMouseLeave={this._onMouseLeave}
           onMouseUp={this._onMouseUp} >
           <View ref="track" style={this.prepareStyles(styles.track)}>
-              <View style={this.prepareStyles(styles.filled)}></View>
-              <View style={this.prepareStyles(remainingStyles)}></View>
+              <View style={this.prepareStyles(styles.filled)}/>
+              <View style={this.prepareStyles(remainingStyles)}/>
               <View style={handleStyles} tabIndex={0} {...handleDragProps}>
                 {focusRipple}
               </View>

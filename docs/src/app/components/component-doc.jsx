@@ -6,6 +6,10 @@ const {StylePropable} = Mixins;
 const ThemeManager = Styles.ThemeManager;
 const DefaultRawTheme = Styles.LightRawTheme;
 
+const {
+  View,
+} = React;
+
 const ComponentDoc = React.createClass({
 
   mixins: [StylePropable],

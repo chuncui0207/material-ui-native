@@ -9,6 +9,10 @@ import IconButtonCode from 'icons-code';
 import SvgIconsCode from 'svg-icons-code';
 import CodeExample from '../../code-example/code-example';
 
+const {
+  View,
+} = React;
+
 export default class FontIconPage extends React.Component {
 
   getStyles() {

@@ -4,6 +4,10 @@ import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 import StylePropable from './mixins/style-propable';
 
+const {
+  View,
+} = React;
+
 // Badge
 export default React.createClass({
   displayName: 'Badge',

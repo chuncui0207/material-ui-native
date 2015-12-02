@@ -17,6 +17,10 @@ import {
 import Code from 'table-code';
 import CodeBlock from '../../code-example/code-block';
 
+const {
+  View,
+} = React;
+
 export default class TablePage extends React.Component {
 
   constructor(props) {

@@ -22,6 +22,10 @@ import RadioButtonCode from 'radio-buttons-code';
 import ToggleCode from 'toggle-code';
 import CodeBlock from '../../code-example/code-block';
 
+const {
+  View,
+} = React;
+
 export default class SwitchesPage extends React.Component {
 
   constructor(props) {

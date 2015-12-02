@@ -5,6 +5,9 @@ import Colors from '../styles/colors';
 import DateTime from '../utils/date-time';
 import YearButton from './year-button';
 
+const {
+  View,
+} = React;
 
 const CalendarYear = React.createClass({
 

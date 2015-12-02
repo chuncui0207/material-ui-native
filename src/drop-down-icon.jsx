@@ -7,6 +7,9 @@ import Menu from './menu/menu';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
+const {
+  View,
+} = React;
 
 const DropDownIcon = React.createClass({
 

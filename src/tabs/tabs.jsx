@@ -7,6 +7,10 @@ import Controllable from '../mixins/controllable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 const Tabs = React.createClass({
 
   mixins: [StylePropable, Controllable],

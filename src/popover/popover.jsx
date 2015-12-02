@@ -11,6 +11,10 @@ import throttle from 'lodash.throttle';
 import AutoPrefix from '../styles/auto-prefix';
 import ContextPure from '../mixins/context-pure';
 
+const {
+  View,
+} = React;
+
 const Popover = React.createClass({
   mixins: [
     ContextPure,

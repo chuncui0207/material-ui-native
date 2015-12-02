@@ -2,6 +2,9 @@ import React from 'react-native';
 import {Mixins} from 'material-ui';
 const {StylePropable} = Mixins;
 
+const {
+  View,
+} = React;
 
 const MobileTearSheet = React.createClass({
   mixins: [StylePropable],

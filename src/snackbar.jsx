@@ -8,6 +8,10 @@ import ThemeManager from './styles/theme-manager';
 import ContextPure from './mixins/context-pure';
 import StyleResizable from './mixins/style-resizable';
 
+const {
+  View,
+} = React;
+
 const Snackbar = React.createClass({
 
   mixins: [

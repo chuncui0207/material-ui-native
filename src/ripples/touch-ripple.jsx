@@ -7,6 +7,9 @@ import Dom from '../utils/dom';
 import ImmutabilityHelper from '../utils/immutability-helper';
 import CircleRipple from './circle-ripple';
 
+const {
+  View,
+} = React;
 
 const TouchRipple = React.createClass({
 

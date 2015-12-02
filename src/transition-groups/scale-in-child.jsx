@@ -7,6 +7,9 @@ import Transitions from '../styles/transitions';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  View,
+} = React;
 
 const ScaleInChild = React.createClass({
 

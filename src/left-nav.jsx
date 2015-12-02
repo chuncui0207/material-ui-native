@@ -19,6 +19,9 @@ import ThemeManager from './styles/theme-manager';
 
 let openNavEventHandler = null;
 
+const {
+  View,
+} = React;
 
 const LeftNav = React.createClass({
 

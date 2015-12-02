@@ -4,7 +4,9 @@ import {ClearFix, Mixins, Styles, Utils} from 'material-ui';
 const {ColorManipulator} = Utils;
 const {StyleResizable, StylePropable} = Mixins;
 const {Colors, Typography} = Styles;
-
+const {
+  View,
+} = React;
 
 const ColorsPage = React.createClass({
 

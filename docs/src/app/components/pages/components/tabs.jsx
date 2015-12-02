@@ -7,6 +7,10 @@ import Code from 'tabs-code';
 import SwipeableViews from 'react-swipeable-views';
 import CodeBlock from '../../code-example/code-block';
 
+const {
+  View,
+} = React;
+
 export default class TabsPage extends React.Component {
 
   constructor(props) {

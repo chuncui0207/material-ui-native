@@ -6,6 +6,9 @@ import AutoPrefix from '../styles/auto-prefix';
 import Transitions from '../styles/transitions';
 import Colors from '../styles/colors';
 
+const {
+  View,
+} = React;
 
 const CircleRipple = React.createClass({
 

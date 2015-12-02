@@ -5,6 +5,10 @@ import Transitions from './styles/transitions';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 const LinearProgress = React.createClass({
 
   mixins: [StylePropable],
@@ -171,8 +175,8 @@ const LinearProgress = React.createClass({
     return (
       <View {...other} style={this.prepareStyles(styles.root, style)}>
         <View style={this.prepareStyles(styles.bar)}>
-          <View ref="bar1" style={this.prepareStyles(styles.barFragment1)}></View>
-          <View ref="bar2" style={this.prepareStyles(styles.barFragment2)}></View>
+          <View ref="bar1" style={this.prepareStyles(styles.barFragment1)}/>
+          <View ref="bar2" style={this.prepareStyles(styles.barFragment2)}/>
         </View>
       </View>
     );

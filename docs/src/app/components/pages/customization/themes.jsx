@@ -27,6 +27,10 @@ const {
   Toggle,
 } = mui;
 
+const {
+  View,
+} = React;
+
 const {StylePropable, StyleResizable} = Mixins;
 const {Typography} = Styles;
 const ThemeManager = Styles.ThemeManager;

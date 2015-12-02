@@ -4,6 +4,10 @@ import Colors from './styles/colors';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 const Avatar = React.createClass({
 
   mixins: [StylePropable],

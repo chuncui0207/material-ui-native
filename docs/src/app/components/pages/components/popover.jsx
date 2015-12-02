@@ -4,6 +4,9 @@ import ComponentDoc from '../../component-doc';
 import Code from 'popover-code';
 import CodeExample from '../../code-example/code-example';
 
+const {
+  View,
+} = React;
 
 let PopoverPage = React.createClass({
   getInitialState() {

@@ -5,6 +5,10 @@ const {Typography} = Styles;
 const ThemeManager = Styles.ThemeManager;
 const DefaultRawTheme = Styles.LightRawTheme;
 
+const {
+  View,
+} = React;
+
 const Prerequisites = React.createClass({
 
   contextTypes : {

@@ -8,6 +8,10 @@ import CodeExample from '../../code-example/code-example';
 import LinkedStateMixin from 'react-addons-linked-state-mixin';
 import CodeBlock from '../../code-example/code-block';
 
+const {
+  View,
+} = React;
+
 const TextFieldsPage = React.createClass({
 
   mixins: [StyleResizable, LinkedStateMixin],

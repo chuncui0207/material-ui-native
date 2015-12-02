@@ -5,6 +5,10 @@ import Code from 'refresh-indicator-code';
 import CodeExample from '../../code-example/code-example';
 import CodeBlock from '../../code-example/code-block';
 
+const {
+  View,
+} = React;
+
 let RefreshIndicatorPage = React.createClass({
 
   render() {

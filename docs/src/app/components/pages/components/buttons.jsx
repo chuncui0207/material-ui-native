@@ -21,6 +21,9 @@ import FlatButtonCode from 'flat-button-code';
 import CodeExample from '../../code-example/code-example';
 import CodeBlock from '../../code-example/code-block';
 
+const {
+  View,
+} = React;
 
 export default class ButtonPage extends React.Component {
 

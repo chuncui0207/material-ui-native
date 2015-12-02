@@ -13,6 +13,10 @@ import SubheaderMenuItem from './subheader-menu-item';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 /***********************
 * Nested Menu Component
 ***********************/

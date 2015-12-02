@@ -4,6 +4,10 @@ import StylePropable from './mixins/style-propable';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 const InkBar = React.createClass({
 
   contextTypes: {
@@ -66,9 +70,7 @@ const InkBar = React.createClass({
     }, this.props.style, colorStyle);
 
     return (
-      <View style={styles}>
-        &nbsp;
-      </View>
+      <View style={styles}/>
     );
   },
 

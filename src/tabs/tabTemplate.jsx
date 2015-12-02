@@ -1,5 +1,8 @@
 import React from 'react-native';
 
+const {
+  View,
+} = React;
 
 const TabTemplate = React.createClass({
 

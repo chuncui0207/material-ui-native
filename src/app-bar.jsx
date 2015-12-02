@@ -8,6 +8,10 @@ import ThemeManager from './styles/theme-manager';
 import Paper from './paper';
 import PropTypes from './utils/prop-types';
 
+const {
+  View,
+} = React;
+
 const AppBar = React.createClass({
 
   mixins: [StylePropable],

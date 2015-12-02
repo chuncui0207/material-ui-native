@@ -17,6 +17,10 @@ import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 import {SelectableContainerEnhance} from 'material-ui/hoc/selectable-enhance';
 
 const {
+  View,
+} = React;
+
+const {
   Avatar,
   Checkbox,
   IconButton,

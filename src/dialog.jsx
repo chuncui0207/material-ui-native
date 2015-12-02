@@ -14,6 +14,10 @@ import warning from 'warning';
 
 import ReactTransitionGroup from 'react-addons-transition-group';
 
+const {
+  View,
+} = React;
+
 const TransitionItem = React.createClass({
   mixins: [StylePropable],
 

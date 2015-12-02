@@ -8,6 +8,10 @@ import Menu from './menus/menu';
 import MenuItem from './menus/menu-item';
 import MenuDivider from './menus/menu-divider';
 
+const {
+  View,
+} = React;
+
 const AutoComplete = React.createClass({
 
   mixins: [

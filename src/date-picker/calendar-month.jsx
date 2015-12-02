@@ -3,6 +3,9 @@ import DateTime from '../utils/date-time';
 import DayButton from './day-button';
 import ClearFix from '../clearfix';
 
+const {
+  View,
+} = React;
 
 const CalendarMonth = React.createClass({
 

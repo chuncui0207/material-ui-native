@@ -9,6 +9,10 @@ import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 import ContextPure from './mixins/context-pure';
 
+const {
+  View,
+} = React;
+
 /**
  * Check if a value is valid to be displayed inside an input.
  *
@@ -359,7 +363,7 @@ const TextField = React.createClass({
     }
 
     let underlineElement = this.props.disabled ? (
-      <View style={this.prepareStyles(styles.underlineAfter)}></View>
+      <View style={this.prepareStyles(styles.underlineAfter)}/>
     ) : (
       <hr style={this.prepareStyles(styles.underline)}/>
     );

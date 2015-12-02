@@ -1,6 +1,10 @@
 import React from 'react-native';
 import Paper from '../paper';
 
+const {
+  View,
+} = React;
+
 const DatePickerInline = React.createClass({
 
   propTypes: {

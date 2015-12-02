@@ -3,6 +3,10 @@ import Paper from '../paper';
 import StylePropable from '../mixins/style-propable';
 import CardExpandable from './card-expandable';
 
+const {
+  View,
+} = React;
+
 const Card = React.createClass({
   mixins:[StylePropable],
 

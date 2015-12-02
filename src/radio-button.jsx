@@ -7,6 +7,10 @@ import RadioButtonOn from './svg-icons/toggle/radio-button-checked';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 const RadioButton = React.createClass({
 
   mixins: [StylePropable],

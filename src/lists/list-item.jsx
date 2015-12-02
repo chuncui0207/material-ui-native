@@ -14,6 +14,10 @@ import NestedList from './nested-list';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 const ListItem = React.createClass({
 
   mixins: [PureRenderMixin, StylePropable],

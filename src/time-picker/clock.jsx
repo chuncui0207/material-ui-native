@@ -5,6 +5,9 @@ import ClockButton from './clock-button';
 import ClockHours from './clock-hours';
 import ClockMinutes from './clock-minutes';
 
+const {
+  View,
+} = React;
 
 const Clock = React.createClass({
 

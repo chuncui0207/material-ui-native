@@ -4,6 +4,9 @@ import CodeExample from '../../code-example/code-example';
 
 const {Typography} = Styles;
 
+const {
+  View,
+} = React;
 
 const InlineStyles = React.createClass({
 

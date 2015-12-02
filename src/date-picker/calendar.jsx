@@ -13,6 +13,9 @@ import ClearFix from '../clearfix';
 import ThemeManager from '../styles/theme-manager';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 
+const {
+  View,
+} = React;
 
 const Calendar = React.createClass({
 

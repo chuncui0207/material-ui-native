@@ -9,6 +9,10 @@ import Code from 'grid-list-code';
 import CodeExample from '../../code-example/code-example';
 import CodeBlock from '../../code-example/code-block';
 
+const {
+  View,
+} = React;
+
 class GridListPage extends React.Component {
 
   constructor(props) {

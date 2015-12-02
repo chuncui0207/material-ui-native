@@ -27,6 +27,10 @@ const styles = {
   },
 };
 
+const {
+  View,
+} = React;
+
 const EnhancedTextarea = React.createClass({
 
   mixins: [StylePropable],

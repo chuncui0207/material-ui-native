@@ -6,6 +6,9 @@ import ClockPointer from './clock-pointer';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  View,
+} = React;
 
 function rad2deg(rad) {
   return rad * 57.29577951308232;

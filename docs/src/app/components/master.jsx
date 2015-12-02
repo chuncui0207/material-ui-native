@@ -16,6 +16,9 @@ const {Colors, Spacing, Typography} = Styles;
 const ThemeManager = Styles.ThemeManager;
 const DefaultRawTheme = Styles.LightRawTheme;
 
+const {
+  View,
+} = React;
 
 const Master = React.createClass({
   mixins: [StylePropable],

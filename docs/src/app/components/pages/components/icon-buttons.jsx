@@ -10,6 +10,10 @@ import Code from 'icon-buttons-code';
 import CodeExample from '../../code-example/code-example';
 import CodeBlock from '../../code-example/code-block';
 
+const {
+  View,
+} = React;
+
 export default class IconButtonsPage extends React.Component {
 
   render() {

@@ -5,6 +5,10 @@ import SlideInTransitionGroup from '../transition-groups/slide-in';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 const DateDisplay = React.createClass({
 
   mixins: [StylePropable],
