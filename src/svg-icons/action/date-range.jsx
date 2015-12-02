@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import SvgIcon from '../../svg-icon';
 

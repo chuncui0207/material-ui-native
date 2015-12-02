@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {Link} from 'react-router';
 import {Paper, Mixins, Styles} from 'material-ui';
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import SvgIcon from '../svg-icon';
 
 let NavigationArrowDropRight = React.createClass({

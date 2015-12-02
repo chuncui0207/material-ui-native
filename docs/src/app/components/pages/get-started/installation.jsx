@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {Paper, Styles} from 'material-ui';
 import CodeBlock from '../../code-example/code-block';
 

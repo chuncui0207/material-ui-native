@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {History} from 'react-router';
 import {Menu, Mixins, Styles} from 'material-ui';
 

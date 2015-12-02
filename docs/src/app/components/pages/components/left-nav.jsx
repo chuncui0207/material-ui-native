@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {LeftNav, MenuItem, RaisedButton, Paper} from 'material-ui';
 import ComponentDoc from '../../component-doc';
 import Code from 'left-nav-code';

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import mui from 'material-ui';
 import CodeBlock from '../../code-example/code-block';
 import ComponentDoc from '../../component-doc';

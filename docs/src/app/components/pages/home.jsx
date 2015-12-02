@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {History} from 'react-router';
 import {Mixins, RaisedButton, Styles} from 'material-ui';
 import HomeFeature from './home-feature';

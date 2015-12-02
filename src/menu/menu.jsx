@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import ReactDOM from 'react-dom';
 import CssEvent from '../utils/css-event';
 import KeyLine from '../utils/key-line';

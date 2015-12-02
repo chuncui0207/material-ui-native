@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {GridList, GridTile, Paper} from 'material-ui';
 
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';

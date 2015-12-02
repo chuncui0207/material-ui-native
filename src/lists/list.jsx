@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import PropTypes from '../utils/prop-types';
 import StylePropable from '../mixins/style-propable';

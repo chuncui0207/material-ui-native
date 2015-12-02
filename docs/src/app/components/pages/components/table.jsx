@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import CodeExample from '../../code-example/code-example';
 import ComponentDoc from '../../component-doc';
 import {

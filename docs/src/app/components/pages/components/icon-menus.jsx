@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {IconButton, Paper} from 'material-ui';
 import IconMenu from 'menus/icon-menu';
 import MenuItem from 'menus/menu-item';

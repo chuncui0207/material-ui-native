@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {Mixins, Styles} from 'material-ui';
 
 const {StyleResizable, StylePropable} = Mixins;

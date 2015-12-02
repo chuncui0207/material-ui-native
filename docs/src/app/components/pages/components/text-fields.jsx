@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {ClearFix, Mixins, TextField, Styles, Paper} from 'material-ui';
 import ComponentDoc from '../../component-doc';
 const {Colors} = Styles;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import Paper from 'paper';
 import Menu from 'menus/menu';
 import MenuItem from 'menus/menu-item';

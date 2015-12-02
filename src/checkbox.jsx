@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import EnhancedSwitch from './enhanced-switch';
 import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';

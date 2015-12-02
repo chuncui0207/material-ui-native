@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import AppLeftNav from './app-left-nav';
 import FullWidthSection from './full-width-section';
 import {AppBar,

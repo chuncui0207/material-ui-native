@@ -4,7 +4,7 @@ import warning from 'warning';
 
 let Modernizr = isBrowser ? require('./utils/modernizr.custom') : undefined;
 
-import React from 'react';
+import React from 'react-native';
 import ReactDOM from 'react-dom';
 import KeyCode from './utils/key-code';
 import StylePropable from './mixins/style-propable';

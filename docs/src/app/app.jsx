@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import ReactDOM from 'react-dom';
 import {Router} from 'react-router';
 import AppRoutes from './app-routes.jsx';

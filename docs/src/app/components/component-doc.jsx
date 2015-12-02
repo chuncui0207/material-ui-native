@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {ClearFix, Mixins, Styles} from 'material-ui';
 import ComponentInfo from './component-info';
 const Typography = Styles.Typography;

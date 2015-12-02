@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {Styles} from 'material-ui';
 
 const {Typography} = Styles;

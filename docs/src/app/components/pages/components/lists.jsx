@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import mui from 'material-ui';
 import ComponentDoc from '../../component-doc';
 import MobileTearSheet from '../../mobile-tear-sheet';

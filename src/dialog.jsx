@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import ReactDOM from 'react-dom';
 import WindowListenable from './mixins/window-listenable';
 import KeyCode from './utils/key-code';

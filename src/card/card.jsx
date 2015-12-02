@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import Paper from '../paper';
 import StylePropable from '../mixins/style-propable';
 import CardExpandable from './card-expandable';

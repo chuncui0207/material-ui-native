@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import AppBar from 'material-ui/app-bar';
 import Paper from 'material-ui/paper';
 import IconButton from 'icon-button';

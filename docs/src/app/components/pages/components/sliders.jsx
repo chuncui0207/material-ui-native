@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {Paper, Slider} from 'material-ui';
 import ComponentDoc from '../../component-doc';
 import Code from 'sliders-code';

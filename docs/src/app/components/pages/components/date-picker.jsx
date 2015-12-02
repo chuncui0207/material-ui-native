@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {DatePicker, TextField, Paper, Toggle} from 'material-ui';
 import ComponentDoc from '../../component-doc';
 import Code from 'date-picker-code';

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {ClearFix, Mixins, Styles} from 'material-ui';
 let {StylePropable, StyleResizable} = Mixins;
 let DesktopGutter = Styles.Spacing.desktopGutter;

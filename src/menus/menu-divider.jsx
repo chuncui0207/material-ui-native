@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import StylePropable from '../mixins/style-propable';
 import ListDivider from '../lists/list-divider';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';

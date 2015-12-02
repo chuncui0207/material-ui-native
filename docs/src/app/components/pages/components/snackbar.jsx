@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {RaisedButton, Snackbar, TextField, Paper} from 'material-ui';
 import ComponentDoc from '../../component-doc';
 import Code from 'snackbars-code';

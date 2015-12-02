@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 
 import {AutoComplete} from 'material-ui';
 import ComponentDoc from '../../component-doc';

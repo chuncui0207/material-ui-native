@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import StylePropable from '../mixins/style-propable';
 import TimeDisplay from './time-display';
 import ClockButton from './clock-button';

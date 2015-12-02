@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {ClearFix, Mixins, Styles, Utils} from 'material-ui';
 
 const {ColorManipulator} = Utils;

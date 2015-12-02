@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import CodeExample from '../../code-example/code-example';
 import {IconButton, Slider, Styles, Tab, Tabs, Paper} from 'material-ui';
 import ComponentDoc from '../../component-doc';

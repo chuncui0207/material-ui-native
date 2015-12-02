@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import ImmutabilityHelper from '../utils/immutability-helper';
 import List from './list';
 

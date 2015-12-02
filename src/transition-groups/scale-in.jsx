@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import ReactTransitionGroup from 'react-addons-transition-group';
 import StylePropable from '../mixins/style-propable';

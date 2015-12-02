@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import ComponentDoc from '../../component-doc';
 import ToggleStar from 'material-ui/svg-icons/toggle/star';
 

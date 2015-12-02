@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import Styles from '../styles';
 import Avatar from '../avatar';
 import StylePropable from '../mixins/style-propable';

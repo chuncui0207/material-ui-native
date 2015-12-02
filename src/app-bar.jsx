@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import StylePropable from './mixins/style-propable';
 import Typography from './styles/typography';
 import IconButton from './icon-button';

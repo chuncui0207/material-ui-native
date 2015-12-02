@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import ReactDOM from 'react-dom';
 import update from 'react-addons-update';
 import Controllable from '../mixins/controllable';

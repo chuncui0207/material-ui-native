@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import StylePropable from '../mixins/style-propable';
 import WindowListenable from '../mixins/window-listenable';
 import TimePickerDialog from './time-picker-dialog';

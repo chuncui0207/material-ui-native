@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {MenuItem, LeftNav, Mixins, Styles} from 'material-ui';
 const {Colors, Spacing, Typography} = Styles;
 const {StylePropable} = Mixins;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {Checkbox, Styles} from 'material-ui';
 import CodeExample from '../../code-example/code-example';
 

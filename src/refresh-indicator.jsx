@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import ReactDOM from 'react-dom';
 import StylePropable from './mixins/style-propable';
 import AutoPrefix from './styles/auto-prefix';

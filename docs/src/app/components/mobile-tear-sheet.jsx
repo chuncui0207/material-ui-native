@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {Mixins} from 'material-ui';
 const {StylePropable} = Mixins;
 
