@@ -115,7 +115,7 @@ const YearButton = React.createClass({
         onMouseEnter={this._handleMouseEnter}
         onMouseLeave={this._handleMouseLeave}
         onTouchTap={this._handleTouchTap}>
-        <div style={this.prepareStyles(styles.buttonState)} />
+        <View style={this.prepareStyles(styles.buttonState)} />
         <span style={this.prepareStyles(styles.label)}>{year}</span>
       </EnhancedButton>
     );

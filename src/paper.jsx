@@ -77,9 +77,9 @@ const Paper = React.createClass({
     };
 
     return (
-      <div {...other} style={this.prepareStyles(styles, style)}>
+      <View {...other} style={this.prepareStyles(styles, style)}>
         {children}
-      </div>
+      </View>
     );
   },
 

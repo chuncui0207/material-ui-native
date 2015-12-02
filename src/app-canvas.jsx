@@ -61,9 +61,9 @@ const AppCanvas = React.createClass({
     }, this);
 
     return (
-      <div style={this.prepareStyles(styles)}>
+      <View style={this.prepareStyles(styles)}>
         {newChildren}
-      </div>
+      </View>
     );
   },
 

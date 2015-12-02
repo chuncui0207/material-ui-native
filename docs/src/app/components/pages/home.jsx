@@ -23,12 +23,12 @@ const HomePage = React.createClass({
     };
 
     return (
-      <div style={style}>
+      <View style={style}>
         {this._getHomePageHero()}
         {this._getHomePurpose()}
         {this._getHomeFeatures()}
         {this._getHomeContribute()}
-      </div>
+      </View>
     );
   },
 
@@ -95,13 +95,13 @@ const HomePage = React.createClass({
     return (
       <FullWidthSection style={styles.root}>
           <img style={styles.svgLogo} src="images/material-ui-logo.svg" />
-          <div style={styles.tagline}>
-            <h1 style={styles.h1}>material ui</h1>
-            <h2 style={styles.h2}>
+          <View style={styles.tagline}>
+            <Text style={styles.h1}>material ui</Text>
+            <Text style={styles.h2}>
               A Set of React Components <span style={styles.nowrap}>
               that Implement</span> <span style={styles.nowrap}>
               Google&apos;s Material Design</span>
-            </h2>
+            </Text>
             <RaisedButton
               className="demo-button"
               label="Demo"
@@ -109,7 +109,7 @@ const HomePage = React.createClass({
               linkButton={true}
               style={styles.demoStyle}
               labelStyle={styles.label}/>
-          </div>
+          </View>
       </FullWidthSection>
     );
   },

@@ -54,9 +54,9 @@ const Examples = React.createClass({
     let styles = this.getStyles();
 
     return (
-      <div>
+      <View>
 
-        <h2 style={styles.headline}>Examples</h2>
+        <Text style={styles.headline}>Examples</Text>
         <p>
           There are 2 projects that you can look at to get started. They can be found
           in the <a href="https://github.com/callemall/material-ui/tree/master/examples">examples folder</a>. These
@@ -72,7 +72,7 @@ const Examples = React.createClass({
           build instructions.
         </p>
 
-    </div>
+    </View>
     );
   },
 

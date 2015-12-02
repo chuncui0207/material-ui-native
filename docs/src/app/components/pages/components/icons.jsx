@@ -27,7 +27,7 @@ export default class FontIconPage extends React.Component {
   render() {
 
     const fontIconDesc = (
-      <div>
+      <View>
         <p style={this.getStyles()}>
           This component will render any icon defined in any style sheets included in your
           project. We are using <a title="Google's Material Design Icons GitHub"
@@ -45,11 +45,11 @@ export default class FontIconPage extends React.Component {
             {'<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">'}
           </CodeBlock>
         </Paper>
-      </div>
+      </View>
     );
 
     let svgIconDesc = (
-      <div>
+      <View>
         <p style={this.getStyles()}>
           Alternatively, it is possible to include svg icons using mui.SvgIcon to
           create a custom svg component. Here we are creating the ActionHome
@@ -73,7 +73,7 @@ import SocialNotificationsActive from 'material-ui/lib/svg-icons/social/notifica
   }
 `}
           </CodeBlock>
-      </div>
+      </View>
     );
 
     let componentInfo = [
@@ -132,7 +132,7 @@ import SocialNotificationsActive from 'material-ui/lib/svg-icons/social/notifica
     };
 
     return (
-      <div>
+      <View>
         <ComponentDoc
           name="Font Icons"
           desc={fontIconDesc}
@@ -180,7 +180,7 @@ import SocialNotificationsActive from 'material-ui/lib/svg-icons/social/notifica
             <ActionHome style={iconStyles} color={Colors.blue500} hoverColor={Colors.greenA200} />
           </CodeExample>
         </ComponentDoc>
-      </div>
+      </View>
     );
   }
 

@@ -99,9 +99,9 @@ const Installation = React.createClass({
     let styles = this.getStyles();
 
     return (
-      <div>
+      <View>
 
-        <h2 style={styles.headline}>Installation</h2>
+        <Text style={styles.headline}>Installation</Text>
         <p>
           Material-UI is available as an <a href="https://www.npmjs.org/package/material-ui">npm package</a>.
           After npm install, you will find all the .jsx files in the /src folder and their compiled versions in the /lib folder.
@@ -124,7 +124,7 @@ const Installation = React.createClass({
           how to do so.
         </p>
 
-        <h2 style={styles.headline}>Usage</h2>
+        <Text style={styles.headline}>Usage</Text>
         <p>
           Using material-ui components is very straightforward. Once material-ui is included in your project, you can use the components this way:
         </p>
@@ -150,13 +150,13 @@ const Installation = React.createClass({
           root directory.
         </p>
 
-        <h2 style={styles.headline}>Customization</h2>
+        <Text style={styles.headline}>Customization</Text>
         <p>We have implemented a default theme to render all Material-UI components. Styling components to your liking is simple and hassle-free.
         This can be achieved in the following two ways:</p>
         <li><a href="#/customization/themes">Use a custom theme to style components</a></li>
         <li><a href="#/customization/inline-styles">Override individual component styles via the style prop</a></li>
 
-      </div>
+      </View>
     );
   },
 

@@ -83,7 +83,7 @@ const List = React.createClass({
     let subheaderElement;
     if (subheader) {
       const mergedSubheaderStyles = this.prepareStyles(styles.subheader, subheaderStyle);
-      subheaderElement = <div style={mergedSubheaderStyles}>{subheader}</div>;
+      subheaderElement = <View style={mergedSubheaderStyles}>{subheader}</View>;
     }
 
     return (

@@ -771,8 +771,8 @@ import ListItem from 'material-ui/lib/lists/list-item';
         </CodeExample>
 
         <Paper style={{padding: '24px', marginBottom: '32px'}}>
-        <div>
-          <h2 style={styles.headline}>Selectable Lists</h2>
+        <View>
+          <Text style={styles.headline}>Selectable Lists</Text>
           <p>
             Basically three steps are needed:
           </p>
@@ -788,7 +788,7 @@ import ListItem from 'material-ui/lib/lists/list-item';
             Wrapping the <code>&lt;List&gt;</code> component with the higher order component "SelectableEnhance" enables
             the clicked <code>&lt;ListItem&gt;</code> to be highlighted.
           </p>
-          <div style={styles.codeblock}>
+          <View style={styles.codeblock}>
             <CodeBlock>
  {`import { SelectableContainerEnhance } from 'material-ui/lib/hoc/selectable-enhance';
 .
@@ -797,7 +797,7 @@ import ListItem from 'material-ui/lib/lists/list-item';
 var SelectableList = SelectableContainerEnhance(List);
 `}
             </CodeBlock>
-          </div>
+          </View>
 
 
           <h3 style={styles.subheadline}>Where to put state</h3>
@@ -815,16 +815,16 @@ var SelectableList = SelectableContainerEnhance(List);
           <p>
             The prop 'valueLink' of <code>&lt;List&gt;</code> has to be set, to make the highlighting controllable:
           </p>
-          <div style={styles.codeblock}>
+          <View style={styles.codeblock}>
             <CodeBlock>
 {`valueLink={{
     value: this.state.selectedIndex,
     requestChange: this.handleUpdateSelectedIndex}}
 `}
             </CodeBlock>
-          </div>
+          </View>
           A sample implementation might look like this.
-          <div style={styles.codeblock}>
+          <View style={styles.codeblock}>
             <CodeBlock>
 {`getInitialState() {
  return { selectedIndex: 1 };
@@ -835,12 +835,12 @@ handleUpdateSelectedIndex(e,index) {
 });
 `}
             </CodeBlock>
-          </div>
+          </View>
           <h3 style={styles.subheadline}>Adjust the <code>&lt;ListItem&gt;</code></h3>
           <p>
             The prop "value" on each ListItem has to be set. This makes the item addressable for the callback.
           </p>
-        </div>
+        </View>
         </Paper>
       </ComponentDoc>
     );

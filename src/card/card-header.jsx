@@ -105,14 +105,14 @@ const CardHeader = React.createClass({
       avatar = <Avatar src={this.props.avatar} style={styles.avatar}/>;
 
     return (
-      <div {...this.props} style={rootStyle}>
+      <View {...this.props} style={rootStyle}>
         {avatar}
-        <div style={textStyle}>
+        <View style={textStyle}>
           <span style={titleStyle}>{this.props.title}</span>
           <span style={subtitleStyle}>{this.props.subtitle}</span>
-        </div>
+        </View>
         {this.props.children}
-      </div>
+      </View>
     );
   },
 });

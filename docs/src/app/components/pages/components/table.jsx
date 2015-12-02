@@ -427,7 +427,7 @@ export default class TablePage extends React.Component {
         </Paper>
 
         <CodeExample code={Code}>
-          <div className="table-examples">
+          <View className="table-examples">
             <Table
               height={this.state.height}
               fixedHeader={this.state.fixedHeader}
@@ -501,7 +501,7 @@ export default class TablePage extends React.Component {
               </TableFooter>
             </Table>
 
-            <div style={propContainerStyle}>
+            <View style={propContainerStyle}>
               <h3>Table Properties</h3>
               <TextField
                 floatingLabelText="Table Body Height"
@@ -556,8 +556,8 @@ export default class TablePage extends React.Component {
                 onToggle={this._onToggle}
                 defaultToggled={this.state.deselectOnClickaway} />
 
-            </div>
-          </div>
+            </View>
+          </View>
         </CodeExample>
       </ComponentDoc>
     );

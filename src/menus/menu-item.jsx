@@ -170,7 +170,7 @@ const MenuItem = React.createClass({
 
       secondaryTextElement = secondaryTextIsAnElement ?
         React.cloneElement(secondaryText, {style: mergedSecondaryTextStyles}) :
-        <div style={this.prepareStyles(styles.secondaryText)}>{secondaryText}</div>;
+        <View style={this.prepareStyles(styles.secondaryText)}>{secondaryText}</View>;
     }
     let childMenuPopover;
     if (menuItems) {

@@ -257,7 +257,7 @@ export default class DatePickerPage extends React.Component {
             wordings={{ok: 'OK', cancel: 'Annuler'}}
             locale="fr" />
 
-          <div style={optionsStyle}>
+          <View style={optionsStyle}>
             <TextField
               floatingLabelText="Min Date"
               defaultValue={this.state.minDate.toDateString()}
@@ -281,7 +281,7 @@ export default class DatePickerPage extends React.Component {
               label="Disable Year Selection"
               defaultToggled={this.state.disableYearSelection}
               onToggle={this._handleToggle.bind(this)} />
-          </div>
+          </View>
         </CodeExample>
       </ComponentDoc>
     );

@@ -112,19 +112,19 @@ const CardMedia = React.createClass({
     });
 
     return (
-      <div {...this.props} style={rootStyle}>
-        <div style={mediaStyle}>
+      <View {...this.props} style={rootStyle}>
+        <View style={mediaStyle}>
           {children}
-        </div>
+        </View>
         {(this.props.overlay) ?
-          <div style={overlayContainerStyle}>
-            <div style={overlayStyle}>
-              <div style={overlayContentStyle}>
+          <View style={overlayContainerStyle}>
+            <View style={overlayStyle}>
+              <View style={overlayContentStyle}>
                 {overlayChildren}
-              </div>
-            </div>
-          </div> : ''}
-      </div>
+              </View>
+            </View>
+          </View> : ''}
+      </View>
     );
   },
 });

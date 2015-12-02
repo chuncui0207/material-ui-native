@@ -173,17 +173,17 @@ const GridTile = React.createClass({
 
     if (title) {
       titleBar = (
-        <div style={this.prepareStyles(styles.titleBar)}>
-          <div style={this.prepareStyles(styles.titleWrap)}>
-            <div style={this.prepareStyles(styles.title)}>{title}</div>
+        <View style={this.prepareStyles(styles.titleBar)}>
+          <View style={this.prepareStyles(styles.titleWrap)}>
+            <View style={this.prepareStyles(styles.title)}>{title}</View>
             {
-              subtitle ? (<div style={this.prepareStyles(styles.subtitle)}>{subtitle}</div>) : null
+              subtitle ? (<View style={this.prepareStyles(styles.subtitle)}>{subtitle}</View>) : null
             }
-          </div>
+          </View>
           {
-            actionIcon ? (<div style={this.prepareStyles(styles.actionIcon)}>{actionIcon}</div>) : null
+            actionIcon ? (<View style={this.prepareStyles(styles.actionIcon)}>{actionIcon}</View>) : null
           }
-        </div>
+        </View>
       );
     }
 

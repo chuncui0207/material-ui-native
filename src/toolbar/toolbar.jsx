@@ -58,9 +58,9 @@ const Toolbar = React.createClass({
 
   render() {
     return (
-      <div className={this.props.className} style={this.prepareStyles(this.getStyles())}>
+      <View className={this.props.className} style={this.prepareStyles(this.getStyles())}>
         {this.props.children}
-      </div>
+      </View>
     );
   },
 

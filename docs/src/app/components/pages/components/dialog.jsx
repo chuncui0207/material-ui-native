@@ -227,12 +227,12 @@ export default class DialogPage extends React.Component {
             onRequestClose={this._handleRequestClose}>
             The actions in this window were passed in as an array of react objects.
           </Dialog>
-          <div style={{width: '300px', margin: '0 auto', paddingTop: '20px'}}>
+          <View style={{width: '300px', margin: '0 auto', paddingTop: '20px'}}>
             <Toggle
               label="Is Modal"
               onToggle={this._handleToggleChange}
               defaultToggled={this.state.modal}/>
-          </div>
+          </View>
           <Dialog
             ref="scrollableContentDialog"
             title="Dialog With Scrollable Content"
@@ -242,9 +242,9 @@ export default class DialogPage extends React.Component {
             autoScrollBodyContent={true}
             open={this.state.openDialogScrollable}
             onRequestClose={this._handleRequestClose}>
-            <div style={{height: '1000px'}}>
+            <View style={{height: '1000px'}}>
               Really long content
-            </div>
+            </View>
           </Dialog>
         </CodeExample>
       </ComponentDoc>

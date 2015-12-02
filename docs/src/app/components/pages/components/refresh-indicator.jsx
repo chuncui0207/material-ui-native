@@ -81,7 +81,7 @@ let RefreshIndicatorPage = React.createClass({
         </Paper>
 
         <CodeExample code={Code}>
-          <div style={{position: 'relative'}}>
+          <View style={{position: 'relative'}}>
             <p>
               Ready status
             </p>
@@ -116,7 +116,7 @@ let RefreshIndicatorPage = React.createClass({
             <RefreshIndicator size={40} left={10} top={130} status="loading" />
             <RefreshIndicator size={40} left={70} top={130} loadingColor={"#FF9800"}
                               status="loading" />
-          </div>
+          </View>
         </CodeExample>
       </ComponentDoc>
     );

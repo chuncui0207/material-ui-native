@@ -361,8 +361,8 @@ export default class ButtonPage extends React.Component {
   render() {
     let styles = this.getStyles();
     return (
-      <div>
-        <h2 style={styles.headline}>Buttons</h2>
+      <View>
+        <Text style={styles.headline}>Buttons</Text>
 
         <Paper style = {{marginBottom: '22px'}}>
           <CodeBlock>
@@ -383,24 +383,24 @@ export default class ButtonPage extends React.Component {
               componentInfo={this.componentInfo.slice(0, 1)}>
 
               <CodeExample code={FlatButtonCode}>
-                <div style={styles.group}>
-                  <div style={styles.container}>
+                <View style={styles.group}>
+                  <View style={styles.container}>
                     <FlatButton label="Default" />
-                  </div>
-                  <div style={styles.container}>
+                  </View>
+                  <View style={styles.container}>
                     <FlatButton label="Primary" primary={true} />
-                  </div>
-                  <div style={styles.container}>
+                  </View>
+                  <View style={styles.container}>
                     <FlatButton label="Secondary" secondary={true} />
-                  </div>
-                </div>
-                <div style={styles.group}>
-                  <div style={styles.container}>
+                  </View>
+                </View>
+                <View style={styles.group}>
+                  <View style={styles.container}>
                     <FlatButton primary={true} label="Choose an Image">
                       <input type="file" id="imageButton" style={styles.exampleImageInput}></input>
                     </FlatButton>
-                  </div>
-                  <div style={styles.container}>
+                  </View>
+                  <View style={styles.container}>
                     <FlatButton
                       linkButton={true}
                       href="https://github.com/callemall/material-ui"
@@ -409,8 +409,8 @@ export default class ButtonPage extends React.Component {
                       labelStyle={styles.buttonLabel}>
                       <FontIcon style={styles.exampleFlatButtonIcon} className="muidocs-icon-custom-github"/>
                     </FlatButton>
-                  </div>
-                  <div style={styles.container}>
+                  </View>
+                  <View style={styles.container}>
                     <FlatButton
                       secondary={true}
                       label="Label after"
@@ -418,11 +418,11 @@ export default class ButtonPage extends React.Component {
                       labelStyle={styles.buttonLabel}>
                       <FontIcon style={styles.exampleFlatButtonIcon} className="muidocs-icon-custom-github"/>
                     </FlatButton>
-                  </div>
-                  <div style={styles.container}>
+                  </View>
+                  <View style={styles.container}>
                     <FlatButton label="Disabled" disabled={true} />
-                  </div>
-                </div>
+                  </View>
+                </View>
               </CodeExample>
             </ComponentDoc>
           </Tab>
@@ -432,24 +432,24 @@ export default class ButtonPage extends React.Component {
               desc={this.desc}
               componentInfo={this.componentInfo.slice(1, 2)}>
               <CodeExample code={RaisedButtonCode}>
-                <div style={styles.group}>
-                  <div style={styles.container}>
+                <View style={styles.group}>
+                  <View style={styles.container}>
                     <RaisedButton label="Default" />
-                  </div>
-                  <div style={styles.container}>
+                  </View>
+                  <View style={styles.container}>
                     <RaisedButton label="Primary" primary={true} />
-                  </div>
-                  <div style={styles.container}>
+                  </View>
+                  <View style={styles.container}>
                     <RaisedButton label="Secondary" secondary={true} />
-                  </div>
-                </div>
-                <div style={styles.group}>
-                  <div style={styles.container}>
+                  </View>
+                </View>
+                <View style={styles.group}>
+                  <View style={styles.container}>
                     <RaisedButton primary={true} label="Choose an Image">
                       <input type="file" style={styles.exampleImageInput}></input>
                     </RaisedButton>
-                  </div>
-                  <div style={styles.container}>
+                  </View>
+                  <View style={styles.container}>
                     <RaisedButton
                       linkButton={true}
                       href="https://github.com/callemall/material-ui"
@@ -458,8 +458,8 @@ export default class ButtonPage extends React.Component {
                       labelStyle={styles.buttonLabel}>
                       <FontIcon style={styles.exampleButtonIcon} className="muidocs-icon-custom-github"/>
                     </RaisedButton>
-                  </div>
-                  <div style={styles.container}>
+                  </View>
+                  <View style={styles.container}>
                     <RaisedButton
                       secondary={true}
                       label="Label after"
@@ -467,11 +467,11 @@ export default class ButtonPage extends React.Component {
                       labelStyle={styles.buttonLabel}>
                       <FontIcon style={styles.exampleButtonIcon} className="muidocs-icon-custom-github"/>
                     </RaisedButton>
-                  </div>
-                  <div style={styles.container}>
+                  </View>
+                  <View style={styles.container}>
                     <RaisedButton label="Disabled" disabled={true} />
-                  </div>
-                </div>
+                  </View>
+                </View>
               </CodeExample>
             </ComponentDoc>
           </Tab>
@@ -481,36 +481,36 @@ export default class ButtonPage extends React.Component {
               desc={this.desc}
               componentInfo={this.componentInfo.slice(2, 3)}>
               <CodeExample code={FloatingActionButtonCode}>
-                <div style={styles.groupFloatingAction}>
-                  <div style={styles.container}>
+                <View style={styles.groupFloatingAction}>
+                  <View style={styles.container}>
                     <FloatingActionButton>
                       <ToggleStar />
                     </FloatingActionButton>
-                  </div>
-                  <div style={styles.container}>
+                  </View>
+                  <View style={styles.container}>
                     <FloatingActionButton iconClassName="muidocs-icon-action-grade" mini={true} />
-                  </div>
-                </div>
-                <div style={styles.groupFloatingAction}>
-                  <div style={styles.container}>
+                  </View>
+                </View>
+                <View style={styles.groupFloatingAction}>
+                  <View style={styles.container}>
                     <FloatingActionButton iconClassName="muidocs-icon-action-grade" secondary={true} />
-                  </div>
-                  <div style={styles.container}>
+                  </View>
+                  <View style={styles.container}>
                     <FloatingActionButton mini={true} secondary={true}>
                       <ToggleStar />
                     </FloatingActionButton>
-                  </div>
-                </div>
-                <div style={styles.groupFloatingAction}>
-                  <div style={styles.container}>
+                  </View>
+                </View>
+                <View style={styles.groupFloatingAction}>
+                  <View style={styles.container}>
                     <FloatingActionButton disabled={true}>
                       <FontIcon className="muidocs-icon-action-grade" />
                     </FloatingActionButton>
-                  </div>
-                  <div style={styles.container}>
+                  </View>
+                  <View style={styles.container}>
                     <FloatingActionButton iconClassName="muidocs-icon-action-grade" mini={true} disabled={true} />
-                  </div>
-                </div>
+                  </View>
+                </View>
               </CodeExample>
             </ComponentDoc>
           </Tab>
@@ -519,7 +519,7 @@ export default class ButtonPage extends React.Component {
           name=""
           desc=""
           componentInfo={this.componentInfo.slice(3)} />
-      </div>
+      </View>
     );
   }
 

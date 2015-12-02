@@ -227,12 +227,12 @@ const RaisedButton = React.createClass({
             touchRippleColor={rippleColor}
             focusRippleOpacity={rippleOpacity}
             touchRippleOpacity={rippleOpacity}>
-              <div ref="overlay" style={this.prepareStyles(
+              <View ref="overlay" style={this.prepareStyles(
                   styles.overlay,
                   (this.state.hovered && !this.props.disabled) && styles.overlayWhenHovered
                 )}>
                   {enhancedButtonChildren}
-              </div>
+              </View>
           </EnhancedButton>
       </Paper>
     );

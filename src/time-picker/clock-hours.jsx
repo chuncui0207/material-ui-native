@@ -212,12 +212,12 @@ const ClockHours = React.createClass({
     let numbers = this._getHourNumbers();
 
     return (
-      <div ref="clock" style={this.prepareStyles(styles.root)} >
+      <View ref="clock" style={this.prepareStyles(styles.root)} >
         <ClockPointer hasSelected={true} value={hours} type="hour" />
         {numbers}
-        <div ref="mask" style={this.prepareStyles(styles.hitMask)} onTouchMove={this.handleTouchMove}
+        <View ref="mask" style={this.prepareStyles(styles.hitMask)} onTouchMove={this.handleTouchMove}
           onTouchEnd={this.handleTouchEnd} onMouseUp={this.handleUp} onMouseMove={this.handleMove}/>
-      </div>
+      </View>
     );
   },
 });

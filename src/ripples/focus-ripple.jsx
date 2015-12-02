@@ -87,7 +87,7 @@ const FocusRipple = React.createClass({
       transition: Transitions.easeOut(pulsateDuration + 'ms', 'transform', null, Transitions.easeInOutFunction),
     }, innerStyle);
 
-    return <div ref="innerCircle" style={innerStyles} />;
+    return <View ref="innerCircle" style={innerStyles} />;
   },
 
   _pulsate() {

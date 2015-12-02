@@ -24,9 +24,9 @@ const CalendarMonth = React.createClass({
     };
 
     return (
-      <div style={styles}>
+      <View style={styles}>
         {this._getWeekElements()}
-      </div>
+      </View>
     );
   },
 

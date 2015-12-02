@@ -165,8 +165,8 @@ const AppBar = React.createClass({
       // If the title is a string, wrap in an h1 tag.
       // If not, just use it as a node.
       titleElement = typeof title === 'string' || title instanceof String ?
-        <h1 onTouchTap={this._onTitleTouchTap} style={this.prepareStyles(styles.title, styles.mainElement, titleStyle)}>{title}</h1> :
-        <div onTouchTap={this._onTitleTouchTap} style={this.prepareStyles(styles.title, styles.mainElement, titleStyle)}>{title}</div>;
+        <Text onTouchTap={this._onTitleTouchTap} style={this.prepareStyles(styles.title, styles.mainElement, titleStyle)}>{title}</Text> :
+        <View onTouchTap={this._onTitleTouchTap} style={this.prepareStyles(styles.title, styles.mainElement, titleStyle)}>{title}</View>;
     }
 
     if (showMenuIconButton) {
@@ -180,9 +180,9 @@ const AppBar = React.createClass({
         }
 
         menuElementLeft = (
-          <div style={this.prepareStyles(styles.iconButton.style)}>
+          <View style={this.prepareStyles(styles.iconButton.style)}>
             {iconElementLeft}
-          </div>
+          </View>
         );
       } else {
         let child = iconClassNameLeft ? '' : <NavigationMenu style={this.mergeStyles(styles.iconButton.iconStyle)}/>;
@@ -215,9 +215,9 @@ const AppBar = React.createClass({
       }
 
       menuElementRight = (
-        <div style={this.prepareStyles(iconRightStyle)}>
+        <View style={this.prepareStyles(iconRightStyle)}>
           {iconElementRight}
-        </div>
+        </View>
       );
     } else if (iconClassNameRight) {
       menuElementRight = (

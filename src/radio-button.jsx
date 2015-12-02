@@ -117,10 +117,10 @@ const RadioButton = React.createClass({
         this.props.disabled && styles.fillWhenDisabled);
 
     let radioButtonElement = (
-      <div>
+      <View>
           <RadioButtonOff style={onStyles} />
           <RadioButtonOn style={offStyles} />
-      </div>
+      </View>
     );
 
     let rippleColor = this.props.checked ? this.getTheme().checkedColor : this.getTheme().borderColor;

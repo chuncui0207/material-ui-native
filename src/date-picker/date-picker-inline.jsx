@@ -44,16 +44,16 @@ const DatePickerInline = React.createClass({
       },
     };
     return (
-      <div style={styles.container}>
-        <div style={styles.subContainer}>
+      <View style={styles.container}>
+        <View style={styles.subContainer}>
           <Paper {...other}>
             {children}
-            <div style={styles.actions}>
+            <View style={styles.actions}>
               {actions}
-            </div>
+            </View>
           </Paper>
-        </div>
-      </div>
+        </View>
+      </View>
     );
   },
 

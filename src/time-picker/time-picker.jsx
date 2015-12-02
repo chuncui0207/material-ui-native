@@ -108,7 +108,7 @@ const TimePicker = React.createClass({
     }
 
     return (
-      <div style={this.prepareStyles(style)}>
+      <View style={this.prepareStyles(style)}>
         <TextField
           {...other}
           style={textFieldStyle}
@@ -124,7 +124,7 @@ const TimePicker = React.createClass({
           onDismiss={onDismiss}
           format={format}
           autoOk={autoOk} />
-      </div>
+      </View>
     );
   },
 

@@ -229,7 +229,7 @@ const LeftNav = React.createClass({
         );
     }
     return (
-      <div className={this.props.className}>
+      <View className={this.props.className}>
         {overlay}
         <Paper
           ref="clickAwayableElement"
@@ -243,7 +243,7 @@ const LeftNav = React.createClass({
             {this.props.header}
             {children}
         </Paper>
-      </div>
+      </View>
     );
   },
 

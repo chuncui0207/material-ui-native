@@ -80,12 +80,12 @@ const Tab = React.createClass({
     }, style);
 
     return (
-      <div
+      <View
         {...other}
         style={styles}
         onTouchTap={this._handleTouchTap}>
         {label}
-      </div>
+      </View>
     );
   },
 

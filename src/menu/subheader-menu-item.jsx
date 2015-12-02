@@ -82,7 +82,7 @@ const SubheaderMenuItem = React.createClass({
 
   render() {
     return (
-        <div
+        <View
           key={this.props.index}
           className={this.props.className}
           style={this.prepareStyles(
@@ -91,7 +91,7 @@ const SubheaderMenuItem = React.createClass({
             this.props.style
           )}>
             {this.props.text}
-        </div>
+        </View>
     );
   },
 

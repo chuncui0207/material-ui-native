@@ -202,10 +202,10 @@ const ThemesPage = React.createClass({
       '  //context and style accordingly\n' +
       '  render () {\n' +
       '    return (\n' +
-      '      <div>\n' +
+      '      <View>\n' +
       '        <AppBar title=\"My AppBar\" \/>\n' +
       '        <RaisedButton label=\"My Button\" primary={true} \/>\n' +
-      '      </div>\n' +
+      '      </View>\n' +
       '    );\n' +
       '  },\n' +
       '});\n\n' +
@@ -225,11 +225,11 @@ const ThemesPage = React.createClass({
 
       '  render() {\n' +
       '    return (\n' +
-      '      <div>\n' +
+      '      <View>\n' +
       '        <AppBar title=\"My AppBar\" \/>\n' +
       '        <RaisedButton label=\"My Button\" primary={true}\n' +
       '           onClick={this.handleClick} \/>\n' +
-      '      </div>\n' +
+      '      </View>\n' +
       '    );\n' +
       '  }\n\n' +
 
@@ -315,15 +315,15 @@ const ThemesPage = React.createClass({
     let styles = this.getStyles();
 
     return (
-      <div>
+      <View>
 
-        <h2 style={styles.headline}>Themes</h2>
+        <Text style={styles.headline}>Themes</Text>
 
         <Paper style={styles.liveExamplePaper}>
           <ClearFix style={styles.liveExampleBlock}>{this.getThemeExamples()}</ClearFix>
         </Paper>
 
-        <div style={styles.bottomBorderWrapper}>
+        <View style={styles.bottomBorderWrapper}>
           <p>
             We changed how themes work in v0.12.0 (check out <a href="https://github.com/callemall/material-ui/releases/tag/v0.12.0">release log</a> for more details).
             There are now two kinds of themes in Material-UI: <b>raw theme</b> and <b>mui theme</b>.
@@ -341,15 +341,15 @@ const ThemesPage = React.createClass({
             defined similarly. The ThemeManager module calculates the mui theme and acts as an interface to modify the theme.
             Before we discuss how to apply custom themes to an application, let&#39;s look at the functions provided by ThemeManager.
           </p>
-        </div>
+        </View>
 
-        <div style={styles.bottomBorderWrapper}>
+        <View style={styles.bottomBorderWrapper}>
           <ComponentDoc
             name=""
             componentInfo={info} />
-        </div>
+        </View>
 
-        <h2 style={styles.headline}>Custom Themes</h2>
+        <Text style={styles.headline}>Custom Themes</Text>
         <p>
           All Material-UI components use the light theme by default so you can start including them in your project
           without having to worry about theming. However, it is quite straightforward to style components to your liking.
@@ -396,7 +396,7 @@ const ThemesPage = React.createClass({
           with the context feature.
         </p>
 
-        <h2 style={styles.headline}>Overriding Theme Variables</h2>
+        <Text style={styles.headline}>Overriding Theme Variables</Text>
 
         <p>
           Once you have obtained the calculated mui theme in your app component, you can easily
@@ -446,7 +446,7 @@ const ThemesPage = React.createClass({
           ThemeManager module.
         </p>
 
-      </div>
+      </View>
     );
   },
 
@@ -492,23 +492,23 @@ const ThemesPage = React.createClass({
     return (
       <ClearFix>
 
-          <div style={styles.group}>
-            <div style={styles.containerCentered}>
+          <View style={styles.group}>
+            <View style={styles.containerCentered}>
               <FloatingActionButton iconClassName="muidocs-icon-action-grade" disabled={true}/>
-            </div>
-            <div style={styles.containerCentered}>
+            </View>
+            <View style={styles.containerCentered}>
               <RaisedButton label="Secondary" secondary={true} />
-            </div>
-            <div style={styles.containerCentered}>
+            </View>
+            <View style={styles.containerCentered}>
               <RaisedButton label="Primary" primary={true}/>
-            </div>
-            <div style={styles.containerCentered}>
+            </View>
+            <View style={styles.containerCentered}>
               <RaisedButton label="Default"/>
-            </div>
-          </div>
+            </View>
+          </View>
 
-          <div style={styles.group}>
-            <div style={styles.container}>
+          <View style={styles.group}>
+            <View style={styles.container}>
               <Checkbox
                 name="checkboxName1"
                 value="checkboxValue1"
@@ -518,8 +518,8 @@ const ThemesPage = React.createClass({
                 value="checkboxValue2"
                 label="disabled checkbox"
                 disabled={true} />
-            </div>
-            <div style={styles.container}>
+            </View>
+            <View style={styles.container}>
               <RadioButtonGroup
                 name="shipSpeed"
                 defaultSelected="usd">
@@ -535,8 +535,8 @@ const ThemesPage = React.createClass({
                     label="MXN"
                     disabled={true}/>
               </RadioButtonGroup>
-            </div>
-            <div style={styles.container}>
+            </View>
+            <View style={styles.container}>
               <Toggle
                 name="toggleName1"
                 value="toggleValue1"
@@ -547,50 +547,50 @@ const ThemesPage = React.createClass({
                 label="disabled toggle"
                 defaultToggled={true}
                 disabled={true} />
-            </div>
-          </div>
+            </View>
+          </View>
 
-          <div style={this.mergeStyles(styles.group, {marginTop: 0})}>
-            <div style={styles.container}>
+          <View style={this.mergeStyles(styles.group, {marginTop: 0})}>
+            <View style={styles.container}>
               <TextField
                 style={styles.textfield}
                 hintText="TextField"/>
-            </div>
-            <div style={styles.container}>
+            </View>
+            <View style={styles.container}>
               <DatePicker
                 hintText="Landscape Dialog"
                 mode="landscape"
                 style={{width: '100%'}}/>
-            </div>
-            <div style={styles.container}>
+            </View>
+            <View style={styles.container}>
               <DropDownMenu menuItems={menuItems} style={{width: '100%'}}/>
-           </div>
-          </div>
+           </View>
+          </View>
 
-          <div style={styles.groupSlider}>
+          <View style={styles.groupSlider}>
             <Slider style={styles.slider} name="slider2" defaultValue={0.5} />
-          </div>
+          </View>
 
-          <div style={styles.group}>
-            <div style={styles.containerCentered}>
+          <View style={styles.group}>
+            <View style={styles.containerCentered}>
               <FlatButton label="View Dialog" onTouchTap={this.handleTouchTapDialog} />
               <Dialog ref="dialog" title="Dialog With Standard Actions" actions={standardActions}>
                 The actions in this window are created from the json that&#39;s passed in.
               </Dialog>
-            </div>
-          </div>
+            </View>
+          </View>
 
-          <div style={styles.group}>
-            <div style={styles.containerCentered}>
+          <View style={styles.group}>
+            <View style={styles.containerCentered}>
               <FlatButton
                   onTouchTap={this.handleClickNav}
                   label="View LeftNav" />
               <LeftNav ref="leftNav" docked={false} menuItems={menuItemsNav} />
-            </div>
-          </div>
+            </View>
+          </View>
 
-          <div style={styles.group}>
-            <div style={styles.containerCentered}>
+          <View style={styles.group}>
+            <View style={styles.containerCentered}>
               <FlatButton
                 onTouchTap={this.handleClickSnackbar}
                 label="View Snackbar" />
@@ -599,8 +599,8 @@ const ThemesPage = React.createClass({
                 message="This is a snackbar"
                 action="Got It!"
                 onActionTouchTap={this.handleAction}/>
-            </div>
-          </div>
+            </View>
+          </View>
       </ClearFix>
     );
   },

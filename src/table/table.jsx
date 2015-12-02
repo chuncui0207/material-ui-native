@@ -137,11 +137,11 @@ const Table = React.createClass({
     let inlineHeader, inlineFooter;
     if (fixedHeader) {
       headerTable = (
-        <div className="mui-header-table" style={this.prepareStyles(headerStyle)}>
+        <View className="mui-header-table" style={this.prepareStyles(headerStyle)}>
           <table className={className} style={mergedTableStyle}>
             {tHead}
           </table>
-        </div>
+        </View>
       );
     }
     else {
@@ -150,11 +150,11 @@ const Table = React.createClass({
     if (tFoot !== undefined) {
       if (fixedFooter) {
         footerTable = (
-          <div className="mui-footer-table" style={this.prepareStyles(footerStyle)}>
+          <View className="mui-footer-table" style={this.prepareStyles(footerStyle)}>
             <table className={className} style={mergedTableStyle}>
               {tFoot}
             </table>
-          </div>
+          </View>
         );
       }
       else {
@@ -163,17 +163,17 @@ const Table = React.createClass({
     }
 
     return (
-      <div className="mui-table-wrapper" style={this.prepareStyles(styles.tableWrapper, wrapperStyle)}>
+      <View className="mui-table-wrapper" style={this.prepareStyles(styles.tableWrapper, wrapperStyle)}>
         {headerTable}
-        <div className="mui-body-table" style={this.prepareStyles(styles.bodyTable, bodyStyle)} ref="tableDiv">
+        <View className="mui-body-table" style={this.prepareStyles(styles.bodyTable, bodyStyle)} ref="tableDiv">
           <table className={classes} style={mergedTableStyle} ref="tableBody">
             {inlineHeader}
             {inlineFooter}
             {tBody}
           </table>
-        </div>
+        </View>
         {footerTable}
-      </div>
+      </View>
     );
   },
 

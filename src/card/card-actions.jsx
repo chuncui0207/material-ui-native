@@ -61,9 +61,9 @@ const CardActions = React.createClass({
     });
 
     return (
-      <div {...this.props} style={this.prepareStyles(styles.root, this.props.style)}>
+      <View {...this.props} style={this.prepareStyles(styles.root, this.props.style)}>
         {children}
-      </div>
+      </View>
     );
   },
 });

@@ -182,13 +182,13 @@ const Master = React.createClass({
       </EnhancedButton>) : null;
 
     return (
-      <div>
+      <View>
         <Paper
           zDepth={0}
           rounded={false}
           style={styles.root}>
           {materialIcon}
-          <div style={this.prepareStyles(styles.container)}>
+          <View style={this.prepareStyles(styles.container)}>
             <Tabs
               style={styles.tabs}
               value={this.state.tabIndex}
@@ -209,9 +209,9 @@ const Master = React.createClass({
                 style={styles.tab}
                 route="/components"/>
             </Tabs>
-          </div>
+          </View>
         </Paper>
-      </div>
+      </View>
     );
   },
 
@@ -240,14 +240,14 @@ const Master = React.createClass({
     );
 
     return (
-      <div>
+      <View>
         <AppBar
           onLeftIconButtonTouchTap={this._onLeftIconButtonTouchTap}
           title={title}
           zDepth={0}
           iconElementRight={githubButton}
           style={{position: 'absolute', top: 0}}/>
-      </div>);
+      </View>);
   },
 
   _onLeftIconButtonTouchTap() {

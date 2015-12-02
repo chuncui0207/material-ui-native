@@ -291,26 +291,26 @@ const Slider = React.createClass({
     }
 
     return (
-      <div {...others } style={this.prepareStyles(this.props.style)}>
+      <View {...others } style={this.prepareStyles(this.props.style)}>
         <span className="mui-input-highlight"></span>
         <span className="mui-input-bar"></span>
         <span className="mui-input-description">{this.props.description}</span>
         <span className="mui-input-error">{this.props.error}</span>
-        <div style={sliderStyles}
+        <View style={sliderStyles}
           onFocus={this._onFocus}
           onBlur={this._onBlur}
           onMouseDown={this._onMouseDown}
           onMouseEnter={this._onMouseEnter}
           onMouseLeave={this._onMouseLeave}
           onMouseUp={this._onMouseUp} >
-          <div ref="track" style={this.prepareStyles(styles.track)}>
-              <div style={this.prepareStyles(styles.filled)}></div>
-              <div style={this.prepareStyles(remainingStyles)}></div>
-              <div style={handleStyles} tabIndex={0} {...handleDragProps}>
+          <View ref="track" style={this.prepareStyles(styles.track)}>
+              <View style={this.prepareStyles(styles.filled)}></View>
+              <View style={this.prepareStyles(remainingStyles)}></View>
+              <View style={handleStyles} tabIndex={0} {...handleDragProps}>
                 {focusRipple}
-              </div>
-            </div>
-        </div>
+              </View>
+            </View>
+        </View>
         <input ref="input" type="hidden"
           name={this.props.name}
           value={this.state.value}
@@ -318,7 +318,7 @@ const Slider = React.createClass({
           min={this.props.min}
           max={this.props.max}
           step={this.props.step} />
-      </div>
+      </View>
     );
   },
 

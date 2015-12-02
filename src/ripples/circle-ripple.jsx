@@ -67,7 +67,7 @@ const CircleRipple = React.createClass({
     }, style);
 
     return (
-      <div {...other} style={mergedStyles} />
+      <View {...other} style={mergedStyles} />
     );
   },
 

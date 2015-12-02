@@ -246,14 +246,14 @@ const Snackbar = React.createClass({
     const contentStyle = open ? this.mergeStyles(styles.content, styles.contentWhenOpen) : styles.content;
 
     return (
-      <div {...others} style={rootStyles}>
-        <div style={mergedBodyStyle}>
-          <div style={contentStyle}>
+      <View {...others} style={rootStyles}>
+        <View style={mergedBodyStyle}>
+          <View style={contentStyle}>
             <span>{message}</span>
             {actionButton}
-          </div>
-        </div>
-      </div>
+          </View>
+        </View>
+      </View>
     );
   },
 

@@ -84,11 +84,11 @@ const CardTitle = React.createClass({
     let subtitleStyle = this.prepareStyles(styles.subtitle, this.props.subtitleStyle);
 
     return (
-      <div {...this.props} style={rootStyle}>
+      <View {...this.props} style={rootStyle}>
         <span style={titleStyle}>{this.props.title}</span>
         <span style={subtitleStyle}>{this.props.subtitle}</span>
         {this.props.children}
-      </div>
+      </View>
     );
   },
 });

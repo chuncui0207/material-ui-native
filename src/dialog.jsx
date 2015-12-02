@@ -82,9 +82,9 @@ const TransitionItem = React.createClass({
       ...other,
     } = this.props;
 
-    return <div {...other} style={this.prepareStyles(this.state.style, style)}>
+    return <View {...other} style={this.prepareStyles(this.state.style, style)}>
         {this.props.children}
-      </div>;
+      </View>;
   },
 });
 
@@ -227,7 +227,7 @@ const DialogInline = React.createClass({
     }
 
     return (
-      <div ref="container" style={this.prepareStyles(styles.main)}>
+      <View ref="container" style={this.prepareStyles(styles.main)}>
         <ReactTransitionGroup component="div" ref="dialogWindow"
           transitionAppear={true} transitionAppearTimeout={450}
           transitionEnter={true} transitionEnterTimeout={450}>
@@ -239,9 +239,9 @@ const DialogInline = React.createClass({
                 style={styles.paper}
                 zDepth={4}>
                 {title}
-                <div ref="dialogContent" style={this.prepareStyles(styles.body)}>
+                <View ref="dialogContent" style={this.prepareStyles(styles.body)}>
                   {this.props.children}
-                </div>
+                </View>
                 {actions}
             </Paper>
           </TransitionItem>}
@@ -249,7 +249,7 @@ const DialogInline = React.createClass({
         <Overlay
           show={this.props.open}
           onTouchTap={this._handleOverlayTouchTap} />
-      </div>
+      </View>
     );
   },
 
@@ -310,9 +310,9 @@ const DialogInline = React.createClass({
       }
 
       actionContainer = (
-        <div style={this.prepareStyles(actionStyle)}>
+        <View style={this.prepareStyles(actionStyle)}>
           {actionObjects}
-        </div>
+        </View>
       );
     }
 
@@ -461,9 +461,9 @@ const Dialog = React.createClass({
 
   renderLayer() {
     return (
-      <div style={wrapperStyle}>
+      <View style={wrapperStyle}>
         <DialogInline {...this.props} onRequestClose={this.props.onRequestClose} open={this.state.open} />
-      </div>
+      </View>
     );
   },
 

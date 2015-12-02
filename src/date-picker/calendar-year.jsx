@@ -40,9 +40,9 @@ const CalendarYear = React.createClass({
     };
 
     return (
-      <div style={styles}>
+      <View style={styles}>
         {years}
-      </div>
+      </View>
     );
   },
 

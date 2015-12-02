@@ -45,9 +45,9 @@ const AppLeftNav = React.createClass({
 
   render() {
     let header = (
-      <div style={this.prepareStyles(this.getStyles())} onTouchTap={this._onHeaderClick}>
+      <View style={this.prepareStyles(this.getStyles())} onTouchTap={this._onHeaderClick}>
         material ui
-      </div>
+      </View>
     );
 
     return (

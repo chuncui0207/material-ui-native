@@ -225,13 +225,13 @@ const Menu = React.createClass({
       if (!childIsADivider && !childIsDisabled) menuItemIndex++;
 
       return animated ? (
-        <div style={childrenContainerStyles}>{clonedChild}</div>
+        <View style={childrenContainerStyles}>{clonedChild}</View>
       ) : clonedChild;
 
     });
 
     return (
-      <div
+      <View
         onKeyDown={this._handleKeyDown}
         style={mergedRootStyles}>
         <Paper
@@ -245,7 +245,7 @@ const Menu = React.createClass({
             {newChildren}
           </List>
         </Paper>
-      </div>
+      </View>
     );
   },
 

@@ -86,7 +86,7 @@ const RefreshIndicator = React.createClass({
     if (this.props.status !== 'ready') {
       const circleStyle = this._getCircleStyle(paperSize);
       childrenCmp = (
-        <div ref="wrapper" style={this.prepareStyles({
+        <View ref="wrapper" style={this.prepareStyles({
           transition: Transitions.create('transform', '20s', null, 'linear'),
           width: '100%',
           height: '100%',
@@ -105,7 +105,7 @@ const RefreshIndicator = React.createClass({
               {...circleStyle.attr}
             />
           </svg>
-        </div>
+        </View>
       );
     } else {
       const circleStyle = this._getCircleStyle(paperSize);

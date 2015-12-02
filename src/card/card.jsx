@@ -69,9 +69,9 @@ const Card = React.createClass({
 
     return (
       <Paper {...other} style={mergedStyles}>
-        <div style={{paddingBottom: addBottomPadding ? 8 : 0}}>
+        <View style={{paddingBottom: addBottomPadding ? 8 : 0}}>
           {newChildren}
-        </div>
+        </View>
       </Paper>
     );
   },

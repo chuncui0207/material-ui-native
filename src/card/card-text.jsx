@@ -59,9 +59,9 @@ const CardText = React.createClass({
     let rootStyle = this.prepareStyles(styles.root, this.props.style);
 
     return (
-      <div {...this.props} style={rootStyle}>
+      <View {...this.props} style={rootStyle}>
         {this.props.children}
-      </div>
+      </View>
     );
   },
 });

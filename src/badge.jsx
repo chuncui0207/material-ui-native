@@ -95,12 +95,12 @@ export default React.createClass({
   render() {
     const styles = this.getStyles();
     return (
-      <div style={this.prepareStyles(styles.root, this.props.style)} className={this.props.className}>
+      <View style={this.prepareStyles(styles.root, this.props.style)} className={this.props.className}>
         {this.props.children}
         <span style={this.prepareStyles(styles.badge, this.props.badgeStyle)}>
           {this.props.badgeContent}
         </span>
-      </div>
+      </View>
     );
   },
 });

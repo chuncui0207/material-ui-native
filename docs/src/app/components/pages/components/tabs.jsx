@@ -178,8 +178,8 @@ export default class TabsPage extends React.Component {
         <CodeExample code={Code}>
           <Tabs>
             <Tab label="Item One" >
-              <div>
-                <h2 style={styles.headline}>Tab One Template Example</h2>
+              <View>
+                <Text style={styles.headline}>Tab One Template Example</Text>
                 <p>
                   This is an example of a tab template!
                 </p>
@@ -187,18 +187,18 @@ export default class TabsPage extends React.Component {
                   You can put any sort of HTML or react component in here. It even keeps the component state!
                 </p>
                 <Slider name="slider0" defaultValue={0.5} />
-              </div>
+              </View>
             </Tab>
             <Tab label="Item Two" >
-              <div>
-                <h2 style={styles.headline}>Tab Two Template Example</h2>
+              <View>
+                <Text style={styles.headline}>Tab Two Template Example</Text>
                 <p>
                   This is another example of a tab template!
                 </p>
                 <p>
                   Fair warning - the next tab routes to home!
                 </p>
-              </div>
+              </View>
             </Tab>
             <Tab
               label="Home (non-content example)"
@@ -206,7 +206,7 @@ export default class TabsPage extends React.Component {
               onActive={this._handleTabActive} />
           </Tabs>
 
-          <div style={styles.tabsContainer}>
+          <View style={styles.tabsContainer}>
             <IconButton
               onClick={this._handleButtonClick.bind(this)}
               iconClassName="material-icons"
@@ -214,25 +214,25 @@ export default class TabsPage extends React.Component {
               iconStyle={styles.iconStyle}>
               home
             </IconButton>
-            <div style={styles.div}/>
+            <View style={styles.div}/>
               <Tabs
                 valueLink={{value: this.state.tabsValue, requestChange: this._handleTabsChange.bind(this)}}
                 style={styles.tabs}
                 contentContainerStyle={styles.contentContainerStyle}>
                 <Tab label="Tab A" value="a" >
-                  <div>
-                    <h2 style={styles.headline}>Controllable Tab Examples</h2>
+                  <View>
+                    <Text style={styles.headline}>Controllable Tab Examples</Text>
                     <p>
                       Tabs are also controllable if you want to programmatically pass them their values.
                       This allows for more functionality in Tabs such as not
                       having any Tab selected or assigning them different values.
                     </p>
                     <p>(The home Icon Button will unselect all the tabs and hide their content.)</p>
-                  </div>
+                  </View>
                 </Tab>
                 <Tab label="Tab B" value="b">
-                  <div>
-                    <h2 style={styles.headline}>Controllable Tab B</h2>
+                  <View>
+                    <Text style={styles.headline}>Controllable Tab B</Text>
                     <p>
                       This is another example of a controllable tab. Remember, if you
                       use controllable Tabs, you need to give all of your tabs values or else
@@ -241,10 +241,10 @@ export default class TabsPage extends React.Component {
                     <p>
                       To see one use for controlled Tabs, press the home button on the right.
                     </p>
-                  </div>
+                  </View>
                 </Tab>
               </Tabs>
-          </div>
+          </View>
           <br />
           <Tabs onChange={this._handleChangeTabs.bind(this)} value={this.state.slideIndex + ''}>
             <Tab label="Tab One" value="0" />
@@ -252,16 +252,16 @@ export default class TabsPage extends React.Component {
             <Tab label="Tab Three" value="2" />
           </Tabs>
           <SwipeableViews index={this.state.slideIndex} onChangeIndex={this._handleChangeIndex.bind(this)}>
-            <div>
-              <h2 style={styles.headline}>Tabs with slide effect</h2>
+            <View>
+              <Text style={styles.headline}>Tabs with slide effect</Text>
               Swipe to see the next slide.<br />
-            </div>
-            <div style={styles.slide}>
+            </View>
+            <View style={styles.slide}>
               slide n°2
-            </div>
-            <div style={styles.slide}>
+            </View>
+            <View style={styles.slide}>
               slide n°3
-            </div>
+            </View>
           </SwipeableViews>
         </CodeExample>
       </ComponentDoc>

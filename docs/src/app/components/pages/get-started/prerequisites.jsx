@@ -70,9 +70,9 @@ const Prerequisites = React.createClass({
     let styles = this.getStyles();
 
     return (
-      <div>
+      <View>
 
-          <h2 style={styles.headline}>Prerequisites</h2>
+          <Text style={styles.headline}>Prerequisites</Text>
           <p>
             We recommend that you get to know <a href="http://facebook.github.io/react/">React</a> before diving into
             material-ui. Material-UI is a set of React components, so understanding how React fits into web development
@@ -149,7 +149,7 @@ const Prerequisites = React.createClass({
             jumping into material-ui. This <a href="http://openmymind.net/2012/2/3/Node-Require-and-Exports/">blog post</a> and <a href="https://www.youtube.com/watch?v=pU9Q6oiQNd0">video</a> are good starting points.
           </p>
 
-      </div>
+      </View>
     );
   },
 

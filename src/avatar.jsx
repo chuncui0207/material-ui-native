@@ -104,10 +104,10 @@ const Avatar = React.createClass({
         style: this.mergeStyles(styleIcon, icon.props.style),
       }) : null;
 
-      return <div {...other} style={this.prepareStyles(styles.root, style)}>
+      return <View {...other} style={this.prepareStyles(styles.root, style)}>
         {iconElement}
         {this.props.children}
-      </div>;
+      </View>;
     }
   },
 });

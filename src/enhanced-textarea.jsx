@@ -99,7 +99,7 @@ const EnhancedTextarea = React.createClass({
     }
 
     return (
-      <div style={this.prepareStyles(this.props.style)}>
+      <View style={this.prepareStyles(this.props.style)}>
         <textarea
           ref="shadow"
           style={this.prepareStyles(shadowStyles)}
@@ -115,7 +115,7 @@ const EnhancedTextarea = React.createClass({
           rows={this.props.rows}
           style={this.prepareStyles(textareaStyles)}
           onChange={this._handleChange} />
-      </div>
+      </View>
     );
   },
 

@@ -13,11 +13,11 @@ import ThemeManager from './styles/theme-manager';
  *    wrap its children with BeforeAfterWrapper. For example:
  *
  *                                            <Paper>
- *  <Paper>                                     <div> // See notice
- *    <BeforeAfterWrapper>        renders         <div/> // before element
+ *  <Paper>                                     <View> // See notice
+ *    <BeforeAfterWrapper>        renders         <View/> // before element
  *      [children of paper]       ------>         [children of paper]
- *    </BeforeAfterWrapper>                       <div/> // after element
- *  </Paper>                                    </div>
+ *    </BeforeAfterWrapper>                       <View/> // after element
+ *  </Paper>                                    </View>
  *                                            </Paper>
  *
  *  Notice: Notice that this div bundles together our elements. If the element

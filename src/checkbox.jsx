@@ -142,10 +142,10 @@ const Checkbox = React.createClass({
     });
 
     let checkboxElement = (
-      <div>
+      <View>
         {unCheckedElement}
         {checkedElement}
-      </div>
+      </View>
     );
 
     let rippleColor = this.state.switched ? checkStyles.fill : boxStyles.fill;

@@ -107,7 +107,7 @@ const DatePicker = React.createClass({
     } = this.props;
 
     return (
-      <div style={this.prepareStyles(style)}>
+      <View style={this.prepareStyles(style)}>
         <TextField
           {...other}
           style={textFieldStyle}
@@ -132,7 +132,7 @@ const DatePicker = React.createClass({
           showYearSelector={showYearSelector}
           shouldDisableDate={this.props.shouldDisableDate}
           hideToolbarYearChange={this.props.hideToolbarYearChange} />
-      </div>
+      </View>
 
     );
   },

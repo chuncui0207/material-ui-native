@@ -283,15 +283,15 @@ const EnhancedSwitch = React.createClass({
     // If toggle component (indicated by whether the style includes thumb) manually lay out
     // elements in order to nest ripple elements
     let switchElement = !this.props.thumbStyle ? (
-        <div style={wrapStyles}>
+        <View style={wrapStyles}>
           {this.props.switchElement}
           {ripples}
-        </div>
+        </View>
       ) : (
-        <div style={wrapStyles}>
-          <div style={this.prepareStyles(this.props.trackStyle)}/>
+        <View style={wrapStyles}>
+          <View style={this.prepareStyles(this.props.trackStyle)}/>
           <Paper style={this.props.thumbStyle} zDepth={1} circle={true}> {ripples} </Paper>
-        </div>
+        </View>
     );
 
     let labelPositionExist = this.props.labelPosition;
@@ -311,10 +311,10 @@ const EnhancedSwitch = React.createClass({
     );
 
     return (
-      <div ref="root" className={className} style={this.prepareStyles(styles.root, this.props.style)}>
+      <View ref="root" className={className} style={this.prepareStyles(styles.root, this.props.style)}>
           {inputElement}
           {elementsInOrder}
-      </div>
+      </View>
     );
   },
 

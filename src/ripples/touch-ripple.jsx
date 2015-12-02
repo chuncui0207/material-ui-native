@@ -67,7 +67,7 @@ const TouchRipple = React.createClass({
     }
 
     return (
-      <div
+      <View
         onMouseUp={this._handleMouseUp}
         onMouseDown={this._handleMouseDown}
         onMouseLeave={this._handleMouseLeave}
@@ -75,7 +75,7 @@ const TouchRipple = React.createClass({
         onTouchEnd={this._handleTouchEnd}>
         {rippleGroup}
         {children}
-      </div>
+      </View>
     );
   },
 

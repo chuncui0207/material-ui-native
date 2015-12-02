@@ -303,11 +303,11 @@ const TextField = React.createClass({
     let inputId = id || this._uniqueId;
 
     let errorTextElement = this.state.errorText ? (
-      <div style={this.prepareStyles(styles.error)}>{this.state.errorText}</div>
+      <View style={this.prepareStyles(styles.error)}>{this.state.errorText}</View>
     ) : null;
 
     let hintTextElement = hintText ? (
-      <div style={this.prepareStyles(styles.hint, hintStyle)}>{hintText}</div>
+      <View style={this.prepareStyles(styles.hint, hintStyle)}>{hintText}</View>
     ) : null;
 
     let floatingLabelTextElement = floatingLabelText ? (
@@ -359,21 +359,21 @@ const TextField = React.createClass({
     }
 
     let underlineElement = this.props.disabled ? (
-      <div style={this.prepareStyles(styles.underlineAfter)}></div>
+      <View style={this.prepareStyles(styles.underlineAfter)}></View>
     ) : (
       <hr style={this.prepareStyles(styles.underline)}/>
     );
     let focusUnderlineElement = <hr style={this.prepareStyles(styles.focusUnderline)} />;
 
     return (
-      <div className={className} style={this.prepareStyles(styles.root, this.props.style)}>
+      <View className={className} style={this.prepareStyles(styles.root, this.props.style)}>
         {floatingLabelTextElement}
         {hintTextElement}
         {inputElement}
         {underlineElement}
         {focusUnderlineElement}
         {errorTextElement}
-      </div>
+      </View>
     );
   },
 

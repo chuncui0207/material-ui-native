@@ -248,7 +248,7 @@ const TextFieldsPage = React.createClass({
 
         <CodeExample code={Code}>
           <ClearFix>
-            <div style={styles.group}>
+            <View style={styles.group}>
               <TextField
                 style={styles.textfield}
                 hintText="Hint Text" /><br/>
@@ -318,8 +318,8 @@ const TextFieldsPage = React.createClass({
                 hintText="Disabled Hint Text"
                 disabled={true}
                 defaultValue="Disabled With Value" />
-            </div>
-            <div style={styles.group}>
+            </View>
+            <View style={styles.group}>
               <TextField
                 hintText="Hint Text"
                 floatingLabelText="Floating Label Text" /><br/>
@@ -364,7 +364,7 @@ const TextFieldsPage = React.createClass({
                 hintText="Password Field"
                 floatingLabelText="Password"
                 type="password" /><br/>
-            </div>
+            </View>
           </ClearFix>
         </CodeExample>
       </ComponentDoc>

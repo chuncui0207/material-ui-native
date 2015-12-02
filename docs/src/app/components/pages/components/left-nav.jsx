@@ -200,12 +200,12 @@ import LeftNav from 'material-ui/lib/left-nav/';
         </Paper>
 
         <CodeExample code={Code}>
-          <div>
-            <div>
+          <View>
+            <View>
               <RaisedButton label="Toggle Docked Controlled Left Nav" onTouchTap={this._toggleLeftNavControlledClick} /><br/><br/>
               <RaisedButton label="Toggle Docked Controlled Left Nav With Children" onTouchTap={this._toggleLeftNavChildrenClick} /><br/><br/>
               <RaisedButton label="Show Undocked Controlled Left Nav" onTouchTap={this._showLeftNavUndockedControlledClick} /><br/><br/>
-            </div>
+            </View>
 
             <LeftNav ref="leftNavChildren" open={this.state.navWithChildrenOpen}>
               <MenuItem index={0}>Menu Item</MenuItem>
@@ -217,7 +217,7 @@ import LeftNav from 'material-ui/lib/left-nav/';
               onChangeRequest={this._changeLeftNavUndockedControlledClick}
               docked={false}
               menuItems={menuItems} />
-          </div>
+          </View>
         </CodeExample>
       </ComponentDoc>
     );

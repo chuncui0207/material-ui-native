@@ -109,9 +109,9 @@ const SlideInChild = React.createClass({
     }, style);
 
     return (
-      <div {...other} style={mergedRootStyles}>
+      <View {...other} style={mergedRootStyles}>
         {children}
-      </div>
+      </View>
     );
   },
 

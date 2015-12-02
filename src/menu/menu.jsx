@@ -136,7 +136,7 @@ const NestedMenuItem = React.createClass({
     } = this.props;
 
     return (
-      <div
+      <View
           ref="root"
           style={styles}
           onMouseEnter={this._openNestedMenu}
@@ -161,7 +161,7 @@ const NestedMenuItem = React.createClass({
           visible={this.state.open}
           onRequestClose={this._closeNestedMenu}
           zDepth={this.props.zDepth + 1} />
-      </div>
+      </View>
     );
   },
 

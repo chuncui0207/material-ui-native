@@ -63,8 +63,8 @@ const InlineStyles = React.createClass({
     let styles = this.getStyles();
 
     return (
-      <div>
-        <h2 style={styles.headline}>Inline Styles</h2>
+      <View>
+        <Text style={styles.headline}>Inline Styles</Text>
         <p>
           All Material-UI components have their styles defined inline. You
           can read our <a href="https://github.com/callemall/material-ui/issues/30">
@@ -122,7 +122,7 @@ const InlineStyles = React.createClass({
         </p>
 
 
-      </div>
+      </View>
     );
   },
 

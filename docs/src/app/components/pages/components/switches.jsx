@@ -345,8 +345,8 @@ export default class SwitchesPage extends React.Component {
   render() {
 
     return (
-      <div>
-      <h2 style={this.getStyles().headline}>Switches</h2>
+      <View>
+      <Text style={this.getStyles().headline}>Switches</Text>
 
       <Paper style = {{marginBottom: '22px'}}>
         <CodeBlock>
@@ -398,84 +398,84 @@ export default class SwitchesPage extends React.Component {
           </ComponentDoc>
         </Tab>
       </Tabs>
-      </div>
+      </View>
     );
   }
 
   _getCheckboxExample() {
     let styles = this.getStyles();
     return (
-      <div style={styles.group}>
-        <div style={styles.container}>
+      <View style={styles.group}>
+        <View style={styles.container}>
           <Checkbox
             id="checkboxId1"
             name="checkboxName1"
             value="checkboxValue1"
             label="went for a run today"/>
-        </div>
-        <div style={styles.container}>
+        </View>
+        <View style={styles.container}>
           <Checkbox
             id="checkboxId2"
             name="checkboxName2"
             value="checkboxValue2"
             label="fed the dog"
             defaultChecked={true}/>
-        </div>
-        <div style={styles.container}>
+        </View>
+        <View style={styles.container}>
           <Checkbox
             id="checkboxId3"
             name="checkboxName3"
             value="checkboxValue3"
             label="built a house on the moon"
             disabled={true}/>
-        </div>
-        <div style={styles.container}>
+        </View>
+        <View style={styles.container}>
           <Checkbox
             name="checkboxName4"
             value="checkboxValue4"
             checkedIcon={<ToggleStar />}
             unCheckedIcon={<ToggleStarBorder />}
             label="custom icon" />
-        </div>
-      </div>
+        </View>
+      </View>
     );
   }
 
   _getToggleExample() {
     let styles = this.getStyles();
     return (
-      <div style={styles.group}>
-        <div style={styles.container}>
+      <View style={styles.group}>
+        <View style={styles.container}>
           <Toggle
             id="toggleId1"
             name="toggleName1"
             value="toggleValue1"
             label="activate thrusters"/>
-        </div>
-        <div style={styles.container}>
+        </View>
+        <View style={styles.container}>
           <Toggle
             id="toggleId2"
             name="toggleName2"
             value="toggleValue2"
             label="auto-pilot"
             defaultToggled={true}/>
-        </div>
-        <div style={styles.container}>
+        </View>
+        <View style={styles.container}>
           <Toggle
             id="toggleId3"
             name="toggleName3"
             value="toggleValue3"
             label="initiate self-destruct sequence"
             disabled={true}/>
-        </div>
-      </div>
+        </View>
+      </View>
     );
   }
 
   _getRadioButtonExample() {
     let styles = this.getStyles();
     return (
-      <div style={styles.group}>
+      <View style={styles.group}>
         <RadioButtonGroup name="shipSpeed" defaultSelected="not_light">
           <RadioButton
             id="radioButtonId1"
@@ -494,7 +494,7 @@ export default class SwitchesPage extends React.Component {
             style={{marginBottom:16}}
             disabled={true}/>
         </RadioButtonGroup>
-      </div>
+      </View>
     );
   }
 

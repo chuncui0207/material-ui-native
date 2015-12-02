@@ -154,7 +154,7 @@ const Calendar = React.createClass({
           mode={this.props.mode}
           weekCount={weekCount} />
         {this.state.displayMonthDay &&
-        <div style={this.prepareStyles(styles.calendarContainer)}>
+        <View style={this.prepareStyles(styles.calendarContainer)}>
           <CalendarToolbar
             DateTimeFormat={DateTimeFormat}
             locale={locale}
@@ -185,11 +185,11 @@ const Calendar = React.createClass({
               maxDate={this.props.maxDate}
               shouldDisableDate={this.props.shouldDisableDate} />
           </SlideInTransitionGroup>
-        </div>}
+        </View>}
         {!this.state.displayMonthDay &&
-        <div style={this.prepareStyles(styles.yearContainer)}>
+        <View style={this.prepareStyles(styles.yearContainer)}>
           {this._yearSelector()}
-        </div>}
+        </View>}
       </ClearFix>
     );
   },

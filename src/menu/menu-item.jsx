@@ -190,7 +190,7 @@ const MenuItem = React.createClass({
     }
 
     return (
-      <div
+      <View
         key={this.props.index}
         className={this.props.className}
         onTouchTap={this._handleTouchTap}
@@ -211,7 +211,7 @@ const MenuItem = React.createClass({
         {toggleElement}
         {iconRight}
 
-      </div>
+      </View>
     );
   },
 

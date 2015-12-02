@@ -165,14 +165,14 @@ const ComponentInfo = React.createClass({
     }, this);
 
     return (
-      <div style={this.prepareStyles(styles.root, this.props.style)}>
+      <View style={this.prepareStyles(styles.root, this.props.style)}>
         <h3 style={this.prepareStyles(styles.h3)}>{this.props.name}</h3>
         <table style={this.prepareStyles(styles.table)}>
           <tbody>
             {propElements}
           </tbody>
         </table>
-      </div>
+      </View>
     );
   },
 });

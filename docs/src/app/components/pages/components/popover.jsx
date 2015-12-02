@@ -95,7 +95,7 @@ let PopoverPage = React.createClass({
           <em>Note that in this version, the select field causes nasty scrolling,
           an upcoming PR will fix, which updates SelectField to use the popover for itself!</em>
           <br/>
-          <h2>Position Options</h2>
+          <Text>Position Options</Text>
           <p>Use the settings below to toggle the positioning of the popovers above</p>
           <strong>Current Settings</strong>
           <br/>
@@ -105,45 +105,45 @@ let PopoverPage = React.createClass({
             targetOrigin: {JSON.stringify(this.state.targetOrigin)}
           </pre>
           <h3>Anchor Origin</h3>
-          <div style={{float:'left'}}>
+          <View style={{float:'left'}}>
             <strong>Vertical</strong>
             <RadioButton onClick={this.setAnchor.bind(this, 'vertical', 'top')} label="Top" checked={this.state.anchorOrigin.vertical === 'top'} />
             <RadioButton onClick={this.setAnchor.bind(this, 'vertical', 'center')} label="Center" checked={this.state.anchorOrigin.vertical === 'center'} />
             <RadioButton onClick={this.setAnchor.bind(this, 'vertical', 'bottom')} label="Bottom" checked={this.state.anchorOrigin.vertical === 'bottom'} />
-          </div>
-          <div style={{float:'left'}}>
+          </View>
+          <View style={{float:'left'}}>
             <strong>Horizontal</strong>
             <RadioButton onClick={this.setAnchor.bind(this, 'horizontal', 'left')} label="Left" checked={this.state.anchorOrigin.horizontal === 'left'} />
             <RadioButton onClick={this.setAnchor.bind(this, 'horizontal', 'middle')} label="Middle" checked={this.state.anchorOrigin.horizontal === 'middle'} />
             <RadioButton onClick={this.setAnchor.bind(this, 'horizontal', 'right')} label="Right" checked={this.state.anchorOrigin.horizontal === 'right'} />
-          </div>
+          </View>
           <br style={{clear:'both'}} />
           <br style={{clear:'both'}} />
 
           <h3>Target Origin</h3>
-          <div style={{float:'left'}}>
+          <View style={{float:'left'}}>
             <strong>Vertical</strong>
             <RadioButton onClick={this.setTarget.bind(this, 'vertical', 'top')} label="Top" checked={this.state.targetOrigin.vertical === 'top'} />
             <RadioButton onClick={this.setTarget.bind(this, 'vertical', 'center')} label="Center" checked={this.state.targetOrigin.vertical === 'center'} />
             <RadioButton onClick={this.setTarget.bind(this, 'vertical', 'bottom')} label="Bottom" checked={this.state.targetOrigin.vertical === 'bottom'} />
-          </div>
-          <div style={{float:'left'}}>
+          </View>
+          <View style={{float:'left'}}>
             <strong>Horizontal</strong>
             <RadioButton onClick={this.setTarget.bind(this, 'horizontal', 'left')} label="Left" checked={this.state.targetOrigin.horizontal === 'left'} />
             <RadioButton onClick={this.setTarget.bind(this, 'horizontal', 'middle')} label="Middle" checked={this.state.targetOrigin.horizontal === 'middle'} />
             <RadioButton onClick={this.setTarget.bind(this, 'horizontal', 'right')} label="Right" checked={this.state.targetOrigin.horizontal === 'right'} />
-          </div>
+          </View>
 
           <Popover open={this.state.activePopover === 'pop'}
             anchorEl={this.state.anchorEl}
             anchorOrigin={this.state.anchorOrigin}
             targetOrigin={this.state.targetOrigin}
             onRequestClose={this.closePopover.bind(this, 'pop')} >
-            <div style={{padding:20}}>
-              <h2>Here is an arbitrary popover</h2>
+            <View style={{padding:20}}>
+              <Text>Here is an arbitrary popover</Text>
               <p>Hi - here is some content</p>
               <RaisedButton primary={true} label="Here is a button"/>
-            </div>
+            </View>
           </Popover>
         </CodeExample>
       </ComponentDoc>

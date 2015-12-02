@@ -45,7 +45,7 @@ const Main = React.createClass({
     ];
 
     return (
-      <div style={containerStyle}>
+      <View style={containerStyle}>
         <Dialog
           title="Super Secret Password"
           actions={standardActions}
@@ -53,12 +53,12 @@ const Main = React.createClass({
           1-2-3-4-5
         </Dialog>
 
-        <h1>material-ui</h1>
-        <h2>example project</h2>
+        <Text>material-ui</Text>
+        <Text>example project</Text>
 
         <RaisedButton label="Super Secret Password" primary={true} onTouchTap={this._handleTouchTap} />
 
-      </div>
+      </View>
     );
   },
 

@@ -181,7 +181,7 @@ export default class IconMenus extends React.Component {
           <br/>
 
           <p>Menu with various open directions</p>
-          <div>
+          <View>
             <IconMenu iconButtonElement={iconButtonElement}
               anchorOrigin={{horizontal:'right', vertical:'top'}}
               targetOrigin={{horizontal:'right', vertical:'top'}}>
@@ -224,10 +224,10 @@ export default class IconMenus extends React.Component {
               <MenuItem primaryText="Help" />
               <MenuItem primaryText="Sign out" />
             </IconMenu>
-          </div>
+          </View>
 
           <p>Menu with value, valueLink, multiple values</p>
-          <div>
+          <View>
             <IconMenu
               iconButtonElement={iconButtonElement}
               onChange={this._handleIconMenuChange}
@@ -261,10 +261,10 @@ export default class IconMenus extends React.Component {
               <MenuItem value="5" primaryText="Hybrid SACD" />
               <MenuItem value="6" primaryText="Vinyl" />
             </IconMenu>
-          </div>
+          </View>
 
           <p>Menu Item variations</p>
-          <div>
+          <View>
             <IconMenu
               iconButtonElement={iconButtonElement}>
               <MenuItem primaryText="Home" />
@@ -287,10 +287,10 @@ export default class IconMenus extends React.Component {
               <MenuDivider />
               <MenuItem primaryText="Remove" leftIcon={<Delete />} />
             </IconMenu>
-          </div>
+          </View>
 
           <p>Scrollable</p>
-          <div>
+          <View>
             <IconMenu
               iconButtonElement={mapsButtonElement}
               maxHeight={272}
@@ -526,7 +526,7 @@ export default class IconMenus extends React.Component {
               <MenuItem value="WI" primaryText="Wisconsin" />
               <MenuItem value="WY" primaryText="Wyoming" />
             </IconMenu>
-          </div>
+          </View>
         </CodeExample>
       </ComponentDoc>
     );

@@ -81,8 +81,8 @@ const ColorsPage = React.createClass({
     let githubLink = 'https://github.com/callemall/material-ui/blob/master/src/styles/colors.js';
 
     return (
-      <div>
-        <h2 style={this.getStyles().headline}>UI Color Palette</h2>
+      <View>
+        <Text style={this.getStyles().headline}>UI Color Palette</Text>
         <p>
           We&#39;ve created javascript variables for every color used in
           the <a href={googleLink}>UI Color Palette</a>. They are stored
@@ -92,11 +92,11 @@ const ColorsPage = React.createClass({
         <ClearFix>
           {colorGroups}
 
-          <div>
+          <View>
             {neutralGroups}
-          </div>
+          </View>
         </ClearFix>
-      </div>
+      </View>
     );
   },
 

@@ -153,19 +153,19 @@ const Tabs = React.createClass({
       tabItemContainerStyle.width : '100%';
 
     return (
-      <div
+      <View
         {...other}
         style={this.prepareStyles(style)}>
-        <div style={this.prepareStyles(styles.tabItemContainer, tabItemContainerStyle)}>
+        <View style={this.prepareStyles(styles.tabItemContainer, tabItemContainerStyle)}>
           {tabs}
-        </div>
-        <div style={{width: inkBarContainerWidth}}>
+        </View>
+        <View style={{width: inkBarContainerWidth}}>
          {inkBar}
-        </div>
-        <div style={this.prepareStyles(contentContainerStyle)}>
+        </View>
+        <View style={this.prepareStyles(contentContainerStyle)}>
           {tabContent}
-        </div>
-      </div>
+        </View>
+      </View>
     );
   },
 

@@ -182,13 +182,13 @@ const ClockMinutes = React.createClass({
     let minutes = this._getMinuteNumbers();
 
     return (
-      <div ref="clock" style={this.prepareStyles(styles.root)} >
+      <View ref="clock" style={this.prepareStyles(styles.root)} >
         <ClockPointer value={minutes.selected} type="minute" />
         {minutes.numbers}
-        <div ref="mask" style={this.prepareStyles(styles.hitMask)} hasSelected={minutes.hasSelected}
+        <View ref="mask" style={this.prepareStyles(styles.hitMask)} hasSelected={minutes.hasSelected}
           onTouchMove={this.handleTouch} onTouchEnd={this.handleTouch}
           onMouseUp={this.handleUp} onMouseMove={this.handleMove} />
-      </div>
+      </View>
     );
   },
 });

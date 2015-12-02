@@ -139,20 +139,20 @@ const Tooltip = React.createClass({
       ...other} = this.props;
     let styles = this.getStyles();
     return (
-      <div {...other}
+      <View {...other}
         style={this.prepareStyles(
             styles.root,
             this.props.show && styles.rootWhenShown,
             this.props.touch && styles.rootWhenTouched,
             this.props.style
           )}>
-        <div
+        <View
           ref="ripple"
           style={this.prepareStyles(
             styles.ripple,
             this.props.show && styles.rippleWhenShown)} />
         <span style={this.prepareStyles(styles.label)}>{this.props.label}</span>
-      </div>
+      </View>
     );
   },
 

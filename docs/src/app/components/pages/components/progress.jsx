@@ -99,7 +99,7 @@ const ProgressPage = React.createClass({
         </Paper>
 
         <CodeExample code={Code}>
-          <h2>Linear Progress</h2>
+          <Text>Linear Progress</Text>
           <p>
             Determinate
           </p>
@@ -113,7 +113,7 @@ const ProgressPage = React.createClass({
           </p>
           <LinearProgress mode="determinate" color={"#4CAF50"} value={this.state.completed} />
           <br/><br/>
-          <h2>Circular Progress</h2>
+          <Text>Circular Progress</Text>
           <p>
             Determinate
           </p>

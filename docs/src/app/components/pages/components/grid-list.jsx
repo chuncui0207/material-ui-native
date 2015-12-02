@@ -198,7 +198,7 @@ class GridListPage extends React.Component {
         </Paper>
 
         <CodeExample code={Code}>
-          <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around'}}>
+          <View style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around'}}>
             {/* Basic grid list with mostly default options */}
             <GridList
               cellHeight={200}
@@ -233,7 +233,7 @@ class GridListPage extends React.Component {
                   ><img src={tile.img} /></GridTile>)
               }
             </GridList>
-          </div>
+          </View>
         </CodeExample>
       </ComponentDoc>
     );

@@ -346,7 +346,7 @@ const ListItem = React.createClass({
 
     return hasCheckbox ? this._createLabelElement(styles, contentChildren) :
       disabled ? this._createDisabledElement(styles, contentChildren) : (
-      <div>
+      <View>
         <EnhancedButton
           {...other}
           disabled={disabled}
@@ -359,12 +359,12 @@ const ListItem = React.createClass({
           onTouchTap={onTouchTap}
           ref="enhancedButton"
           style={this.mergeStyles(styles.root, style)}>
-          <div style={this.prepareStyles(styles.innerDiv, innerDivStyle)}>
+          <View style={this.prepareStyles(styles.innerDiv, innerDivStyle)}>
             {contentChildren}
-          </div>
+          </View>
         </EnhancedButton>
         {nestedList}
-      </div>
+      </View>
     );
 
   },
@@ -433,9 +433,9 @@ const ListItem = React.createClass({
         style: mergedStyles,
       })
     ) : (
-      <div key={key} style={this.prepareStyles(styles)}>
+      <View key={key} style={this.prepareStyles(styles)}>
         {data}
-      </div>
+      </View>
     );
   },
 

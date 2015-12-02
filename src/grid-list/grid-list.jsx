@@ -86,11 +86,11 @@ const GridList = React.createClass({
         height: cellHeight * childRows + padding,
       });
 
-      return <div style={this.prepareStyles(itemStyle)}>{currentChild}</div>;
+      return <View style={this.prepareStyles(itemStyle)}>{currentChild}</View>;
     });
 
     return (
-      <div style={this.prepareStyles(mergedRootStyles)} {...other}>{wrappedChildren}</div>
+      <View style={this.prepareStyles(mergedRootStyles)} {...other}>{wrappedChildren}</View>
     );
   },
 });

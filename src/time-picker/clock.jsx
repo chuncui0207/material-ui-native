@@ -117,7 +117,7 @@ const Clock = React.createClass({
     }
 
     return (
-      <div style={this.prepareStyles(styles.root)}>
+      <View style={this.prepareStyles(styles.root)}>
         <TimeDisplay
           selectedTime={this.state.selectedTime}
           mode={this.state.mode}
@@ -126,12 +126,12 @@ const Clock = React.createClass({
           onSelectHour={this._setMode.bind(this, 'hour')}
           onSelectMin={this._setMode.bind(this, 'minute')} />
 
-        <div style={this.prepareStyles(styles.container)} >
+        <View style={this.prepareStyles(styles.container)} >
           {clock}
-        </div>
+        </View>
 
        {buttons}
-      </div>
+      </View>
     );
   },
 

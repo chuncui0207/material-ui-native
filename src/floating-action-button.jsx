@@ -214,7 +214,7 @@ const FloatingActionButton = React.createClass({
           )}
           focusRippleColor={styles.icon.color}
           touchRippleColor={styles.icon.color}>
-            <div
+            <View
               ref="overlay"
               style={this.prepareStyles(
                 styles.overlay,
@@ -222,7 +222,7 @@ const FloatingActionButton = React.createClass({
               )}>
                 {iconElement}
                 {children}
-            </div>
+            </View>
         </EnhancedButton>
       </Paper>
     );

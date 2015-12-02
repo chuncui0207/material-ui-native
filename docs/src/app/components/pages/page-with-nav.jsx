@@ -63,19 +63,19 @@ let PageWithNav = React.createClass({
   render() {
     let styles = this.getStyles();
     return (
-      <div style={this.prepareStyles(styles.root)}>
-        <div style={this.prepareStyles(styles.content)}>
+      <View style={this.prepareStyles(styles.root)}>
+        <View style={this.prepareStyles(styles.content)}>
           {this.props.children}
-        </div>
-        <div style={this.prepareStyles(styles.secondaryNav)}>
+        </View>
+        <View style={this.prepareStyles(styles.secondaryNav)}>
           <Menu
             ref="menuItems"
             zDepth={0}
             menuItems={this.props.menuItems}
             selectedIndex={this._getSelectedIndex()}
             onItemTap={this._onMenuItemClick} />
-        </div>
-      </div>
+        </View>
+      </View>
     );
   },
 

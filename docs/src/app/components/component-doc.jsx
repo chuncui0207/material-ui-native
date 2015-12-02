@@ -109,13 +109,13 @@ const ComponentDoc = React.createClass({
       if ((typeof this.props.desc) === 'string') {
         desc = <p style={this.prepareStyles(styles.desc)}>{this.props.desc}</p>;
       } else {
-        desc = <div style={this.prepareStyles(styles.desc)}>{this.props.desc}</div>;
+        desc = <View style={this.prepareStyles(styles.desc)}>{this.props.desc}</View>;
       }
     }
 
     let header;
     if (this.props.name.length > 0) {
-      header = <h2 style={this.prepareStyles(styles.headline)}>{this.props.name}</h2>;
+      header = <Text style={this.prepareStyles(styles.headline)}>{this.props.name}</Text>;
     }
 
     return (
@@ -125,9 +125,9 @@ const ComponentDoc = React.createClass({
 
         {desc}
 
-        <div>
+        <View>
           {componentInfo}
-        </div>
+        </View>
 
       </ClearFix>
     );

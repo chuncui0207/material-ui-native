@@ -146,7 +146,7 @@ const IconMenu = React.createClass({
       </Menu>;
 
     return (
-      <div
+      <View
         className={className}
         onMouseDown={onMouseDown}
         onMouseLeave={onMouseLeave}
@@ -165,7 +165,7 @@ const IconMenu = React.createClass({
           context={this.context}>
             {menu}
         </Popover>
-      </div>
+      </View>
     );
   },
 

@@ -155,9 +155,9 @@ const ToolbarGroup = React.createClass({
     }, this);
 
     return (
-      <div className={this.props.className} style={this.prepareStyles(styles.root, this.props.style)}>
+      <View className={this.props.className} style={this.prepareStyles(styles.root, this.props.style)}>
         {newChildren}
-      </div>
+      </View>
     );
   },
 

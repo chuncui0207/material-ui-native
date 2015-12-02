@@ -140,13 +140,13 @@ const Popover = React.createClass({
 
     return (
       <Paper style={wrapperStyle} zDepth={zDepth} className={className} >
-        <div>
-          <div style={horizontalAnimation}>
-            <div style={verticalAnimation}>
+        <View>
+          <View style={horizontalAnimation}>
+            <View style={verticalAnimation}>
                 {this.props.children}
-           </div>
-          </div>
-        </div>
+           </View>
+          </View>
+        </View>
       </Paper>
     );
   },

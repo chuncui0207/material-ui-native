@@ -199,9 +199,9 @@ const AutoComplete = React.createClass({
     ) : null;
 
     return (
-      <div style={mergedRootStyles}
+      <View style={mergedRootStyles}
            onKeyDown={this._handleKeyDown}>
-        <div
+        <View
           style={{
             width:'100%',
           }}>
@@ -232,9 +232,9 @@ const AutoComplete = React.createClass({
             }}
 
             {...textFieldProps} />
-        </div>
+        </View>
           <ReactTransitionGroup>{menu}</ReactTransitionGroup>
-      </div>
+      </View>
     );
   },
 

@@ -169,12 +169,12 @@ const LinearProgress = React.createClass({
     let styles = this.getStyles();
 
     return (
-      <div {...other} style={this.prepareStyles(styles.root, style)}>
-        <div style={this.prepareStyles(styles.bar)}>
-          <div ref="bar1" style={this.prepareStyles(styles.barFragment1)}></div>
-          <div ref="bar2" style={this.prepareStyles(styles.barFragment2)}></div>
-        </div>
-      </div>
+      <View {...other} style={this.prepareStyles(styles.root, style)}>
+        <View style={this.prepareStyles(styles.bar)}>
+          <View ref="bar1" style={this.prepareStyles(styles.barFragment1)}></View>
+          <View ref="bar2" style={this.prepareStyles(styles.barFragment2)}></View>
+        </View>
+      </View>
     );
   },
 });

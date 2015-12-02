@@ -115,17 +115,17 @@ const TimeDisplay = React.createClass({
     styles[mode].color = this.getTheme().accentColor;
 
     return (
-      <div {...other} style={this.prepareStyles(styles.root)}>
-        <div style={this.prepareStyles(styles.box)}>
-          <div style={this.prepareStyles(styles.time)}>
+      <View {...other} style={this.prepareStyles(styles.root)}>
+        <View style={this.prepareStyles(styles.box)}>
+          <View style={this.prepareStyles(styles.time)}>
             <span style={this.prepareStyles(styles.hour)} onTouchTap={this.props.onSelectHour}>{hour}</span>
             <span>:</span>
             <span style={this.prepareStyles(styles.minute)} onTouchTap={this.props.onSelectMin}>{min}</span>
-          </div>
+          </View>
 
          <span key={"affix"}>{this.props.affix.toUpperCase()}</span>
-        </div>
-      </div>
+        </View>
+      </View>
     );
   },
 

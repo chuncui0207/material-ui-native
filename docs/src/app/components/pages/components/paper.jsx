@@ -98,7 +98,7 @@ import Paper from 'material-ui/lib/paper';
         </Paper>
 
         <CodeExample code={Code}>
-          <div>
+          <View>
             <ClearFix style={groupStyle}>
               {this._getGroupDefault()}
             </ClearFix>
@@ -108,7 +108,7 @@ import Paper from 'material-ui/lib/paper';
             <ClearFix style={groupStyle}>
               {this._getGroupCircle()}
             </ClearFix>
-          </div>
+          </View>
         </CodeExample>
       </ComponentDoc>
     );

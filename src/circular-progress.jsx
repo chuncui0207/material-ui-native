@@ -185,14 +185,14 @@ const CircularProgress = React.createClass({
     let styles = this.getStyles(size || 1);
 
     return (
-      <div {...other} style={this.prepareStyles(styles.root, style)} >
-        <div ref="wrapper" style={this.prepareStyles(styles.wrapper, innerStyle)} >
+      <View {...other} style={this.prepareStyles(styles.root, style)} >
+        <View ref="wrapper" style={this.prepareStyles(styles.wrapper, innerStyle)} >
           <svg style={this.prepareStyles(styles.svg)} >
             <circle ref="path" style={this.prepareStyles(styles.path)} cx="25" cy="25"
               r="20" fill="none" strokeWidth="2.5" strokeMiterlimit="10" />
           </svg>
-        </div>
-      </div>
+        </View>
+      </View>
     );
   },
 });

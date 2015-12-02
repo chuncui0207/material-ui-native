@@ -15,7 +15,7 @@ export default class IconButtonsPage extends React.Component {
   render() {
 
     let desc = (
-      <div>
+      <View>
         <p>
           This component generates a button element and all props.
           Also, focus styles will happen on tab but not on click.
@@ -45,7 +45,7 @@ export default class IconButtonsPage extends React.Component {
             iconClassName prop.
           </li>
         </ol>
-      </div>
+      </View>
     );
 
     let componentInfo = [

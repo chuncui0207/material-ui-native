@@ -141,10 +141,10 @@ const Toggle = React.createClass({
     let toggleElementStyles = this.mergeStyles(styles.toggleElement, this.props.elementStyle);
 
     let toggleElement = (
-      <div style={this.prepareStyles(toggleElementStyles)}>
-        <div style={this.prepareStyles(trackStyles)} />
+      <View style={this.prepareStyles(toggleElementStyles)}>
+        <View style={this.prepareStyles(trackStyles)} />
         <Paper style={thumbStyles} circle={true} zDepth={1} />
-      </div>
+      </View>
     );
 
     let customRippleStyle = this.mergeStyles({
