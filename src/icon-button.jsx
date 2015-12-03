@@ -1,4 +1,4 @@
-import React from 'react-native';
+import React from '../../react-native';
 import StylePropable from './mixins/style-propable';
 import ContextPure from './mixins/context-pure';
 import Transitions from './styles/transitions';

@@ -1,4 +1,4 @@
-import React from 'react-native';
+import React from '../../react-native';
 import Transitions from './styles/transitions';
 import StylePropable from './mixins/style-propable';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';

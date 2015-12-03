@@ -1,4 +1,4 @@
-import React from 'react-native';
+import React from '../../react-native';
 import StylePropable from './mixins/style-propable';
 import TextField from './text-field';
 import DropDownMenu from './drop-down-menu';

@@ -1,4 +1,4 @@
-import React from 'react-native';
+import React from '../../../react-native';
 import Extend from '../utils/extend';
 // import OpenIcon from '../svg-icons/hardware/keyboard-arrow-up';
 // import CloseIcon from '../svg-icons/hardware/keyboard-arrow-down';

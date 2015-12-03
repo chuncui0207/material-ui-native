@@ -1,4 +1,4 @@
-import React from 'react-native';
+import React from '../../../react-native';
 import Checkbox from '../checkbox';
 import StylePropable from '../mixins/style-propable';
 import TableHeaderColumn from './table-header-column';

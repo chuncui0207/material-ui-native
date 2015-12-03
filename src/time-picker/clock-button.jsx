@@ -1,4 +1,4 @@
-import React from 'react-native';
+import React from '../../../react-native';
 import StylePropable from '../mixins/style-propable';
 import EnhancedButton from '../enhanced-button';
 import Transitions from '../styles/transitions';

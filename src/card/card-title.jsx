@@ -1,4 +1,4 @@
-import React from 'react-native';
+import React from '../../../react-native';
 import Styles from '../styles';
 import StylePropable from '../mixins/style-propable';
 import ThemeManager from '../styles/theme-manager';

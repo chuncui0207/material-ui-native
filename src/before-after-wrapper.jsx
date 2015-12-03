@@ -1,4 +1,4 @@
-import React from 'react-native';
+import React from '../../react-native';
 import StylePropable from './mixins/style-propable';
 import AutoPrefix from './styles/auto-prefix';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';

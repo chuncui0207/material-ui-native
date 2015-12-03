@@ -1,7 +1,1 @@
-{
-  "breakConfig": true,
-  "stage": 1,
-  "plugins": [
-    "dev-expression"
-  ]
-}
+{}

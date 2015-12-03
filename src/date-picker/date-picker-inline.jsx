@@ -1,4 +1,4 @@
-import React from 'react-native';
+import React from '../../../react-native';
 import Paper from '../paper';
 
 const {

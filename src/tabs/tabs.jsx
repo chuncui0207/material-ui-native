@@ -1,4 +1,4 @@
-import React from 'react-native';
+import React from '../../../react-native';
 import ReactDOM from 'react-dom';
 import TabTemplate from './tabTemplate';
 import InkBar from '../ink-bar';

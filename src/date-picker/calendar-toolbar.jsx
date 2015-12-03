@@ -1,4 +1,4 @@
-import React from 'react-native';
+import React from '../../../react-native';
 import IconButton from '../icon-button';
 import Toolbar from '../toolbar/toolbar';
 import ToolbarGroup from '../toolbar/toolbar-group';

@@ -1,4 +1,4 @@
-import React from 'react-native';
+import React from '../../../react-native';
 import ReactDOM from 'react-dom';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import ColorManipulator from '../utils/color-manipulator';

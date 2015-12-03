@@ -1,4 +1,4 @@
-import React from 'react-native';
+import React from '../../../react-native';
 import DateTime from '../utils/date-time';
 import DayButton from './day-button';
 import ClearFix from '../clearfix';

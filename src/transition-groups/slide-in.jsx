@@ -1,4 +1,4 @@
-import React from 'react-native';
+import React from '../../../react-native';
 import ReactTransitionGroup from 'react-addons-transition-group';
 import StylePropable from '../mixins/style-propable';
 import SlideInChild from './slide-in-child';
