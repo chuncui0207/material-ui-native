@@ -1,10 +1,13 @@
 import React from 'react-native';
 import ThemeManager from '../styles/theme-manager';
+import StylePropable from '../mixins/style-propable';
 import ColorManipulator from '../utils/color-manipulator';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 
 export const SelectableContainerEnhance = (Component) => {
   let composed = React.createClass({
+
+    mixins: [StylePropable],
 
     contextTypes: {
       muiTheme: React.PropTypes.object,
