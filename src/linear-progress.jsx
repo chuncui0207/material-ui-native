@@ -140,8 +140,8 @@ const LinearProgress = React.createClass({
         backgroundColor: this.props.color || this.getTheme().primary1Color,
         top: 0,
         left: 0,
-        bottom: 0,
-        transition: Transitions.create('all', '840ms', null, 'cubic-bezier(0.650, 0.815, 0.735, 0.395)'),
+        bottom: 0
+        //transition: Transitions.create('all', '840ms', null, 'cubic-bezier(0.650, 0.815, 0.735, 0.395)'),
       };
 
       styles.barFragment2 = {
@@ -149,8 +149,8 @@ const LinearProgress = React.createClass({
         backgroundColor: this.props.color || this.getTheme().primary1Color,
         top: 0,
         left: 0,
-        bottom: 0,
-        transition: Transitions.create('all', '840ms', null, 'cubic-bezier(0.165, 0.840, 0.440, 1.000)'),
+        bottom: 0
+        //transition: Transitions.create('all', '840ms', null, 'cubic-bezier(0.165, 0.840, 0.440, 1.000)'),
       };
     }
     else {

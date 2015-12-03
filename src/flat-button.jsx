@@ -165,7 +165,7 @@ const FlatButton = React.createClass({
       overflow: 'hidden',
       backgroundColor: hovered ? buttonHoverColor : buttonBackgroundColor,
       lineHeight: buttonHeight + 'px',
-      minWidth: buttonMinWidth,
+      //minWidth: buttonMinWidth,
       padding: 0,
       margin: 0,
       //This is need so that ripples do not bleed past border radius.

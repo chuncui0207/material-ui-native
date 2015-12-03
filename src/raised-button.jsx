@@ -1,6 +1,5 @@
 import React from '../../react-native';
 import ReactDOM from 'react-dom';
-
 import Transitions from './styles/transitions';
 import ColorManipulator from './utils/color-manipulator';
 import Children from './utils/children';
@@ -12,6 +11,7 @@ import ThemeManager from './styles/theme-manager';
 
 const {
   View,
+  StyleSheet,
 } = React;
 
 function validateLabel(props, propName, componentName) {
@@ -20,7 +20,6 @@ function validateLabel(props, propName, componentName) {
       'specified in ' + componentName + '.');
   }
 }
-
 
 const RaisedButton = React.createClass({
   contextTypes: {
@@ -126,9 +125,9 @@ const RaisedButton = React.createClass({
     let styles = StyleSheet.create({
       root: {
         //display: 'inline-block',
-        minWidth: this.props.fullWidth ? '100%' : this.getThemeButton().minWidth,
+        //minWidth: this.props.fullWidth ? '100%' : this.getThemeButton().minWidth,
         height: this.getThemeButton().height,
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
       },
       container: {
         position: 'relative',
@@ -137,7 +136,7 @@ const RaisedButton = React.createClass({
         padding: 0,
         overflow: 'hidden',
         borderRadius: 2,
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
         backgroundColor: this._getBackgroundColor(),
 
         //This is need so that ripples do not bleed
@@ -148,20 +147,20 @@ const RaisedButton = React.createClass({
       label: {
         position: 'relative',
         opacity: 1,
-        fontSize: '14px',
-        letterSpacing: 0,
-        textTransform: this.getTheme().textTransform ? this.getTheme().textTransform :
-                    (this.getThemeButton().textTransform ? this.getThemeButton().textTransform : 'uppercase'),
+        fontSize: 14px,
+        //letterSpacing: 0,
+        //textTransform: this.getTheme().textTransform ? this.getTheme().textTransform :
+        //            (this.getThemeButton().textTransform ? this.getThemeButton().textTransform : 'uppercase'),
         fontWeight: Typography.fontWeightMedium,
         margin: 0,
-        padding: '0px ' + this.state.muiTheme.rawTheme.spacing.desktopGutterLess + 'px',
-        userSelect: 'none',
-        lineHeight: (this.props.style && this.props.style.height) ?
-         this.props.style.height : this.getThemeButton().height + 'px',
+        //padding: '0px ' + this.state.muiTheme.rawTheme.spacing.desktopGutterLess + 'px',
+        //userSelect: 'none',
+        //lineHeight: (this.props.style && this.props.style.height) ?
+        // this.props.style.height : this.getThemeButton().height + 'px',
         color:  this._getLabelColor(),
       },
       overlay: {
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
         top: 0,
       },
       overlayWhenHovered: {

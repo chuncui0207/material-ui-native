@@ -14,9 +14,9 @@ class Typography {
     this.textLightWhite = Colors.lightWhite;
 
     // font weight
-    this.fontWeightLight = 300;
-    this.fontWeightNormal = 400;
-    this.fontWeightMedium = 500;
+    this.fontWeightLight = '300';
+    this.fontWeightNormal = '400';
+    this.fontWeightMedium = '500';
 
     this.fontStyleButtonFontSize = 14;
   }
