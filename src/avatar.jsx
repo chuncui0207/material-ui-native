@@ -5,6 +5,7 @@ import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
 const {
+  Image,
   View,
   StyleSheet,
 } = React;
@@ -90,7 +91,7 @@ const Avatar = React.createClass({
         });
       }
 
-      return <img {...other} src={src} style={this.prepareStyles(styles.root, style)} />;
+      return <Image {...other} source={src} style={this.prepareStyles(styles.root, style)} />;
     } else {
       styles.root = this.mergeStyles(styles.root, {
         backgroundColor: backgroundColor,
