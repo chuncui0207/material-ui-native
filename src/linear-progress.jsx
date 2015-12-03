@@ -1,6 +1,6 @@
 import React from '../../react-native';
 import ReactDOM from 'react-dom';
-import StylePropable from './mixins/style-propable';
+
 import Transitions from './styles/transitions';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
@@ -11,9 +11,6 @@ const {
 } = React;
 
 const LinearProgress = React.createClass({
-
-  mixins: [StylePropable],
-
   propTypes: {
     mode: React.PropTypes.oneOf(['determinate', 'indeterminate']),
     value: React.PropTypes.number,

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import CssEvent from '../utils/css-event';
 import KeyLine from '../utils/key-line';
 import KeyCode from '../utils/key-code';
-import StylePropable from '../mixins/style-propable';
+
 import Transitions from '../styles/transitions';
 import ClickAwayable from '../mixins/click-awayable';
 import Paper from '../paper';
@@ -23,7 +23,7 @@ const {
 ***********************/
 const NestedMenuItem = React.createClass({
 
-  mixins: [ClickAwayable, StylePropable],
+  mixins: [ClickAwayable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -216,9 +216,6 @@ const NestedMenuItem = React.createClass({
 * Menu Component
 ****************/
 const Menu = React.createClass({
-
-  mixins: [StylePropable],
-
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

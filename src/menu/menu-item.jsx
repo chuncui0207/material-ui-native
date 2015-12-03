@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-import StylePropable from '../mixins/style-propable';
+
 import FontIcon from '../font-icon';
 import Toggle from '../toggle';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
@@ -18,9 +18,6 @@ const Types = {
 
 
 const MenuItem = React.createClass({
-
-  mixins: [StylePropable],
-
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

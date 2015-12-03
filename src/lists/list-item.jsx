@@ -2,7 +2,7 @@ import React from '../../../react-native';
 import ReactDOM from 'react-dom';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import ColorManipulator from '../utils/color-manipulator';
-import StylePropable from '../mixins/style-propable';
+
 import Colors from '../styles/colors';
 import Transitions from '../styles/transitions';
 import Typography from '../styles/typography';
@@ -20,7 +20,7 @@ const {
 
 const ListItem = React.createClass({
 
-  mixins: [PureRenderMixin, StylePropable],
+  mixins: [PureRenderMixin],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

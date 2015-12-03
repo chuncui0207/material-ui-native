@@ -1,5 +1,5 @@
 import React from '../../react-native';
-import StylePropable from './mixins/style-propable';
+
 import Transitions from './styles/transitions';
 import Paper from './paper';
 import EnhancedSwitch from './enhanced-switch';
@@ -11,9 +11,6 @@ const {
 } = React;
 
 const Toggle = React.createClass({
-
-  mixins: [StylePropable],
-
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

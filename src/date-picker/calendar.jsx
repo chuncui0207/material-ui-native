@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-import StylePropable from '../mixins/style-propable';
+
 import WindowListenable from '../mixins/window-listenable';
 import DateTime from '../utils/date-time';
 import KeyCode from '../utils/key-code';
@@ -20,7 +20,7 @@ const {
 
 const Calendar = React.createClass({
 
-  mixins: [StylePropable, WindowListenable],
+  mixins: [WindowListenable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

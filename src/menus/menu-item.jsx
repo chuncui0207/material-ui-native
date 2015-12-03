@@ -1,7 +1,7 @@
 import React from '../../../react-native';
 import ReactDOM from 'react-dom';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
-import StylePropable from '../mixins/style-propable';
+
 import Colors from '../styles/colors';
 import Popover from '../popover/popover';
 // import CheckIcon from '../svg-icons/navigation/check';
@@ -17,7 +17,7 @@ const {
 const nestedMenuStyle = {position:'relative'};
 const MenuItem = React.createClass({
 
-  mixins: [PureRenderMixin, StylePropable],
+  mixins: [PureRenderMixin],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

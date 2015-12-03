@@ -1,7 +1,7 @@
 import React from '../../react-native';
 import ReactDOM from 'react-dom';
 import KeyCode from './utils/key-code';
-import StylePropable from './mixins/style-propable';
+
 import Transitions from './styles/transitions';
 import UniqueId from './utils/unique-id';
 import WindowListenable from './mixins/window-listenable';
@@ -20,7 +20,7 @@ const {
 
 const EnhancedSwitch = React.createClass({
 
-  mixins: [WindowListenable, StylePropable],
+  mixins: [WindowListenable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

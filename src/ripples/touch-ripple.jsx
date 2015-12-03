@@ -2,7 +2,7 @@ import React from '../../../react-native';
 import ReactDOM from 'react-dom';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import ReactTransitionGroup from 'react-addons-transition-group';
-import StylePropable from '../mixins/style-propable';
+
 import Dom from '../utils/dom';
 import ImmutabilityHelper from '../utils/immutability-helper';
 import CircleRipple from './circle-ripple';
@@ -13,7 +13,7 @@ const {
 
 const TouchRipple = React.createClass({
 
-  mixins: [PureRenderMixin, StylePropable],
+  mixins: [PureRenderMixin],
 
   propTypes: {
     centerRipple: React.PropTypes.bool,

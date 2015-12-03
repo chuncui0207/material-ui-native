@@ -1,7 +1,7 @@
 import React from '../../react-native';
 import ReactDOM from 'react-dom';
 import ColorManipulator from './utils/color-manipulator';
-import StylePropable from './mixins/style-propable';
+
 import Transitions from './styles/transitions';
 import UniqueId from './utils/unique-id';
 import EnhancedTextarea from './enhanced-textarea';
@@ -26,10 +26,7 @@ function isValid(value) {
 
 const TextField = React.createClass({
 
-  mixins: [
-    ContextPure,
-    StylePropable,
-  ],
+  mixins: [ContextPure],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

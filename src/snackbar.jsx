@@ -1,5 +1,5 @@
 import React from '../../react-native';
-import StylePropable from './mixins/style-propable';
+
 import Transitions from './styles/transitions';
 import ClickAwayable from './mixins/click-awayable';
 import FlatButton from './flat-button';
@@ -15,7 +15,6 @@ const {
 const Snackbar = React.createClass({
 
   mixins: [
-    StylePropable,
     StyleResizable,
     ClickAwayable,
     ContextPure,

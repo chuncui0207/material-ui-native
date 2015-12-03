@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import WindowListenable from './mixins/window-listenable';
 import KeyCode from './utils/key-code';
 import Transitions from './styles/transitions';
-import StylePropable from './mixins/style-propable';
+
 import FlatButton from './flat-button';
 import Overlay from './overlay';
 import RenderToLayer from './render-to-layer';
@@ -20,7 +20,6 @@ const {
 } = React;
 
 const TransitionItem = React.createClass({
-  mixins: [StylePropable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -95,7 +94,7 @@ const TransitionItem = React.createClass({
 
 const DialogInline = React.createClass({
 
-  mixins: [WindowListenable, StylePropable],
+  mixins: [WindowListenable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-import StylePropable from '../mixins/style-propable';
+
 import EnhancedButton from '../enhanced-button';
 import Transitions from '../styles/transitions';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
@@ -11,9 +11,6 @@ const {
 } = React;
 
 const ClockButton = React.createClass({
-
-  mixins: [StylePropable],
-
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

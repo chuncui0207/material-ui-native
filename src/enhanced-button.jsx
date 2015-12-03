@@ -1,6 +1,6 @@
 import React from '../../react-native';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
-import StylePropable from './mixins/style-propable';
+
 import Colors from './styles/colors';
 import Children from './utils/children';
 import Events from './utils/events';
@@ -46,7 +46,7 @@ function listenForTabPresses() {
 
 const EnhancedButton = React.createClass({
 
-  mixins: [PureRenderMixin, StylePropable],
+  mixins: [PureRenderMixin],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

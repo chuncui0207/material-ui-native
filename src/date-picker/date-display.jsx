@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-import StylePropable from '../mixins/style-propable';
+
 import Transitions from '../styles/transitions';
 import SlideInTransitionGroup from '../transition-groups/slide-in';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
@@ -10,9 +10,6 @@ const {
 } = React;
 
 const DateDisplay = React.createClass({
-
-  mixins: [StylePropable],
-
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

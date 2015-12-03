@@ -3,16 +3,13 @@ import Extend from '../utils/extend';
 // import OpenIcon from '../svg-icons/hardware/keyboard-arrow-up';
 // import CloseIcon from '../svg-icons/hardware/keyboard-arrow-down';
 import IconButton from '../icon-button';
-import StylePropable from '../mixins/style-propable';
+
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 import ContextPure from '../mixins/context-pure';
 
 const CardExpandable = React.createClass({
-  mixins: [
-    StylePropable,
-    ContextPure,
-  ],
+  mixins: [ContextPure],
 
   getStyles() {
     const contextKeys = this.constructor.getRelevantContextKeys(this.state.muiTheme);

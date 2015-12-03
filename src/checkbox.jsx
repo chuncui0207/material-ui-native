@@ -1,6 +1,6 @@
 import React from '../../react-native';
 import EnhancedSwitch from './enhanced-switch';
-import StylePropable from './mixins/style-propable';
+
 import Transitions from './styles/transitions';
 // import CheckboxOutline from './svg-icons/toggle/check-box-outline-blank';
 // import CheckboxChecked from './svg-icons/toggle/check-box';
@@ -12,9 +12,6 @@ const {
 } = React;
 
 const Checkbox = React.createClass({
-
-  mixins: [StylePropable],
-
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

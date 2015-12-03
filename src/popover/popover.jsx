@@ -2,7 +2,7 @@ import React from '../../../react-native';
 import ReactDOM from 'react-dom';
 import WindowListenable from '../mixins/window-listenable';
 import RenderToLayer from '../render-to-layer';
-import StylePropable from '../mixins/style-propable';
+
 import CssEvent from '../utils/css-event';
 import PropTypes from '../utils/prop-types';
 import Transitions from '../styles/transitions';
@@ -18,7 +18,6 @@ const {
 const Popover = React.createClass({
   mixins: [
     ContextPure,
-    StylePropable,
     WindowListenable,
   ],
 

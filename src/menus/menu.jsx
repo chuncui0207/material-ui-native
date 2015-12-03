@@ -2,7 +2,7 @@ import React from '../../../react-native';
 import ReactDOM from 'react-dom';
 import update from 'react-addons-update';
 import Controllable from '../mixins/controllable';
-import StylePropable from '../mixins/style-propable';
+
 import ClickAwayable from '../mixins/click-awayable';
 import AutoPrefix from '../styles/auto-prefix';
 import Transitions from '../styles/transitions';
@@ -21,7 +21,6 @@ const {
 const Menu = React.createClass({
 
   mixins: [
-    StylePropable,
     Controllable,
     ClickAwayable,
   ],

@@ -1,6 +1,6 @@
 import React from '../../react-native';
 import ReactDOM from 'react-dom';
-import StylePropable from './mixins/style-propable';
+
 import Transitions from './styles/transitions';
 import ColorManipulator from './utils/color-manipulator';
 import Children from './utils/children';
@@ -23,9 +23,6 @@ function validateLabel(props, propName, componentName) {
 
 
 const RaisedButton = React.createClass({
-
-  mixins: [StylePropable],
-
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

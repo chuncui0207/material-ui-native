@@ -1,6 +1,6 @@
 import React from '../../react-native';
 import ReactDOM from 'react-dom';
-import StylePropable from './mixins/style-propable';
+
 import Transitions from './styles/transitions';
 import Colors from './styles/colors';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
@@ -14,8 +14,6 @@ const {
 const Overlay = React.createClass({
 
   _originalBodyOverflow: '',
-
-  mixins: [StylePropable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

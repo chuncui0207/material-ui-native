@@ -1,6 +1,6 @@
 import React from '../../../react-native';
 import Styles from '../styles';
-import StylePropable from '../mixins/style-propable';
+
 import ThemeManager from '../styles/theme-manager';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 
@@ -9,9 +9,6 @@ const {
 } = React;
 
 const CardMedia = React.createClass({
-
-  mixins:[StylePropable],
-
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-import StylePropable from '../mixins/style-propable';
+
 import Typography from '../styles/typography';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
@@ -10,9 +10,6 @@ const {
 } = React;
 
 const SubheaderMenuItem = React.createClass({
-
-  mixins: [StylePropable],
-
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

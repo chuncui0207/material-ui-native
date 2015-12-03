@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-import StylePropable from '../mixins/style-propable';
+
 import WindowListenable from '../mixins/window-listenable';
 import TimePickerDialog from './time-picker-dialog';
 import TextField from '../text-field';
@@ -19,7 +19,7 @@ emptyTime.setMilliseconds(0);
 
 const TimePicker = React.createClass({
 
-  mixins: [StylePropable, WindowListenable],
+  mixins: [WindowListenable],
 
   propTypes: {
     autoOk: React.PropTypes.bool,

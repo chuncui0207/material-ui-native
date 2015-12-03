@@ -1,6 +1,6 @@
 import React from '../../react-native';
 import ReactTransitionGroup from 'react-addons-transition-group';
-import StylePropable from './mixins/style-propable';
+
 import ClickAwayable from './mixins/click-awayable';
 import KeyCode from './utils/key-code';
 import TextField from './text-field';
@@ -15,10 +15,7 @@ const {
 
 const AutoComplete = React.createClass({
 
-  mixins: [
-    StylePropable,
-    ClickAwayable,
-  ],
+  mixins: [ClickAwayable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

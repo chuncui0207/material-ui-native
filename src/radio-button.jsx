@@ -1,5 +1,5 @@
 import React from '../../react-native';
-import StylePropable from './mixins/style-propable';
+
 import Transitions from './styles/transitions';
 import EnhancedSwitch from './enhanced-switch';
 // import RadioButtonOff from './svg-icons/toggle/radio-button-unchecked';
@@ -13,9 +13,6 @@ const {
 } = React;
 
 const RadioButton = React.createClass({
-
-  mixins: [StylePropable],
-
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

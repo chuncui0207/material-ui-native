@@ -1,6 +1,6 @@
 import React from '../../../react-native';
 import ReactDOM from 'react-dom';
-import StylePropable from '../mixins/style-propable';
+
 import Events from '../utils/events';
 import PropTypes from '../utils/prop-types';
 import Menu from '../menus/menu';
@@ -14,9 +14,6 @@ const {
 } = React;
 
 const IconMenu = React.createClass({
-
-  mixins: [StylePropable],
-
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

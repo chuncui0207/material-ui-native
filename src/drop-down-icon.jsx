@@ -1,5 +1,5 @@
 import React from '../../react-native';
-import StylePropable from './mixins/style-propable';
+
 import Transitions from './styles/transitions';
 import ClickAwayable from './mixins/click-awayable';
 import FontIcon from './font-icon';
@@ -14,7 +14,7 @@ const {
 
 const DropDownIcon = React.createClass({
 
-  mixins: [StylePropable, ClickAwayable],
+  mixins: [ClickAwayable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

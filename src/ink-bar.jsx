@@ -1,6 +1,6 @@
 import React from '../../react-native';
 import Transitions from './styles/transitions';
-import StylePropable from './mixins/style-propable';
+
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
@@ -44,8 +44,6 @@ const InkBar = React.createClass({
     let newMuiTheme = nextContext.muiTheme ? nextContext.muiTheme : this.state.muiTheme;
     this.setState({muiTheme: newMuiTheme});
   },
-
-  mixins: [StylePropable],
 
   render() {
     let {

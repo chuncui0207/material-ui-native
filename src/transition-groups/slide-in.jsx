@@ -1,15 +1,12 @@
 import React from '../../../react-native';
 import ReactTransitionGroup from 'react-addons-transition-group';
-import StylePropable from '../mixins/style-propable';
+
 import SlideInChild from './slide-in-child';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
 
 const SlideIn = React.createClass({
-
-  mixins: [StylePropable],
-
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

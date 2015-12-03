@@ -1,7 +1,7 @@
 import React from '../../../react-native';
 import ReactDOM from 'react-dom';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
-import StylePropable from '../mixins/style-propable';
+
 import AutoPrefix from '../styles/auto-prefix';
 import Transitions from '../styles/transitions';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
@@ -13,7 +13,7 @@ const {
 
 const ScaleInChild = React.createClass({
 
-  mixins: [PureRenderMixin, StylePropable],
+  mixins: [PureRenderMixin],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

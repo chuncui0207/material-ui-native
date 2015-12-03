@@ -1,5 +1,5 @@
 import React from '../../react-native';
-import StylePropable from './mixins/style-propable';
+
 import TextField from './text-field';
 import DropDownMenu from './drop-down-menu';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
@@ -8,10 +8,7 @@ import ContextPure from './mixins/context-pure';
 
 const SelectField = React.createClass({
 
-  mixins: [
-    StylePropable,
-    ContextPure,
-  ],
+  mixins: [ContextPure],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

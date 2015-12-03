@@ -7,7 +7,7 @@ let Modernizr = isBrowser ? require('./utils/modernizr.custom') : undefined;
 import React from '../../react-native';
 import ReactDOM from 'react-dom';
 import KeyCode from './utils/key-code';
-import StylePropable from './mixins/style-propable';
+
 import AutoPrefix from './styles/auto-prefix';
 import Transitions from './styles/transitions';
 import WindowListenable from './mixins/window-listenable';
@@ -25,7 +25,7 @@ const {
 
 const LeftNav = React.createClass({
 
-  mixins: [StylePropable, WindowListenable],
+  mixins: [WindowListenable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

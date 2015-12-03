@@ -1,6 +1,6 @@
 import React from '../../react-native';
 import ReactDOM from 'react-dom';
-import StylePropable from './mixins/style-propable';
+
 import Transitions from './styles/transitions';
 import ColorManipulator from './utils/color-manipulator';
 import EnhancedButton from './enhanced-button';
@@ -25,9 +25,6 @@ let getZDepth = function(disabled) {
 
 
 const FloatingActionButton = React.createClass({
-
-  mixins: [StylePropable],
-
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

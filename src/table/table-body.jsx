@@ -2,14 +2,14 @@ import React from '../../../react-native';
 import Checkbox from '../checkbox';
 import TableRowColumn from './table-row-column';
 import ClickAwayable from '../mixins/click-awayable';
-import StylePropable from '../mixins/style-propable';
+
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
 
 const TableBody = React.createClass({
 
-  mixins: [ClickAwayable, StylePropable],
+  mixins: [ClickAwayable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

@@ -1,7 +1,7 @@
 import React from '../../../react-native';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import ReactTransitionGroup from 'react-addons-transition-group';
-import StylePropable from '../mixins/style-propable';
+
 import ScaleInChild from './scale-in-child';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
@@ -9,7 +9,7 @@ import ThemeManager from '../styles/theme-manager';
 
 const ScaleIn = React.createClass({
 
-  mixins: [PureRenderMixin, StylePropable],
+  mixins: [PureRenderMixin],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

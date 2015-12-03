@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-import StylePropable from '../mixins/style-propable';
+
 import Transition from '../styles/transitions';
 import DateTime from '../utils/date-time';
 import EnhancedButton from '../enhanced-button';
@@ -12,9 +12,6 @@ const {
 } = React;
 
 const DayButton = React.createClass({
-
-  mixins: [StylePropable],
-
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

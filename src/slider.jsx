@@ -1,6 +1,6 @@
 import React from '../../react-native';
 import ReactDOM from 'react-dom';
-import StylePropable from './mixins/style-propable';
+
 import Transitions from './styles/transitions';
 import FocusRipple from './ripples/focus-ripple';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
@@ -47,9 +47,6 @@ let valueInRangePropType = (props, propName, componentName) => {
 
 
 const Slider = React.createClass({
-
-  mixins: [StylePropable],
-
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

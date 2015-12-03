@@ -1,7 +1,7 @@
 import React from '../../../react-native';
 import ReactDOM from 'react-dom';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
-import StylePropable from '../mixins/style-propable';
+
 import AutoPrefix from '../styles/auto-prefix';
 import Colors from '../styles/colors';
 import Transitions from '../styles/transitions';
@@ -15,7 +15,7 @@ const {
 
 const FocusRipple = React.createClass({
 
-  mixins: [PureRenderMixin, StylePropable],
+  mixins: [PureRenderMixin],
 
   propTypes: {
     color: React.PropTypes.string,

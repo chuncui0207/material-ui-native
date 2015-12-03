@@ -1,6 +1,6 @@
 import React from '../../../react-native';
 import ReactDOM from 'react-dom';
-import StylePropable from '../mixins/style-propable';
+
 import Colors from '../styles/colors';
 import DateTime from '../utils/date-time';
 import YearButton from './year-button';
@@ -10,9 +10,6 @@ const {
 } = React;
 
 const CalendarYear = React.createClass({
-
-  mixins: [StylePropable],
-
   propTypes: {
     displayDate: React.PropTypes.object.isRequired,
     onYearTouchTap: React.PropTypes.func,

@@ -1,6 +1,6 @@
 import React from '../../react-native';
 import ReactDOM from 'react-dom';
-import StylePropable from './mixins/style-propable';
+
 import AutoPrefix from './styles/auto-prefix';
 import Transitions from './styles/transitions';
 import Paper from './paper';
@@ -9,7 +9,6 @@ import ThemeManager from './styles/theme-manager';
 
 const VIEWBOX_SIZE = 32;
 const RefreshIndicator = React.createClass({
-  mixins: [StylePropable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

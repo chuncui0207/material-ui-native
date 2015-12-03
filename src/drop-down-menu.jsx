@@ -1,6 +1,6 @@
 import React from '../../react-native';
 import ReactDOM from 'react-dom';
-import StylePropable from './mixins/style-propable';
+
 import Transitions from './styles/transitions';
 import KeyCode from './utils/key-code';
 // import DropDownArrow from './svg-icons/navigation/arrow-drop-down';
@@ -15,9 +15,6 @@ const {
 } = React;
 
 const DropDownMenu = React.createClass({
-
-  mixins: [StylePropable],
-
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

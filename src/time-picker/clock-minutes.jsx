@@ -1,6 +1,6 @@
 import React from '../../../react-native';
 import ReactDOM from 'react-dom';
-import StylePropable from '../mixins/style-propable';
+
 import ClockNumber from './clock-number';
 import ClockPointer from './clock-pointer';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
@@ -29,9 +29,6 @@ function getTouchEventOffsetValues(e) {
 
 
 const ClockMinutes = React.createClass({
-
-  mixins: [StylePropable],
-
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
