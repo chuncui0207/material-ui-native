@@ -8,6 +8,7 @@ import ThemeManager from './styles/theme-manager';
 
 const {
   View,
+  TextInput,
 } = React;
 
 /**
@@ -315,7 +316,7 @@ const Slider = React.createClass({
               </View>
             </View>
         </View>
-        <input ref="input" type="hidden"
+        <TextInput ref="input" type="hidden"
           name={this.props.name}
           value={this.state.value}
           required={this.props.required}

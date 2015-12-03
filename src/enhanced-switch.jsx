@@ -15,6 +15,7 @@ import ThemeManager from './styles/theme-manager';
 const {
   View,
   StyleSheet,
+  TextInput,
 } = React;
 
 const EnhancedSwitch = React.createClass({
@@ -258,7 +259,7 @@ const EnhancedSwitch = React.createClass({
     }
 
     let inputElement = (
-      <input
+      <TextInput
         {...other}
         {...inputProps}/>
     );

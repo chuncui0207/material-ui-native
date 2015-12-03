@@ -11,6 +11,7 @@ import ContextPure from './mixins/context-pure';
 
 const {
   View,
+  TextInput,
 } = React;
 
 /**
@@ -354,7 +355,7 @@ const TextField = React.createClass({
           onHeightChange={this._handleTextAreaHeightChange}
           textareaStyle={this.mergeAndPrefix(styles.textarea)} />
       ) : (
-        <input
+        <TextInput
           {...other}
           {...inputProps}
           style={this.prepareStyles(inputStyle)}
