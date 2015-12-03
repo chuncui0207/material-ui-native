@@ -123,7 +123,7 @@ const LinearProgress = React.createClass({
       root: {
         position: 'relative',
         height: 4,
-        display: 'block',
+        //display: 'block',
         width: '100%',
         backgroundColor: this.getTheme().primary3Color,
         borderRadius: 2,

@@ -133,7 +133,7 @@ const MenuItem = React.createClass({
         [marginRight]: this.getSpacing().desktopGutter,
       },
       data: {
-        display: 'block',
+        //display: 'block',
         [paddingLeft]: this.getSpacing().desktopGutter * 2,
         lineHeight: this.getTheme().dataHeight + 'px',
         height: this.getTheme().dataHeight + 'px',

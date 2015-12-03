@@ -119,7 +119,7 @@ const FloatingActionButton = React.createClass({
     let styles = StyleSheet.create({
       root: {
         transition: Transitions.easeOut(),
-        display: 'inline-block',
+        //display: 'inline-block',
       },
       container: {
         transition: Transitions.easeOut(),

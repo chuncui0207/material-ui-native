@@ -164,7 +164,7 @@ const TextField = React.createClass({
         lineHeight: '24px',
         width: props.fullWidth ? '100%' : 256,
         height: (props.rows - 1) * 24 + (props.floatingLabelText ? 72 : 48),
-        display: 'inline-block',
+        //display: 'inline-block',
         position: 'relative',
         backgroundColor: backgroundColor,
         fontFamily: this.state.muiTheme.rawTheme.fontFamily,

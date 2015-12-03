@@ -141,7 +141,7 @@ const EnhancedSwitch = React.createClass({
         position: 'relative',
         cursor: this.props.disabled ? 'default' : 'pointer',
         overflow: 'visible',
-        display: 'table',
+        //display: 'table',
         height: 'auto',
         width: '100%',
       },
@@ -165,7 +165,7 @@ const EnhancedSwitch = React.createClass({
       label: {
         float: 'left',
         position: 'relative',
-        display: 'block',
+        //display: 'block',
         width: labelWidth,
         lineHeight: '24px',
         color: this.getTheme().textColor,
@@ -174,7 +174,7 @@ const EnhancedSwitch = React.createClass({
         transition: Transitions.easeOut(),
         float: 'left',
         position: 'relative',
-        display: 'block',
+        //display: 'block',
         width: switchWidth,
         marginRight: (this.props.labelPosition === 'right') ?
           spacing.desktopGutterLess : 0,

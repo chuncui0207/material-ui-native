@@ -102,7 +102,7 @@ const DropDownMenu = React.createClass({
       root: {
         transition: Transitions.easeOut(),
         position: 'relative',
-        display: 'inline-block',
+        //display: 'inline-block',
         height: spacing.desktopSubheaderHeight,
         fontSize: spacing.desktopDropDownMenuFontSize,
         outline: 'none',

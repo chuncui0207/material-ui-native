@@ -61,7 +61,7 @@ const InkBar = React.createClass({
       left: left,
       width: width,
       bottom: 0,
-      display: 'block',
+      //display: 'block',
       backgroundColor: this.state.muiTheme.inkBar.backgroundColor,
       height: 2,
       marginTop: -2,

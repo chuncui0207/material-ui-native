@@ -184,7 +184,7 @@ const LeftNav = React.createClass({
     });
 
     styles.menuItemLink = this.mergeStyles(styles.menuItem, {
-      display: 'block',
+      //display: 'block',
       textDecoration: 'none',
       color: this.getThemePalette().textColor,
     });

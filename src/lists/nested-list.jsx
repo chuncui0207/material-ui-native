@@ -1,5 +1,4 @@
 import React from 'react-native';
-import ImmutabilityHelper from '../utils/immutability-helper';
 import List from './list';
 
 
@@ -22,19 +21,12 @@ const NestedList = React.createClass({
 
     const {
       children,
-      open,
       nestedLevel,
       style,
     } = this.props;
 
-    const styles = {
-      root: {
-        display: open ? null : 'none',
-      },
-    };
-
     return (
-      <List style={ImmutabilityHelper.merge(styles.root, style)}>
+      <List style={style}>
         {
           React.Children.map(children, (child) => {
             return React.isValidElement(child) ? (

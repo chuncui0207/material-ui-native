@@ -143,7 +143,7 @@ const ListItem = React.createClass({
           !this.state.rightIconButtonHovered &&
           !this.state.rightIconButtonKeyboardFocused ? hoverColor : null,
         color: textColor,
-        display: 'block',
+        //display: 'block',
         fontSize: 16,
         lineHeight: '16px',
         position: 'relative',
@@ -163,7 +163,7 @@ const ListItem = React.createClass({
       icons: {
         height: 24,
         width: 24,
-        display: 'block',
+        //display: 'block',
         position: 'absolute',
         top: twoLine ? 12 : singleAvatar ? 4 : 0,
         padding: 12,
@@ -200,7 +200,7 @@ const ListItem = React.createClass({
 
       leftCheckbox: {
         position: 'absolute',
-        display: 'block',
+        //display: 'block',
         width: 24,
         top: twoLine ? 24 : singleAvatar ? 16 : 12,
         left: 16,
@@ -211,14 +211,14 @@ const ListItem = React.createClass({
 
       rightIconButton: {
         position: 'absolute',
-        display: 'block',
+        //display: 'block',
         top: twoLine ? 12 : singleAvatar ? 4 : 0,
         right: 4,
       },
 
       rightToggle: {
         position: 'absolute',
-        display: 'block',
+        //display: 'block',
         width: 54,
         top: twoLine ? 25 : singleAvatar ? 17 : 13,
         right: 8,
@@ -236,7 +236,7 @@ const ListItem = React.createClass({
         overflow: 'hidden',
         textOverflow: 'ellipsis',
         whiteSpace: threeLine ? null : 'nowrap',
-        display: threeLine ? '-webkit-box' : null,
+        //display: threeLine ? '-webkit-box' : null,
         WebkitLineClamp: threeLine ? 2 : null,
         WebkitBoxOrient: threeLine ? 'vertical' : null,
       },

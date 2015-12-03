@@ -168,7 +168,7 @@ const Snackbar = React.createClass({
       root: {
         position: 'fixed',
         left: 0,
-        display: 'flex',
+        //display: 'flex',
         right: 0,
         bottom: 0,
         //zIndex: 10,

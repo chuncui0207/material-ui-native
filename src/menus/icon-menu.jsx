@@ -116,7 +116,7 @@ const IconMenu = React.createClass({
 
     let styles = StyleSheet.create({
       root: {
-        display: 'inline-block',
+        //display: 'inline-block',
         position: 'relative',
       },
 

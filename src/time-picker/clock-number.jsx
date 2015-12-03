@@ -103,7 +103,7 @@ const ClockNumber = React.createClass({
 
     let styles = StyleSheet.create({
       root: {
-        display: 'inline-block',
+        //display: 'inline-block',
         position: 'absolute',
         width: 32,
         height: 32,

@@ -92,7 +92,7 @@ const DateDisplay = React.createClass({
 
       monthDay: {
         root: {
-          display: 'inline-block',
+          //display: 'inline-block',
           fontSize: 36,
           fontWeight: '400',
           lineHeight: '36px',

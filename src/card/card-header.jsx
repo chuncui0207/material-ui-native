@@ -73,7 +73,7 @@ const CardHeader = React.createClass({
         position: 'relative',
       },
       text: {
-        display: 'inline-block',
+        //display: 'inline-block',
         verticalAlign: 'top',
       },
       avatar: {
@@ -81,12 +81,12 @@ const CardHeader = React.createClass({
       },
       title: {
         color: this.props.titleColor,
-        display: 'block',
+        //display: 'block',
         fontSize: 15,
       },
       subtitle: {
         color: this.props.subtitleColor,
-        display: 'block',
+        //display: 'block',
         fontSize: 14,
       },
     };

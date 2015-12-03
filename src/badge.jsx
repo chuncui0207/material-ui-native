@@ -73,11 +73,11 @@ export default React.createClass({
     return {
       root: {
         position: 'relative',
-        display: 'inline-block',
+        //display: 'inline-block',
         padding: [radius2x + 'px', radius2x + 'px', radius + 'px', radius + 'px'].join(' '),
       },
       badge: {
-        display: 'flex',
+        //display: 'flex',
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'center',

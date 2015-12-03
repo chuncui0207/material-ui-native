@@ -69,13 +69,13 @@ const CardTitle = React.createClass({
       title: {
         fontSize: 24,
         color: this.props.titleColor,
-        display: 'block',
+        //display: 'block',
         lineHeight: '36px',
       },
       subtitle: {
         fontSize: 14,
         color: this.props.subtitleColor,
-        display: 'block',
+        //display: 'block',
       },
     };
   },

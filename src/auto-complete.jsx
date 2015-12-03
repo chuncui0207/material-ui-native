@@ -103,7 +103,7 @@ const AutoComplete = React.createClass({
 
     let styles = StyleSheet.create({
       root: {
-        display: 'inline-block',
+        //display: 'inline-block',
         position: 'relative',
         width: this.props.fullWidth ? '100%' : 256,
       },
@@ -117,7 +117,7 @@ const AutoComplete = React.createClass({
         width: '100%',
       },
       list: {
-        display: 'block',
+        //display: 'block',
         width: this.props.fullWidth ? '100%' : 256,
       },
     });

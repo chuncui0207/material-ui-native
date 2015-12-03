@@ -68,7 +68,7 @@ const FontIcon = React.createClass({
     let mergedStyles = this.prepareStyles({
       position: 'relative',
       fontSize: spacing.iconSize,
-      display: 'inline-block',
+      //display: 'inline-block',
       userSelect: 'none',
       transition: Transitions.easeOut(),
     }, style, {

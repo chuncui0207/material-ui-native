@@ -72,7 +72,7 @@ const YearButton = React.createClass({
         boxSizing: 'border-box',
         WebkitTapHighlightColor: 'rgba(0,0,0,0)',
         position: 'relative',
-        display: 'block',
+        //display: 'block',
         margin: '0 auto',
         width: 36,
         fontSize: 14,

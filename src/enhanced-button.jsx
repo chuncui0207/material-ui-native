@@ -159,7 +159,7 @@ const EnhancedButton = React.createClass({
       border: 10,
       background: 'none',
       boxSizing: 'border-box',
-      display: 'inline-block',
+      //display: 'inline-block',
       font: 'inherit',
       fontFamily: this.state.muiTheme.rawTheme.fontFamily,
       tapHighlightColor: Colors.transparent,

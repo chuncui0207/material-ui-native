@@ -49,7 +49,7 @@ const ClearFix = React.createClass({
     let before = function() {
       return {
         content: "' '",
-        display: 'table',
+        //display: 'table',
       };
     };
 

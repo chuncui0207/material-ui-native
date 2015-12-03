@@ -78,7 +78,7 @@ const GridTile = React.createClass({
     let styles = StyleSheet.create({
       root: {
         position: 'relative',
-        display: 'block',
+        //display: 'block',
         height: '100%',
         overflow: 'hidden',
       },
@@ -89,7 +89,7 @@ const GridTile = React.createClass({
         [this.props.titlePosition]: 0,
         height: this.props.subtitle ? 68 : 48,
         background: this.props.titleBackground,
-        display: 'flex',
+        //display: 'flex',
         alignItems: 'center',
       },
       titleWrap: {

@@ -57,7 +57,7 @@ const GridList = React.createClass({
   getStyles() {
     return {
       root: {
-        display: 'flex',
+        //display: 'flex',
         flexWrap: 'wrap',
         margin: -this.props.padding / 2,
       },

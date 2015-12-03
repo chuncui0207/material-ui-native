@@ -59,7 +59,7 @@ const ToolbarTitle = React.createClass({
       paddingRight: this.state.muiTheme.rawTheme.spacing.desktopGutterLess,
       lineHeight: this.getTheme().height + 'px',
       fontSize: this.getTheme().titleFontSize + 'px',
-      display: 'inline-block',
+      //display: 'inline-block',
       position: 'relative',
     }, style);
 

@@ -113,7 +113,7 @@ const Calendar = React.createClass({
           weekCount === 6 ? 324 : 244,
         float: isLandscape ? 'right' : 'none',
       },
-      dateDisplay: {
+      datedisplay: {
         width: isLandscape ? 120 : '',
         height: isLandscape ?
           weekCount === 5 ? 238 :

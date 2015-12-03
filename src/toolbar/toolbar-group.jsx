@@ -75,7 +75,7 @@ const ToolbarGroup = React.createClass({
         root: {
           float: 'left',
           color: Colors.lightBlack, // removes hover color change, we want to keep it
-          display: 'inline-block',
+          //display: 'inline-block',
           marginRight: this.getSpacing(),
         },
         controlBg: {
@@ -83,7 +83,7 @@ const ToolbarGroup = React.createClass({
           borderRadius: 0,
         },
         underline: {
-          display: 'none',
+          //display: 'none',
         },
       },
       button: {

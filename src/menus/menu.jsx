@@ -164,7 +164,7 @@ const Menu = React.createClass({
       },
 
       list: {
-        display: 'table-cell',
+        //display: 'table-cell',
         paddingBottom: desktop ? 16 : 8,
         paddingTop: desktop ? 16 : 8,
         userSelect: 'none',

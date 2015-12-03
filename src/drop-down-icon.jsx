@@ -77,7 +77,7 @@ const DropDownIcon = React.createClass({
     let iconWidth = 48;
     let styles = StyleSheet.create({
       root: {
-        display: 'inline-block',
+        //display: 'inline-block',
         width: iconWidth + 'px !important',
         position: 'relative',
         height: spacing.desktopToolbarHeight,
