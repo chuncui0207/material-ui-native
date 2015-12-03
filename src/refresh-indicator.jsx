@@ -125,7 +125,7 @@ const RefreshIndicator = React.createClass({
     const padding = this._getPaddingSize();
     return {
       position: 'absolute',
-      zIndex: 2,
+      //zIndex: 2,
       width: this.props.size,
       height: this.props.size,
       padding: padding,

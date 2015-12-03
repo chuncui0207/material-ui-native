@@ -171,7 +171,7 @@ const Snackbar = React.createClass({
         display: 'flex',
         right: 0,
         bottom: 0,
-        zIndex: 10,
+        //zIndex: 10,
         visibility: 'hidden',
         transform: 'translate3d(0, ' + desktopSubheaderHeight + 'px, 0)',
         transition:

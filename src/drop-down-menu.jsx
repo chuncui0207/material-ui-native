@@ -94,7 +94,7 @@ const DropDownMenu = React.createClass({
 
   getStyles() {
     const {disabled} = this.props;
-    let zIndex = 5; // As AppBar
+    // let zIndex = 5; // As AppBar
     let spacing = this.state.muiTheme.rawTheme.spacing;
     let accentColor = this.state.muiTheme.dropDownMenu.accentColor;
     let backgroundColor = this.state.muiTheme.menu.backgroundColor;
@@ -138,9 +138,6 @@ const DropDownMenu = React.createClass({
         borderTop: 'solid 1px ' + accentColor,
         margin: '-1px ' + spacing.desktopGutter + 'px',
       },
-      menu: {
-        zIndex: zIndex + 1,
-      },
       menuItem: {
         paddingRight: spacing.iconSize +
                       spacing.desktopGutterLess +
@@ -162,7 +159,7 @@ const DropDownMenu = React.createClass({
         position: 'fixed',
         top: 0,
         left: 0,
-        zIndex: zIndex,
+        //zIndex: zIndex,
       },
     };
 
@@ -249,7 +246,6 @@ const DropDownMenu = React.createClass({
             autoWidth={autoWidth}
             selectedIndex={selectedIndex}
             menuItems={menuItems}
-            style={styles.menu}
             menuItemStyle={this.mergeStyles(styles.menuItem, menuItemStyle)}
             hideable={true}
             visible={this.state.open}

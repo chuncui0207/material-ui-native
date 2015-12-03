@@ -323,7 +323,7 @@ const Menu = React.createClass({
         overflow: 'hidden',
         position: 'absolute',
         top: 0,
-        zIndex: 1,
+        //zIndex: 1,
       },
       item: {
         height: 34,

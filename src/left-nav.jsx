@@ -156,7 +156,7 @@ const LeftNav = React.createClass({
         height: '100%',
         width: this.getTheme().width,
         position: 'fixed',
-        zIndex: 10,
+        //zIndex: 10,
         left: isBrowser && Modernizr.csstransforms3d ? 0 : x,
         top: 0,
         transform: 'translate3d(' + x + 'px, 0, 0)',

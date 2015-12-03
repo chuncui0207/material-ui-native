@@ -85,7 +85,7 @@ const Overlay = React.createClass({
         position: 'fixed',
         height: '100%',
         width: '100%',
-        zIndex: 9,
+        //zIndex: 9,
         top: 0,
         left: '-100%',
         opacity: 0,

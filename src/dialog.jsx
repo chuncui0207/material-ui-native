@@ -165,7 +165,7 @@ const DialogInline = React.createClass({
       position: 'fixed',
       boxSizing: 'border-box',
       WebkitTapHighlightColor: 'rgba(0,0,0,0)',
-      zIndex: 10,
+      //zIndex: 10,
       top: 0,
       left: -10000,
       width: '100%',
@@ -181,7 +181,7 @@ const DialogInline = React.createClass({
       width: '75%',
       maxWidth: spacing.desktopKeylineIncrement * 12,
       margin: '0 auto',
-      zIndex: 10,
+      //zIndex: 10,
     };
 
     let body = {
@@ -391,7 +391,7 @@ const DialogInline = React.createClass({
 });
 
 
-const wrapperStyle = {position:'fixed', top:0, left:0, zIndex:20};
+const wrapperStyle = {position:'fixed', top:0, left:0}; //zIndex:20};
 const Dialog = React.createClass({
 
   propTypes: {

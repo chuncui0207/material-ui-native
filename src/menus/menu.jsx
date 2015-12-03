@@ -154,7 +154,7 @@ const Menu = React.createClass({
         //it scales y
         transition: animated ? Transitions.easeOut('250ms', 'transform') : null,
         position: 'absolute',
-        zIndex: 10,
+        //zIndex: 10,
         top: openDown ? 0 : null,
         bottom: !openDown ? 0 : null,
         left: !openLeft ? 0 : null,

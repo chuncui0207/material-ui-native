@@ -162,7 +162,7 @@ const Slider = React.createClass({
         pointerEvents: 'inherit',
         top: 0,
         left: '0%',
-        zIndex: 1,
+        //zIndex: 1,
         margin: (this.getTheme().trackSize / 2) + 'px 0 0 0',
         width: this.getTheme().handleSize,
         height: this.getTheme().handleSize,

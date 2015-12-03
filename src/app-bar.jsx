@@ -95,7 +95,7 @@ const AppBar = React.createClass({
     let styles = StyleSheet.create({
       root: {
         position: 'relative',
-        zIndex: 5,
+        //zIndex: 5,
         width: '100%',
         display: 'flex',
         minHeight: themeVariables.height,

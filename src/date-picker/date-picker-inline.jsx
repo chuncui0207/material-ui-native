@@ -37,7 +37,7 @@ const DatePickerInline = React.createClass({
         textAlign: 'right',
       },
       container: {
-        zIndex: 3,
+        //zIndex: 3,
         width: '100%',
         position: 'relative',
         display: 'block',

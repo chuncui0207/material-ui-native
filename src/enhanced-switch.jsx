@@ -152,7 +152,7 @@ const EnhancedSwitch = React.createClass({
         opacity: 0,
         width: '100%',
         height: '100%',
-        zIndex: 2,
+        //zIndex: 2,
         left: 0,
         boxSizing: 'border-box',
         padding: 0,

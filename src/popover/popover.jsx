@@ -116,7 +116,7 @@ const Popover = React.createClass({
       position: 'fixed',
       top: anchor.top,
       left: anchor.left,
-      zIndex: 20,
+      //zIndex: 20,
       opacity:1,
       overflow:'auto',
       maxHeight:'100%',
