@@ -16,6 +16,7 @@ import ReactTransitionGroup from 'react-addons-transition-group';
 
 const {
   View,
+  Text,
 } = React;
 
 const TransitionItem = React.createClass({
@@ -226,7 +227,7 @@ const DialogInline = React.createClass({
       // If the title is a string, wrap in an h3 tag.
       // If not, just use it as a node.
       title = Object.prototype.toString.call(this.props.title) === '[object String]' ?
-        <h3 style={this.prepareStyles(styles.title)}>{this.props.title}</h3> :
+        <Text style={this.prepareStyles(styles.title)}>{this.props.title}</Text> :
         this.props.title;
     }
 
