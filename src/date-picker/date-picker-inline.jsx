@@ -27,7 +27,7 @@ const DatePickerInline = React.createClass({
     } = this.props;
 
     if (!open) {
-      return <span />;
+      return <View />;
     }
 
     const styles = {

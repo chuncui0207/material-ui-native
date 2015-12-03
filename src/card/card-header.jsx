@@ -111,8 +111,8 @@ const CardHeader = React.createClass({
       <View {...this.props} style={rootStyle}>
         {avatar}
         <View style={textStyle}>
-          <span style={titleStyle}>{this.props.title}</span>
-          <span style={subtitleStyle}>{this.props.subtitle}</span>
+          <View style={titleStyle}>{this.props.title}</View>
+          <View style={subtitleStyle}>{this.props.subtitle}</View>
         </View>
         {this.props.children}
       </View>

@@ -101,9 +101,9 @@ export default React.createClass({
     return (
       <View style={this.prepareStyles(styles.root, this.props.style)} className={this.props.className}>
         {this.props.children}
-        <span style={this.prepareStyles(styles.badge, this.props.badgeStyle)}>
+        <View style={this.prepareStyles(styles.badge, this.props.badgeStyle)}>
           {this.props.badgeContent}
-        </span>
+        </View>
       </View>
     );
   },

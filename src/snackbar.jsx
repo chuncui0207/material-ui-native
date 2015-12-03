@@ -253,7 +253,7 @@ const Snackbar = React.createClass({
       <View {...others} style={rootStyles}>
         <View style={mergedBodyStyle}>
           <View style={contentStyle}>
-            <span>{message}</span>
+            <View>{message}</View>
             {actionButton}
           </View>
         </View>

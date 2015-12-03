@@ -4,6 +4,10 @@ import Transitions from './styles/transitions';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 const FontIcon = React.createClass({
 
   mixins: [StylePropable],
@@ -72,7 +76,7 @@ const FontIcon = React.createClass({
     });
 
     return (
-      <span
+      <View
         {...other}
         onMouseLeave={this._handleMouseLeave}
         onMouseEnter={this._handleMouseEnter}

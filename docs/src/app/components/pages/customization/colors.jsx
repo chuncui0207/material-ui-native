@@ -136,7 +136,7 @@ const ColorsPage = React.createClass({
     let blockTitle;
 
     if (contrastRatio < 7) fgColor = Colors.fullWhite;
-    if (colorTitle) blockTitle = <span style={this.getStyles().name}>{colorTitle}</span>;
+    if (colorTitle) blockTitle = <View style={this.getStyles().name}>{colorTitle}</View>;
 
     let styles = StyleSheet.create({
       backgroundColor: bgColor,

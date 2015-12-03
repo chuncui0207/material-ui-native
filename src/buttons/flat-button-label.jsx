@@ -4,6 +4,10 @@ import StylePropable from '../mixins/style-propable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 const FlatButtonLabel = React.createClass({
 
   mixins: [
@@ -66,7 +70,7 @@ const FlatButtonLabel = React.createClass({
     }, style);
 
     return (
-      <span style={this.prepareStyles(mergedRootStyles)}>{label}</span>
+      <View style={this.prepareStyles(mergedRootStyles)}>{label}</View>
     );
   },
 

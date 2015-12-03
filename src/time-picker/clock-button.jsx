@@ -7,6 +7,7 @@ import ThemeManager from '../styles/theme-manager';
 
 const {
   StyleSheet,
+  View,
 } = React;
 
 const ClockButton = React.createClass({
@@ -116,8 +117,8 @@ const ClockButton = React.createClass({
           disableFocusRipple={true}
           disableTouchRipple={true}
           onTouchTap={this._handleTouchTap}>
-          <span style={this.prepareStyles(styles.select)} />
-          <span style={this.prepareStyles(styles.label)} >{this.props.children}</span>
+          <View style={this.prepareStyles(styles.select)} />
+          <View style={this.prepareStyles(styles.label)} >{this.props.children}</View>
         </EnhancedButton>
     );
   },

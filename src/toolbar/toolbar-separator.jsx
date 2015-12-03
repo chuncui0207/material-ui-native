@@ -3,6 +3,10 @@ import StylePropable from '../mixins/style-propable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 const ToolbarSeparator = React.createClass({
 
   mixins: [StylePropable],
@@ -60,7 +64,7 @@ const ToolbarSeparator = React.createClass({
     }, this.props.style);
 
     return (
-      <span className={this.props.className} style={styles}/>
+      <View className={this.props.className} style={styles}/>
     );
   },
 

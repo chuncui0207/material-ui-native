@@ -82,7 +82,7 @@ const ClockPointer = React.createClass({
 
   render() {
     if (this.props.value === null) {
-      return <span />;
+      return <View />;
     }
 
     let angle = this.getAngle();

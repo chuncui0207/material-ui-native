@@ -182,7 +182,7 @@ const Master = React.createClass({
         linkButton={true}
         href="/#/home">
         <img style={this.prepareStyles(styles.svgLogo)} src="images/material-ui-logo.svg"/>
-        <span style={this.prepareStyles(styles.span)}>material ui</span>
+        <View style={this.prepareStyles(styles.span)}>material ui</View>
       </EnhancedButton>) : null;
 
     return (

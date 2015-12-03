@@ -152,7 +152,7 @@ const ComponentInfo = React.createClass({
     let styles = this.getStyles();
     this.props.infoArray.forEach(function(info, i) {
 
-      if (info.type) typesSpan = <span style={this.prepareStyles(styles.type)}>{info.type}</span>;
+      if (info.type) typesSpan = <View style={this.prepareStyles(styles.type)}>{info.type}</View>;
 
       if (i === this.props.infoArray.length - 1) {
         styles.desc = this.mergeStyles(styles.desc, styles.descWhenLastChild);

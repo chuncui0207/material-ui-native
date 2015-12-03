@@ -10,6 +10,10 @@ import TouchRipple from './ripples/touch-ripple';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 let styleInjected = false;
 let listening = false;
 let tabPressed = false;
@@ -167,11 +171,11 @@ const EnhancedButton = React.createClass({
 
     if (disabled && linkButton) {
       return (
-        <span
+        <View
           {...other}
           style={mergedStyles}>
           {children}
-        </span>
+        </View>
       );
     }
 

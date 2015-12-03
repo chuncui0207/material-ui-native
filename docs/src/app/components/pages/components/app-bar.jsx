@@ -12,6 +12,10 @@ import IconMenu from 'menus/icon-menu';
 import MenuItem from 'menus/menu-item';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 
+const {
+  View,
+} = React;
+
 const styles = {
   title: {
     cursor: 'pointer',
@@ -152,7 +156,7 @@ import AppBar from 'material-ui/lib/app-bar';
             iconClassNameRight="muidocs-icon-navigation-expand-more" />
           <br />
           <AppBar
-            title={<span style={styles.title} onTouchTap={this._onTouchTap}>Title</span>}
+            title={<View style={styles.title} onTouchTap={this._onTouchTap}>Title</View>}
             iconElementLeft={<IconButton><NavigationClose /></IconButton>}
             iconElementRight={<FlatButton label="Save" />} />
           <br />

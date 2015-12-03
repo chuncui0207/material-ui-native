@@ -88,8 +88,8 @@ const CardTitle = React.createClass({
 
     return (
       <View {...this.props} style={rootStyle}>
-        <span style={titleStyle}>{this.props.title}</span>
-        <span style={subtitleStyle}>{this.props.subtitle}</span>
+        <View style={titleStyle}>{this.props.title}</View>
+        <View style={subtitleStyle}>{this.props.subtitle}</View>
         {this.props.children}
       </View>
     );

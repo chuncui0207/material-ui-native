@@ -3,6 +3,10 @@ import StylePropable from '../mixins/style-propable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
+const {
+  View,
+} = React;
+
 const ToolbarTitle = React.createClass({
 
   mixins: [StylePropable],
@@ -60,7 +64,7 @@ const ToolbarTitle = React.createClass({
     }, style);
 
     return (
-      <span style={styles} {...other} >{text}</span>
+      <View style={styles} {...other} >{text}</View>
     );
   },
 

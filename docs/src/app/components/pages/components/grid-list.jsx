@@ -212,7 +212,7 @@ class GridListPage extends React.Component {
                 tilesData.map(tile => <GridTile
                   key={tile.img}
                   title={tile.title}
-                  subtitle={<span>by <b>{tile.author}</b></span>}
+                  subtitle={<View>by <b>{tile.author}</b></View>}
                   actionIcon={<IconButton><StarBorder color="white"/></IconButton>}
                   ><img src={tile.img} /></GridTile>)
               }

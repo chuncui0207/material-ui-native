@@ -191,9 +191,9 @@ const RaisedButton = React.createClass({
     let labelElement;
     if (label) {
       labelElement = (
-        <span style={this.prepareStyles(styles.label, labelStyle)}>
+        <View style={this.prepareStyles(styles.label, labelStyle)}>
           {label}
-        </span>
+        </View>
       );
     }
 

@@ -102,9 +102,9 @@ const HomePage = React.createClass({
           <View style={styles.tagline}>
             <Text style={styles.h1}>material ui</Text>
             <Text style={styles.h2}>
-              A Set of React Components <span style={styles.nowrap}>
-              that Implement</span> <span style={styles.nowrap}>
-              Google&apos;s Material Design</span>
+              A Set of React Components <View style={styles.nowrap}>
+              that Implement</View> <View style={styles.nowrap}>
+              Google&apos;s Material Design</View>
             </Text>
             <RaisedButton
               className="demo-button"
@@ -197,8 +197,8 @@ const HomePage = React.createClass({
     return (
       <FullWidthSection useContent={true} style={styles.root}>
         <h3 style={styles.h3}>
-          Want to help make this <span style={styles.nowrap}>project awesome? </span>
-          <span style={styles.nowrap}>Check out our repo.</span>
+          Want to help make this <View style={styles.nowrap}>project awesome? </View>
+          <View style={styles.nowrap}>Check out our repo.</View>
         </h3>
         <RaisedButton
           label="GitHub"

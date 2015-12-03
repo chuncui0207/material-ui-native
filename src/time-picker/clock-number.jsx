@@ -4,6 +4,7 @@ import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
 const {
+  View,
   StyleSheet,
 } = React;
 
@@ -137,7 +138,7 @@ const ClockNumber = React.createClass({
     styles.root.transform = 'translate(' + x + 'px, ' + y + 'px)';
 
     return (
-        <span style={this.prepareStyles(styles.root)}>{this.props.value}</span>
+        <View style={this.prepareStyles(styles.root)}>{this.props.value}</View>
     );
   },
 });

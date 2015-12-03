@@ -567,7 +567,7 @@ import ListItem from 'material-ui/lib/lists/list-item';
                 primaryText="Brunch this weekend?"
                 secondaryText={
                   <p>
-                    <span style={{color: Colors.darkBlack}}>Brendan Lim</span> --
+                    <View style={{color: Colors.darkBlack}}>Brendan Lim</View> --
                     I&apos;ll be in your neighborhood this weekend.
                   </p>
                 } />
@@ -575,11 +575,11 @@ import ListItem from 'material-ui/lib/lists/list-item';
               <ListItem
                 leftAvatar={<Avatar src="images/kolage-128.jpg" />}
                 primaryText={
-                  <p>Summer BBQ&nbsp;&nbsp;<span style={{color: Colors.lightBlack}}>4</span></p>
+                  <p>Summer BBQ&nbsp;&nbsp;<View style={{color: Colors.lightBlack}}>4</View></p>
                 }
                 secondaryText={
                   <p>
-                    <span style={{color: Colors.darkBlack}}>to me, Scott, Jennifer</span> --
+                    <View style={{color: Colors.darkBlack}}>to me, Scott, Jennifer</View> --
                     Wish I could but I can
                   </p>
                 } />
@@ -589,7 +589,7 @@ import ListItem from 'material-ui/lib/lists/list-item';
                 primaryText="Oui oui"
                 secondaryText={
                   <p>
-                    <span style={{color: Colors.darkBlack}}>Grace Ng</span> --
+                    <View style={{color: Colors.darkBlack}}>Grace Ng</View> --
                     Do you have Paris recommendations?
                   </p>
                 } />
@@ -599,7 +599,7 @@ import ListItem from 'material-ui/lib/lists/list-item';
                 primaryText="Birthday gift"
                 secondaryText={
                   <p>
-                    <span style={{color: Colors.darkBlack}}>Kerem Suer</span> --
+                    <View style={{color: Colors.darkBlack}}>Kerem Suer</View> --
                     Do you have any ideas on what I
                   </p>
                 } />
@@ -609,7 +609,7 @@ import ListItem from 'material-ui/lib/lists/list-item';
                 primaryText="Recipe to try"
                 secondaryText={
                   <p>
-                    <span style={{color: Colors.darkBlack}}>Raquel Parrado</span> --
+                    <View style={{color: Colors.darkBlack}}>Raquel Parrado</View> --
                     We should eat this: grated cheese
                   </p>
                 } />
@@ -619,7 +619,7 @@ import ListItem from 'material-ui/lib/lists/list-item';
                 primaryText="Giants game"
                 secondaryText={
                   <p>
-                    <span style={{color: Colors.darkBlack}}>Chelsea Otakan</span> --
+                    <View style={{color: Colors.darkBlack}}>Chelsea Otakan</View> --
                     Any interest in seeing the Giants
                   </p>
                 } />
@@ -633,7 +633,7 @@ import ListItem from 'material-ui/lib/lists/list-item';
                 primaryText="Brunch this weekend?"
                 secondaryText={
                   <p>
-                    <span style={{color: Colors.darkBlack}}>Brendan Lim</span> --
+                    <View style={{color: Colors.darkBlack}}>Brendan Lim</View> --
                     I&apos;ll be in your neighborhood doing errands this weekend. Do you want to grab brunch?
                   </p>
                 }
@@ -642,11 +642,11 @@ import ListItem from 'material-ui/lib/lists/list-item';
               <ListItem
                 leftAvatar={<Avatar src="images/kolage-128.jpg" />}
                 primaryText={
-                  <p>Summer BBQ&nbsp;&nbsp;<span style={{color: Colors.lightBlack}}>4</span></p>
+                  <p>Summer BBQ&nbsp;&nbsp;<View style={{color: Colors.lightBlack}}>4</View></p>
                 }
                 secondaryText={
                   <p>
-                    <span style={{color: Colors.darkBlack}}>to me, Scott, Jennifer</span> --
+                    <View style={{color: Colors.darkBlack}}>to me, Scott, Jennifer</View> --
                     Wish I could come, but I&apos;m out of town this weekend.
                   </p>
                 }
@@ -657,7 +657,7 @@ import ListItem from 'material-ui/lib/lists/list-item';
                 primaryText="Oui oui"
                 secondaryText={
                   <p>
-                    <span style={{color: Colors.darkBlack}}>Grace Ng</span> --
+                    <View style={{color: Colors.darkBlack}}>Grace Ng</View> --
                     Do you have Paris recommendations? Have you ever been?
                   </p>
                 }
@@ -668,7 +668,7 @@ import ListItem from 'material-ui/lib/lists/list-item';
                 primaryText="Birdthday gift"
                 secondaryText={
                   <p>
-                    <span style={{color: Colors.darkBlack}}>Kerem Suer</span> --
+                    <View style={{color: Colors.darkBlack}}>Kerem Suer</View> --
                     Do you have any ideas what we can get Heidi for her birthday? How about a pony?
                   </p>
                 }
@@ -679,7 +679,7 @@ import ListItem from 'material-ui/lib/lists/list-item';
                 primaryText="Recipe to try"
                 secondaryText={
                   <p>
-                    <span style={{color: Colors.darkBlack}}>Raquel Parrado</span> --
+                    <View style={{color: Colors.darkBlack}}>Raquel Parrado</View> --
                     We should eat this: grated squash. Corn and tomatillo tacos.
                   </p>
                 }
@@ -695,7 +695,7 @@ import ListItem from 'material-ui/lib/lists/list-item';
                 primaryText="Brendan Lim"
                 secondaryText={
                   <p>
-                    <span style={{color: Colors.darkBlack}}>Brunch this weekend?</span><br/>
+                    <View style={{color: Colors.darkBlack}}>Brunch this weekend?</View><br/>
                     I&apos;ll be in your neighborhood doing errands this weekend. Do you want to grab brunch?
                   </p>
                 }
@@ -707,7 +707,7 @@ import ListItem from 'material-ui/lib/lists/list-item';
                 primaryText="me, Scott, Jennifer"
                 secondaryText={
                   <p>
-                    <span style={{color: Colors.darkBlack}}>Summer BBQ</span><br/>
+                    <View style={{color: Colors.darkBlack}}>Summer BBQ</View><br/>
                     Wish I could come, but I&apos;m out of town this weekend.
                   </p>
                 }
@@ -719,7 +719,7 @@ import ListItem from 'material-ui/lib/lists/list-item';
                 primaryText="Grace Ng"
                 secondaryText={
                   <p>
-                    <span style={{color: Colors.darkBlack}}>Oui oui</span><br/>
+                    <View style={{color: Colors.darkBlack}}>Oui oui</View><br/>
                     Do you have any Paris recs? Have you ever been?
                   </p>
                 }
@@ -731,7 +731,7 @@ import ListItem from 'material-ui/lib/lists/list-item';
                 primaryText="Kerem Suer"
                 secondaryText={
                   <p>
-                    <span style={{color: Colors.darkBlack}}>Birthday gift</span><br/>
+                    <View style={{color: Colors.darkBlack}}>Birthday gift</View><br/>
                     Do you have any ideas what we can get Heidi for her birthday? How about a pony?
                   </p>
                 }
@@ -743,7 +743,7 @@ import ListItem from 'material-ui/lib/lists/list-item';
                 primaryText="Raquel Parrado"
                 secondaryText={
                   <p>
-                    <span style={{color: Colors.darkBlack}}>Recipe to try</span><br/>
+                    <View style={{color: Colors.darkBlack}}>Recipe to try</View><br/>
                     We should eat this: grated squash. Corn and tomatillo tacos.
                   </p>
                 }

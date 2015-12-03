@@ -122,12 +122,12 @@ const TimeDisplay = React.createClass({
       <View {...other} style={this.prepareStyles(styles.root)}>
         <View style={this.prepareStyles(styles.box)}>
           <View style={this.prepareStyles(styles.time)}>
-            <span style={this.prepareStyles(styles.hour)} onTouchTap={this.props.onSelectHour}>{hour}</span>
-            <span>:</span>
-            <span style={this.prepareStyles(styles.minute)} onTouchTap={this.props.onSelectMin}>{min}</span>
+            <View style={this.prepareStyles(styles.hour)} onTouchTap={this.props.onSelectHour}>{hour}</View>
+            <View>:</View>
+            <View style={this.prepareStyles(styles.minute)} onTouchTap={this.props.onSelectMin}>{min}</View>
           </View>
 
-         <span key={"affix"}>{this.props.affix.toUpperCase()}</span>
+         <View key={"affix"}>{this.props.affix.toUpperCase()}</View>
         </View>
       </View>
     );

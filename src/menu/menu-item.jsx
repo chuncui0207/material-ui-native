@@ -174,9 +174,9 @@ const MenuItem = React.createClass({
 
     if (this.props.iconClassName) icon = <FontIcon style={this.mergeStyles(styles.icon, this.props.iconStyle, this.props.selected && styles.rootWhenSelected)} className={this.props.iconClassName} />;
     if (this.props.iconRightClassName) iconRight = <FontIcon style={this.mergeStyles(styles.iconRight, this.props.iconRightStyle)} className={this.props.iconRightClassName} />;
-    if (this.props.data) data = <span style={this.prepareStyles(styles.data)}>{this.props.data}</span>;
-    if (this.props.number !== undefined) number = <span style={this.prepareStyles(styles.number)}>{this.props.number}</span>;
-    if (this.props.attribute !== undefined) attribute = <span style={this.prepareStyles(styles.style)}>{this.props.attribute}</span>;
+    if (this.props.data) data = <View style={this.prepareStyles(styles.data)}>{this.props.data}</View>;
+    if (this.props.number !== undefined) number = <View style={this.prepareStyles(styles.number)}>{this.props.number}</View>;
+    if (this.props.attribute !== undefined) attribute = <View style={this.prepareStyles(styles.style)}>{this.props.attribute}</View>;
     if (this.props.icon) icon = this.props.icon;
 
     if (this.props.toggle) {
