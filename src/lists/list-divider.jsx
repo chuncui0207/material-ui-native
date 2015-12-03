@@ -47,18 +47,8 @@ const ListDivider = React.createClass({
       ...other,
     } = this.props;
 
-    const mergedStyles = this.mergeStyles({
-      margin: 0,
-      marginTop: -1,
-      marginLeft: inset ? 72 : 0,
-      height: 1,
-      border: 'none',
-      backgroundColor: this.state.muiTheme.rawTheme.palette.borderColor,
-    }, style);
-
-    return (
+    return;
       //<hr {...other} style={this.prepareStyles(mergedStyles)} />
-    );
   },
 });
 

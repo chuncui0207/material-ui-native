@@ -84,14 +84,15 @@ const LinkMenuItem = React.createClass({
   },
 
   render() {
-    let onClickHandler = (this.props.disabled) ? this._stopLink : undefined;
+    // let onClickHandler = (this.props.disabled) ? this._stopLink : undefined;
     // Prevent context menu 'Open In New Tab/Window'
     let linkAttribute = (this.props.disabled) ? 'data-href' : 'href';
     let link = {};
     link[linkAttribute] = this.props.payload;
 
-    let styles = this.getStyles();
+    //let styles = this.getStyles();
 
+    /*
     let linkStyles =
       this.prepareStyles(
         styles.root,
@@ -101,8 +102,7 @@ const LinkMenuItem = React.createClass({
         this.props.style,
         this.props.disabled && styles.rootWhenDisabled);
 
-    return (
-      /*<a
+      <a
         key={this.props.index}
         target={this.props.target}
         style={linkStyles} {...link}
@@ -112,7 +112,8 @@ const LinkMenuItem = React.createClass({
         onMouseLeave={this._handleMouseLeave}>
           {this.props.text}
       </a>*/
-    );
+
+    return;
   },
 
   _stopLink(event) {

@@ -7,7 +7,7 @@ import Colors from '../styles/colors';
 import Transitions from '../styles/transitions';
 import Typography from '../styles/typography';
 import EnhancedButton from '../enhanced-button';
-import IconButton from '../icon-button';
+// import IconButton from '../icon-button';
 // import OpenIcon from '../svg-icons/navigation/arrow-drop-up';
 // import CloseIcon from '../svg-icons/navigation/arrow-drop-down';
 import NestedList from './nested-list';

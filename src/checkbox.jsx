@@ -8,7 +8,6 @@ import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
 const {
-  View,
   StyleSheet,
 } = React;
 
@@ -132,28 +131,7 @@ const Checkbox = React.createClass({
         this.state.switched && styles.checkWhenSwitched,
         iconStyle,
         this.props.disabled && styles.checkWhenDisabled);
-
-    /*
-    let checkedElement = checkedIcon ? React.cloneElement(checkedIcon, {
-      style: this.mergeStyles(checkStyles, checkedIcon.props.style),
-    }) : React.createElement(CheckboxChecked, {
-      style: checkStyles,
-    });
-
-    let unCheckedElement = unCheckedIcon ? React.cloneElement(unCheckedIcon, {
-      style: this.mergeStyles(boxStyles, unCheckedIcon.props.style),
-    }) : React.createElement(CheckboxOutline, {
-      style: boxStyles,
-    });
-
-    let checkboxElement = (
-      <View>
-        {unCheckedElement}
-        {checkedElement}
-      </View>
-    );
-    */
-
+    let checkboxElement;
     let rippleColor = this.state.switched ? checkStyles.fill : boxStyles.fill;
     let mergedIconStyle = this.mergeStyles(styles.icon, iconStyle);
 

@@ -97,8 +97,8 @@ const CalendarToolbar = React.createClass({
       year: 'numeric',
     }).format(displayDate);
 
-    const nextButtonIcon; //= this.state.muiTheme.isRtl ? <NavigationChevronRight /> : <NavigationChevronLeft />;
-    const prevButtonIcon; //= this.state.muiTheme.isRtl ? <NavigationChevronLeft /> : <NavigationChevronRight />;
+    let nextButtonIcon;//= this.state.muiTheme.isRtl ? <NavigationChevronRight /> : <NavigationChevronLeft />;
+    let prevButtonIcon;//= this.state.muiTheme.isRtl ? <NavigationChevronLeft /> : <NavigationChevronRight />;
 
     return (
       <Toolbar className="mui-date-picker-calendar-toolbar" style={styles.root} noGutter={true}>

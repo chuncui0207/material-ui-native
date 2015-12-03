@@ -7,10 +7,6 @@ import Paper from './paper';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
-const {
-  View,
-} = React;
-
 const VIEWBOX_SIZE = 32;
 const RefreshIndicator = React.createClass({
   mixins: [StylePropable],
@@ -85,27 +81,7 @@ const RefreshIndicator = React.createClass({
   },
 
   _renderChildren() {
-    const paperSize = this._getPaperSize();
-    let childrenCmp = null;
-    if (this.props.status !== 'ready') {
-      const circleStyle = this._getCircleStyle(paperSize);
-      childrenCmp = (
-        <View ref="wrapper" style={this.prepareStyles({
-          transition: Transitions.create('transform', '20s', null, 'linear'),
-          width: '100%',
-          height: '100%',
-        })}
-        >
-        </View>
-      );
-    } else {
-      const circleStyle = this._getCircleStyle(paperSize);
-      const polygonStyle = this._getPolygonStyle(paperSize);
-      childrenCmp = (
-      );
-    }
-
-    return childrenCmp;
+    return;
   },
 
   _getTheme() {

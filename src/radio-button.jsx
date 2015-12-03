@@ -108,22 +108,9 @@ const RadioButton = React.createClass({
     } = this.props;
 
     let styles = this.getStyles();
-    let onStyles =
-      this.mergeStyles(
-        styles.target,
-        this.props.checked && styles.targetWhenChecked,
-        this.props.iconStyle,
-        this.props.disabled && styles.targetWhenDisabled);
-    let offStyles =
-      this.mergeStyles(
-        styles.fill,
-        this.props.checked && styles.fillWhenChecked,
-        this.props.iconStyle,
-        this.props.disabled && styles.fillWhenDisabled);
 
     let radioButtonElement = (
-      <View>
-      </View>
+      <View/>
     );
 
     let rippleColor = this.props.checked ? this.getTheme().checkedColor : this.getTheme().borderColor;
