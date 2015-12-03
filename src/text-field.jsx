@@ -363,12 +363,8 @@ const TextField = React.createClass({
       );
     }
 
-    let underlineElement = this.props.disabled ? (
-      <View style={this.prepareStyles(styles.underlineAfter)}/>
-    ) : (
-      <hr style={this.prepareStyles(styles.underline)}/>
-    );
-    let focusUnderlineElement = <hr style={this.prepareStyles(styles.focusUnderline)} />;
+    let underlineElement; // = <View style={this.prepareStyles(styles.underlineAfter)}/>
+    let focusUnderlineElement; // = <hr style={this.prepareStyles(styles.focusUnderline)} />;
 
     return (
       <View className={className} style={this.prepareStyles(styles.root, this.props.style)}>
