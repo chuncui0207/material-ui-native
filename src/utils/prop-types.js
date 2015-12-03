@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 
 const horizontal = React.PropTypes.oneOf(['left', 'middle', 'right']);
 const vertical = React.PropTypes.oneOf(['top', 'center', 'bottom']);

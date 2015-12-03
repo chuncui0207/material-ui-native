@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import ThemeManager from '../styles/theme-manager';
 import ColorManipulator from '../utils/color-manipulator';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';

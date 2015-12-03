@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import createFragment from 'react-addons-create-fragment';
 
 export default {

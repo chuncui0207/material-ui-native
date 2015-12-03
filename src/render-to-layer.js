@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import ReactDOM from 'react-dom';
 import Events from './utils/events';
 import Dom from './utils/dom';
