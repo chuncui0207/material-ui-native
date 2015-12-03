@@ -102,7 +102,7 @@ const Tabs = React.createClass({
       tabItemContainer: {
         margin: 0,
         padding: 0,
-        width: '100%',
+        //width: '100%',
         height: 48,
         backgroundColor: themeVariables.backgroundColor,
         whiteSpace: 'nowrap',

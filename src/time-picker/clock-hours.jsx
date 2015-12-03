@@ -197,8 +197,8 @@ const ClockHours = React.createClass({
   render() {
     let styles = StyleSheet.create({
       root: {
-        height: '100%',
-        width: '100%',
+        //height: '100%',
+        //width: '100%',
         borderRadius: '100%',
         position: 'relative',
         pointerEvents: 'none',
@@ -206,8 +206,8 @@ const ClockHours = React.createClass({
       },
 
       hitMask: {
-        height: '100%',
-        width: '100%',
+        //height: '100%',
+        //width: '100%',
         pointerEvents: 'auto',
       },
     });

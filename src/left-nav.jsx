@@ -153,7 +153,7 @@ const LeftNav = React.createClass({
     let x = this._getTranslateMultiplier() * (this.state.open ? 0 : this._getMaxTranslateX());
     let styles = StyleSheet.create({
       root: {
-        height: '100%',
+        //height: '100%',
         width: this.getTheme().width,
         position: 'fixed',
         //zIndex: 10,
@@ -167,7 +167,7 @@ const LeftNav = React.createClass({
       menu: {
         overflowY: 'auto',
         overflowX: 'hidden',
-        height: '100%',
+        //height: '100%',
         borderRadius: '0',
       },
       overlay: {

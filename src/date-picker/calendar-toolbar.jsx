@@ -24,7 +24,7 @@ const styles = {
     lineHeight: '14px',
     fontSize: 14,
     height: 14,
-    width: '100%',
+    //width: '100%',
     fontWeight: '500',
     textAlign: 'center',
   },

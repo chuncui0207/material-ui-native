@@ -98,7 +98,7 @@ const Calendar = React.createClass({
         fontSize: 12,
       },
       calendarContainer: {
-        width: isLandscape ? 320 : '100%',
+        //width: isLandscape ? 320 : '100%',
         height: weekCount === 5 ? 284 :
           weekCount === 6 ? 324 : 244,
         float: isLandscape ? 'right' : 'none',

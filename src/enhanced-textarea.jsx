@@ -8,13 +8,13 @@ const rowsHeight = 24;
 
 const styles = {
   textarea: {
-    width: '100%',
+    //width: '100%',
     resize: 'none',
     font: 'inherit',
     padding: 0,
   },
   shadow: {
-    width: '100%',
+    //width: '100%',
     resize: 'none',
     // Overflow also needed to here to remove the extra row
     // added to textareas in Firefox.

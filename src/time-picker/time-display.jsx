@@ -93,7 +93,7 @@ const TimeDisplay = React.createClass({
         textAlign: 'center',
         position: 'relative',
         width: 280,
-        height: '100%',
+        //height: '100%',
       },
 
       time: {

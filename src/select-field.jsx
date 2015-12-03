@@ -90,14 +90,14 @@ const SelectField = React.createClass({
       root: {
         height: 46,
         position: 'relative',
-        width: '100%',
+        //width: '100%',
         top: 16,
         fontSize: 16,
       },
       label: {
         paddingLeft: 0,
         top: 4,
-        width: '100%',
+        //width: '100%',
       },
       icon: {
         top: 20,

@@ -65,7 +65,7 @@ const SlideIn = React.createClass({
     let mergedRootStyles = this.prepareStyles({
       position: 'relative',
       overflow: 'hidden',
-      height: '100%',
+      //height: '100%',
     }, style);
 
     let newChildren = React.Children.map(children, (child) => {

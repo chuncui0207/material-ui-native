@@ -64,7 +64,7 @@ const CardMedia = React.createClass({
         left: 0,
       },
       overlay: {
-        height: '100%',
+        //height: '100%',
         position: 'relative',
       },
       overlayContent: {
@@ -78,9 +78,9 @@ const CardMedia = React.createClass({
       media: {},
       mediaChild: {
         verticalAlign: 'top',
-        maxWidth: '100%',
-        minWidth: '100%',
-        width:'100%',
+        //maxWidth: '100%',
+        //minWidth: '100%',
+        //width:'100%',
       },
     };
   },

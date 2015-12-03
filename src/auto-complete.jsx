@@ -105,7 +105,7 @@ const AutoComplete = React.createClass({
       root: {
         //display: 'inline-block',
         position: 'relative',
-        width: this.props.fullWidth ? '100%' : 256,
+        //width: this.props.fullWidth ? '100%' : 256,
       },
       input: {
       },
@@ -114,11 +114,11 @@ const AutoComplete = React.createClass({
       menu: {
         top: this.props.floatingLabelText ? 64 : 40,
         left: 0,
-        width: '100%',
+        //width: '100%',
       },
       list: {
         //display: 'block',
-        width: this.props.fullWidth ? '100%' : 256,
+        //width: this.props.fullWidth ? '100%' : 256,
       },
     });
 
@@ -208,7 +208,7 @@ const AutoComplete = React.createClass({
            onKeyDown={this._handleKeyDown}>
         <View
           style={{
-            width:'100%',
+            //width:'100%',
           }}>
           <TextField
             {...other}

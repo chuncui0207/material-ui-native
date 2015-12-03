@@ -11,7 +11,6 @@ const TabTemplate = React.createClass({
     let styles = StyleSheet.create({
       'height': 0,
       'overflow': 'hidden',
-      'width': '100%',
       'position': 'relative',
       'textAlign': 'initial',
     });

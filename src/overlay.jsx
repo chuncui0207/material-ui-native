@@ -83,8 +83,8 @@ const Overlay = React.createClass({
     let styles = StyleSheet.create({
       root: {
         position: 'fixed',
-        height: '100%',
-        width: '100%',
+        //height: '100%',
+        //width: '100%',
         //zIndex: 9,
         top: 0,
         left: '-100%',

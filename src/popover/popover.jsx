@@ -119,7 +119,7 @@ const Popover = React.createClass({
       //zIndex: 20,
       opacity:1,
       overflow:'auto',
-      maxHeight:'100%',
+      //maxHeight:'100%',
       transform:'scale(0,0)',
       transformOrigin: `${horizontal} ${targetOrigin.vertical}`,
       transition: animated ? Transitions.easeOut('500ms', ['transform', 'opacity']) : null,
@@ -127,7 +127,7 @@ const Popover = React.createClass({
     wrapperStyle = this.mergeAndPrefix(wrapperStyle, this.props.style);
 
     let horizontalAnimation = {
-      maxHeight:'100%',
+      //maxHeight:'100%',
       overflowY:'auto',
       transform:'scaleX(0)',
       opacity:1,

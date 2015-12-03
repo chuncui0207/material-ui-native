@@ -78,7 +78,7 @@ const Toggle = React.createClass({
       },
       track: {
         transition: Transitions.easeOut(),
-        width: '100%',
+        //width: '100%',
         height: 14,
         borderRadius: 30,
         backgroundColor: this.getTheme().trackOffColor,

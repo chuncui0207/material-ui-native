@@ -146,13 +146,13 @@ const Slider = React.createClass({
         position: 'absolute',
         top: (this.getTheme().handleSizeActive - this.getTheme().trackSize) / 2,
         left: 0,
-        width: '100%',
+        //width: '100%',
         height: this.getTheme().trackSize,
       },
       filledAndRemaining: {
         position: 'absolute',
         top: 0,
-        height: '100%',
+        //height: '100%',
         transition: Transitions.easeOut(null, 'margin'),
       },
       handle: {
@@ -214,8 +214,8 @@ const Slider = React.createClass({
         left: -this.getTheme().trackSize,
       },
       rippleInner: {
-        height: '300%',
-        width: '300%',
+        //height: '300%',
+        //width: '300%',
         top: -this.getTheme().handleSize,
         left: -this.getTheme().handleSize,
       },

@@ -55,7 +55,7 @@ const Toolbar = React.createClass({
       WebkitTapHighlightColor: 'rgba(0,0,0,0)',
       backgroundColor: this.getTheme().backgroundColor,
       height: this.getTheme().height,
-      width: '100%',
+      //width: '100%',
       padding: this.props.noGutter ? 0 : '0px ' + this.state.muiTheme.rawTheme.spacing.desktopGutter + 'px',
     }, this.props.style);
   },

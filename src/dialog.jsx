@@ -168,8 +168,8 @@ const DialogInline = React.createClass({
       //zIndex: 10,
       top: 0,
       left: -10000,
-      width: '100%',
-      height: '100%',
+      //width: '100%',
+      //height: '100%',
       transition: Transitions.easeOut('0ms', 'left', '450ms'),
     };
 
@@ -178,7 +178,7 @@ const DialogInline = React.createClass({
       WebkitTapHighlightColor: 'rgba(0,0,0,0)',
       transition: Transitions.easeOut(),
       position: 'relative',
-      width: '75%',
+      //width: '75%',
       maxWidth: spacing.desktopKeylineIncrement * 12,
       margin: '0 auto',
       //zIndex: 10,
@@ -298,7 +298,7 @@ const DialogInline = React.createClass({
       WebkitTapHighlightColor: 'rgba(0,0,0,0)',
       padding: 8,
       marginBottom: 8,
-      width: '100%',
+      //width: '100%',
       textAlign: 'right',
     };
 

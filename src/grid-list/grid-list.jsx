@@ -83,12 +83,12 @@ const GridList = React.createClass({
     const mergedRootStyles = this.mergeStyles(styles.root, style);
 
     const wrappedChildren = React.Children.map(children, (currentChild) => {
-      const childCols = currentChild.props.cols || 1;
-      const childRows = currentChild.props.rows || 1;
-      const itemStyle = this.mergeStyles(styles.item, {
-        width: (100 / cols * childCols) + '%',
+      //const childCols = currentChild.props.cols || 1;
+      //const childRows = currentChild.props.rows || 1;
+      const itemStyle = '';/*this.mergeStyles(styles.item, {
+        //width: (100 / cols * childCols) + '%',
         height: cellHeight * childRows + padding,
-      });
+      });*/
 
       return <View style={this.prepareStyles(itemStyle)}>{currentChild}</View>;
     });

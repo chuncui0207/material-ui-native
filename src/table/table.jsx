@@ -82,7 +82,7 @@ const Table = React.createClass({
       root: {
         backgroundColor: this.getTheme().backgroundColor,
         padding: '0 ' + this.state.muiTheme.rawTheme.spacing.desktopGutter + 'px',
-        width: '100%',
+        //width: '100%',
         borderCollapse: 'collapse',
         borderSpacing: 0,
         tableLayout: 'fixed',

@@ -67,7 +67,7 @@ const ScaleIn = React.createClass({
     const mergedRootStyles = this.prepareStyles({
       position: 'relative',
       overflow: 'hidden',
-      height: '100%',
+      //height: '100%',
     }, style);
 
     const newChildren = React.Children.map(children, (child) => {

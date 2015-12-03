@@ -89,7 +89,7 @@ const ClockPointer = React.createClass({
 
     let styles = StyleSheet.create({
       root: {
-        height: '30%',
+        //height: '30%',
         background: this.getTheme().accentColor,
         width: 2,
         left: 'calc(50% - 1px)',

@@ -110,13 +110,13 @@ const DropDownMenu = React.createClass({
       control: {
         cursor: disabled ? 'not-allowed' : 'pointer',
         position: 'static',
-        height: '100%',
+        //height: '100%',
       },
       controlBg: {
         transition: Transitions.easeOut(),
         backgroundColor: backgroundColor,
-        height: '100%',
-        width: '100%',
+        //height: '100%',
+        //width: '100%',
         opacity: 0,
       },
       icon: {
@@ -154,8 +154,8 @@ const DropDownMenu = React.createClass({
         top: spacing.desktopToolbarHeight / 2,
       },
       overlay: {
-        height: '100%',
-        width: '100%',
+        //height: '100%',
+        //width: '100%',
         position: 'fixed',
         top: 0,
         left: 0,

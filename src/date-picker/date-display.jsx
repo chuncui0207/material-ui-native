@@ -99,7 +99,7 @@ const DateDisplay = React.createClass({
           height: isLandscape ? 76 : 38,
           opacity: this.state.selectedYear ? 0.7 : 1.0,
           transition: Transitions.easeOut(),
-          width: '100%',
+          //width: '100%',
         },
 
         title: {

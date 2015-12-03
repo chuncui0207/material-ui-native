@@ -96,7 +96,7 @@ const AppBar = React.createClass({
       root: {
         position: 'relative',
         //zIndex: 5,
-        width: '100%',
+        //width: '100%',
         //display: 'flex',
         minHeight: themeVariables.height,
         backgroundColor: themeVariables.color,

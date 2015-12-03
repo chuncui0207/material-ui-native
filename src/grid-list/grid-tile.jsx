@@ -79,7 +79,7 @@ const GridTile = React.createClass({
       root: {
         position: 'relative',
         //display: 'block',
-        height: '100%',
+        //height: '100%',
         overflow: 'hidden',
       },
       titleBar: {
@@ -115,7 +115,7 @@ const GridTile = React.createClass({
         order: actionPos === 'left' ? -1 : 1,
       },
       childImg: {
-        height: '100%',
+        //height: '100%',
         transform: 'translateX(-50%)',
         position: 'relative',
         left: '50%',

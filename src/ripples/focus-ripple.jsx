@@ -55,8 +55,8 @@ const FocusRipple = React.createClass({
     } = this.props;
 
     const mergedRootStyles = this.mergeStyles({
-      height: '100%',
-      width: '100%',
+      //height: '100%',
+      //width: '100%',
       position: 'absolute',
       top: 0,
       left: 0,
@@ -82,8 +82,8 @@ const FocusRipple = React.createClass({
 
     const innerStyles = this.mergeAndPrefix({
       position: 'absolute',
-      height: '100%',
-      width: '100%',
+      //height: '100%',
+      //width: '100%',
       borderRadius: '50%',
       opacity: opacity ? opacity : 0.16,
       backgroundColor: color,
