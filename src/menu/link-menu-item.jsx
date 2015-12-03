@@ -102,7 +102,7 @@ const LinkMenuItem = React.createClass({
         this.props.disabled && styles.rootWhenDisabled);
 
     return (
-      <a
+      /*<a
         key={this.props.index}
         target={this.props.target}
         style={linkStyles} {...link}
@@ -111,7 +111,7 @@ const LinkMenuItem = React.createClass({
         onMouseEnter={this._handleMouseEnter}
         onMouseLeave={this._handleMouseLeave}>
           {this.props.text}
-      </a>
+      </a>*/
     );
   },
 
