@@ -4,7 +4,7 @@ import PureRenderMixin from 'react-addons-pure-render-mixin';
 import StylePropable from '../mixins/style-propable';
 import Colors from '../styles/colors';
 import Popover from '../popover/popover';
-import CheckIcon from '../svg-icons/navigation/check';
+// import CheckIcon from '../svg-icons/navigation/check';
 import ListItem from '../lists/list-item';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
@@ -151,7 +151,7 @@ const MenuItem = React.createClass({
     let mergedInnerDivStyles = this.mergeStyles(styles.innerDivStyle, innerDivStyle);
 
     //Left Icon
-    let leftIconElement = leftIcon ? leftIcon : checked ? <CheckIcon /> : null;
+    let leftIconElement; // = leftIcon ? leftIcon : checked ? <CheckIcon /> : null;
     if (leftIconElement && desktop) {
       const mergedLeftIconStyles = this.mergeStyles(styles.leftIconDesktop, leftIconElement.props.style);
       leftIconElement = React.cloneElement(leftIconElement, {style: mergedLeftIconStyles});

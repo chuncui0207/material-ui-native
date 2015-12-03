@@ -1,7 +1,7 @@
 import React from 'react-native';
 import Extend from '../utils/extend';
-import OpenIcon from '../svg-icons/hardware/keyboard-arrow-up';
-import CloseIcon from '../svg-icons/hardware/keyboard-arrow-down';
+// import OpenIcon from '../svg-icons/hardware/keyboard-arrow-up';
+// import CloseIcon from '../svg-icons/hardware/keyboard-arrow-down';
 import IconButton from '../icon-button';
 import StylePropable from '../mixins/style-propable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
@@ -84,10 +84,10 @@ const CardExpandable = React.createClass({
     let styles = this.getStyles();
 
     let expandable;
-    if (this.props.expanded === true)
-      expandable = <OpenIcon/>;
-    else
-      expandable = <CloseIcon/>;
+//    if (this.props.expanded === true)
+//      expandable = <OpenIcon/>;
+//    else
+//      expandable = <CloseIcon/>;
 
     let mergedStyles = this.mergeStyles(styles.root, this.props.style);
 

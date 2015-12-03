@@ -2,8 +2,8 @@ import React from 'react-native';
 import EnhancedSwitch from './enhanced-switch';
 import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';
-import CheckboxOutline from './svg-icons/toggle/check-box-outline-blank';
-import CheckboxChecked from './svg-icons/toggle/check-box';
+// import CheckboxOutline from './svg-icons/toggle/check-box-outline-blank';
+// import CheckboxChecked from './svg-icons/toggle/check-box';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
@@ -133,6 +133,7 @@ const Checkbox = React.createClass({
         iconStyle,
         this.props.disabled && styles.checkWhenDisabled);
 
+    /*
     let checkedElement = checkedIcon ? React.cloneElement(checkedIcon, {
       style: this.mergeStyles(checkStyles, checkedIcon.props.style),
     }) : React.createElement(CheckboxChecked, {
@@ -151,6 +152,7 @@ const Checkbox = React.createClass({
         {checkedElement}
       </View>
     );
+    */
 
     let rippleColor = this.state.switched ? checkStyles.fill : boxStyles.fill;
     let mergedIconStyle = this.mergeStyles(styles.icon, iconStyle);

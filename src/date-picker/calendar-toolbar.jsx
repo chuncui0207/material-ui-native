@@ -2,8 +2,8 @@ import React from 'react-native';
 import IconButton from '../icon-button';
 import Toolbar from '../toolbar/toolbar';
 import ToolbarGroup from '../toolbar/toolbar-group';
-import NavigationChevronLeft from '../svg-icons/navigation/chevron-left';
-import NavigationChevronRight from '../svg-icons/navigation/chevron-right';
+// import NavigationChevronLeft from '../svg-icons/navigation/chevron-left';
+// import NavigationChevronRight from '../svg-icons/navigation/chevron-right';
 import SlideInTransitionGroup from '../transition-groups/slide-in';
 import ThemeManager from '../styles/theme-manager';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
@@ -97,8 +97,8 @@ const CalendarToolbar = React.createClass({
       year: 'numeric',
     }).format(displayDate);
 
-    const nextButtonIcon = this.state.muiTheme.isRtl ? <NavigationChevronRight /> : <NavigationChevronLeft />;
-    const prevButtonIcon = this.state.muiTheme.isRtl ? <NavigationChevronLeft /> : <NavigationChevronRight />;
+    const nextButtonIcon; //= this.state.muiTheme.isRtl ? <NavigationChevronRight /> : <NavigationChevronLeft />;
+    const prevButtonIcon; //= this.state.muiTheme.isRtl ? <NavigationChevronLeft /> : <NavigationChevronRight />;
 
     return (
       <Toolbar className="mui-date-picker-calendar-toolbar" style={styles.root} noGutter={true}>

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';
 import KeyCode from './utils/key-code';
-import DropDownArrow from './svg-icons/navigation/arrow-drop-down';
+// import DropDownArrow from './svg-icons/navigation/arrow-drop-down';
 import Paper from './paper';
 import Menu from './menu/menu';
 import ClearFix from './clearfix';
@@ -241,7 +241,6 @@ const DropDownMenu = React.createClass({
             <View style={this.prepareStyles(styles.label, this.state.open && styles.labelWhenOpen, labelStyle)}>
               {displayValue}
             </View>
-            <DropDownArrow style={this.mergeStyles(styles.icon, iconStyle)}/>
             <View style={this.prepareStyles(styles.underline, underlineStyle)}/>
           </ClearFix>
 

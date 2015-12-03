@@ -96,41 +96,12 @@ const RefreshIndicator = React.createClass({
           height: '100%',
         })}
         >
-          <svg style={{
-            width: paperSize,
-            height: paperSize,
-          }}
-            viewBox={`0 0 ${VIEWBOX_SIZE} ${VIEWBOX_SIZE}`}
-          >
-            <circle ref="path"
-              style={this.prepareStyles(circleStyle.style, {
-                transition: Transitions.create('all', '1.5s', null, 'ease-in-out'),
-              })}
-              {...circleStyle.attr}
-            />
-          </svg>
         </View>
       );
     } else {
       const circleStyle = this._getCircleStyle(paperSize);
       const polygonStyle = this._getPolygonStyle(paperSize);
       childrenCmp = (
-        <svg style={{
-          width: paperSize,
-          height: paperSize,
-        }}
-          viewBox={`0 0 ${VIEWBOX_SIZE} ${VIEWBOX_SIZE}`}
-        >
-          <circle
-            style={this.prepareStyles(circleStyle.style)}
-            {...circleStyle.attr}
-          >
-          </circle>
-          <polygon
-            style={this.prepareStyles(polygonStyle.style)}
-            {...polygonStyle.attr}
-          />
-        </svg>
       );
     }
 

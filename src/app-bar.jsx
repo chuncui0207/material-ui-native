@@ -2,7 +2,7 @@ import React from 'react-native';
 import StylePropable from './mixins/style-propable';
 import Typography from './styles/typography';
 import IconButton from './icon-button';
-import NavigationMenu from './svg-icons/navigation/menu';
+// import NavigationMenu from './svg-icons/navigation/menu';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 import Paper from './paper';
@@ -190,7 +190,7 @@ const AppBar = React.createClass({
           </View>
         );
       } else {
-        let child = iconClassNameLeft ? '' : <NavigationMenu style={this.mergeStyles(styles.iconButton.iconStyle)}/>;
+        let child = '';//iconClassNameLeft ? '' : <NavigationMenu style={this.mergeStyles(styles.iconButton.iconStyle)}/>;
         menuElementLeft = (
           <IconButton
             style={this.mergeStyles(styles.iconButton.style)}

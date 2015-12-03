@@ -8,8 +8,8 @@ import Transitions from '../styles/transitions';
 import Typography from '../styles/typography';
 import EnhancedButton from '../enhanced-button';
 import IconButton from '../icon-button';
-import OpenIcon from '../svg-icons/navigation/arrow-drop-up';
-import CloseIcon from '../svg-icons/navigation/arrow-drop-down';
+// import OpenIcon from '../svg-icons/navigation/arrow-drop-up';
+// import CloseIcon from '../svg-icons/navigation/arrow-drop-down';
 import NestedList from './nested-list';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
@@ -301,12 +301,12 @@ const ListItem = React.createClass({
       };
 
       // Create a nested list indicator icon if we don't have an icon on the right
-      if (needsNestedIndicator) {
-        rightIconButtonElement = this.state.open ?
-          <IconButton><OpenIcon /></IconButton> :
-          <IconButton><CloseIcon /></IconButton>;
-        rightIconButtonHandlers.onTouchTap = this._handleNestedListToggle;
-      }
+//      if (needsNestedIndicator) {
+//        rightIconButtonElement; = this.state.open ?
+//          <IconButton><OpenIcon /></IconButton> :
+//          <IconButton><CloseIcon /></IconButton>;
+//        rightIconButtonHandlers.onTouchTap = this._handleNestedListToggle;
+//      }
 
       this._pushElement(
         contentChildren,

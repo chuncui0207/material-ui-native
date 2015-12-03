@@ -2,8 +2,8 @@ import React from 'react-native';
 import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';
 import EnhancedSwitch from './enhanced-switch';
-import RadioButtonOff from './svg-icons/toggle/radio-button-unchecked';
-import RadioButtonOn from './svg-icons/toggle/radio-button-checked';
+// import RadioButtonOff from './svg-icons/toggle/radio-button-unchecked';
+// import RadioButtonOn from './svg-icons/toggle/radio-button-checked';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
@@ -123,8 +123,6 @@ const RadioButton = React.createClass({
 
     let radioButtonElement = (
       <View>
-          <RadioButtonOff style={onStyles} />
-          <RadioButtonOn style={offStyles} />
       </View>
     );
 
