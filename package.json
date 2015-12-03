@@ -40,7 +40,7 @@
     "warning": "^2.1.0"
   },
   "peerDependencies": {
-    "react-native": "^0.14.0",
+    "react-native": "^0.13.0",
     "react-tap-event-plugin": "^0.2.0"
   },
   "devDependencies": {
