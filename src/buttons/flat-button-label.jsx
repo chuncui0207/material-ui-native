@@ -5,7 +5,7 @@ import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
 const {
-  View,
+  Text,
 } = React;
 
 const FlatButtonLabel = React.createClass({
@@ -70,7 +70,7 @@ const FlatButtonLabel = React.createClass({
     }, style);
 
     return (
-      <View style={this.prepareStyles(mergedRootStyles)}>{label}</View>
+      <Text style={this.prepareStyles(mergedRootStyles)}>{label}</Text>
     );
   },
 
