@@ -1,8 +1,8 @@
 {
-  "name": "material-ui",
-  "author": "Call-em-all Engineering Team",
-  "version": "0.13.4",
-  "description": "Material Design UI components built with React",
+  "name": "material-ui-native",
+  "author": "lenaten",
+  "version": "0.0.1",
+  "description": "Material Design UI components built with React Native",
   "main": "./lib",
   "scripts": {
     "test": "npm run test-base -- --single-run",
@@ -22,13 +22,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/callemall/material-ui.git"
+    "url": "https://github.com/lenaten/material-ui-native.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/callemall/material-ui/issues"
+    "url": "https://github.com/lenaten/material-ui-native/issues"
   },
-  "homepage": "http://material-ui.com/",
+  "homepage": "https://github.com/lenaten/material-ui-native.git",
   "dependencies": {
     "lodash.throttle": "~3.0.4",
     "lodash.debounce": "~3.1.1",
