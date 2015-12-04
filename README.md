@@ -11,7 +11,8 @@ Material-UI-Native is a set of [React Native](http://facebook.github.io/react/) 
 
 Material-UI-Native is available as an [npm package](https://www.npmjs.org/package/material-ui-native).
 ```sh
-npm install material-ui-native
+$ npm install babel-plugin-dev-expression
+$ npm install material-ui-native
 ```
 After npm install, you'll find all the .jsx files in the /src folder and their compiled versions in the /lib folder.
 
