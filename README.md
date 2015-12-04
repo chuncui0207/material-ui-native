@@ -41,3 +41,4 @@ module.exports = MyAwesomeReactComponent;
 - Card*
 
 ## License
+MIT
