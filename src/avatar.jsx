@@ -5,6 +5,7 @@ import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
 const {
+  Text,
   Image,
   View,
   StyleSheet,
@@ -112,7 +113,7 @@ const Avatar = React.createClass({
 
       return <View {...other} style={this.prepareStyles(styles.root, style)}>
         {iconElement}
-        {this.props.children}
+        <Text>{this.props.children}</Text>
       </View>;
     }
   },
