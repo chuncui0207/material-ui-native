@@ -1,5 +1,5 @@
 import React from '../../react-native';
-
+import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';
 import ClickAwayable from './mixins/click-awayable';
 import FlatButton from './flat-button';
@@ -15,6 +15,7 @@ const {
 const Snackbar = React.createClass({
 
   mixins: [
+    StylePropable,
     StyleResizable,
     ClickAwayable,
     ContextPure,
@@ -173,9 +174,9 @@ const Snackbar = React.createClass({
         //zIndex: 10,
         visibility: 'hidden',
         transform: 'translate3d(0, ' + desktopSubheaderHeight + 'px, 0)',
-        transition:
-          Transitions.easeOut('400ms', 'transform') + ',' +
-          Transitions.easeOut('400ms', 'visibility'),
+        //transition:
+        //  Transitions.easeOut('400ms', 'transform') + ',' +
+        //  Transitions.easeOut('400ms', 'visibility'),
       },
       rootWhenOpen: {
         visibility: 'visible',
@@ -186,7 +187,7 @@ const Snackbar = React.createClass({
         padding: '0 ' + desktopGutter + 'px',
         height: desktopSubheaderHeight,
         lineHeight: desktopSubheaderHeight + 'px',
-        borderRadius: isSmall ? 0 : 2,
+        //TODO: borderRadius: isSmall ? 0 : 2,
         //maxWidth: isSmall ? 'inherit' : 568,
         //minWidth: isSmall ? 'inherit' : 288,
         flexGrow: isSmall ? 1 : 0,
@@ -196,11 +197,11 @@ const Snackbar = React.createClass({
         fontSize: 14,
         color: textColor,
         opacity: 0,
-        transition: Transitions.easeOut('400ms', 'opacity'),
+        //transition: Transitions.easeOut('400ms', 'opacity'),
       },
       contentWhenOpen: {
         opacity: 1,
-        transition: Transitions.easeOut('500ms', 'opacity', '100ms'),
+        //transition: Transitions.easeOut('500ms', 'opacity', '100ms'),
       },
       action: {
         color: actionColor,

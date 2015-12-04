@@ -1,6 +1,6 @@
 import React from '../../../react-native';
 import Checkbox from '../checkbox';
-
+import StylePropable from '../mixins/style-propable';
 import TableHeaderColumn from './table-header-column';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
@@ -10,6 +10,9 @@ const {
 } = React;
 
 const TableHeader = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

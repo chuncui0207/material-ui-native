@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-
+import StylePropable from '../mixins/style-propable';
 import Transition from '../styles/transitions';
 import DateTime from '../utils/date-time';
 import EnhancedButton from '../enhanced-button';
@@ -12,6 +12,9 @@ const {
 } = React;
 
 const DayButton = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -69,8 +72,8 @@ const DayButton = React.createClass({
 
     let styles = StyleSheet.create({
       root: {
-        boxSizing: 'border-box',
-        WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+        //boxSizing:: 'border-box',
+        //TODO: WebkitTapHighlightColor: 'rgba(0,0,0,0)',
         position: 'relative',
         float: 'left',
         width: 41,
@@ -88,9 +91,9 @@ const DayButton = React.createClass({
         width: 36,
         top: 2,
         opacity: 0,
-        borderRadius: '50%',
+        //TODO: borderRadius: '50%',
         transform: 'scale(0)',
-        transition: Transition.easeOut(),
+        //transition: Transition.easeOut(),
         backgroundColor: this.getTheme().selectColor,
       },
     });

@@ -1,4 +1,4 @@
-import ReactDOM from 'react-dom';
+/*import ReactDOM from 'react-dom';*/
 import Events from '../utils/events';
 import Dom from '../utils/dom';
 
@@ -16,7 +16,7 @@ export default {
 
   _checkClickAway(event) {
     if (this.isMounted()) {
-      let el = ReactDOM.findDOMNode(this);
+/*      let el = ReactDOM.findDOMNode(this);*/
 
       // Check if the target is inside the current component
       if (event.target !== el &&

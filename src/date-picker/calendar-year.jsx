@@ -1,6 +1,6 @@
 import React from '../../../react-native';
-import ReactDOM from 'react-dom';
-
+/*import ReactDOM from 'react-dom';*/
+import StylePropable from '../mixins/style-propable';
 import Colors from '../styles/colors';
 import DateTime from '../utils/date-time';
 import YearButton from './year-button';
@@ -10,6 +10,9 @@ const {
 } = React;
 
 const CalendarYear = React.createClass({
+
+  mixins: [StylePropable],
+
   propTypes: {
     displayDate: React.PropTypes.object.isRequired,
     onYearTouchTap: React.PropTypes.func,
@@ -79,8 +82,8 @@ const CalendarYear = React.createClass({
   _scrollToSelectedYear() {
     if (this.refs.selectedYearButton === undefined) return;
 
-    let container = ReactDOM.findDOMNode(this);
-    let yearButtonNode = ReactDOM.findDOMNode(this.refs.selectedYearButton);
+/*    let container = ReactDOM.findDOMNode(this);*/
+/*    let yearButtonNode = ReactDOM.findDOMNode(this.refs.selectedYearButton);*/
 
     let containerHeight = container.clientHeight;
     let yearButtonNodeHeight = yearButtonNode.clientHeight || 32;

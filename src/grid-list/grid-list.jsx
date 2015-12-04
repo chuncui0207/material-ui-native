@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-
+import StylePropable from '../mixins/style-propable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
@@ -8,6 +8,9 @@ const {
 } = React;
 
 const GridList = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -59,7 +62,7 @@ const GridList = React.createClass({
         margin: -this.props.padding / 2,
       },
       item: {
-        boxSizing: 'border-box',
+        //boxSizing:: 'border-box',
         padding: this.props.padding / 2,
       },
     };

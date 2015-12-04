@@ -1,7 +1,7 @@
 import React from '../../../react-native';
-import ReactDOM from 'react-dom';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
-
+/*import ReactDOM from 'react-dom';*/
+/*import PureRenderMixin from 'react-addons-pure-render-mixin';*/
+import StylePropable from '../mixins/style-propable';
 import AutoPrefix from '../styles/auto-prefix';
 import Transitions from '../styles/transitions';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
@@ -13,7 +13,7 @@ const {
 
 const ScaleInChild = React.createClass({
 
-  mixins: [PureRenderMixin],
+  mixins: [/*PureRenderMixin, */StylePropable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -75,7 +75,7 @@ const ScaleInChild = React.createClass({
   },
 
   componentWillLeave(callback) {
-    let style = ReactDOM.findDOMNode(this).style;
+/*    let style = ReactDOM.findDOMNode(this).style;*/
 
     style.opacity = '0';
     AutoPrefix.set(style, 'transform', 'scale(' + this.props.minScale + ')');
@@ -99,7 +99,7 @@ const ScaleInChild = React.createClass({
       //width: '100%',
       top: 0,
       left: 0,
-      transition: Transitions.easeOut(null, ['transform', 'opacity']),
+      //transition: Transitions.easeOut(null, ['transform', 'opacity']),
     }, style);
 
     return (
@@ -110,14 +110,14 @@ const ScaleInChild = React.createClass({
   },
 
   _animate() {
-    let style = ReactDOM.findDOMNode(this).style;
+/*    let style = ReactDOM.findDOMNode(this).style;*/
 
     style.opacity = '1';
     AutoPrefix.set(style, 'transform', 'scale(' + this.props.maxScale + ')');
   },
 
   _initializeAnimation(callback) {
-    let style = ReactDOM.findDOMNode(this).style;
+/*    let style = ReactDOM.findDOMNode(this).style;*/
 
     style.opacity = '0';
     AutoPrefix.set(style, 'transform', 'scale(0)');

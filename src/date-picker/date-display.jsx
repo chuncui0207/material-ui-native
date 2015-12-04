@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-
+import StylePropable from '../mixins/style-propable';
 import Transitions from '../styles/transitions';
 import SlideInTransitionGroup from '../transition-groups/slide-in';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
@@ -10,6 +10,9 @@ const {
 } = React;
 
 const DateDisplay = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -95,12 +98,12 @@ const DateDisplay = React.createClass({
           lineHeight: '36px',
           height: isLandscape ? 76 : 38,
           opacity: this.state.selectedYear ? 0.7 : 1.0,
-          transition: Transitions.easeOut(),
+          //transition: Transitions.easeOut(),
           //width: '100%',
         },
 
         title: {
-          cursor: !this.state.selectedYear ? 'default' : 'pointer',
+          //TODO: cursor: !this.state.selectedYear ? 'default' : 'pointer',
         },
       },
 
@@ -112,12 +115,12 @@ const DateDisplay = React.createClass({
           lineHeight: '16px',
           height: 16,
           opacity: this.state.selectedYear ? 1.0 : 0.7,
-          transition: Transitions.easeOut(),
+          //transition: Transitions.easeOut(),
           marginBottom: 10,
         },
 
         title: {
-          cursor: (this.state.selectedYear && !this.props.disableYearSelection) ? 'pointer' : 'default',
+          //TODO: cursor: (this.state.selectedYear && !this.props.disableYearSelection) ? 'pointer' : 'default',
         },
       },
     };

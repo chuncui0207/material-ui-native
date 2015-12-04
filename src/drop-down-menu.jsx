@@ -1,6 +1,6 @@
 import React from '../../react-native';
-import ReactDOM from 'react-dom';
-
+/*import ReactDOM from 'react-dom';*/
+import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';
 import KeyCode from './utils/key-code';
 // import DropDownArrow from './svg-icons/navigation/arrow-drop-down';
@@ -15,6 +15,9 @@ const {
 } = React;
 
 const DropDownMenu = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -97,20 +100,20 @@ const DropDownMenu = React.createClass({
     let backgroundColor = this.state.muiTheme.menu.backgroundColor;
     let styles = {
       root: {
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
         position: 'relative',
         //display: 'inline-block',
         height: spacing.desktopSubheaderHeight,
         fontSize: spacing.desktopDropDownMenuFontSize,
-        outline: 'none',
+        //TODO: outline:: 'none',
       },
       control: {
-        cursor: disabled ? 'not-allowed' : 'pointer',
+        //TODO: cursor: disabled ? 'not-allowed' : 'pointer',
         position: 'static',
         //height: '100%',
       },
       controlBg: {
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
         backgroundColor: backgroundColor,
         //height: '100%',
         //width: '100%',
@@ -123,7 +126,7 @@ const DropDownMenu = React.createClass({
         fill: this.state.muiTheme.dropDownMenu.accentColor,
       },
       label: {
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
         lineHeight: spacing.desktopToolbarHeight + 'px',
         position: 'absolute',
         paddingLeft: spacing.desktopGutter,
@@ -254,8 +257,8 @@ const DropDownMenu = React.createClass({
   },
 
   _setWidth() {
-    let el = ReactDOM.findDOMNode(this);
-    let menuItemsDom = ReactDOM.findDOMNode(this.refs.menuItems);
+/*    let el = ReactDOM.findDOMNode(this);*/
+/*    let menuItemsDom = ReactDOM.findDOMNode(this.refs.menuItems);*/
     if (!this.props.style || !this.props.style.hasOwnProperty('width')) {
       el.style.width = 'auto';
       el.style.width = menuItemsDom.offsetWidth + 'px';

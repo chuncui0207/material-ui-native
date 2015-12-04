@@ -1,9 +1,9 @@
 import React from '../../../react-native';
-import ReactDOM from 'react-dom';
+/*import ReactDOM from 'react-dom';*/
 import CssEvent from '../utils/css-event';
 import KeyLine from '../utils/key-line';
 import KeyCode from '../utils/key-code';
-
+import StylePropable from '../mixins/style-propable';
 import Transitions from '../styles/transitions';
 import ClickAwayable from '../mixins/click-awayable';
 import Paper from '../paper';
@@ -23,7 +23,7 @@ const {
 ***********************/
 const NestedMenuItem = React.createClass({
 
-  mixins: [ClickAwayable],
+  mixins: [ClickAwayable, StylePropable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -74,7 +74,7 @@ const NestedMenuItem = React.createClass({
 
   componentDidMount() {
     this._positionNestedMenu();
-    ReactDOM.findDOMNode(this).focus();
+/*    ReactDOM.findDOMNode(this).focus();*/
   },
 
   componentDidUpdate() {
@@ -89,7 +89,7 @@ const NestedMenuItem = React.createClass({
     let styles = StyleSheet.create({
       root: {
         userSelect: 'none',
-        cursor: 'pointer',
+        //TODO: cursor: 'pointer',
         lineHeight: this.getTheme().height + 'px',
         color: this.state.muiTheme.rawTheme.palette.textColor,
       },
@@ -110,7 +110,7 @@ const NestedMenuItem = React.createClass({
         color: this.getTheme().selectedTextColor,
       },
       rootWhenDisabled: {
-        cursor: 'default',
+        //TODO: cursor: 'default',
         color: this.state.muiTheme.rawTheme.palette.disabledColor,
       },
     });
@@ -179,8 +179,8 @@ const NestedMenuItem = React.createClass({
   },
 
   _positionNestedMenu() {
-    let el = ReactDOM.findDOMNode(this);
-    let nestedMenu = ReactDOM.findDOMNode(this.refs.nestedMenu);
+/*    let el = ReactDOM.findDOMNode(this);*/
+/*    let nestedMenu = ReactDOM.findDOMNode(this.refs.nestedMenu);*/
     nestedMenu.style.left = el.offsetWidth + 'px';
   },
 
@@ -190,7 +190,7 @@ const NestedMenuItem = React.createClass({
 
   _closeNestedMenu() {
     this.setState({open: false});
-    ReactDOM.findDOMNode(this).focus();
+/*    ReactDOM.findDOMNode(this).focus();*/
   },
 
   _onParentItemTap() {
@@ -216,6 +216,9 @@ const NestedMenuItem = React.createClass({
 * Menu Component
 ****************/
 const Menu = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -270,7 +273,7 @@ const Menu = React.createClass({
   },
 
   componentDidMount() {
-    let el = ReactDOM.findDOMNode(this);
+/*    let el = ReactDOM.findDOMNode(this);*/
 
     //Set the menu width
     this._setKeyWidth(el);
@@ -292,7 +295,7 @@ const Menu = React.createClass({
     this.setState({muiTheme: newMuiTheme});
 
     //Set the menu width
-    this._setKeyWidth(ReactDOM.findDOMNode(this));
+/*    this._setKeyWidth(ReactDOM.findDOMNode(this));*/
   },
 
   getTheme() {
@@ -309,8 +312,8 @@ const Menu = React.createClass({
         backgroundColor: this.getTheme().containerBackgroundColor,
         paddingTop: this.getSpacing().desktopGutterMini,
         paddingBottom: this.getSpacing().desktopGutterMini,
-        transition: Transitions.easeOut(null, 'height'),
-        outline:'none !important',
+        //transition: Transitions.easeOut(null, 'height'),
+        //TODO: outline::'none !important',
       },
       subheader: {
         paddingLeft: this.state.muiTheme.menuSubheader.padding,
@@ -481,8 +484,8 @@ const Menu = React.createClass({
   },
 
   _expandHideableMenu() {
-    let el = ReactDOM.findDOMNode(this);
-    let container = ReactDOM.findDOMNode(this.refs.paperContainer);
+/*    let el = ReactDOM.findDOMNode(this);*/
+/*    let container = ReactDOM.findDOMNode(this.refs.paperContainer);*/
     let padding = this.getSpacing().desktopGutterMini;
     let height = this._getHiddenMenuHeight(el, padding);
 
@@ -531,8 +534,8 @@ const Menu = React.createClass({
   },
 
   _collapseHideableMenu() {
-    let el = ReactDOM.findDOMNode(this);
-    let container = ReactDOM.findDOMNode(this.refs.paperContainer);
+/*    let el = ReactDOM.findDOMNode(this);*/
+/*    let container = ReactDOM.findDOMNode(this.refs.paperContainer);*/
     let originalOpacity = el.style.opacity;
 
     //Add transition

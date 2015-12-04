@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-
+import StylePropable from '../mixins/style-propable';
 import FontIcon from '../font-icon';
 import Toggle from '../toggle';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
@@ -18,6 +18,9 @@ const Types = {
 
 
 const MenuItem = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -106,7 +109,7 @@ const MenuItem = React.createClass({
     let styles = StyleSheet.create({
       root: {
         userSelect: 'none',
-        cursor: 'pointer',
+        //TODO: cursor: 'pointer',
         lineHeight: this.getTheme().height + 'px',
         paddingLeft: this.getTheme().padding,
         paddingRight: this.getTheme().padding,
@@ -152,7 +155,7 @@ const MenuItem = React.createClass({
         color: this.getTheme().selectedTextColor,
       },
       rootWhenDisabled: {
-        cursor: 'default',
+        //TODO: cursor: 'default',
         color: this.state.muiTheme.rawTheme.palette.disabledColor,
       },
     });

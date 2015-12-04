@@ -1,6 +1,6 @@
 import React from '../../../react-native';
-import ReactDOM from 'react-dom';
-
+/*import ReactDOM from 'react-dom';*/
+import StylePropable from '../mixins/style-propable';
 import Events from '../utils/events';
 import PropTypes from '../utils/prop-types';
 import Menu from '../menus/menu';
@@ -14,6 +14,9 @@ const {
 } = React;
 
 const IconMenu = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -183,7 +186,7 @@ const IconMenu = React.createClass({
       //Set focus on the icon button when the menu close
       if (isKeyboard) {
         let iconButton = this.refs[this.state.iconButtonRef];
-        ReactDOM.findDOMNode(iconButton).focus();
+/*        ReactDOM.findDOMNode(iconButton).focus();*/
         iconButton.setKeyboardFocus();
       }
     });

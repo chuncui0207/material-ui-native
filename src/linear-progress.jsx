@@ -1,6 +1,6 @@
 import React from '../../react-native';
-import ReactDOM from 'react-dom';
-
+/*import ReactDOM from 'react-dom';*/
+import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
@@ -11,6 +11,9 @@ const {
 } = React;
 
 const LinearProgress = React.createClass({
+
+  mixins: [StylePropable],
+
   propTypes: {
     mode: React.PropTypes.oneOf(['determinate', 'indeterminate']),
     value: React.PropTypes.number,
@@ -60,8 +63,8 @@ const LinearProgress = React.createClass({
   },
 
   componentDidMount() {
-    let bar1 = ReactDOM.findDOMNode(this.refs.bar1);
-    let bar2 = ReactDOM.findDOMNode(this.refs.bar2);
+/*    let bar1 = ReactDOM.findDOMNode(this.refs.bar1);*/
+/*    let bar2 = ReactDOM.findDOMNode(this.refs.bar2);*/
 
     this._barUpdate(0, bar1, [
       [-35, 100],
@@ -123,7 +126,7 @@ const LinearProgress = React.createClass({
         //display: 'block',
         //width: '100%',
         backgroundColor: this.getTheme().primary3Color,
-        borderRadius: 2,
+        //TODO: borderRadius: 2,
         margin: 0,
         overflow: 'hidden',
       },
@@ -140,8 +143,8 @@ const LinearProgress = React.createClass({
         backgroundColor: this.props.color || this.getTheme().primary1Color,
         top: 0,
         left: 0,
-        bottom: 0
-        //transition: Transitions.create('all', '840ms', null, 'cubic-bezier(0.650, 0.815, 0.735, 0.395)'),
+        bottom: 0,
+        ////transition: Transitions.create('all', '840ms', null, 'cubic-bezier(0.650, 0.815, 0.735, 0.395)'),
       };
 
       styles.barFragment2 = {
@@ -149,8 +152,8 @@ const LinearProgress = React.createClass({
         backgroundColor: this.props.color || this.getTheme().primary1Color,
         top: 0,
         left: 0,
-        bottom: 0
-        //transition: Transitions.create('all', '840ms', null, 'cubic-bezier(0.165, 0.840, 0.440, 1.000)'),
+        bottom: 0,
+        ////transition: Transitions.create('all', '840ms', null, 'cubic-bezier(0.165, 0.840, 0.440, 1.000)'),
       };
     }
     else {

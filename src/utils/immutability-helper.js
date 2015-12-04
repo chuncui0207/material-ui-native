@@ -1,9 +1,9 @@
-import update from 'react-addons-update';
+// TODO: import update from 'react-addons-update';
 
 function mergeSingle(objA, objB) {
   if (!objA) return objB;
   if (!objB) return objA;
-  return update(objA, {$merge: objB});
+  return //update(objA, {$merge: objB});
 }
 
 export default {
@@ -23,16 +23,16 @@ export default {
   mergeItem(obj, key, newValueObject) {
     let command = {};
     command[key] = {$merge: newValueObject};
-    return update(obj, command);
+    return //update(obj, command);
   },
 
   push(array, obj) {
     const newObj = Array.isArray(obj) ? obj : [obj];
-    return update(array, {$push: newObj});
+    return //update(array, {$push: newObj});
   },
 
   shift(array) {
-    return update(array, {$splice: [[0, 1]]});
+    return //update(array, {$splice: [[0, 1]]});
   },
 
 };

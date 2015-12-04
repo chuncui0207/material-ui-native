@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-
+import StylePropable from '../mixins/style-propable';
 import WindowListenable from '../mixins/window-listenable';
 import DateTime from '../utils/date-time';
 import DatePickerDialog from './date-picker-dialog';
@@ -13,7 +13,7 @@ const {
 
 const DatePicker = React.createClass({
 
-  mixins: [WindowListenable],
+  mixins: [StylePropable, WindowListenable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

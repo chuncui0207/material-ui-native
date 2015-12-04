@@ -1,5 +1,5 @@
 import React from '../../react-native';
-
+import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
@@ -9,6 +9,9 @@ const {
 } = React;
 
 const FontIcon = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -67,7 +70,7 @@ const FontIcon = React.createClass({
       fontSize: spacing.iconSize,
       //display: 'inline-block',
       userSelect: 'none',
-      transition: Transitions.easeOut(),
+      //transition: Transitions.easeOut(),
     }, style, {
       color: this.state.hovered ? onColor : offColor,
     });

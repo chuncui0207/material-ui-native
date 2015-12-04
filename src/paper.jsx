@@ -1,6 +1,6 @@
 import React from '../../react-native';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
-
+/*import PureRenderMixin from 'react-addons-pure-render-mixin';*/
+import StylePropable from './mixins/style-propable';
 import PropTypes from './utils/prop-types';
 import Transitions from './styles/transitions';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
@@ -12,7 +12,7 @@ const {
 
 const Paper = React.createClass({
 
-  mixins: [PureRenderMixin],
+  mixins: [/*PureRenderMixin, */StylePropable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -72,12 +72,12 @@ const Paper = React.createClass({
 
     const styles = {
       backgroundColor: this.state.muiTheme.paper.backgroundColor,
-      transition: transitionEnabled && Transitions.easeOut(),
-      boxSizing: 'border-box',
-      fontFamily: this.state.muiTheme.rawTheme.fontFamily,
-      WebkitTapHighlightColor: 'rgba(0,0,0,0)',
-      boxShadow: this._getZDepthShadows(zDepth),
-      borderRadius: circle ? '50%' : rounded ? '2px' : '0px',
+      //transition: transitionEnabled && Transitions.easeOut(),
+      //boxSizing:: 'border-box',
+      //fontFamily: this.state.muiTheme.rawTheme.fontFamily,
+      //TODO: WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+      //TODO: boxShadow: this._getZDepthShadows(zDepth),
+      //TODO: borderRadius: circle ? '50%' : rounded ? '2px' : '0px',
     };
 
     return (

@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-
+import StylePropable from '../mixins/style-propable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
@@ -8,6 +8,9 @@ const {
 } = React;
 
 const Toolbar = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -48,8 +51,8 @@ const Toolbar = React.createClass({
 
   getStyles() {
     return this.mergeStyles({
-      boxSizing: 'border-box',
-      WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+      //boxSizing:: 'border-box',
+      //TODO: WebkitTapHighlightColor: 'rgba(0,0,0,0)',
       backgroundColor: this.getTheme().backgroundColor,
       height: this.getTheme().height,
       //width: '100%',

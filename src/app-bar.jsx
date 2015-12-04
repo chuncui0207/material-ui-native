@@ -1,5 +1,5 @@
 import React from '../../react-native';
-
+import StylePropable from './mixins/style-propable';
 import Typography from './styles/typography';
 import IconButton from './icon-button';
 // import NavigationMenu from './svg-icons/navigation/menu';
@@ -14,6 +14,9 @@ const {
 } = React;
 
 const AppBar = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },

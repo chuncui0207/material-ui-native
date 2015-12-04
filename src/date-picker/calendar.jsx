@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-
+import StylePropable from '../mixins/style-propable';
 import WindowListenable from '../mixins/window-listenable';
 import DateTime from '../utils/date-time';
 import KeyCode from '../utils/key-code';
@@ -20,7 +20,7 @@ const {
 
 const Calendar = React.createClass({
 
-  mixins: [WindowListenable],
+  mixins: [StylePropable, WindowListenable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -102,7 +102,7 @@ const Calendar = React.createClass({
         height: weekCount === 5 ? 284 :
           weekCount === 6 ? 324 : 244,
         float: isLandscape ? 'right' : 'none',
-        transition: Transitions.easeOut('150ms', 'height'),
+        //transition: Transitions.easeOut('150ms', 'height'),
         overflow: 'hidden',
       },
       yearContainer: {

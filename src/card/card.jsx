@@ -1,6 +1,6 @@
 import React from '../../../react-native';
 import Paper from '../paper';
-
+import StylePropable from '../mixins/style-propable';
 import CardExpandable from './card-expandable';
 
 const {
@@ -8,6 +8,7 @@ const {
 } = React;
 
 const Card = React.createClass({
+  mixins:[StylePropable],
 
   getInitialState() {
     return {expanded: this.props.initiallyExpanded ? true : false};

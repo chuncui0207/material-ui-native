@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-
+import StylePropable from '../mixins/style-propable';
 import WindowListenable from '../mixins/window-listenable';
 import KeyCode from '../utils/key-code';
 import Clock from './clock';
@@ -14,7 +14,7 @@ const {
 
 const TimePickerDialog = React.createClass({
 
-  mixins: [WindowListenable],
+  mixins: [StylePropable, WindowListenable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

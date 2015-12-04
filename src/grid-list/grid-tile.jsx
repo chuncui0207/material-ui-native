@@ -1,6 +1,6 @@
 import React from '../../../react-native';
-import ReactDOM from 'react-dom';
-
+/*import ReactDOM from 'react-dom';*/
+import StylePropable from '../mixins/style-propable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
@@ -10,6 +10,9 @@ const {
 } = React;
 
 const GridTile = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -85,7 +88,7 @@ const GridTile = React.createClass({
         right: 0,
         [this.props.titlePosition]: 0,
         height: this.props.subtitle ? 68 : 48,
-        background: this.props.titleBackground,
+        //TODO: background: this.props.titleBackground,
         //display: 'flex',
         alignItems: 'center',
       },
@@ -130,7 +133,7 @@ const GridTile = React.createClass({
   },
 
   _ensureImageCover() {
-    let imgEl = ReactDOM.findDOMNode(this.refs.img);
+/*    let imgEl = ReactDOM.findDOMNode(this.refs.img);*/
 
     if (imgEl) {
       let fit = () => {

@@ -1,8 +1,8 @@
 import React from '../../../react-native';
-import ReactDOM from 'react-dom';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
-import ReactTransitionGroup from 'react-addons-transition-group';
-
+/*import ReactDOM from 'react-dom';*/
+/*import PureRenderMixin from 'react-addons-pure-render-mixin';*/
+/*import ReactTransitionGroup from 'react-addons-transition-group';*/
+import StylePropable from '../mixins/style-propable';
 import Dom from '../utils/dom';
 import ImmutabilityHelper from '../utils/immutability-helper';
 import CircleRipple from './circle-ripple';
@@ -13,7 +13,7 @@ const {
 
 const TouchRipple = React.createClass({
 
-  mixins: [PureRenderMixin],
+  mixins: [/*PureRenderMixin, */StylePropable],
 
   propTypes: {
     centerRipple: React.PropTypes.bool,
@@ -62,13 +62,14 @@ const TouchRipple = React.createClass({
         overflow: 'hidden',
       }, style);
 
-      rippleGroup = (
+      /*rippleGroup = (
         <ReactTransitionGroup style={mergedStyles}>
           {ripples}
         </ReactTransitionGroup>
-      );
+      );*/
     }
 
+        // TODO: {rippleGroup}
     return (
       <View
         onMouseUp={this._handleMouseUp}
@@ -76,7 +77,6 @@ const TouchRipple = React.createClass({
         onMouseLeave={this._handleMouseLeave}
         onTouchStart={this._handleTouchStart}
         onTouchEnd={this._handleTouchEnd}>
-        {rippleGroup}
         {children}
       </View>
     );
@@ -138,7 +138,7 @@ const TouchRipple = React.createClass({
 
   _getRippleStyle(e) {
     let style = {};
-    const el = ReactDOM.findDOMNode(this);
+/*    const el = ReactDOM.findDOMNode(this);*/
     const elHeight = el.offsetHeight;
     const elWidth = el.offsetWidth;
     const offset = Dom.offset(el);

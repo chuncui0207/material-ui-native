@@ -1,5 +1,5 @@
 import React from '../../react-native';
-
+import StylePropable from './mixins/style-propable';
 import Colors from './styles/colors';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
@@ -11,6 +11,9 @@ const {
 } = React;
 
 const Avatar = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -72,7 +75,7 @@ const Avatar = React.createClass({
         height: size,
         width: size,
         userSelect: 'none',
-        borderRadius: '50%',
+        //TODO: borderRadius: '50%',
         //display: 'inline-block',
       },
     });
@@ -84,7 +87,7 @@ const Avatar = React.createClass({
         styles.root = this.mergeStyles(styles.root, {
           height: size - 2,
           width: size - 2,
-          border: 'solid 1px ' + borderColor,
+          //TODO: border: 'solid 1px ' + borderColor,
         });
       }
 

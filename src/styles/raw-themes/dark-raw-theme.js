@@ -4,7 +4,7 @@ import Spacing from '../spacing';
 
 export default {
   spacing: Spacing,
-  fontFamily: 'Roboto, sans-serif',
+  //fontFamily: 'Roboto, sans-serif',
   palette: {
     primary1Color: Colors.cyan700,
     primary2Color: Colors.cyan700,

@@ -1,6 +1,6 @@
 import React from '../../../react-native';
 import ContextPure from '../mixins/context-pure';
-
+import StylePropable from '../mixins/style-propable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
@@ -10,7 +10,10 @@ const {
 
 const FlatButtonLabel = React.createClass({
 
-  mixins: [ContextPure],
+  mixins: [
+    ContextPure,
+    StylePropable,
+  ],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

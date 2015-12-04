@@ -1,6 +1,6 @@
 import React from '../../../react-native';
 import Colors from '../styles/colors';
-
+import StylePropable from '../mixins/style-propable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
@@ -10,6 +10,9 @@ const {
 } = React;
 
 const ToolbarGroup = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -77,7 +80,7 @@ const ToolbarGroup = React.createClass({
         },
         controlBg: {
           backgroundColor: this.getTheme().menuHoverColor,
-          borderRadius: 0,
+          //TODO: borderRadius: 0,
         },
         underline: {
           //display: 'none',
@@ -91,7 +94,7 @@ const ToolbarGroup = React.createClass({
       icon: {
         root: {
           float: 'left',
-          cursor: 'pointer',
+          //TODO: cursor: 'pointer',
           color: this.getTheme().iconColor,
           lineHeight: this.getTheme().height + 'px',
           paddingLeft: this.getSpacing(),

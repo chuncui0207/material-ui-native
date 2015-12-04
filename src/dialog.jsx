@@ -1,9 +1,9 @@
 import React from '../../react-native';
-import ReactDOM from 'react-dom';
+/*import ReactDOM from 'react-dom';*/
 import WindowListenable from './mixins/window-listenable';
 import KeyCode from './utils/key-code';
 import Transitions from './styles/transitions';
-
+import StylePropable from './mixins/style-propable';
 import FlatButton from './flat-button';
 import Overlay from './overlay';
 import RenderToLayer from './render-to-layer';
@@ -12,7 +12,7 @@ import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 import warning from 'warning';
 
-import ReactTransitionGroup from 'react-addons-transition-group';
+/*import ReactTransitionGroup from 'react-addons-transition-group';*/
 
 const {
   View,
@@ -20,6 +20,7 @@ const {
 } = React;
 
 const TransitionItem = React.createClass({
+  mixins: [StylePropable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -94,7 +95,7 @@ const TransitionItem = React.createClass({
 
 const DialogInline = React.createClass({
 
-  mixins: [WindowListenable],
+  mixins: [WindowListenable, StylePropable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -162,20 +163,20 @@ const DialogInline = React.createClass({
 
     let main = {
       position: 'fixed',
-      boxSizing: 'border-box',
-      WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+      //boxSizing:: 'border-box',
+      //TODO: WebkitTapHighlightColor: 'rgba(0,0,0,0)',
       //zIndex: 10,
       top: 0,
       left: -10000,
       //width: '100%',
       //height: '100%',
-      transition: Transitions.easeOut('0ms', 'left', '450ms'),
+      //transition: Transitions.easeOut('0ms', 'left', '450ms'),
     };
 
     let content = {
-      boxSizing: 'border-box',
-      WebkitTapHighlightColor: 'rgba(0,0,0,0)',
-      transition: Transitions.easeOut(),
+      //boxSizing:: 'border-box',
+      //TODO: WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+      //transition: Transitions.easeOut(),
       position: 'relative',
       //width: '75%',
       maxWidth: spacing.desktopKeylineIncrement * 12,
@@ -203,7 +204,7 @@ const DialogInline = React.createClass({
     if (this.props.open) {
       main = this.mergeStyles(main, {
         left: 0,
-        transition: Transitions.easeOut('0ms', 'left', '0ms'),
+        //transition: Transitions.easeOut('0ms', 'left', '0ms'),
       });
     }
 
@@ -211,7 +212,7 @@ const DialogInline = React.createClass({
       main: this.mergeStyles(main, this.props.style),
       content: this.mergeStyles(content, this.props.contentStyle),
       paper: {
-        background: this.state.muiTheme.rawTheme.palette.canvasColor,
+        //TODO: background: this.state.muiTheme.rawTheme.palette.canvasColor,
       },
       body: this.mergeStyles(body, this.props.bodyStyle),
       title: this.mergeStyles(title, this.props.titleStyle),
@@ -230,7 +231,8 @@ const DialogInline = React.createClass({
         this.props.title;
     }
 
-    return (
+    return;
+    /*
       <View ref="container" style={this.prepareStyles(styles.main)}>
         <ReactTransitionGroup component="div" ref="dialogWindow"
           transitionAppear={true} transitionAppearTimeout={450}
@@ -254,7 +256,7 @@ const DialogInline = React.createClass({
           show={this.props.open}
           onTouchTap={this._handleOverlayTouchTap} />
       </View>
-    );
+    */
   },
 
   _getAction(actionJSON, key) {
@@ -293,8 +295,8 @@ const DialogInline = React.createClass({
     let actionContainer;
     let actionObjects = [];
     const actionStyle = {
-      boxSizing: 'border-box',
-      WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+      //boxSizing:: 'border-box',
+      //TODO: WebkitTapHighlightColor: 'rgba(0,0,0,0)',
       padding: 8,
       marginBottom: 8,
       //width: '100%',
@@ -329,9 +331,9 @@ const DialogInline = React.createClass({
     }
 
     let clientHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-    let container = ReactDOM.findDOMNode(this);
-    let dialogWindow = ReactDOM.findDOMNode(this.refs.dialogWindow);
-    let dialogContent = ReactDOM.findDOMNode(this.refs.dialogContent);
+/*    let container = ReactDOM.findDOMNode(this);*/
+/*    let dialogWindow = ReactDOM.findDOMNode(this.refs.dialogWindow);*/
+/*    let dialogContent = ReactDOM.findDOMNode(this.refs.dialogContent);*/
     let minPaddingTop = 16;
 
     //Reset the height in case the window was resized.

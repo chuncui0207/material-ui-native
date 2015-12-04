@@ -1,5 +1,5 @@
 import React from '../../react-native';
-
+import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';
 import ClickAwayable from './mixins/click-awayable';
 import FontIcon from './font-icon';
@@ -14,7 +14,7 @@ const {
 
 const DropDownIcon = React.createClass({
 
-  mixins: [ClickAwayable],
+  mixins: [StylePropable, ClickAwayable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -82,10 +82,10 @@ const DropDownIcon = React.createClass({
         position: 'relative',
         height: spacing.desktopToolbarHeight,
         fontSize: spacing.desktopDropDownMenuFontSize,
-        cursor: 'pointer',
+        //TODO: cursor: 'pointer',
       },
       menu: {
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
         right: '-14px !important',
         top: '9px !important',
         opacity: (this.state.open) ? 1 : 0,

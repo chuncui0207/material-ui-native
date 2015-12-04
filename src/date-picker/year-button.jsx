@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-
+import StylePropable from '../mixins/style-propable';
 import EnhancedButton from '../enhanced-button';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
@@ -10,6 +10,9 @@ const {
 } = React;
 
 const YearButton = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -66,8 +69,8 @@ const YearButton = React.createClass({
 
     let styles = StyleSheet.create({
       root: {
-        boxSizing: 'border-box',
-        WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+        //boxSizing:: 'border-box',
+        //TODO: WebkitTapHighlightColor: 'rgba(0,0,0,0)',
         position: 'relative',
         //display: 'block',
         margin: '0 auto',
@@ -87,7 +90,7 @@ const YearButton = React.createClass({
         height: 32,
         width: 32,
         opacity: 0,
-        borderRadius: '50%',
+        //TODO: borderRadius: '50%',
         transform: 'scale(0)',
         backgroundColor: this.getTheme().selectColor,
       },

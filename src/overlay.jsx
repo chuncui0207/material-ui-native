@@ -1,6 +1,6 @@
 import React from '../../react-native';
-import ReactDOM from 'react-dom';
-
+/*import ReactDOM from 'react-dom';*/
+import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';
 import Colors from './styles/colors';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
@@ -14,6 +14,8 @@ const {
 const Overlay = React.createClass({
 
   _originalBodyOverflow: '',
+
+  mixins: [StylePropable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -73,7 +75,7 @@ const Overlay = React.createClass({
   },
 
   setOpacity(opacity) {
-    let overlay = ReactDOM.findDOMNode(this);
+/*    let overlay = ReactDOM.findDOMNode(this);*/
     overlay.style.opacity = opacity;
   },
 
@@ -88,24 +90,24 @@ const Overlay = React.createClass({
         left: '-100%',
         opacity: 0,
         backgroundColor: Colors.lightBlack,
-        WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
+        //TODO: WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
 
         // Two ways to promote overlay to its own render layer
         willChange: 'opacity',
         transform: 'translateZ(0)',
 
-        transition:
-          this.props.transitionEnabled &&
-          Transitions.easeOut('0ms', 'left', '400ms') + ',' +
-          Transitions.easeOut('400ms', 'opacity'),
+        //transition:
+        //  this.props.transitionEnabled &&
+        //  Transitions.easeOut('0ms', 'left', '400ms') + ',' +
+        //  Transitions.easeOut('400ms', 'opacity'),
       },
       rootWhenShown: {
         left: '0',
         opacity: 1,
-        transition:
-          this.props.transitionEnabled &&
-          Transitions.easeOut('0ms', 'left') + ',' +
-          Transitions.easeOut('400ms', 'opacity'),
+        //transition:
+        //  this.props.transitionEnabled &&
+        //  Transitions.easeOut('0ms', 'left') + ',' +
+        //  Transitions.easeOut('400ms', 'opacity'),
       },
     });
     return styles;

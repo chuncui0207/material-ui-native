@@ -2,7 +2,7 @@ import React from '../../react-native';
 import Typography from './styles/typography';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
-
+import StylePropable from './mixins/style-propable';
 
 const {
   View,
@@ -11,7 +11,7 @@ const {
 // Badge
 export default React.createClass({
   displayName: 'Badge',
-
+  mixins: [StylePropable],
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -90,7 +90,7 @@ export default React.createClass({
         fontSize: radius,
         width: radius2x,
         height: radius2x,
-        borderRadius: '50%',
+        //TODO: borderRadius: '50%',
         backgroundColor: badgeBackgroundColor,
         color: badgeTextColor,
       },

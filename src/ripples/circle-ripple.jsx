@@ -1,7 +1,7 @@
 import React from '../../../react-native';
-import ReactDOM from 'react-dom';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
-
+/*import ReactDOM from 'react-dom';*/
+/*import PureRenderMixin from 'react-addons-pure-render-mixin';*/
+import StylePropable from '../mixins/style-propable';
 import AutoPrefix from '../styles/auto-prefix';
 import Transitions from '../styles/transitions';
 import Colors from '../styles/colors';
@@ -12,7 +12,7 @@ const {
 
 const CircleRipple = React.createClass({
 
-  mixins: [PureRenderMixin],
+  mixins: [/*PureRenderMixin, */StylePropable],
 
   propTypes: {
     color: React.PropTypes.string,
@@ -44,7 +44,7 @@ const CircleRipple = React.createClass({
   },
 
   componentWillLeave(callback) {
-    let style = ReactDOM.findDOMNode(this).style;
+/*    let style = ReactDOM.findDOMNode(this).style;*/
     style.opacity = 0;
     setTimeout(() => {
       if (this.isMounted()) callback();
@@ -65,7 +65,7 @@ const CircleRipple = React.createClass({
       left: 0,
       //height: '100%',
       //width: '100%',
-      borderRadius: '50%',
+      //TODO: borderRadius: '50%',
       backgroundColor: color,
     }, style);
 
@@ -75,7 +75,7 @@ const CircleRipple = React.createClass({
   },
 
   _animate() {
-    let style = ReactDOM.findDOMNode(this).style;
+/*    let style = ReactDOM.findDOMNode(this).style;*/
     const transitionValue = (
       Transitions.easeOut('2s', 'opacity') + ',' +
       Transitions.easeOut('1s', 'transform')
@@ -85,7 +85,7 @@ const CircleRipple = React.createClass({
   },
 
   _initializeAnimation(callback) {
-    let style = ReactDOM.findDOMNode(this).style;
+/*    let style = ReactDOM.findDOMNode(this).style;*/
     style.opacity = this.props.opacity;
     AutoPrefix.set(style, 'transform', 'scale(0)');
     setTimeout(() => {

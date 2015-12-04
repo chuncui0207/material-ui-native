@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-
+import StylePropable from '../mixins/style-propable';
 import TimeDisplay from './time-display';
 import ClockButton from './clock-button';
 import ClockHours from './clock-hours';
@@ -10,6 +10,9 @@ const {
 } = React;
 
 const Clock = React.createClass({
+
+  mixins: [StylePropable],
+
   propTypes: {
     onChangeMinutes: React.PropTypes.func,
     onChangeHours: React.PropTypes.func,

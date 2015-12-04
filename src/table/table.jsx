@@ -1,6 +1,6 @@
 import React from '../../../react-native';
-import ReactDOM from 'react-dom';
-
+/*import ReactDOM from 'react-dom';*/
+import StylePropable from '../mixins/style-propable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
@@ -10,6 +10,9 @@ const {
 } = React;
 
 const Table = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -180,8 +183,8 @@ const Table = React.createClass({
   },
 
   isScrollbarVisible() {
-    const tableDivHeight = ReactDOM.findDOMNode(this.refs.tableDiv).clientHeight;
-    const tableBodyHeight = ReactDOM.findDOMNode(this.refs.tableBody).clientHeight;
+/*    const tableDivHeight = ReactDOM.findDOMNode(this.refs.tableDiv).clientHeight;*/
+/*    const tableBodyHeight = ReactDOM.findDOMNode(this.refs.tableBody).clientHeight;*/
 
     return tableBodyHeight > tableDivHeight;
   },

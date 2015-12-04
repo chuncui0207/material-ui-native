@@ -1,8 +1,8 @@
 import React from '../../../react-native';
-import ReactDOM from 'react-dom';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+/*import ReactDOM from 'react-dom';*/
+/*import PureRenderMixin from 'react-addons-pure-render-mixin';*/
 import ColorManipulator from '../utils/color-manipulator';
-
+import StylePropable from '../mixins/style-propable';
 import Colors from '../styles/colors';
 import Transitions from '../styles/transitions';
 import Typography from '../styles/typography';
@@ -20,7 +20,7 @@ const {
 
 const ListItem = React.createClass({
 
-  mixins: [PureRenderMixin],
+  mixins: [/*PureRenderMixin, */StylePropable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -147,7 +147,7 @@ const ListItem = React.createClass({
         fontSize: 16,
         lineHeight: '16px',
         position: 'relative',
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
       },
 
       //This inner div is needed so that ripples will span the entire container
@@ -187,7 +187,7 @@ const ListItem = React.createClass({
       },
 
       label: {
-        cursor: 'pointer',
+        //TODO: cursor: 'pointer',
       },
 
       leftAvatar: {
@@ -375,7 +375,7 @@ const ListItem = React.createClass({
 
   applyFocusState(focusState) {
     const button = this.refs.enhancedButton;
-    const buttonEl = ReactDOM.findDOMNode(button);
+/*    const buttonEl = ReactDOM.findDOMNode(button);*/
 
     if (button) {
       switch (focusState) {

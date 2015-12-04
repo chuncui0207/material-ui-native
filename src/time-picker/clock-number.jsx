@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-
+import StylePropable from '../mixins/style-propable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
@@ -9,6 +9,9 @@ const {
 } = React;
 
 const ClockNumber = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -104,7 +107,7 @@ const ClockNumber = React.createClass({
         position: 'absolute',
         width: 32,
         height: 32,
-        borderRadius: '100%',
+        //TODO: borderRadius: '100%',
         left: 'calc(50% - 16px)',
         top: 10,
         textAlign: 'center',
@@ -112,7 +115,7 @@ const ClockNumber = React.createClass({
         userSelect: 'none',  /* Chrome all / Safari all */
         fontSize: '1.1em',
         pointerEvents: 'none',
-        boxSizing: 'border-box',
+        //boxSizing:: 'border-box',
       },
     });
 

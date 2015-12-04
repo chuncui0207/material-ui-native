@@ -1,5 +1,5 @@
 import React from '../../react-native';
-
+import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';
 import EnhancedSwitch from './enhanced-switch';
 // import RadioButtonOff from './svg-icons/toggle/radio-button-unchecked';
@@ -13,6 +13,9 @@ const {
 } = React;
 
 const RadioButton = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -62,7 +65,7 @@ const RadioButton = React.createClass({
         width: this.getTheme().size,
       },
       target: {
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
         position: 'absolute',
         opacity: 1,
         transform: 'scale(1)',
@@ -73,7 +76,7 @@ const RadioButton = React.createClass({
         opacity: 1,
         transform: 'scale(0)',
         transformOrigin: '50% 50%',
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
         fill: this.getTheme().checkedColor,
       },
       targetWhenChecked: {

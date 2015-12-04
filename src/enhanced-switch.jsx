@@ -1,7 +1,7 @@
 import React from '../../react-native';
-import ReactDOM from 'react-dom';
+/*import ReactDOM from 'react-dom';*/
 import KeyCode from './utils/key-code';
-
+import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';
 import UniqueId from './utils/unique-id';
 import WindowListenable from './mixins/window-listenable';
@@ -20,7 +20,7 @@ const {
 
 const EnhancedSwitch = React.createClass({
 
-  mixins: [WindowListenable],
+  mixins: [WindowListenable, StylePropable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -78,13 +78,13 @@ const EnhancedSwitch = React.createClass({
   getEvenWidth() {
     return (
       parseInt(window
-        .getComputedStyle(ReactDOM.findDOMNode(this.refs.root))
+/*        .getComputedStyle(ReactDOM.findDOMNode(this.refs.root))*/
         .getPropertyValue('width'), 10)
     );
   },
 
   componentDidMount() {
-    let inputNode = ReactDOM.findDOMNode(this.refs.checkbox);
+/*    let inputNode = ReactDOM.findDOMNode(this.refs.checkbox);*/
     if (!this.props.switched || inputNode.checked !== this.props.switched) {
       this.props.onParentShouldUpdate(inputNode.checked);
     }
@@ -139,7 +139,7 @@ const EnhancedSwitch = React.createClass({
     let styles = StyleSheet.create({
       root: {
         position: 'relative',
-        cursor: this.props.disabled ? 'default' : 'pointer',
+        //TODO: cursor: this.props.disabled ? 'default' : 'pointer',
         overflow: 'visible',
         //display: 'table',
         height: 'auto',
@@ -147,14 +147,14 @@ const EnhancedSwitch = React.createClass({
       },
       input: {
         position: 'absolute',
-        cursor: this.props.disabled ? 'default' : 'pointer',
+        //TODO: cursor: this.props.disabled ? 'default' : 'pointer',
         pointerEvents: 'all',
         opacity: 0,
         //width: '100%',
         //height: '100%',
         //zIndex: 2,
         left: 0,
-        boxSizing: 'border-box',
+        //boxSizing:: 'border-box',
         padding: 0,
         margin: 0,
       },
@@ -171,7 +171,7 @@ const EnhancedSwitch = React.createClass({
         color: this.getTheme().textColor,
       },
       wrap: {
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
         float: 'left',
         position: 'relative',
         //display: 'block',
@@ -326,14 +326,14 @@ const EnhancedSwitch = React.createClass({
 
 
   isSwitched() {
-    return ReactDOM.findDOMNode(this.refs.checkbox).checked;
+/*    return ReactDOM.findDOMNode(this.refs.checkbox).checked;*/
   },
 
   // no callback here because there is no event
   setSwitched(newSwitchedValue) {
     if (!this.props.hasOwnProperty('checked') || this.props.checked === false) {
       this.props.onParentShouldUpdate(newSwitchedValue);
-      ReactDOM.findDOMNode(this.refs.checkbox).checked = newSwitchedValue;
+/*      ReactDOM.findDOMNode(this.refs.checkbox).checked = newSwitchedValue;*/
     }
     else if (process.env.NODE_ENV !== 'production') {
       let message = 'Cannot call set method while checked is defined as a property.';
@@ -342,7 +342,7 @@ const EnhancedSwitch = React.createClass({
   },
 
   getValue() {
-    return ReactDOM.findDOMNode(this.refs.checkbox).value;
+/*    return ReactDOM.findDOMNode(this.refs.checkbox).value;*/
   },
 
   isKeyboardFocused() {
@@ -355,7 +355,7 @@ const EnhancedSwitch = React.createClass({
       isKeyboardFocused: false,
     });
 
-    let isInputChecked = ReactDOM.findDOMNode(this.refs.checkbox).checked;
+/*    let isInputChecked = ReactDOM.findDOMNode(this.refs.checkbox).checked;*/
 
     if (!this.props.hasOwnProperty('checked')) {
       this.props.onParentShouldUpdate(isInputChecked);

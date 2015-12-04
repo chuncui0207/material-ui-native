@@ -19,9 +19,9 @@ export default {
       if (style.didFlip) {
         console.warn(new Error('You\'re calling `ensureDirection` on the same style object twice.'));
       }
-      style = ImmutabilityHelper.merge({
-        didFlip: 'true',
-      }, style);
+      //style = ImmutabilityHelper.merge({
+      //  didFlip: 'true',
+      //}, style);
     }
 
     // Left to right is the default. No need to flip anything.

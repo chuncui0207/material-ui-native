@@ -1,6 +1,6 @@
 import React from '../../react-native';
-import ReactDOM from 'react-dom';
-
+/*import ReactDOM from 'react-dom';*/
+import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';
 import FocusRipple from './ripples/focus-ripple';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
@@ -47,6 +47,9 @@ let valueInRangePropType = (props, propName, componentName) => {
 
 
 const Slider = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -133,7 +136,7 @@ const Slider = React.createClass({
       root: {
         touchCallout: 'none',
         userSelect: 'none',
-        cursor: 'default',
+        //TODO: cursor: 'default',
         height: this.getTheme().handleSizeActive,
         position: 'relative',
         marginTop: 24,
@@ -150,12 +153,12 @@ const Slider = React.createClass({
         position: 'absolute',
         top: 0,
         //height: '100%',
-        transition: Transitions.easeOut(null, 'margin'),
+        //transition: Transitions.easeOut(null, 'margin'),
       },
       handle: {
-        boxSizing: 'border-box',
+        //boxSizing:: 'border-box',
         position: 'absolute',
-        cursor: 'pointer',
+        //TODO: cursor: 'pointer',
         pointerEvents: 'inherit',
         top: 0,
         left: '0%',
@@ -165,38 +168,37 @@ const Slider = React.createClass({
         height: this.getTheme().handleSize,
         backgroundColor: this.getTheme().selectionColor,
         backgroundClip: 'padding-box',
-        border: '0px solid transparent',
-        borderRadius: '50%',
+        //TODO: border: '0px solid transparent',
+        //TODO: borderRadius: '50%',
         transform: 'translate(-50%, -50%)',
-        transition:
-          Transitions.easeOut('450ms', 'background') + ',' +
-          Transitions.easeOut('450ms', 'border-color') + ',' +
-          Transitions.easeOut('450ms', 'width') + ',' +
-          Transitions.easeOut('450ms', 'height'),
+        //transition:
+        //  Transitions.easeOut('450ms', 'background') + ',' +
+        //  Transitions.easeOut('450ms', 'border-color') + ',' +
+        //  Transitions.easeOut('450ms', 'width') + ',' +
+        //  Transitions.easeOut('450ms', 'height'),
         overflow: 'visible',
       },
       handleWhenDisabled: {
-        boxSizing: 'content-box',
-        cursor: 'not-allowed',
+        //boxSizing:: 'content-box',
+        //TODO: cursor: 'not-allowed',
         backgroundColor: this.getTheme().trackColor,
         width: this.getTheme().handleSizeDisabled,
         height: this.getTheme().handleSizeDisabled,
-        border: 'none',
+        //TODO: border: 'none',
       },
       handleWhenPercentZero: {
-        border: this.getTheme().trackSize + 'px solid ' + this.getTheme().handleColorZero,
+        //TODO: border: this.getTheme().trackSize + 'px solid ' + this.getTheme().handleColorZero,
         backgroundColor: this.getTheme().handleFillColor,
-        boxShadow: 'none',
+        //boxShadow: 'none',
       },
       handleWhenPercentZeroAndDisabled: {
-        cursor: 'not-allowed',
+        //TODO: cursor: 'not-allowed',
         width: this.getTheme().handleSizeDisabled,
         height: this.getTheme().handleSizeDisabled,
       },
-      handleWhenPercentZeroAndFocused: {
-        border: this.getTheme().trackSize + 'px solid ' +
-          this.getTheme().trackColorSelected,
-      },
+      //handleWhenPercentZeroAndFocused: {
+        //TODO: border: this.getTheme().trackSize + 'px solid ' + this.getTheme().trackColorSelected,
+      //},
       handleWhenActive: {
         width: this.getTheme().handleSizeActive,
         height: this.getTheme().handleSizeActive,
@@ -441,7 +443,7 @@ const Slider = React.createClass({
   },
 
   _getTrackLeft() {
-    return ReactDOM.findDOMNode(this.refs.track).getBoundingClientRect().left;
+/*    return ReactDOM.findDOMNode(this.refs.track).getBoundingClientRect().left;*/
   },
 
   _onMouseUp(e) {
@@ -476,7 +478,7 @@ const Slider = React.createClass({
   },
 
   _dragX(e, pos) {
-    let max = ReactDOM.findDOMNode(this.refs.track).clientWidth;
+/*    let max = ReactDOM.findDOMNode(this.refs.track).clientWidth;*/
     if (pos < 0) pos = 0; else if (pos > max) pos = max;
     this._updateWithChangeEvent(e, pos / max);
   },

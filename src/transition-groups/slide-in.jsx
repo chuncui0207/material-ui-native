@@ -1,12 +1,15 @@
 import React from '../../../react-native';
-import ReactTransitionGroup from 'react-addons-transition-group';
-
+/*import ReactTransitionGroup from 'react-addons-transition-group';*/
+import StylePropable from '../mixins/style-propable';
 import SlideInChild from './slide-in-child';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
 
 const SlideIn = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -78,15 +81,14 @@ const SlideIn = React.createClass({
       );
     }, this);
 
-    return (
-      <ReactTransitionGroup
+    return;
+  },
+      /*<ReactTransitionGroup
         {...other}
         style={mergedRootStyles}
         component="div">
         {newChildren}
-      </ReactTransitionGroup>
-    );
-  },
+      </ReactTransitionGroup>*/
 
   _getLeaveDirection() {
     return this.props.direction;

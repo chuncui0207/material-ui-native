@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-
+import StylePropable from '../mixins/style-propable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
@@ -9,6 +9,9 @@ const {
 } = React;
 
 const ClockPointer = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -87,7 +90,7 @@ const ClockPointer = React.createClass({
     let styles = StyleSheet.create({
       root: {
         //height: '30%',
-        background: this.getTheme().accentColor,
+        //TODO: background: this.getTheme().accentColor,
         width: 2,
         left: 'calc(50% - 1px)',
         position: 'absolute',
@@ -97,14 +100,14 @@ const ClockPointer = React.createClass({
         transform: 'rotateZ(' + angle + 'deg)',
       },
       mark: {
-        background: this.getTheme().selectTextColor,
-        border: '4px solid ' + this.getTheme().accentColor,
+        //TODO: background: this.getTheme().selectTextColor,
+        //TODO: border: '4px solid ' + this.getTheme().accentColor,
         width: 7,
         height: 7,
         position: 'absolute',
         top: -5,
         left: -6,
-        borderRadius: '100%',
+        //TODO: borderRadius: '100%',
       },
     });
 

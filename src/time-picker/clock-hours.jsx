@@ -1,6 +1,6 @@
 import React from '../../../react-native';
-import ReactDOM from 'react-dom';
-
+/*import ReactDOM from 'react-dom';*/
+import StylePropable from '../mixins/style-propable';
 import ClockNumber from './clock-number';
 import ClockPointer from './clock-pointer';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
@@ -29,6 +29,9 @@ function getTouchEventOffsetValues(e) {
 
 
 const ClockHours = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -83,7 +86,7 @@ const ClockHours = React.createClass({
   },
 
   componentDidMount() {
-    let clockElement = ReactDOM.findDOMNode(this.refs.mask);
+/*    let clockElement = ReactDOM.findDOMNode(this.refs.mask);*/
 
     this.center = {
       x: clockElement.offsetWidth / 2,
@@ -196,10 +199,10 @@ const ClockHours = React.createClass({
       root: {
         //height: '100%',
         //width: '100%',
-        borderRadius: '100%',
+        //TODO: borderRadius: '100%',
         position: 'relative',
         pointerEvents: 'none',
-        boxSizing: 'border-box',
+        //boxSizing:: 'border-box',
       },
 
       hitMask: {

@@ -1,5 +1,5 @@
 import React from '../../react-native';
-
+import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';
 import Paper from './paper';
 import EnhancedSwitch from './enhanced-switch';
@@ -11,6 +11,9 @@ const {
 } = React;
 
 const Toggle = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -74,21 +77,21 @@ const Toggle = React.createClass({
         width: toggleTrackWidth,
       },
       track: {
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
         //width: '100%',
         height: 14,
-        borderRadius: 30,
+        //TODO: borderRadius: 30,
         backgroundColor: this.getTheme().trackOffColor,
       },
       thumb: {
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
         position: 'absolute',
         top: 1,
         left: 0,
         width: toggleSize,
         height: toggleSize,
         lineHeight: '24px',
-        borderRadius: '50%',
+        //TODO: borderRadius: '50%',
         backgroundColor: this.getTheme().thumbOffColor,
       },
       trackWhenSwitched: {

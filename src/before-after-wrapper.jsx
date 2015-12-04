@@ -1,5 +1,5 @@
 import React from '../../react-native';
-
+import StylePropable from './mixins/style-propable';
 import AutoPrefix from './styles/auto-prefix';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
@@ -39,6 +39,9 @@ import ThemeManager from './styles/theme-manager';
  */
 
 const BeforeAfterWrapper = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -96,8 +99,8 @@ const BeforeAfterWrapper = React.createClass({
 
     let beforeElement, afterElement;
 
-    beforeStyle = AutoPrefix.all({boxSizing: 'border-box'});
-    afterStyle = AutoPrefix.all({boxSizing: 'border-box'});
+    beforeStyle = AutoPrefix.all({/*boxSizing:: 'border-box'*/});
+    afterStyle = AutoPrefix.all({/*boxSizing:: 'border-box'*/});
 
     if (this.props.beforeStyle) beforeElement =
       React.createElement(this.props.beforeElementType,

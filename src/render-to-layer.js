@@ -1,5 +1,5 @@
 import React from 'react-native';
-import ReactDOM from 'react-dom';
+/*import ReactDOM from 'react-dom';*/
 import Events from './utils/events';
 import Dom from './utils/dom';
 import debounce from 'lodash.debounce';
@@ -82,9 +82,9 @@ const RenderToLayer = React.createClass({
     // a noscript element, like React does when an element's render returns
     // null.
     if (layerElement === null) {
-      this.layerElement = ReactDOM.unstable_renderSubtreeIntoContainer(this, <noscript />, this._layer);
+/*      this.layerElement = ReactDOM.unstable_renderSubtreeIntoContainer(this, <noscript />, this._layer);*/
     } else {
-      this.layerElement = ReactDOM.unstable_renderSubtreeIntoContainer(this, layerElement, this._layer);
+/*      this.layerElement = ReactDOM.unstable_renderSubtreeIntoContainer(this, layerElement, this._layer);*/
     }
   },
 
@@ -95,7 +95,7 @@ const RenderToLayer = React.createClass({
           if (this.layerWillUnmount) {
             this.layerWillUnmount(this._layer);
           }
-          ReactDOM.unmountComponentAtNode(this._layer);
+/*          ReactDOM.unmountComponentAtNode(this._layer);*/
           document.body.removeChild(this._layer);
           this._layer = null;
         }

@@ -1,7 +1,7 @@
 import React from '../../../react-native';
-import ReactDOM from 'react-dom';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
-
+/*import ReactDOM from 'react-dom';*/
+/*import PureRenderMixin from 'react-addons-pure-render-mixin';*/
+import StylePropable from '../mixins/style-propable';
 import AutoPrefix from '../styles/auto-prefix';
 import Colors from '../styles/colors';
 import Transitions from '../styles/transitions';
@@ -15,7 +15,7 @@ const {
 
 const FocusRipple = React.createClass({
 
-  mixins: [PureRenderMixin],
+  mixins: [/*PureRenderMixin, */StylePropable],
 
   propTypes: {
     color: React.PropTypes.string,
@@ -84,10 +84,10 @@ const FocusRipple = React.createClass({
       position: 'absolute',
       //height: '100%',
       //width: '100%',
-      borderRadius: '50%',
+      //TODO: borderRadius: '50%',
       opacity: opacity ? opacity : 0.16,
       backgroundColor: color,
-      transition: Transitions.easeOut(pulsateDuration + 'ms', 'transform', null, Transitions.easeInOutFunction),
+      //transition: Transitions.easeOut(pulsateDuration + 'ms', 'transform', null, Transitions.easeInOutFunction),
     }, innerStyle);
 
     return <View ref="innerCircle" style={innerStyles} />;
@@ -96,7 +96,7 @@ const FocusRipple = React.createClass({
   _pulsate() {
     if (!this.isMounted()) return;
 
-    let innerCircle = ReactDOM.findDOMNode(this.refs.innerCircle);
+/*    let innerCircle = ReactDOM.findDOMNode(this.refs.innerCircle);*/
     if (!innerCircle) return;
 
     const startScale = 'scale(1)';
@@ -113,7 +113,7 @@ const FocusRipple = React.createClass({
   },
 
   _setRippleSize() {
-    let el = ReactDOM.findDOMNode(this.refs.innerCircle);
+/*    let el = ReactDOM.findDOMNode(this.refs.innerCircle);*/
     const height = el.offsetHeight;
     const width = el.offsetWidth;
     const size = Math.max(height, width);

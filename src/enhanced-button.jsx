@@ -1,6 +1,6 @@
 import React from '../../react-native';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
-
+/*//import PureRenderMixin from 'react-addons-pure-render-mixin';*/
+import StylePropable from './mixins/style-propable';
 import Colors from './styles/colors';
 import Children from './utils/children';
 import Events from './utils/events';
@@ -25,7 +25,7 @@ function injectStyle() {
     style.innerHTML = `
       button::-moz-focus-inner,
       input::-moz-focus-inner {
-        border: 0;
+        //TODO: border: 0;
         padding: 0;
       }
     `;
@@ -46,7 +46,7 @@ function listenForTabPresses() {
 
 const EnhancedButton = React.createClass({
 
-  mixins: [PureRenderMixin],
+  mixins: [/*PureRenderMixin,*/StylePropable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -91,7 +91,7 @@ const EnhancedButton = React.createClass({
 
   getDefaultProps() {
     return {
-      containerElement: 'button',
+      containerElement: React.createElement(View),
       onBlur: () => {},
       onFocus: () => {},
       onKeyboardFocus: () => {},
@@ -99,7 +99,7 @@ const EnhancedButton = React.createClass({
       onKeyUp: () => {},
       onTouchTap: () => {},
       tabIndex: 0,
-      type: 'button',
+      type: 'EnhancedButton',
     };
   },
 
@@ -126,8 +126,8 @@ const EnhancedButton = React.createClass({
   },
 
   componentDidMount() {
-    injectStyle();
-    listenForTabPresses();
+    // TODO: injectStyle();
+    // TODO: listenForTabPresses();
   },
 
   render() {
@@ -154,21 +154,23 @@ const EnhancedButton = React.createClass({
       type,
       ...other,
     } = this.props;
-
-    const mergedStyles = this.prepareStyles({
-      border: 10,
-      background: 'none',
-      boxSizing: 'border-box',
+    
+    //const mergedStyles = this.prepareStyles({
+      //TODO: border: 10,
+      //TODO: background: 'none',
+      //boxSizing:: 'border-box',
       //display: 'inline-block',
-      font: 'inherit',
-      fontFamily: this.state.muiTheme.rawTheme.fontFamily,
-      tapHighlightColor: Colors.transparent,
-      appearance: linkButton ? null : 'button',
-      cursor: disabled ? 'default' : 'pointer',
-      textDecoration: 'none',
-      outline: 'none',
-    }, style);
+      //TODO: font: 'inherit',
+      //fontFamily: this.state.muiTheme.rawTheme.fontFamily,
+      //TODO: tapHighlightColor: Colors.transparent,
+      //appearance: linkButton ? null : 'Button3',
+      //TODO: cursor: disabled ? 'default' : 'pointer',
+      //TODO: textDecoration: 'none',
+      //TODO: outline:: 'none',
+    //}, style);
+    const mergedStyles = style;
 
+      // TODO:
     if (disabled && linkButton) {
       return (
         <View

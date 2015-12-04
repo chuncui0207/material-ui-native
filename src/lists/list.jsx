@@ -1,7 +1,7 @@
 import React from '../../../react-native';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+/*import PureRenderMixin from 'react-addons-pure-render-mixin';*/
 import PropTypes from '../utils/prop-types';
-
+import StylePropable from '../mixins/style-propable';
 import Typography from '../styles/typography';
 import Paper from '../paper';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
@@ -13,7 +13,7 @@ const {
 
 const List = React.createClass({
 
-  mixins: [PureRenderMixin],
+  mixins: [/*PureRenderMixin, */StylePropable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

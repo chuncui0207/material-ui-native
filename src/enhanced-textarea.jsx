@@ -1,6 +1,6 @@
 import React from '../../react-native';
-import ReactDOM from 'react-dom';
-
+/*import ReactDOM from 'react-dom';*/
+import StylePropable from './mixins/style-propable';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
@@ -10,7 +10,7 @@ const styles = {
   textarea: {
     //width: '100%',
     resize: 'none',
-    font: 'inherit',
+    //TODO: font: 'inherit',
     padding: 0,
   },
   shadow: {
@@ -21,7 +21,7 @@ const styles = {
     overflow: 'hidden',
     // Visibility needed to hide the extra text area on ipads
     visibility: 'hidden',
-    font: 'inherit',
+    //TODO: font: 'inherit',
     padding: 0,
     position: 'absolute',
   },
@@ -32,6 +32,9 @@ const {
 } = React;
 
 const EnhancedTextarea = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -121,7 +124,7 @@ const EnhancedTextarea = React.createClass({
   },
 
   getInputNode() {
-    return ReactDOM.findDOMNode(this.refs.input);
+/*    return ReactDOM.findDOMNode(this.refs.input);*/
   },
 
   setValue(value) {
@@ -130,7 +133,7 @@ const EnhancedTextarea = React.createClass({
   },
 
   _syncHeightWithShadow(newValue, e) {
-    let shadow = ReactDOM.findDOMNode(this.refs.shadow);
+/*    let shadow = ReactDOM.findDOMNode(this.refs.shadow);*/
 
     if (newValue !== undefined) {
       shadow.value = newValue;

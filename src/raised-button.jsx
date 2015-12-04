@@ -1,6 +1,7 @@
 import React from '../../react-native';
-import ReactDOM from 'react-dom';
-import Transitions from './styles/transitions';
+/*import ReactDOM from 'react-dom';*/
+import StylePropable from './mixins/style-propable';
+//import Transitions from './styles/transitions';
 import ColorManipulator from './utils/color-manipulator';
 import Children from './utils/children';
 import Typography from './styles/typography';
@@ -10,6 +11,7 @@ import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
 const {
+  Text,
   View,
   StyleSheet,
 } = React;
@@ -22,6 +24,9 @@ function validateLabel(props, propName, componentName) {
 }
 
 const RaisedButton = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -122,51 +127,51 @@ const RaisedButton = React.createClass({
   getStyles() {
 
     let amount = (this.props.primary || this.props.secondary) ? 0.4 : 0.08;
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         //display: 'inline-block',
         //minWidth: this.props.fullWidth ? '100%' : this.getThemeButton().minWidth,
         height: this.getThemeButton().height,
-        //transition: Transitions.easeOut(),
+        ////transition: Transitions.easeOut(),
       },
       container: {
-        position: 'relative',
+        //position: 'relative',
         //height: '100%',
         //width: '100%',
         padding: 0,
         overflow: 'hidden',
-        borderRadius: 2,
-        //transition: Transitions.easeOut(),
+        //TODO: borderRadius: 2,
+        ////transition: Transitions.easeOut(),
         backgroundColor: this._getBackgroundColor(),
 
         //This is need so that ripples do not bleed
         //past border radius.
         //See: http://stackoverflow.com/questions/17298739/css-overflow-hidden-not-working-in-chrome-when-parent-has-border-radius-and-chil
-        transform: 'translate3d(0, 0, 0)',
+        //transform: 'translate3d(0, 0, 0)',
       },
       label: {
-        position: 'relative',
+        //position: 'relative',
         opacity: 1,
-        fontSize: 14px,
+        //fontSize: 14,
         //letterSpacing: 0,
         //textTransform: this.getTheme().textTransform ? this.getTheme().textTransform :
         //            (this.getThemeButton().textTransform ? this.getThemeButton().textTransform : 'uppercase'),
-        fontWeight: Typography.fontWeightMedium,
+        //fontWeight: Typography.fontWeightMedium,
         margin: 0,
         //padding: '0px ' + this.state.muiTheme.rawTheme.spacing.desktopGutterLess + 'px',
         //userSelect: 'none',
         //lineHeight: (this.props.style && this.props.style.height) ?
         // this.props.style.height : this.getThemeButton().height + 'px',
-        color:  this._getLabelColor(),
+        //color:  this._getLabelColor(),
       },
       overlay: {
-        //transition: Transitions.easeOut(),
+        ////transition: Transitions.easeOut(),
         top: 0,
       },
       overlayWhenHovered: {
         backgroundColor: ColorManipulator.fade(this._getLabelColor(), amount),
       },
-    });
+    }
     return styles;
   },
 
@@ -187,9 +192,9 @@ const RaisedButton = React.createClass({
     let labelElement;
     if (label) {
       labelElement = (
-        <View style={this.prepareStyles(styles.label, labelStyle)}>
+        <Text style={StyleSheet.create(this.prepareStyles(styles.label, labelStyle))}>
           {label}
-        </View>
+        </Text>
       );
     }
 
@@ -217,22 +222,23 @@ const RaisedButton = React.createClass({
       <Paper
         style={this.mergeStyles(styles.root, this.props.style)}
         zDepth={this.state.zDepth}>
-          <EnhancedButton
-            {...other}
-            {...buttonEventHandlers}
-            ref="container"
-            disabled={disabled}
-            style={this.mergeStyles(styles.container)}
-            focusRippleColor={rippleColor}
-            touchRippleColor={rippleColor}
-            focusRippleOpacity={rippleOpacity}
-            touchRippleOpacity={rippleOpacity}>
-              <View ref="overlay" style={this.prepareStyles(
-                  styles.overlay,
-                  (this.state.hovered && !this.props.disabled) && styles.overlayWhenHovered
-                )}>
-                  {enhancedButtonChildren}
-              </View>
+        <EnhancedButton
+          {...other}
+          {...buttonEventHandlers}
+          ref="container"
+          disabled={disabled}
+          style={styles.container}
+          focusRippleColor={rippleColor}
+          touchRippleColor={rippleColor}
+          focusRippleOpacity={rippleOpacity}
+          touchRippleOpacity={rippleOpacity}>
+            <View 
+              ref="overlay" 
+              style={this.prepareStyles(
+                styles.overlay,
+                (this.state.hovered && !this.props.disabled) && styles.overlayWhenHovered)}>
+              {enhancedButtonChildren}
+            </View>
           </EnhancedButton>
       </Paper>
     );
@@ -280,11 +286,11 @@ const RaisedButton = React.createClass({
     if (keyboardFocused && !this.props.disabled) {
       this.setState({zDepth: this.state.initialZDepth + 1});
       let amount = (this.props.primary || this.props.secondary) ? 0.4 : 0.08;
-      ReactDOM.findDOMNode(this.refs.overlay).style.backgroundColor = ColorManipulator.fade(this.prepareStyles(this.getStyles().label, this.props.labelStyle).color, amount);
+/*      //ReactDOM.findDOMNode(this.refs.overlay).style.backgroundColor = ColorManipulator.fade(this.prepareStyles(this.getStyles().label, this.props.labelStyle).color, amount);*/
     }
     else if (!this.state.hovered) {
       this.setState({zDepth: this.state.initialZDepth});
-      ReactDOM.findDOMNode(this.refs.overlay).style.backgroundColor = 'transparent';
+/*      //ReactDOM.findDOMNode(this.refs.overlay).style.backgroundColor = 'transparent';*/
     }
   },
 });

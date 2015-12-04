@@ -1,8 +1,8 @@
 import React from '../../../react-native';
-import ReactDOM from 'react-dom';
+/*import ReactDOM from 'react-dom';*/
 import WindowListenable from '../mixins/window-listenable';
 import RenderToLayer from '../render-to-layer';
-
+import StylePropable from '../mixins/style-propable';
 import CssEvent from '../utils/css-event';
 import PropTypes from '../utils/prop-types';
 import Transitions from '../styles/transitions';
@@ -18,6 +18,7 @@ const {
 const Popover = React.createClass({
   mixins: [
     ContextPure,
+    StylePropable,
     WindowListenable,
   ],
 
@@ -121,7 +122,7 @@ const Popover = React.createClass({
       //maxHeight:'100%',
       transform:'scale(0,0)',
       transformOrigin: `${horizontal} ${targetOrigin.vertical}`,
-      transition: animated ? Transitions.easeOut('500ms', ['transform', 'opacity']) : null,
+      //transition: animated ? Transitions.easeOut('500ms', ['transform', 'opacity']) : null,
     };
     wrapperStyle = this.mergeAndPrefix(wrapperStyle, this.props.style);
 
@@ -130,7 +131,7 @@ const Popover = React.createClass({
       overflowY:'auto',
       transform:'scaleX(0)',
       opacity:1,
-      transition: animated ? Transitions.easeOut('250ms', ['transform', 'opacity']) : null,
+      //transition: animated ? Transitions.easeOut('250ms', ['transform', 'opacity']) : null,
       transformOrigin: `${horizontal} ${targetOrigin.vertical}`,
     };
 
@@ -138,7 +139,7 @@ const Popover = React.createClass({
       opacity:1,
       transform:'scaleY(0)',
       transformOrigin: `${horizontal} ${targetOrigin.vertical}`,
-      transition: animated ? Transitions.easeOut('500ms', ['transform', 'opacity']) : null,
+      //transition: animated ? Transitions.easeOut('500ms', ['transform', 'opacity']) : null,
     };
 
     return (
@@ -226,8 +227,8 @@ const Popover = React.createClass({
   },
 
   getAnchorPosition(el) {
-    if (!el)
-      el = ReactDOM.findDOMNode(this);
+/*    if (!el)
+        el = ReactDOM.findDOMNode(this);*/
 
     const rect = el.getBoundingClientRect();
     const a = {

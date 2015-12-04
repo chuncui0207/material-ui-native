@@ -1,6 +1,6 @@
 import React from '../../react-native';
 import EnhancedSwitch from './enhanced-switch';
-
+import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';
 // import CheckboxOutline from './svg-icons/toggle/check-box-outline-blank';
 // import CheckboxChecked from './svg-icons/toggle/check-box';
@@ -12,6 +12,9 @@ const {
 } = React;
 
 const Checkbox = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -73,24 +76,24 @@ const Checkbox = React.createClass({
         opacity: 0,
         transform: 'scale(0)',
         transitionOrigin: '50% 50%',
-        transition: Transitions.easeOut('450ms', 'opacity', '0ms') + ', ' +
-                      Transitions.easeOut('0ms', 'transform', '450ms'),
+        //transition: Transitions.easeOut('450ms', 'opacity', '0ms') + ', ' +
+                      //Transitions.easeOut('0ms', 'transform', '450ms'),
         fill: this.getTheme().checkedColor,
       },
       box: {
         position: 'absolute',
         opacity: 1,
         fill: this.getTheme().boxColor,
-        transition: Transitions.easeOut('2s', null, '200ms'),
+        //transition: Transitions.easeOut('2s', null, '200ms'),
       },
       checkWhenSwitched: {
         opacity: 1,
         transform: 'scale(1)',
-        transition: Transitions.easeOut('0ms', 'opacity', '0ms') + ', ' +
-                    Transitions.easeOut('800ms', 'transform', '0ms'),
+        //transition: Transitions.easeOut('0ms', 'opacity', '0ms') + ', ' +
+                    //Transitions.easeOut('800ms', 'transform', '0ms'),
       },
       boxWhenSwitched: {
-        transition: Transitions.easeOut('100ms', null, '0ms'),
+        //transition: Transitions.easeOut('100ms', null, '0ms'),
         fill: this.getTheme().checkedColor,
       },
       checkWhenDisabled: {

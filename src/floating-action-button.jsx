@@ -1,6 +1,6 @@
 import React from '../../react-native';
-import ReactDOM from 'react-dom';
-
+/*import ReactDOM from 'react-dom';*/
+import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';
 import ColorManipulator from './utils/color-manipulator';
 import EnhancedButton from './enhanced-button';
@@ -25,6 +25,9 @@ let getZDepth = function(disabled) {
 
 
 const FloatingActionButton = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -115,18 +118,18 @@ const FloatingActionButton = React.createClass({
 
     let styles = StyleSheet.create({
       root: {
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
         //display: 'inline-block',
       },
       container: {
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
         position: 'relative',
         height: themeVariables.buttonSize,
         width: themeVariables.buttonSize,
         padding: 0,
         overflow: 'hidden',
         backgroundColor: this._getBackgroundColor(),
-        borderRadius: '50%',
+        //TODO: borderRadius: '50%',
         textAlign: 'center',
         verticalAlign: 'bottom',
         //This is need so that ripples do not bleed
@@ -139,7 +142,7 @@ const FloatingActionButton = React.createClass({
         width: themeVariables.miniSize,
       },
       overlay: {
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
         top: 0,
       },
       overlayWhenHovered: {
@@ -271,11 +274,11 @@ const FloatingActionButton = React.createClass({
   _handleKeyboardFocus(e, keyboardFocused) {
     if (keyboardFocused && !this.props.disabled) {
       this.setState({zDepth: this.state.initialZDepth + 1});
-      ReactDOM.findDOMNode(this.refs.overlay).style.backgroundColor = ColorManipulator.fade(this.getStyles().icon.color, 0.4);
+/*      ReactDOM.findDOMNode(this.refs.overlay).style.backgroundColor = ColorManipulator.fade(this.getStyles().icon.color, 0.4);*/
     }
     else if (!this.state.hovered) {
       this.setState({zDepth: this.state.initialZDepth});
-      ReactDOM.findDOMNode(this.refs.overlay).style.backgroundColor = 'transparent';
+/*      ReactDOM.findDOMNode(this.refs.overlay).style.backgroundColor = 'transparent';*/
     }
   },
 

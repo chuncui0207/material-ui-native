@@ -1,7 +1,7 @@
 import Colors from './colors';
 import ColorManipulator from '../utils/color-manipulator';
 import Extend from '../utils/extend';
-import update from 'react-addons-update';
+// TODO: import update from 'react-addons-update';
 
 export default {
 
@@ -229,8 +229,9 @@ export default {
   //function to modify the spacing of the raw theme. This function recomputes
   //the MUI theme and returns it based on the new theme.
   modifyRawThemeSpacing: function(muiTheme, newSpacing) {
-    let newRawTheme = update(muiTheme.rawTheme, {spacing: {$set: newSpacing}});
-    return this.getMuiTheme(newRawTheme);
+    //let newRawTheme = update(muiTheme.rawTheme, {spacing: {$set: newSpacing}});
+    //return this.getMuiTheme(newRawTheme);
+    return muiTheme;
   },
 
 
@@ -238,16 +239,19 @@ export default {
   //the MUI theme and returns it based on the new raw theme.
   //keys inside 'newPalette' override values for existing keys in palette
   modifyRawThemePalette: function(muiTheme, newPaletteKeys) {
-    let newPalette = Extend(muiTheme.rawTheme.palette, newPaletteKeys);
-    let newRawTheme = update(muiTheme.rawTheme, {palette: {$set: newPalette}});
-    return this.getMuiTheme(newRawTheme);
+    //let newPalette = Extend(muiTheme.rawTheme.palette, newPaletteKeys);
+    //let newRawTheme = update(muiTheme.rawTheme, {palette: {$set: newPalette}});
+    //return this.getMuiTheme(newRawTheme);
+    return muiTheme;
   },
 
   //function to modify the font family of the raw theme. This function recomputes
   //the MUI theme and returns it based on the new raw theme.
-  modifyRawThemeFontFamily: function(muiTheme, newFontFamily) {
-    let newRawTheme = update(muiTheme.rawTheme, {fontFamily: {$set: newFontFamily}});
-    return this.getMuiTheme(newRawTheme);
+  modifyRawThemefontFamily: function(muiTheme, newFontFamily) {
+    //let newRawTheme = update(muiTheme.rawTheme, {fontFamily: {$set: newFontFamily}});
+    //return this.getMuiTheme(newRawTheme);
+    // TODO: convert
+    return muiTheme;
   },
 
 };

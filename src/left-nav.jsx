@@ -5,9 +5,9 @@ import warning from 'warning';
 let Modernizr = isBrowser ? require('./utils/modernizr.custom') : undefined;
 
 import React from '../../react-native';
-import ReactDOM from 'react-dom';
+/*import ReactDOM from 'react-dom';*/
 import KeyCode from './utils/key-code';
-
+import StylePropable from './mixins/style-propable';
 import AutoPrefix from './styles/auto-prefix';
 import Transitions from './styles/transitions';
 import WindowListenable from './mixins/window-listenable';
@@ -25,7 +25,7 @@ const {
 
 const LeftNav = React.createClass({
 
-  mixins: [WindowListenable],
+  mixins: [StylePropable, WindowListenable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -160,7 +160,7 @@ const LeftNav = React.createClass({
         left: isBrowser && Modernizr.csstransforms3d ? 0 : x,
         top: 0,
         transform: 'translate3d(' + x + 'px, 0, 0)',
-        transition: !this.state.swiping && Transitions.easeOut(),
+        //transition: !this.state.swiping && Transitions.easeOut(),
         backgroundColor: this.getTheme().color,
         overflow: 'hidden',
       },
@@ -168,7 +168,7 @@ const LeftNav = React.createClass({
         overflowY: 'auto',
         overflowX: 'hidden',
         //height: '100%',
-        borderRadius: '0',
+        //TODO: borderRadius: '0',
       },
       overlay: {
         pointerEvents: this.state.open ? 'auto' : 'none', // Bypass mouse events when left nav is closing.
@@ -185,7 +185,7 @@ const LeftNav = React.createClass({
 
     styles.menuItemLink = this.mergeStyles(styles.menuItem, {
       //display: 'block',
-      textDecoration: 'none',
+      //TODO: textDecoration: 'none',
       color: this.getThemePalette().textColor,
     });
     styles.menuItemSubheader = this.mergeStyles(styles.menuItem, {
@@ -276,9 +276,9 @@ const LeftNav = React.createClass({
 
   _updateMenuHeight() {
     if (this.props.header) {
-      const menu = ReactDOM.findDOMNode(this.refs.menuItems);
+/*      const menu = ReactDOM.findDOMNode(this.refs.menuItems);*/
       if (menu) {
-        const container = ReactDOM.findDOMNode(this.refs.clickAwayableElement);
+/*        const container = ReactDOM.findDOMNode(this.refs.clickAwayableElement);*/
         const menuHeight = container.clientHeight - menu.offsetTop;
         menu.style.height = menuHeight + 'px';
       }
@@ -369,7 +369,7 @@ const LeftNav = React.createClass({
   },
 
   _setPosition(translateX) {
-    let leftNav = ReactDOM.findDOMNode(this.refs.clickAwayableElement);
+/*    let leftNav = ReactDOM.findDOMNode(this.refs.clickAwayableElement);*/
     let transformCSS = 'translate3d(' + (this._getTranslateMultiplier() * translateX) + 'px, 0, 0)';
     this.refs.overlay.setOpacity(1 - translateX / this._getMaxTranslateX());
     AutoPrefix.set(leftNav.style, 'transform', transformCSS);

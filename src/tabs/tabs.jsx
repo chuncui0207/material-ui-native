@@ -1,8 +1,8 @@
 import React from '../../../react-native';
-import ReactDOM from 'react-dom';
+/*import ReactDOM from 'react-dom';*/
 import TabTemplate from './tabTemplate';
 import InkBar from '../ink-bar';
-
+import StylePropable from '../mixins/style-propable';
 import Controllable from '../mixins/controllable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
@@ -14,7 +14,7 @@ const {
 
 const Tabs = React.createClass({
 
-  mixins: [Controllable],
+  mixins: [StylePropable, Controllable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -64,7 +64,7 @@ const Tabs = React.createClass({
   getEvenWidth() {
     return (
       parseInt(window
-        .getComputedStyle(ReactDOM.findDOMNode(this))
+/*        .getComputedStyle(ReactDOM.findDOMNode(this))*/
         .getPropertyValue('width'), 10)
     );
   },

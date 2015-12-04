@@ -1,5 +1,5 @@
 import React from 'react-native';
-import createFragment from 'react-addons-create-fragment';
+// TODO: import createFragment from 'react-addons-create-fragment';
 
 export default {
 
@@ -21,7 +21,7 @@ export default {
 
     if (validChildrenCount === 0) return undefined;
     if (validChildrenCount === 1) return newFragments[firstKey];
-    return createFragment(newFragments);
+    return newFragments; //createFragment(newFragments);
   },
 
   extend(children, extendedProps, extendedChildren) {

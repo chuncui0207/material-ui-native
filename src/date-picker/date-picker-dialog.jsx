@@ -1,6 +1,6 @@
 import React from '../../../react-native';
 import ContextPure from '../mixins/context-pure';
-
+import StylePropable from '../mixins/style-propable';
 import WindowListenable from '../mixins/window-listenable';
 import KeyCode from '../utils/key-code';
 import Calendar from './calendar';
@@ -18,6 +18,7 @@ const {
 const DatePickerDialog = React.createClass({
 
   mixins: [
+    StylePropable,
     WindowListenable,
     ContextPure,
   ],

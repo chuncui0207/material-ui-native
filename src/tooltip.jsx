@@ -1,6 +1,6 @@
 import React from '../../react-native';
-import ReactDOM from 'react-dom';
-
+/*import ReactDOM from 'react-dom';*/
+import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';
 import Colors from './styles/colors';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
@@ -11,6 +11,9 @@ const {
 } = React;
 
 const Tooltip = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -72,23 +75,23 @@ const Tooltip = React.createClass({
     let styles = StyleSheet.create({
       root: {
         position: 'absolute',
-        fontFamily: this.state.muiTheme.rawTheme.fontFamily,
+        //fontFamily: this.state.muiTheme.rawTheme.fontFamily,
         fontSize: '10px',
         lineHeight: '22px',
         padding: '0 8px',
         color: Colors.white,
         overflow: 'hidden',
         top: -10000,
-        borderRadius: 2,
+        //TODO: borderRadius: 2,
         userSelect: 'none',
         opacity: 0,
         right: horizontalPosition === 'left' ? 12 : null,
         left: horizontalPosition === 'center' ?
           (this.state.offsetWidth - 48) / 2 * -1 : null,
-        transition:
-          Transitions.easeOut('0ms', 'top', '450ms') + ',' +
-          Transitions.easeOut('450ms', 'transform', '0ms') + ',' +
-          Transitions.easeOut('450ms', 'opacity', '0ms'),
+        //transition:
+        //  Transitions.easeOut('0ms', 'top', '450ms') + ',' +
+        //  Transitions.easeOut('450ms', 'transform', '0ms') + ',' +
+        //  Transitions.easeOut('450ms', 'opacity', '0ms'),
       },
       label: {
         position: 'relative',
@@ -100,22 +103,22 @@ const Tooltip = React.createClass({
           horizontalPosition === 'left' ? '100%' : '0%',
         top: verticalPosition === 'bottom' ? 0 : '100%',
         transform: 'translate(-50%, -50%)',
-        borderRadius: '50%',
+        //TODO: borderRadius: '50%',
         backgroundColor: 'transparent',
-        transition:
-          Transitions.easeOut('0ms', 'width', '450ms') + ',' +
-          Transitions.easeOut('0ms', 'height', '450ms') + ',' +
-          Transitions.easeOut('450ms', 'backgroundColor', '0ms'),
+        //transition:
+        //  Transitions.easeOut('0ms', 'width', '450ms') + ',' +
+        //  Transitions.easeOut('0ms', 'height', '450ms') + ',' +
+        //  Transitions.easeOut('450ms', 'backgroundColor', '0ms'),
       },
       rootWhenShown: {
         top: verticalPosition === 'top' ?
           touchOffsetTop : 36,
         opacity: 0.9,
         transform: 'translate3d(0px, ' + offset + 'px, 0px)',
-        transition:
-          Transitions.easeOut('0ms', 'top', '0ms') + ',' +
-          Transitions.easeOut('450ms', 'transform', '0ms') + ',' +
-          Transitions.easeOut('450ms', 'opacity', '0ms'),
+        //transition:
+        //  Transitions.easeOut('0ms', 'top', '0ms') + ',' +
+        //  Transitions.easeOut('450ms', 'transform', '0ms') + ',' +
+        //  Transitions.easeOut('450ms', 'opacity', '0ms'),
       },
       rootWhenTouched: {
         fontSize: '14px',
@@ -124,10 +127,10 @@ const Tooltip = React.createClass({
       },
       rippleWhenShown: {
         backgroundColor: Colors.grey700,
-        transition:
-          Transitions.easeOut('450ms', 'width', '0ms') + ',' +
-          Transitions.easeOut('450ms', 'height', '0ms') + ',' +
-          Transitions.easeOut('450ms', 'backgroundColor', '0ms'),
+        //transition:
+        //  Transitions.easeOut('450ms', 'width', '0ms') + ',' +
+        //  Transitions.easeOut('450ms', 'height', '0ms') + ',' +
+        //  Transitions.easeOut('450ms', 'backgroundColor', '0ms'),
       },
     });
 
@@ -158,8 +161,8 @@ const Tooltip = React.createClass({
   },
 
   _setRippleSize() {
-    let ripple = ReactDOM.findDOMNode(this.refs.ripple);
-    let tooltip = window.getComputedStyle(ReactDOM.findDOMNode(this));
+/*    let ripple = ReactDOM.findDOMNode(this.refs.ripple);*/
+/*    let tooltip = window.getComputedStyle(ReactDOM.findDOMNode(this));*/
     let tooltipWidth = parseInt(tooltip.getPropertyValue('width'), 10) /
       (this.props.horizontalPosition === 'center' ? 2 : 1);
     let tooltipHeight = parseInt(tooltip.getPropertyValue('height'), 10);
@@ -177,7 +180,7 @@ const Tooltip = React.createClass({
   },
 
   _setTooltipPosition() {
-    let tooltip = ReactDOM.findDOMNode(this);
+/*    let tooltip = ReactDOM.findDOMNode(this);*/
     this.setState({offsetWidth: tooltip.offsetWidth});
   },
 

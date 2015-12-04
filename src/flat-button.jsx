@@ -31,7 +31,7 @@ const FlatButton = React.createClass({
       return {
         buttonColor: flatButtonTheme.color,
         buttonHeight: buttonTheme.height,
-        buttonMinWidth: buttonTheme.minWidth,
+        //buttonMinWidth: buttonTheme.minWidth,
         disabledTextColor: flatButtonTheme.disabledTextColor,
         primaryTextColor: flatButtonTheme.primaryTextColor,
         secondaryTextColor: flatButtonTheme.secondaryTextColor,
@@ -132,7 +132,7 @@ const FlatButton = React.createClass({
     const {
       buttonColor,
       buttonHeight,
-      buttonMinWidth,
+      //buttonMinWidth,
       disabledTextColor,
       primaryTextColor,
       secondaryTextColor,
@@ -154,12 +154,12 @@ const FlatButton = React.createClass({
 
     const mergedRootStyles = ImmutabilityHelper.merge({
       color: defaultColor,
-      transition: Transitions.easeOut(),
+      //transition: Transitions.easeOut(),
       fontSize: Typography.fontStyleButtonFontSize,
       letterSpacing: 0,
       textTransform: textTransform,
       fontWeight: Typography.fontWeightMedium,
-      borderRadius: 2,
+      //TODO: borderRadius: 2,
       userSelect: 'none',
       position: 'relative',
       overflow: 'hidden',

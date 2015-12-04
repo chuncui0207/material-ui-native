@@ -1,5 +1,5 @@
 import React from '../../react-native';
-
+import StylePropable from './mixins/style-propable';
 import ContextPure from './mixins/context-pure';
 import Transitions from './styles/transitions';
 import PropTypes from './utils/prop-types';
@@ -16,7 +16,10 @@ const {
 
 const IconButton = React.createClass({
 
-  mixins: [ContextPure],
+  mixins: [
+    StylePropable,
+    ContextPure,
+  ],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -102,15 +105,15 @@ const IconButton = React.createClass({
     let styles = StyleSheet.create({
       root: {
         position: 'relative',
-        boxSizing: 'border-box',
-        transition: Transitions.easeOut(),
+        //boxSizing:: 'border-box',
+        //transition: Transitions.easeOut(),
         padding: iconSize / 2,
         width: iconSize * 2,
         height: iconSize * 2,
         fontSize: 0,
       },
       tooltip: {
-        boxSizing: 'border-box',
+        //boxSizing:: 'border-box',
       },
       icon: {
         color: textColor,
@@ -121,7 +124,7 @@ const IconButton = React.createClass({
         top: 0,
         //width: '100%',
         //height: '100%',
-        background: disabledColor,
+        //TODO: background: disabledColor,
       },
       disabled: {
         color: disabledColor,

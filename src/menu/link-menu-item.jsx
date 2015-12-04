@@ -1,9 +1,12 @@
 import React from '../../../react-native';
-
+import StylePropable from '../mixins/style-propable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
 const LinkMenuItem = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -59,7 +62,7 @@ const LinkMenuItem = React.createClass({
     let style = {
       root: {
         userSelect: 'none',
-        cursor: 'pointer',
+        //TODO: cursor: 'pointer',
         //display: 'block',
         lineHeight: this.getTheme().height + 'px',
         paddingLeft: this.getTheme().padding,
@@ -72,7 +75,7 @@ const LinkMenuItem = React.createClass({
         color: this.getTheme().selectedTextColor,
       },
       rootWhenDisabled: {
-        cursor: 'default',
+        //TODO: cursor: 'default',
         color: this.state.muiTheme.rawTheme.palette.disabledColor,
       },
     };

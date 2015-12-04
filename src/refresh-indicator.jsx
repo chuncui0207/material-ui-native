@@ -1,6 +1,6 @@
 import React from '../../react-native';
-import ReactDOM from 'react-dom';
-
+/*import ReactDOM from 'react-dom';*/
+import StylePropable from './mixins/style-propable';
 import AutoPrefix from './styles/auto-prefix';
 import Transitions from './styles/transitions';
 import Paper from './paper';
@@ -9,6 +9,7 @@ import ThemeManager from './styles/theme-manager';
 
 const VIEWBOX_SIZE = 32;
 const RefreshIndicator = React.createClass({
+  mixins: [StylePropable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -62,8 +63,8 @@ const RefreshIndicator = React.createClass({
   },
 
   componentDidUpdate() {
-    this._scalePath(ReactDOM.findDOMNode(this.refs.path), 0);
-    this._rotateWrapper(ReactDOM.findDOMNode(this.refs.wrapper));
+/*    this._scalePath(ReactDOM.findDOMNode(this.refs.path), 0);*/
+/*    this._rotateWrapper(ReactDOM.findDOMNode(this.refs.wrapper));*/
   },
 
   render() {
@@ -132,7 +133,7 @@ const RefreshIndicator = React.createClass({
       left: -10000,
       transform: `translate3d(${10000 + this.props.left}px, ${10000 + this.props.top}px, 0)`,
       opacity: this.props.status === 'hide' ? 0 : 1,
-      transition: this.props.status === 'hide' ? Transitions.create('all', '.3s', 'ease-out') : 'none',
+      //transition: this.props.status === 'hide' ? Transitions.create('all', '.3s', 'ease-out') : 'none',
     };
   },
 

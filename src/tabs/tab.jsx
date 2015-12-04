@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-
+import StylePropable from '../mixins/style-propable';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
 
@@ -8,6 +8,9 @@ const {
 } = React;
 
 const Tab = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -66,17 +69,17 @@ const Tab = React.createClass({
     } = this.props;
     let styles = this.prepareStyles({
       //display: 'table-cell',
-      cursor: 'pointer',
+      //TODO: cursor: 'pointer',
       textAlign: 'center',
       verticalAlign: 'middle',
       height: 48,
       color: selected ? this.state.muiTheme.tabs.selectedTextColor : this.state.muiTheme.tabs.textColor,
-      outline: 'none',
+      //TODO: outline:: 'none',
       fontSize: 14,
       fontWeight: 500,
       whiteSpace: 'initial',
-      fontFamily: this.state.muiTheme.rawTheme.fontFamily,
-      boxSizing: 'border-box',
+      //fontFamily: this.state.muiTheme.rawTheme.fontFamily,
+      //boxSizing:: 'border-box',
       width: width,
     }, style);
 

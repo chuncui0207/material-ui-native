@@ -1,7 +1,7 @@
 import React from '../../react-native';
-import ReactDOM from 'react-dom';
+/*import ReactDOM from 'react-dom';*/
 import ColorManipulator from './utils/color-manipulator';
-
+import StylePropable from './mixins/style-propable';
 import Transitions from './styles/transitions';
 import UniqueId from './utils/unique-id';
 import EnhancedTextarea from './enhanced-textarea';
@@ -26,7 +26,10 @@ function isValid(value) {
 
 const TextField = React.createClass({
 
-  mixins: [ContextPure],
+  mixins: [
+    ContextPure,
+    StylePropable,
+  ],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -164,8 +167,8 @@ const TextField = React.createClass({
         //display: 'inline-block',
         position: 'relative',
         backgroundColor: backgroundColor,
-        fontFamily: this.state.muiTheme.rawTheme.fontFamily,
-        transition: Transitions.easeOut('200ms', 'height'),
+        //fontFamily: this.state.muiTheme.rawTheme.fontFamily,
+        //transition: Transitions.easeOut('200ms', 'height'),
       },
       error: {
         position: 'relative',
@@ -173,37 +176,37 @@ const TextField = React.createClass({
         fontSize: 12,
         lineHeight: '12px',
         color: errorColor,
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
       },
       hint: {
         position: 'absolute',
         lineHeight: '22px',
         opacity: 1,
         color: hintColor,
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
         bottom: 12,
       },
       input: {
-        tapHighlightColor: 'rgba(0,0,0,0)',
+        //TODO: tapHighlightColor: 'rgba(0,0,0,0)',
         padding: 0,
         position: 'relative',
         //width: '100%',
         //height: '100%',
-        border: 'none',
-        outline: 'none',
+        //TODO: border: 'none',
+        //TODO: outline:: 'none',
         backgroundColor: 'transparent',
         color: props.disabled ? disabledTextColor : textColor,
-        font: 'inherit',
+        //TODO: font: 'inherit',
       },
       underline: {
-        border: 'none',
+        //TODO: border: 'none',
         borderBottom: 'solid 1px ' + borderColor,
         position: 'absolute',
         //width: '100%',
         bottom: 8,
         margin: 0,
-        MozBoxSizing: 'content-box',
-        boxSizing: 'content-box',
+        //MozboxSizing:: 'content-box',
+        //boxSizing:: 'content-box',
         height: 0,
       },
       underlineAfter: {
@@ -211,7 +214,7 @@ const TextField = React.createClass({
         //width: '100%',
         overflow: 'hidden',
         userSelect: 'none',
-        cursor: 'default',
+        //TODO: cursor: 'default',
         bottom: 8,
         borderBottom: 'dotted 2px ' + disabledTextColor,
       },
@@ -219,7 +222,7 @@ const TextField = React.createClass({
         borderBottom: 'solid 2px',
         borderColor: focusColor,
         transform: 'scaleX(0)',
-        transition: Transitions.easeOut(),
+        //transition: Transitions.easeOut(),
       },
     });
 
@@ -233,7 +236,7 @@ const TextField = React.createClass({
       bottom: 'none',
       opacity: 1,
       //zIndex: 1, // Needed to display label above Chrome's autocomplete field background
-      cursor: 'text',
+      //TODO: cursor: 'text',
       transform: 'scale(1) translate3d(0, 0, 0)',
       transformOrigin: 'left top',
     });
@@ -241,8 +244,8 @@ const TextField = React.createClass({
     styles.textarea = this.mergeStyles(styles.input, {
       marginTop: props.floatingLabelText ? 36 : 12,
       marginBottom: props.floatingLabelText ? -36 : -12,
-      boxSizing: 'border-box',
-      font: 'inherit',
+      //boxSizing:: 'border-box',
+      //TODO: font: 'inherit',
     });
 
     styles.focusUnderline = this.mergeStyles(styles.underline, styles.underlineFocus, props.underlineFocusStyle);
@@ -421,8 +424,8 @@ const TextField = React.createClass({
   },
 
   _getInputNode() {
-    return (this.props.children || this.props.multiLine) ?
-      this.refs[this._getRef()].getInputNode() : ReactDOM.findDOMNode(this.refs[this._getRef()]);
+/*    return (this.props.children || this.props.multiLine) ?
+        this.refs[this._getRef()].getInputNode() : ReactDOM.findDOMNode(this.refs[this._getRef()]);*/
   },
 
   _handleInputBlur(e) {
@@ -450,7 +453,7 @@ const TextField = React.createClass({
   _handleTextAreaHeightChange(e, height) {
     let newHeight = height + 24;
     if (this.props.floatingLabelText) newHeight += 24;
-    ReactDOM.findDOMNode(this).style.height = newHeight + 'px';
+/*    ReactDOM.findDOMNode(this).style.height = newHeight + 'px';*/
   },
 
   _isControlled() {

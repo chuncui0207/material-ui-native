@@ -1,6 +1,6 @@
 import React from '../../../react-native';
-import ReactDOM from 'react-dom';
-
+/*import ReactDOM from 'react-dom';*/
+import StylePropable from '../mixins/style-propable';
 import AutoPrefix from '../styles/auto-prefix';
 import Transitions from '../styles/transitions';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
@@ -11,6 +11,9 @@ const {
 } = React;
 
 const SlideInChild = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -54,7 +57,7 @@ const SlideInChild = React.createClass({
   },
 
   componentWillEnter(callback) {
-    let style = ReactDOM.findDOMNode(this).style;
+/*    let style = ReactDOM.findDOMNode(this).style;*/
     let x = this.props.direction === 'left' ? '100%' :
       this.props.direction === 'right' ? '-100%' : '0';
     let y = this.props.direction === 'up' ? '100%' :
@@ -69,13 +72,13 @@ const SlideInChild = React.createClass({
   },
 
   componentDidEnter() {
-    let style = ReactDOM.findDOMNode(this).style;
+/*    let style = ReactDOM.findDOMNode(this).style;*/
     style.opacity = '1';
     AutoPrefix.set(style, 'transform', 'translate3d(0,0,0)');
   },
 
   componentWillLeave(callback) {
-    let style = ReactDOM.findDOMNode(this).style;
+/*    let style = ReactDOM.findDOMNode(this).style;*/
     let direction = this.props.getLeaveDirection();
     let x = direction === 'left' ? '-100%' :
       direction === 'right' ? '100%' : '0';
@@ -105,7 +108,7 @@ const SlideInChild = React.createClass({
       //width: '100%',
       top: 0,
       left: 0,
-      transition: Transitions.easeOut(null, ['transform', 'opacity']),
+      //transition: Transitions.easeOut(null, ['transform', 'opacity']),
     }, style);
 
     return (

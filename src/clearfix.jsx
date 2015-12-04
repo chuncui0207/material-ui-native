@@ -1,11 +1,12 @@
 import React from '../../react-native';
 import BeforeAfterWrapper from './before-after-wrapper';
-
+import StylePropable from './mixins/style-propable';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
 import ThemeManager from './styles/theme-manager';
 
 
 const ClearFix = React.createClass({
+  mixins: [StylePropable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,

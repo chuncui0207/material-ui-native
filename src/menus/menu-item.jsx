@@ -1,7 +1,7 @@
 import React from '../../../react-native';
-import ReactDOM from 'react-dom';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
-
+/*import ReactDOM from 'react-dom';*/
+/*import PureRenderMixin from 'react-addons-pure-render-mixin';*/
+import StylePropable from '../mixins/style-propable';
 import Colors from '../styles/colors';
 import Popover from '../popover/popover';
 // import CheckIcon from '../svg-icons/navigation/check';
@@ -17,7 +17,7 @@ const {
 const nestedMenuStyle = {position:'relative'};
 const MenuItem = React.createClass({
 
-  mixins: [PureRenderMixin],
+  mixins: [/*PureRenderMixin, */StylePropable],
 
   contextTypes: {
     muiTheme: React.PropTypes.object,
@@ -234,7 +234,7 @@ const MenuItem = React.createClass({
     e.preventDefault();
     this.setState({
       open:true,
-      anchorEl:ReactDOM.findDOMNode(this),
+/*      anchorEl:ReactDOM.findDOMNode(this),*/
     });
     if (this.props.onTouchTap) {
       this.props.onTouchTap(e);

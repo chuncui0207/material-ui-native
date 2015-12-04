@@ -1,5 +1,5 @@
 import React from '../../../react-native';
-
+import StylePropable from '../mixins/style-propable';
 import Tooltip from '../tooltip';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
@@ -9,6 +9,9 @@ const {
 } = React;
 
 const TableHeaderColumn = React.createClass({
+
+  mixins: [StylePropable],
+
   contextTypes: {
     muiTheme: React.PropTypes.object,
   },
@@ -66,7 +69,7 @@ const TableHeaderColumn = React.createClass({
         position: 'relative',
       },
       tooltip: {
-        boxSizing: 'border-box',
+        //boxSizing:: 'border-box',
         marginTop: theme.height / 2,
       },
     });

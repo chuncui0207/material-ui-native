@@ -1,8 +1,8 @@
 import React from '../../../react-native';
-import ReactDOM from 'react-dom';
-import update from 'react-addons-update';
+/*import ReactDOM from 'react-dom';*/
+//import update from 'react-addons-update';
 import Controllable from '../mixins/controllable';
-
+import StylePropable from '../mixins/style-propable';
 import ClickAwayable from '../mixins/click-awayable';
 import AutoPrefix from '../styles/auto-prefix';
 import Transitions from '../styles/transitions';
@@ -21,6 +21,7 @@ const {
 const Menu = React.createClass({
 
   mixins: [
+    StylePropable,
     Controllable,
     ClickAwayable,
   ],
@@ -97,7 +98,7 @@ const Menu = React.createClass({
   },
 
   componentWillLeave(callback) {
-    let rootStyle = ReactDOM.findDOMNode(this).style;
+/*    let rootStyle = ReactDOM.findDOMNode(this).style;*/
     rootStyle.transition = Transitions.easeOut('250ms', ['opacity', 'transform']);
     rootStyle.transform = 'translate3d(0,-8px,0)';
     rootStyle.opacity = 0;
@@ -151,7 +152,7 @@ const Menu = React.createClass({
       root: {
         //Nested div bacause the List scales x faster than
         //it scales y
-        transition: animated ? Transitions.easeOut('250ms', 'transform') : null,
+        //transition: animated ? Transitions.easeOut('250ms', 'transform') : null,
         position: 'absolute',
         //zIndex: 10,
         top: openDown ? 0 : null,
@@ -171,12 +172,12 @@ const Menu = React.createClass({
       },
 
       menuItemContainer: {
-        transition: animated ? Transitions.easeOut(null, 'opacity') : null,
+        //transition: animated ? Transitions.easeOut(null, 'opacity') : null,
         opacity: 0,
       },
 
       paper: {
-        transition: animated ? Transitions.easeOut('500ms', ['transform', 'opacity']) : null,
+        //transition: animated ? Transitions.easeOut('500ms', ['transform', 'opacity']) : null,
         transform: 'scaleY(0)',
         transformOrigin: openDown ? 'top' : 'bottom',
         opacity: 0,
@@ -260,9 +261,9 @@ const Menu = React.createClass({
   },
 
   _animateOpen() {
-    let rootStyle = ReactDOM.findDOMNode(this).style;
-    let scrollContainerStyle = ReactDOM.findDOMNode(this.refs.scrollContainer).style;
-    let menuContainers = ReactDOM.findDOMNode(this.refs.list).childNodes;
+/*    let rootStyle = ReactDOM.findDOMNode(this).style;*/
+/*    let scrollContainerStyle = ReactDOM.findDOMNode(this.refs.scrollContainer).style;*/
+/*    let menuContainers = ReactDOM.findDOMNode(this.refs.list).childNodes;*/
 
     AutoPrefix.set(rootStyle, 'transform', 'scaleX(1)');
     AutoPrefix.set(scrollContainerStyle, 'transform', 'scaleY(1)');
@@ -410,12 +411,12 @@ const Menu = React.createClass({
     this._setFocusIndex(focusIndex, false);
 
     if (multiple) {
-      let index = menuValue.indexOf(itemValue);
-      let newMenuValue = index === -1 ?
-        update(menuValue, {$push: [itemValue]}) :
-        update(menuValue, {$splice: [[index, 1]]});
+      // TODO: let index = menuValue.indexOf(itemValue);
+      //let newMenuValue = index === -1 ?
+      //  update(menuValue, {$push: [itemValue]}) :
+      //  update(menuValue, {$splice: [[index, 1]]});
 
-      valueLink.requestChange(e, newMenuValue);
+      //valueLink.requestChange(e, newMenuValue);
     }
     else if (!multiple && itemValue !== menuValue) {
       valueLink.requestChange(e, itemValue);
@@ -456,20 +457,20 @@ const Menu = React.createClass({
     let menuItemHeight = desktop ? 32 : 48;
 
     if (focusedMenuItem) {
-      let selectedOffSet = ReactDOM.findDOMNode(focusedMenuItem).offsetTop;
+/*      let selectedOffSet = ReactDOM.findDOMNode(focusedMenuItem).offsetTop;*/
 
       //Make the focused item be the 2nd item in the list the
       //user sees
       let scrollTop = selectedOffSet - menuItemHeight;
       if (scrollTop < menuItemHeight) scrollTop = 0;
 
-      ReactDOM.findDOMNode(this.refs.scrollContainer).scrollTop = scrollTop;
+/*      ReactDOM.findDOMNode(this.refs.scrollContainer).scrollTop = scrollTop;*/
     }
   },
 
   _setWidth() {
-    let el = ReactDOM.findDOMNode(this);
-    let listEl = ReactDOM.findDOMNode(this.refs.list);
+/*    let el = ReactDOM.findDOMNode(this);*/
+/*    let listEl = ReactDOM.findDOMNode(this.refs.list);*/
     let elWidth = el.offsetWidth;
     let keyWidth = this.state.keyWidth;
     let minWidth = keyWidth * 1.5;
