@@ -1,4 +1,4 @@
-import AutoPrefix from '../styles/auto-prefix';
+/*import AutoPrefix from '../styles/auto-prefix';*/
 import ImmutabilityHelper from '../utils/immutability-helper';
 
 const reTranslate = /((^|\s)translate(3d|X)?\()(\-?[\d]+)/;
@@ -9,7 +9,7 @@ export default {
 
   mergeAndPrefix() {
     let mergedStyles = ImmutabilityHelper.merge.apply(this, arguments);
-    return AutoPrefix.all(mergedStyles);
+/*    return AutoPrefix.all(mergedStyles);*/
   },
 
   // This function ensures that `style` supports both ltr and rtl directions by checking
@@ -94,6 +94,6 @@ export default {
   prepareStyles(muiTheme, ...styles) {
     styles = styles.length > 1 ? ImmutabilityHelper.merge.apply(this, styles) : (styles[0] || {});
     const flipped = this.ensureDirection(muiTheme, styles);
-    return AutoPrefix.all(flipped);
+/*    return AutoPrefix.all(flipped);*/
   },
 };

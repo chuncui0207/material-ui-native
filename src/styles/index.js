@@ -1,5 +1,5 @@
 export default {
-  AutoPrefix: require('./auto-prefix'),
+/*  AutoPrefix: require('./auto-prefix'),*/
   Colors: require('./colors'),
   Spacing: require('./spacing'),
   ThemeManager: require('./theme-manager'),

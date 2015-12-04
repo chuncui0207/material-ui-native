@@ -1,7 +1,7 @@
 import React from '../../../react-native';
 /*import ReactDOM from 'react-dom';*/
 import StylePropable from '../mixins/style-propable';
-import AutoPrefix from '../styles/auto-prefix';
+/*import AutoPrefix from '../styles/auto-prefix';*/
 import Transitions from '../styles/transitions';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
@@ -64,7 +64,7 @@ const SlideInChild = React.createClass({
       this.props.direction === 'down' ? '-100%' : '0';
 
     style.opacity = '0';
-    AutoPrefix.set(style, 'transform', 'translate3d(' + x + ',' + y + ',0)');
+/*    AutoPrefix.set(style, 'transform', 'translate3d(' + x + ',' + y + ',0)');*/
 
     setTimeout(() => {
       if (this.isMounted()) callback();
@@ -74,7 +74,7 @@ const SlideInChild = React.createClass({
   componentDidEnter() {
 /*    let style = ReactDOM.findDOMNode(this).style;*/
     style.opacity = '1';
-    AutoPrefix.set(style, 'transform', 'translate3d(0,0,0)');
+/*    AutoPrefix.set(style, 'transform', 'translate3d(0,0,0)');*/
   },
 
   componentWillLeave(callback) {
@@ -86,7 +86,7 @@ const SlideInChild = React.createClass({
       direction === 'down' ? '100%' : '0';
 
     style.opacity = '0';
-    AutoPrefix.set(style, 'transform', 'translate3d(' + x + ',' + y + ',0)');
+/*    AutoPrefix.set(style, 'transform', 'translate3d(' + x + ',' + y + ',0)');*/
 
     setTimeout(() => {
       if (this.isMounted()) callback();

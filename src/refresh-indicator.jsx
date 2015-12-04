@@ -1,7 +1,7 @@
 import React from '../../react-native';
 /*import ReactDOM from 'react-dom';*/
 import StylePropable from './mixins/style-propable';
-import AutoPrefix from './styles/auto-prefix';
+/*import AutoPrefix from './styles/auto-prefix';*/
 import Transitions from './styles/transitions';
 import Paper from './paper';
 import DefaultRawTheme from './styles/raw-themes/light-raw-theme';
@@ -218,9 +218,9 @@ const RefreshIndicator = React.createClass({
       transitionDuration = '850ms';
     }
 
-    AutoPrefix.set(path.style, 'strokeDasharray', strokeDasharray);
-    AutoPrefix.set(path.style, 'strokeDashoffset', strokeDashoffset);
-    AutoPrefix.set(path.style, 'transitionDuration', transitionDuration);
+/*    AutoPrefix.set(path.style, 'strokeDasharray', strokeDasharray);*/
+/*    AutoPrefix.set(path.style, 'strokeDashoffset', strokeDashoffset);*/
+/*    AutoPrefix.set(path.style, 'transitionDuration', transitionDuration);*/
   },
 
   _rotateWrapper(wrapper) {
@@ -229,21 +229,21 @@ const RefreshIndicator = React.createClass({
     clearTimeout(this._timer2);
     this._timer2 = setTimeout(this._rotateWrapper.bind(this, wrapper), 10050);
 
-    AutoPrefix.set(wrapper.style, 'transform', null);
-    AutoPrefix.set(wrapper.style, 'transform', 'rotate(0deg)');
-    AutoPrefix.set(wrapper.style, 'transitionDuration', '0ms');
+/*    AutoPrefix.set(wrapper.style, 'transform', null);*/
+/*    AutoPrefix.set(wrapper.style, 'transform', 'rotate(0deg)');*/
+/*    AutoPrefix.set(wrapper.style, 'transitionDuration', '0ms');*/
 
     setTimeout(() => {
       if (this.isMounted()) {
-        AutoPrefix.set(wrapper.style, 'transform', 'rotate(1800deg)');
-        AutoPrefix.set(wrapper.style, 'transitionDuration', '10s');
-        AutoPrefix.set(wrapper.style, 'transitionTimingFunction', 'linear');
+/*        AutoPrefix.set(wrapper.style, 'transform', 'rotate(1800deg)');*/
+/*        AutoPrefix.set(wrapper.style, 'transitionDuration', '10s');*/
+/*        AutoPrefix.set(wrapper.style, 'transitionTimingFunction', 'linear');*/
       }
     }, 50);
   },
 
   prefixed(key) {
-    return AutoPrefix.single(key);
+/*    return AutoPrefix.single(key);*/
   },
 
 });

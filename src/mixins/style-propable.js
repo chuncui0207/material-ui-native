@@ -26,7 +26,7 @@ export default {
   },
 
   // prepareStyles is used to merge multiple styles, make sure they are flipped to rtl
-  // if needed, and then autoprefix them. It should probably always be used instead of
+/*  // if needed, and then autoprefix them. It should probably always be used instead of*/
   // mergeAndPrefix.
   //
   // Never call this on the same style object twice. As a rule of thumb,

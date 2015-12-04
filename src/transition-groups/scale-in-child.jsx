@@ -2,7 +2,7 @@ import React from '../../../react-native';
 /*import ReactDOM from 'react-dom';*/
 /*import PureRenderMixin from 'react-addons-pure-render-mixin';*/
 import StylePropable from '../mixins/style-propable';
-import AutoPrefix from '../styles/auto-prefix';
+/*import AutoPrefix from '../styles/auto-prefix';*/
 import Transitions from '../styles/transitions';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 import ThemeManager from '../styles/theme-manager';
@@ -78,7 +78,7 @@ const ScaleInChild = React.createClass({
 /*    let style = ReactDOM.findDOMNode(this).style;*/
 
     style.opacity = '0';
-    AutoPrefix.set(style, 'transform', 'scale(' + this.props.minScale + ')');
+/*    AutoPrefix.set(style, 'transform', 'scale(' + this.props.minScale + ')');*/
 
     setTimeout(() => {
       if (this.isMounted()) callback();
@@ -113,14 +113,14 @@ const ScaleInChild = React.createClass({
 /*    let style = ReactDOM.findDOMNode(this).style;*/
 
     style.opacity = '1';
-    AutoPrefix.set(style, 'transform', 'scale(' + this.props.maxScale + ')');
+/*    AutoPrefix.set(style, 'transform', 'scale(' + this.props.maxScale + ')');*/
   },
 
   _initializeAnimation(callback) {
 /*    let style = ReactDOM.findDOMNode(this).style;*/
 
     style.opacity = '0';
-    AutoPrefix.set(style, 'transform', 'scale(0)');
+/*    AutoPrefix.set(style, 'transform', 'scale(0)');*/
 
     setTimeout(() => {
       if (this.isMounted()) callback();

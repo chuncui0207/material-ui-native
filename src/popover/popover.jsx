@@ -8,7 +8,7 @@ import PropTypes from '../utils/prop-types';
 import Transitions from '../styles/transitions';
 import Paper from '../paper';
 import throttle from 'lodash.throttle';
-import AutoPrefix from '../styles/auto-prefix';
+/*import AutoPrefix from '../styles/auto-prefix';*/
 import ContextPure from '../mixins/context-pure';
 
 const {
@@ -217,13 +217,13 @@ const Popover = React.createClass({
       });
     }
 
-    AutoPrefix.set(el.style, 'transform', `scale(${value},${value})`);
-    AutoPrefix.set(innerInner.style, 'transform', `scaleX(${value})`);
-    AutoPrefix.set(innerInnerInner.style, 'transform', `scaleY(${value})`);
-    AutoPrefix.set(rootStyle, 'opacity', value);
-    AutoPrefix.set(innerStyle, 'opacity', value);
-    AutoPrefix.set(innerInnerInner, 'opacity', value);
-    AutoPrefix.set(el.style, 'opacity', value);
+/*    AutoPrefix.set(el.style, 'transform', `scale(${value},${value})`);*/
+/*    AutoPrefix.set(innerInner.style, 'transform', `scaleX(${value})`);*/
+/*    AutoPrefix.set(innerInnerInner.style, 'transform', `scaleY(${value})`);*/
+/*    AutoPrefix.set(rootStyle, 'opacity', value);*/
+/*    AutoPrefix.set(innerStyle, 'opacity', value);*/
+/*    AutoPrefix.set(innerInnerInner, 'opacity', value);*/
+/*    AutoPrefix.set(el.style, 'opacity', value);*/
   },
 
   getAnchorPosition(el) {
