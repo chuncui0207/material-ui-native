@@ -1,5 +1,7 @@
 #### Note
 This is WIP of converting Material-UI to React-Native.
+Tested with React Native 0.13.0.
+Help is wellcomed.
 
 # Material-UI-Native
 
