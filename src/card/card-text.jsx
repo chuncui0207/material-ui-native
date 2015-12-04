@@ -4,7 +4,7 @@ import ThemeManager from '../styles/theme-manager';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 
 const {
-  View,
+  Text,
 } = React;
 
 const CardText = React.createClass({
@@ -62,9 +62,9 @@ const CardText = React.createClass({
     let rootStyle = this.prepareStyles(styles.root, this.props.style);
 
     return (
-      <View {...this.props} style={rootStyle}>
+      <Text {...this.props} style={rootStyle}>
         {this.props.children}
-      </View>
+      </Text>
     );
   },
 });
