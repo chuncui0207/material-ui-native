@@ -6,6 +6,7 @@ import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
 
 const {
   View,
+  Text,
 } = React;
 
 const CardTitle = React.createClass({
@@ -88,8 +89,8 @@ const CardTitle = React.createClass({
 
     return (
       <View {...this.props} style={rootStyle}>
-        <View style={titleStyle}>{this.props.title}</View>
-        <View style={subtitleStyle}>{this.props.subtitle}</View>
+        <Text style={titleStyle}>{this.props.title}</Text>
+        <Text style={subtitleStyle}>{this.props.subtitle}</Text>
         {this.props.children}
       </View>
     );
