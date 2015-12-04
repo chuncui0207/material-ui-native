@@ -135,7 +135,7 @@ const Slider = React.createClass({
     let styles = StyleSheet.create({
       root: {
         touchCallout: 'none',
-        userSelect: 'none',
+       // TODO: userSelect: 'none',
         //TODO: cursor: 'default',
         height: this.getTheme().handleSizeActive,
         position: 'relative',

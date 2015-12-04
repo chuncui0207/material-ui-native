@@ -160,7 +160,7 @@ const FlatButton = React.createClass({
       textTransform: textTransform,
       fontWeight: Typography.fontWeightMedium,
       //TODO: borderRadius: 2,
-      userSelect: 'none',
+     // TODO: userSelect: 'none',
       position: 'relative',
       overflow: 'hidden',
       backgroundColor: hovered ? buttonHoverColor : buttonBackgroundColor,

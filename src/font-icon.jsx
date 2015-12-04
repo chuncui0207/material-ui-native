@@ -69,7 +69,7 @@ const FontIcon = React.createClass({
       position: 'relative',
       fontSize: spacing.iconSize,
       //display: 'inline-block',
-      userSelect: 'none',
+     // TODO: userSelect: 'none',
       //transition: Transitions.easeOut(),
     }, style, {
       color: this.state.hovered ? onColor : offColor,
