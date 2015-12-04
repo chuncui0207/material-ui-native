@@ -16,9 +16,9 @@ export default {
   //   `styleConstants` in `muiTheme` and replacing attribute keys if necessary.
   ensureDirection(muiTheme, style) {
     if (process.env.NODE_ENV !== 'production') {
-      if (style.didFlip) {
-        console.warn(new Error('You\'re calling `ensureDirection` on the same style object twice.'));
-      }
+      //if (style.didFlip) {
+      //  console.warn(new Error('You\'re calling `ensureDirection` on the same style object twice.'));
+      //}
       //style = ImmutabilityHelper.merge({
       //  didFlip: 'true',
       //}, style);
