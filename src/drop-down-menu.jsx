@@ -123,7 +123,7 @@ const DropDownMenu = React.createClass({
         position: 'absolute',
         top: ((spacing.desktopToolbarHeight - 24) / 2),
         right: spacing.desktopGutterLess,
-        fill: this.state.muiTheme.dropDownMenu.accentColor,
+       // TODO: fill: this.state.muiTheme.dropDownMenu.accentColor,
       },
       label: {
         //transition: Transitions.easeOut(),

@@ -78,12 +78,12 @@ const Checkbox = React.createClass({
         transitionOrigin: '50% 50%',
         //transition: Transitions.easeOut('450ms', 'opacity', '0ms') + ', ' +
                       //Transitions.easeOut('0ms', 'transform', '450ms'),
-        fill: this.getTheme().checkedColor,
+       // TODO: fill: this.getTheme().checkedColor,
       },
       box: {
         position: 'absolute',
         opacity: 1,
-        fill: this.getTheme().boxColor,
+       // TODO: fill: this.getTheme().boxColor,
         //transition: Transitions.easeOut('2s', null, '200ms'),
       },
       checkWhenSwitched: {
@@ -94,13 +94,13 @@ const Checkbox = React.createClass({
       },
       boxWhenSwitched: {
         //transition: Transitions.easeOut('100ms', null, '0ms'),
-        fill: this.getTheme().checkedColor,
+       // TODO: fill: this.getTheme().checkedColor,
       },
       checkWhenDisabled: {
-        fill: this.getTheme().disabledColor,
+       // TODO: fill: this.getTheme().disabledColor,
       },
       boxWhenDisabled: {
-        fill: this.getTheme().disabledColor,
+       // TODO: fill: this.getTheme().disabledColor,
       },
       label: {
         color: this.props.disabled ? this.getTheme().labelDisabledColor : this.getTheme().labelColor,

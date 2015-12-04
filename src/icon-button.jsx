@@ -117,7 +117,7 @@ const IconButton = React.createClass({
       },
       icon: {
         color: textColor,
-        fill: textColor,
+       // TODO: fill: textColor,
       },
       overlay: {
         position: 'relative',
@@ -128,7 +128,7 @@ const IconButton = React.createClass({
       },
       disabled: {
         color: disabledColor,
-        fill: disabledColor,
+       // TODO: fill: disabledColor,
       },
     });
 

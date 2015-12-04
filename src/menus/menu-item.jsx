@@ -143,7 +143,7 @@ const MenuItem = React.createClass({
         padding: 0,
         right: 24,
         top: 4,
-        fill: Colors.grey600,
+       // TODO: fill: Colors.grey600,
       },
     };
 
