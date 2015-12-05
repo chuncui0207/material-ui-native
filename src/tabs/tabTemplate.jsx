@@ -8,12 +8,12 @@ const {
 const TabTemplate = React.createClass({
 
   render() {
-    let styles = StyleSheet.create({
+    let styles = {
       'height': 0,
       'overflow': 'hidden',
       'position': 'relative',
       'textAlign': 'initial',
-    });
+    }
 
     if (this.props.selected) {
       delete styles.height;

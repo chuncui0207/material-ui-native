@@ -68,7 +68,7 @@ const Toggle = React.createClass({
   getStyles() {
     let toggleSize = 20;
     let toggleTrackWidth = 36;
-    let styles = StyleSheet.create({
+    let styles = {
       icon: {
         width: 36,
         padding: '4px 0px 6px 2px',
@@ -111,7 +111,7 @@ const Toggle = React.createClass({
         color: this.props.disabled ? this.getTheme().labelDisabledColor : this.getTheme().labelColor,
         width: 'calc(100% - ' + (toggleTrackWidth + 10) + 'px)',
       },
-    });
+    }
 
     return styles;
   },

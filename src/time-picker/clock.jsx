@@ -98,14 +98,14 @@ const Clock = React.createClass({
     let clock = null;
     let buttons = this._getButtons();
 
-    let styles = StyleSheet.create({
+    let styles = {
       root: {},
 
       container: {
         height: 280,
         padding: 10,
       },
-    });
+    }
 
     if ( this.state.mode === 'hour') {
       clock = <ClockHours key="hours"

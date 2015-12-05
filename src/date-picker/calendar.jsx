@@ -93,7 +93,7 @@ const Calendar = React.createClass({
     let weekCount = DateTime.getWeekArray(this.state.displayDate).length;
     let toolbarInteractions = this._getToolbarInteractions();
     let isLandscape = this.props.mode === 'landscape';
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         fontSize: 12,
       },
@@ -136,7 +136,7 @@ const Calendar = React.createClass({
         textAlign: 'center',
         margin: '0 2px',
       },
-    });
+    }
 
     const weekTitleDayStyle = this.prepareStyles(styles.weekTitleDay);
     const {

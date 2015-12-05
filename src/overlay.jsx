@@ -80,7 +80,7 @@ const Overlay = React.createClass({
   },
 
   getStyles() {
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         position: 'fixed',
         //height: '100%',
@@ -109,7 +109,7 @@ const Overlay = React.createClass({
         //  Transitions.easeOut('0ms', 'left') + ',' +
         //  Transitions.easeOut('400ms', 'opacity'),
       },
-    });
+    }
     return styles;
   },
 

@@ -119,7 +119,7 @@ const DatePickerDialog = React.createClass({
       calendarTextColor,
     } = this.constructor.getRelevantContextKeys(this.state.muiTheme);
 
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         fontSize: 14,
         color: calendarTextColor,
@@ -136,7 +136,7 @@ const DatePickerDialog = React.createClass({
       actions: {
         marginRight: 8,
       },
-    });
+    }
 
     let actions = [
       <FlatButton

@@ -136,7 +136,7 @@ const EnhancedSwitch = React.createClass({
     let spacing = this.state.muiTheme.rawTheme.spacing;
     let switchWidth = 60 - spacing.desktopGutterLess;
     let labelWidth = 'calc(100% - 60px)';
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         position: 'relative',
           overflow: 'visible',
@@ -185,7 +185,7 @@ const EnhancedSwitch = React.createClass({
         top: -12,
         left: -12,
       },
-    });
+    }
 
     return styles;
   },

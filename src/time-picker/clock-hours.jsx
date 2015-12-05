@@ -195,7 +195,7 @@ const ClockHours = React.createClass({
   },
 
   render() {
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         //height: '100%',
         //width: '100%',
@@ -210,7 +210,7 @@ const ClockHours = React.createClass({
         //width: '100%',
         pointerEvents: 'auto',
       },
-    });
+    }
 
     let hours = this._getSelected();
     let numbers = this._getHourNumbers();

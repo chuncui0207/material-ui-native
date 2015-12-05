@@ -66,7 +66,7 @@ const Checkbox = React.createClass({
 
   getStyles() {
     let checkboxSize = 24;
-    let styles = StyleSheet.create({
+    let styles = {
       icon: {
         height: checkboxSize,
         width: checkboxSize,
@@ -105,7 +105,7 @@ const Checkbox = React.createClass({
       label: {
         color: this.props.disabled ? this.getTheme().labelDisabledColor : this.getTheme().labelColor,
       },
-    });
+    }
 
     return styles;
   },

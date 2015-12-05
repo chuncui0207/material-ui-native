@@ -31,7 +31,7 @@ const CalendarYear = React.createClass({
 
   render() {
     let years = this._getYears();
-    let styles = StyleSheet.create({
+    let styles = {
       position: 'relative',
       height: 'inherit',
       lineHeight: 36,
@@ -40,7 +40,7 @@ const CalendarYear = React.createClass({
       backgroundColor: Colors.white,
       overflowX: 'hidden',
       overflowY: 'scroll',
-    });
+    }
 
     return (
       <View style={styles}>

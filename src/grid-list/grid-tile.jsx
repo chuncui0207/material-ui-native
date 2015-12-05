@@ -75,7 +75,7 @@ const GridTile = React.createClass({
     const actionPos = this.props.actionIcon ? this.props.actionPosition : null;
     const gutterLess = spacing.desktopGutterLess;
 
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         position: 'relative',
         //display: 'block',
@@ -120,7 +120,7 @@ const GridTile = React.createClass({
         position: 'relative',
         left: '50%',
       },
-    });
+    }
     return styles;
   },
 

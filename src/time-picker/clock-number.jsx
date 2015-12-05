@@ -101,7 +101,7 @@ const ClockNumber = React.createClass({
       [-37, 50],
     ];
 
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         //display: 'inline-block',
         position: 'absolute',
@@ -116,7 +116,7 @@ const ClockNumber = React.createClass({
         pointerEvents: 'none',
         //boxSizing:: 'border-box',
       },
-    });
+    }
 
     if (this.props.isSelected) {
       styles.root.backgroundColor = this.getTheme().accentColor;

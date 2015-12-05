@@ -66,7 +66,7 @@ const ToolbarGroup = React.createClass({
   getStyles() {
     let marginHorizontal = this.getSpacing();
     let marginVertical = (this.getTheme().height - this.state.muiTheme.button.height) / 2;
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         position: 'relative',
         float: this.props.float,
@@ -107,7 +107,7 @@ const ToolbarGroup = React.createClass({
         color: this.getTheme().iconColor,
         lineHeight: this.getTheme().height,
       },
-    });
+    }
 
     return styles;
   },

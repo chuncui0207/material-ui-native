@@ -201,7 +201,7 @@ const RaisedButton = React.createClass({
     let labelElement;
     if (label) {
       labelElement = (
-        <Text style={StyleSheet.create(this.prepareStyles(styles.label, labelStyle))}>
+        <Text style={this.prepareStyles(styles.label, labelStyle)}>
           {label}
         </Text>
       );
@@ -211,10 +211,6 @@ const RaisedButton = React.createClass({
     let rippleOpacity = !(primary || secondary) ? 0.1 : 0.16;
 
     let buttonEventHandlers = disabled ? null : {
-      onMouseDown: this._handleMouseDown,
-      onMouseUp: this._handleMouseUp,
-      onMouseLeave: this._handleMouseLeave,
-      onMouseEnter: this._handleMouseEnter,
       onTouchStart: this._handleTouchStart,
       onTouchEnd: this._handleTouchEnd,
       onKeyboardFocus: this._handleKeyboardFocus,
@@ -251,31 +247,6 @@ const RaisedButton = React.createClass({
           </EnhancedButton>
       </Paper>
     );
-  },
-
-  _handleMouseDown(e) {
-    //only listen to left clicks
-    if (e.button === 0) {
-      this.setState({zDepth: this.state.initialZDepth + 1});
-    }
-    if (this.props.onMouseDown) this.props.onMouseDown(e);
-  },
-
-  _handleMouseUp(e) {
-    this.setState({zDepth: this.state.initialZDepth});
-    if (this.props.onMouseUp) this.props.onMouseUp(e);
-  },
-
-  _handleMouseLeave(e) {
-    if (!this.refs.container.isKeyboardFocused()) this.setState({zDepth: this.state.initialZDepth, hovered: false});
-    if (this.props.onMouseLeave) this.props.onMouseLeave(e);
-  },
-
-  _handleMouseEnter(e) {
-    if (!this.refs.container.isKeyboardFocused() && !this.state.touch) {
-      this.setState({hovered: true});
-    }
-    if (this.props.onMouseEnter) this.props.onMouseEnter(e);
   },
 
   _handleTouchStart(e) {

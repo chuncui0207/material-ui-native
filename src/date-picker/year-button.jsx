@@ -67,7 +67,7 @@ const YearButton = React.createClass({
       ...other,
     } = this.props;
 
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         //boxSizing:: 'border-box',
         //TODO: WebkitTapHighlightColor: 'rgba(0,0,0,0)',
@@ -94,7 +94,7 @@ const YearButton = React.createClass({
         transform: 'scale(0)',
         backgroundColor: this.getTheme().selectColor,
       },
-    });
+    }
 
     if (this.state.hover) {
       styles.label.color = this.getTheme().selectTextColor;

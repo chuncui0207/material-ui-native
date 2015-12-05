@@ -92,7 +92,7 @@ const AppBar = React.createClass({
     let themeVariables = this.state.muiTheme.appBar;
     let iconButtonSize = this.state.muiTheme.button.iconButtonSize;
     let flatButtonSize = 36;
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         position: 'relative',
         //zIndex: 5,
@@ -135,7 +135,7 @@ const AppBar = React.createClass({
         backgroundColor: 'transparent',
         marginTop: (iconButtonSize - flatButtonSize) / 2 + 2,
       },
-    });
+    }
 
     return styles;
   },

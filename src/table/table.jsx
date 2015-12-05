@@ -78,7 +78,7 @@ const Table = React.createClass({
   },
 
   getStyles() {
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         backgroundColor: this.getTheme().backgroundColor,
         padding: '0 ' + this.state.muiTheme.rawTheme.spacing.desktopGutter + 'px',
@@ -96,7 +96,7 @@ const Table = React.createClass({
         height: (this.props.fixedHeader || this.props.fixedFooter) ? 'auto' : this.props.height,
         overflow: 'auto',
       },
-    });
+    }
 
     return styles;
   },

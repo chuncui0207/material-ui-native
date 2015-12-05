@@ -87,7 +87,7 @@ const ClockPointer = React.createClass({
 
     let angle = this.getAngle();
 
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         //height: '30%',
         //TODO: background: this.getTheme().accentColor,
@@ -109,7 +109,7 @@ const ClockPointer = React.createClass({
         left: -6,
         borderRadius: 100,
       },
-    });
+    }
 
     if (!this.state.inner) {
       styles.root.height = '40%';

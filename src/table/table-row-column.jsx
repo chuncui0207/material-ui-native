@@ -61,7 +61,7 @@ const TableRowColumn = React.createClass({
 
   getStyles() {
     let theme = this.getTheme();
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         paddingLeft: theme.spacing,
         paddingRight: theme.spacing,
@@ -72,7 +72,7 @@ const TableRowColumn = React.createClass({
         whiteSpace: 'nowrap',
         textOverflow: 'ellipsis',
       },
-    });
+    }
 
     if (React.Children.count(this.props.children) === 1 && !isNaN(this.props.children)) {
       styles.textAlign = 'right';

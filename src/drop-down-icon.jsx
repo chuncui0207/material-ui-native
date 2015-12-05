@@ -75,7 +75,7 @@ const DropDownIcon = React.createClass({
   getStyles() {
     let spacing = this.state.muiTheme.rawTheme.spacing;
     let iconWidth = 48;
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         //display: 'inline-block',
         width: iconWidth + 'px !important',
@@ -94,7 +94,7 @@ const DropDownIcon = React.createClass({
         height: spacing.desktopDropDownMenuItemHeight,
         lineHeight: spacing.desktopDropDownMenuItemHeight,
       },
-    });
+    }
     return styles;
   },
 

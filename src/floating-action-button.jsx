@@ -116,7 +116,7 @@ const FloatingActionButton = React.createClass({
   getStyles() {
     let themeVariables = this.state.muiTheme.floatingActionButton;
 
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         //transition: Transitions.easeOut(),
         //display: 'inline-block',
@@ -158,7 +158,7 @@ const FloatingActionButton = React.createClass({
         height: themeVariables.miniSize,
         lineHeight: themeVariables.miniSize,
       },
-    });
+    }
     return styles;
   },
 

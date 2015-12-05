@@ -132,7 +132,7 @@ const Slider = React.createClass({
     let fillGutter = this.getTheme().handleSize / 2;
     let disabledGutter = this.getTheme().trackSize + this.getTheme().handleSizeDisabled / 2;
     let calcDisabledSpacing = this.props.disabled ? ' - ' + disabledGutter + 'px' : '';
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         touchCallout: 'none',
             height: this.getTheme().handleSizeActive,
@@ -213,7 +213,7 @@ const Slider = React.createClass({
         top: -this.getTheme().handleSize,
         left: -this.getTheme().handleSize,
       },
-    });
+    }
     styles.filled = this.mergeAndPrefix(styles.filledAndRemaining, {
       left: 0,
       backgroundColor: (this.props.disabled) ?

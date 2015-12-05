@@ -60,7 +60,7 @@ const SubheaderMenuItem = React.createClass({
   getStyles() {
     let gutterMini = this.getSpacing().desktopGutterMini;
     let subheaderHeight = this.getSpacing().desktopSubheaderHeight;
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         //boxSizing:: 'border-box',
         fontSize: 13,
@@ -80,7 +80,7 @@ const SubheaderMenuItem = React.createClass({
         paddingTop: 0,
         marginTop: 0,
       },
-    });
+    }
 
     return styles;
   },

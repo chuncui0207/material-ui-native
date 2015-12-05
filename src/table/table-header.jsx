@@ -64,11 +64,11 @@ const TableHeader = React.createClass({
   },
 
   getStyles() {
-    let styles = StyleSheet.create({
+    let styles = {
       root:  {
         borderBottom: '1px solid ' + this.getTheme().borderColor,
       },
-    });
+    }
 
     return styles;
   },

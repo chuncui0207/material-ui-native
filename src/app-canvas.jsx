@@ -41,12 +41,12 @@ const AppCanvas = React.createClass({
   },
 
   render() {
-    let styles = StyleSheet.create({
+    let styles = {
       //height: '100%',
       backgroundColor: this.state.muiTheme.rawTheme.palette.canvasColor,
       WebkitFontSmoothing: 'antialiased',
       direction: 'ltr',
-    });
+    }
 
     let newChildren = React.Children.map(this.props.children, (currentChild) => {
       if (!currentChild) { // If undefined, skip it

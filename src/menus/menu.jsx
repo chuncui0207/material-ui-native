@@ -148,7 +148,7 @@ const Menu = React.createClass({
     let openDown = openDirection.split('-')[0] === 'bottom';
     let openLeft = openDirection.split('-')[1] === 'left';
 
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         //Nested div bacause the List scales x faster than
         //it scales y
@@ -187,7 +187,7 @@ const Menu = React.createClass({
       selectedMenuItem: {
         color: this.state.muiTheme.rawTheme.palette.accent1Color,
       },
-    });
+    }
 
     let mergedRootStyles = this.prepareStyles(styles.root, style);
     let mergedListStyles = this.mergeStyles(styles.list, listStyle);

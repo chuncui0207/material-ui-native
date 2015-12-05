@@ -151,7 +151,7 @@ const LeftNav = React.createClass({
 
   getStyles() {
     let x = this._getTranslateMultiplier() * (this.state.open ? 0 : this._getMaxTranslateX());
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         //height: '100%',
         width: this.getTheme().width,
@@ -181,7 +181,7 @@ const LeftNav = React.createClass({
         left: 'auto',
         right: 0,
       },
-    });
+    }
 
     styles.menuItemLink = this.mergeStyles(styles.menuItem, {
       //display: 'block',

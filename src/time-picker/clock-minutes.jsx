@@ -167,7 +167,7 @@ const ClockMinutes = React.createClass({
   },
 
   render() {
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         //height: '100%',
         //width: '100%',
@@ -182,7 +182,7 @@ const ClockMinutes = React.createClass({
         //width: '100%',
         pointerEvents: 'auto',
       },
-    });
+    }
 
     let minutes = this._getMinuteNumbers();
 

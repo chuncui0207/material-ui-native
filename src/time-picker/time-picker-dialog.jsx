@@ -73,7 +73,7 @@ const TimePickerDialog = React.createClass({
       ...other,
     } = this.props;
 
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         fontSize: 14,
         color: this.getTheme().clockColor,
@@ -84,7 +84,7 @@ const TimePickerDialog = React.createClass({
       body: {
         padding:0,
       },
-    });
+    }
 
     let actions = [
       <FlatButton

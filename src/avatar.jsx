@@ -71,14 +71,14 @@ const Avatar = React.createClass({
       ...other,
     } = this.props;
 
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         height: size,
         width: size,
           borderRadius: 50,
         //display: 'inline-block',
       },
-    });
+    }
 
     if (src) {
       const borderColor = this.state.muiTheme.avatar.borderColor;

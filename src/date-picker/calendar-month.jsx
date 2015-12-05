@@ -21,11 +21,11 @@ const CalendarMonth = React.createClass({
   },
 
   render() {
-    let styles = StyleSheet.create({
+    let styles = {
       lineHeight: 32,
       textAlign: 'center',
       padding: '16px 14px 0 14px',
-    });
+    }
 
     return (
       <View style={styles}>

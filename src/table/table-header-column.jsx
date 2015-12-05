@@ -55,7 +55,7 @@ const TableHeaderColumn = React.createClass({
 
   getStyles() {
     let theme = this.getTheme();
-    let styles = StyleSheet.create({
+    let styles = {
       root:  {
         fontWeight: 'normal',
         fontSize: 12,
@@ -72,7 +72,7 @@ const TableHeaderColumn = React.createClass({
         //boxSizing:: 'border-box',
         marginTop: theme.height / 2,
       },
-    });
+    }
 
     return styles;
   },

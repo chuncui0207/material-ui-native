@@ -68,7 +68,7 @@ const ClockButton = React.createClass({
       className,
       ...other} = this.props;
 
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         position: 'absolute',
         bottom: 65,
@@ -96,7 +96,7 @@ const ClockButton = React.createClass({
         //transition: Transitions.easeOut(),
         backgroundColor: this.getTheme().accentColor,
       },
-    });
+    }
 
     if (this.props.selected) {
       styles.label.color = this.getTheme().selectTextColor;

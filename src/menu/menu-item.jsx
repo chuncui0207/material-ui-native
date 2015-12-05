@@ -106,7 +106,7 @@ const MenuItem = React.createClass({
     const marginRight = isRtl ? 'marginLeft' : 'marginRight';
     const paddingLeft = isRtl ? 'paddingRight' : 'paddingLeft';
 
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
             lineHeight: this.getTheme().height,
         paddingLeft: this.getTheme().padding,
@@ -155,7 +155,7 @@ const MenuItem = React.createClass({
       rootWhenDisabled: {
           color: this.state.muiTheme.rawTheme.palette.disabledColor,
       },
-    });
+    }
 
     return styles;
   },

@@ -88,7 +88,7 @@ const TimeDisplay = React.createClass({
       ...other,
     } = this.props;
 
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         textAlign: 'center',
         position: 'relative',
@@ -112,7 +112,7 @@ const TimeDisplay = React.createClass({
       hour: {},
 
       minute: {},
-    });
+    }
 
     let [hour, min] = this.sanitizeTime();
 

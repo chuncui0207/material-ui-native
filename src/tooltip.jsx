@@ -72,7 +72,7 @@ const Tooltip = React.createClass({
     let offset = verticalPosition === 'bottom' ?
       14 + touchMarginOffset : -14 - touchMarginOffset;
 
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         position: 'absolute',
         //fontFamily: this.state.muiTheme.rawTheme.fontFamily,
@@ -131,7 +131,7 @@ const Tooltip = React.createClass({
         //  Transitions.easeOut('450ms', 'height', '0ms') + ',' +
         //  Transitions.easeOut('450ms', 'backgroundColor', '0ms'),
       },
-    });
+    }
 
     return styles;
   },

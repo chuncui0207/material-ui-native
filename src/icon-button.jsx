@@ -102,7 +102,7 @@ const IconButton = React.createClass({
       disabledColor,
     } = this.constructor.getRelevantContextKeys(this.state.muiTheme);
 
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         position: 'relative',
         //boxSizing:: 'border-box',
@@ -130,7 +130,7 @@ const IconButton = React.createClass({
         color: disabledColor,
         fill: disabledColor,
       },
-    });
+    }
 
     return styles;
   },

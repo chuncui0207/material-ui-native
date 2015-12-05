@@ -86,7 +86,7 @@ const SelectField = React.createClass({
   },
 
   getStyles() {
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         height: 46,
         position: 'relative',
@@ -108,7 +108,7 @@ const SelectField = React.createClass({
       },
       input: {},
       error: {},
-    });
+    }
 
     if (!this.props.floatingLabelText) {
       styles.label.top = -6;

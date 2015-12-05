@@ -86,7 +86,7 @@ const NestedMenuItem = React.createClass({
   },
 
   getStyles() {
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
             lineHeight: this.getTheme().height,
         color: this.state.muiTheme.rawTheme.palette.textColor,
@@ -110,7 +110,7 @@ const NestedMenuItem = React.createClass({
       rootWhenDisabled: {
           color: this.state.muiTheme.rawTheme.palette.disabledColor,
       },
-    });
+    }
 
     return styles;
   },
@@ -304,7 +304,7 @@ const Menu = React.createClass({
   },
 
   getStyles() {
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         backgroundColor: this.getTheme().containerBackgroundColor,
         paddingTop: this.getSpacing().desktopGutterMini,
@@ -325,7 +325,7 @@ const Menu = React.createClass({
       item: {
         height: 34,
       },
-    });
+    }
 
     return styles;
   },

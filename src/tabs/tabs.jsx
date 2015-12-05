@@ -98,7 +98,7 @@ const Tabs = React.createClass({
     } = this.props;
 
     let themeVariables = this.state.muiTheme.tabs;
-    let styles = StyleSheet.create({
+    let styles = {
       tabItemContainer: {
         margin: 0,
         padding: 0,
@@ -108,7 +108,7 @@ const Tabs = React.createClass({
         whiteSpace: 'nowrap',
         //display: 'table',
       },
-    });
+    }
 
     let valueLink = this.getValueLink(this.props);
     let tabValue = valueLink.value;

@@ -101,7 +101,7 @@ const AutoComplete = React.createClass({
       ...other,
     } = this.props;
 
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         //display: 'inline-block',
         position: 'relative',
@@ -120,7 +120,7 @@ const AutoComplete = React.createClass({
         //display: 'block',
         //width: this.props.fullWidth ? '100%' : 256,
       },
-    });
+    }
 
     let textFieldProps = {
       style: this.mergeAndPrefix(styles.input, style),

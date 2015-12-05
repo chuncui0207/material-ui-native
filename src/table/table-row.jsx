@@ -84,7 +84,7 @@ const TableRow = React.createClass({
       cellBgColor = theme.stripeColor;
     }
 
-    let styles = StyleSheet.create({
+    let styles = {
       root: {
         borderBottom: '1px solid ' + this.getTheme().borderColor,
         color: this.getTheme().textColor,
@@ -92,7 +92,7 @@ const TableRow = React.createClass({
       cell: {
         backgroundColor: cellBgColor,
       },
-    });
+    }
 
     if (!this.props.displayBorder) {
       styles.root.borderBottom = '';
