@@ -83,8 +83,7 @@ const Tooltip = React.createClass({
         overflow: 'hidden',
         top: -10000,
         //TODO: borderRadius: 2,
-       // TODO: userSelect: 'none',
-        opacity: 0,
+          opacity: 0,
         right: horizontalPosition === 'left' ? 12 : null,
         left: horizontalPosition === 'center' ?
           (this.state.offsetWidth - 48) / 2 * -1 : null,

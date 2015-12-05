@@ -167,8 +167,7 @@ const Menu = React.createClass({
         //display: 'table-cell',
         paddingBottom: desktop ? 16 : 8,
         paddingTop: desktop ? 16 : 8,
-       // TODO: userSelect: 'none',
-        width: width,
+          width: width,
       },
 
       menuItemContainer: {

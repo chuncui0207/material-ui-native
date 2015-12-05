@@ -213,8 +213,7 @@ const TextField = React.createClass({
         position: 'absolute',
         //width: '100%',
         overflow: 'hidden',
-       // TODO: userSelect: 'none',
-          bottom: 8,
+            bottom: 8,
         borderBottom: 'dotted 2px ' + disabledTextColor,
       },
       underlineFocus: {

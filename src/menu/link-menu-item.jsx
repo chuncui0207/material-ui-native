@@ -61,8 +61,7 @@ const LinkMenuItem = React.createClass({
   getStyles() {
     let style = {
       root: {
-       // TODO: userSelect: 'none',
-          //display: 'block',
+            //display: 'block',
         lineHeight: this.getTheme().height,
         paddingLeft: this.getTheme().padding,
         paddingRight: this.getTheme().padding,

@@ -112,8 +112,7 @@ const ClockNumber = React.createClass({
         top: 10,
         textAlign: 'center',
         paddingTop: 5,
-       // TODO: userSelect: 'none',  /* Chrome all / Safari all */
-        fontSize: '1.1em',
+          fontSize: '1.1em',
         pointerEvents: 'none',
         //boxSizing:: 'border-box',
       },

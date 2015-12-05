@@ -108,8 +108,7 @@ const MenuItem = React.createClass({
 
     let styles = StyleSheet.create({
       root: {
-       // TODO: userSelect: 'none',
-          lineHeight: this.getTheme().height,
+            lineHeight: this.getTheme().height,
         paddingLeft: this.getTheme().padding,
         paddingRight: this.getTheme().padding,
         color: this.state.muiTheme.rawTheme.palette.textColor,

@@ -75,8 +75,7 @@ const Avatar = React.createClass({
       root: {
         height: size,
         width: size,
-       // TODO: userSelect: 'none',
-        borderRadius: 50,
+          borderRadius: 50,
         //display: 'inline-block',
       },
     });
