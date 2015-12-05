@@ -103,8 +103,7 @@ const DateDisplay = React.createClass({
         },
 
         title: {
-          //TODO: cursor: !this.state.selectedYear ? 'default' : 'pointer',
-        },
+            },
       },
 
       year: {
@@ -120,8 +119,7 @@ const DateDisplay = React.createClass({
         },
 
         title: {
-          //TODO: cursor: (this.state.selectedYear && !this.props.disableYearSelection) ? 'pointer' : 'default',
-        },
+            },
       },
     };
 

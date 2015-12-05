@@ -89,8 +89,7 @@ const NestedMenuItem = React.createClass({
     let styles = StyleSheet.create({
       root: {
        // TODO: userSelect: 'none',
-        //TODO: cursor: 'pointer',
-        lineHeight: this.getTheme().height,
+          lineHeight: this.getTheme().height,
         color: this.state.muiTheme.rawTheme.palette.textColor,
       },
       icon: {
@@ -110,8 +109,7 @@ const NestedMenuItem = React.createClass({
         color: this.getTheme().selectedTextColor,
       },
       rootWhenDisabled: {
-        //TODO: cursor: 'default',
-        color: this.state.muiTheme.rawTheme.palette.disabledColor,
+          color: this.state.muiTheme.rawTheme.palette.disabledColor,
       },
     });
 

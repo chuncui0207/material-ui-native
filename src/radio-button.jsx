@@ -69,7 +69,7 @@ const RadioButton = React.createClass({
         position: 'absolute',
         opacity: 1,
         transform: 'scale(1)',
-       // TODO: fill: this.getTheme().borderColor,
+        fill: this.getTheme().borderColor,
       },
       fill: {
         position: 'absolute',
@@ -77,7 +77,7 @@ const RadioButton = React.createClass({
         transform: 'scale(0)',
         transformOrigin: '50% 50%',
         //transition: Transitions.easeOut(),
-       // TODO: fill: this.getTheme().checkedColor,
+        fill: this.getTheme().checkedColor,
       },
       targetWhenChecked: {
         opacity: 0,
@@ -87,12 +87,12 @@ const RadioButton = React.createClass({
         opacity: 1,
         transform: 'scale(1)',
       },
-      //targetWhenDisabled: {
-       // TODO: fill: this.getTheme().disabledColor,
-      //},
-      //fillWhenDisabled: {
-       // TODO: fill: this.getTheme().disabledColor,
-      //},
+      targetWhenDisabled: {
+        fill: this.getTheme().disabledColor,
+      },
+      fillWhenDisabled: {
+        fill: this.getTheme().disabledColor,
+      },
       label: {
         color: this.props.disabled ? this.getTheme().labelDisabledColor : this.getTheme().labelColor,
       }

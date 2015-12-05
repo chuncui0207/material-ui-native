@@ -139,16 +139,14 @@ const EnhancedSwitch = React.createClass({
     let styles = StyleSheet.create({
       root: {
         position: 'relative',
-        //TODO: cursor: this.props.disabled ? 'default' : 'pointer',
-        overflow: 'visible',
+          overflow: 'visible',
         //display: 'table',
         height: 'auto',
         //width: '100%',
       },
       input: {
         position: 'absolute',
-        //TODO: cursor: this.props.disabled ? 'default' : 'pointer',
-        pointerEvents: 'all',
+          pointerEvents: 'all',
         opacity: 0,
         //width: '100%',
         //height: '100%',

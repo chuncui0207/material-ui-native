@@ -126,7 +126,7 @@ const AppBar = React.createClass({
           marginLeft: -16,
         },
         iconStyle: {
-         // TODO: fill: themeVariables.textColor,
+          fill: themeVariables.textColor,
           color: themeVariables.textColor,
         },
       },

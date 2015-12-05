@@ -164,7 +164,6 @@ const EnhancedButton = React.createClass({
       //fontFamily: this.state.muiTheme.rawTheme.fontFamily,
       //TODO: tapHighlightColor: Colors.transparent,
       //appearance: linkButton ? null : 'Button3',
-      //TODO: cursor: disabled ? 'default' : 'pointer',
       //TODO: textDecoration: 'none',
       //TODO: outline:: 'none',
     //}, style);

@@ -90,7 +90,7 @@ const YearButton = React.createClass({
         height: 32,
         width: 32,
         opacity: 0,
-        //TODO: borderRadius: '50%',
+        borderRadius: 50,
         transform: 'scale(0)',
         backgroundColor: this.getTheme().selectColor,
       },

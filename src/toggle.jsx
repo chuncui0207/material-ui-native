@@ -91,7 +91,7 @@ const Toggle = React.createClass({
         width: toggleSize,
         height: toggleSize,
         lineHeight: 24,
-        //TODO: borderRadius: '50%',
+        borderRadius: 50,
         backgroundColor: this.getTheme().thumbOffColor,
       },
       trackWhenSwitched: {

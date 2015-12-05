@@ -94,8 +94,7 @@ const ToolbarGroup = React.createClass({
       icon: {
         root: {
           float: 'left',
-          //TODO: cursor: 'pointer',
-          color: this.getTheme().iconColor,
+              color: this.getTheme().iconColor,
           lineHeight: this.getTheme().height,
           paddingLeft: this.getSpacing(),
         },

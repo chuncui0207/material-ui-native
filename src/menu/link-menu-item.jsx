@@ -62,8 +62,7 @@ const LinkMenuItem = React.createClass({
     let style = {
       root: {
        // TODO: userSelect: 'none',
-        //TODO: cursor: 'pointer',
-        //display: 'block',
+          //display: 'block',
         lineHeight: this.getTheme().height,
         paddingLeft: this.getTheme().padding,
         paddingRight: this.getTheme().padding,
@@ -75,8 +74,7 @@ const LinkMenuItem = React.createClass({
         color: this.getTheme().selectedTextColor,
       },
       rootWhenDisabled: {
-        //TODO: cursor: 'default',
-        color: this.state.muiTheme.rawTheme.palette.disabledColor,
+          color: this.state.muiTheme.rawTheme.palette.disabledColor,
       },
     };
 

@@ -107,7 +107,7 @@ const ClockPointer = React.createClass({
         position: 'absolute',
         top: -5,
         left: -6,
-        //TODO: borderRadius: '100%',
+        borderRadius: 100,
       },
     });
 

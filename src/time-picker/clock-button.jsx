@@ -75,7 +75,7 @@ const ClockButton = React.createClass({
         pointerEvents: 'auto',
         height: 50,
         width: 50,
-        //TODO: borderRadius: '100%',
+        borderRadius: 100,
       },
 
       label : {
@@ -91,7 +91,7 @@ const ClockButton = React.createClass({
         top: 0,
         left: 0,
         opacity: 0,
-        //TODO: borderRadius: '50%',
+        borderRadius: 50,
         transform: 'scale(0)',
         //transition: Transitions.easeOut(),
         backgroundColor: this.getTheme().accentColor,

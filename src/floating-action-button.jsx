@@ -129,7 +129,7 @@ const FloatingActionButton = React.createClass({
         padding: 0,
         overflow: 'hidden',
         backgroundColor: this._getBackgroundColor(),
-        //TODO: borderRadius: '50%',
+        borderRadius: 50,
         textAlign: 'center',
        // TODO: verticalAlign: 'bottom',
         //This is need so that ripples do not bleed
@@ -151,7 +151,7 @@ const FloatingActionButton = React.createClass({
       icon: {
         height: themeVariables.buttonSize,
         lineHeight: themeVariables.buttonSize,
-       // TODO: fill: themeVariables.iconColor,
+        fill: themeVariables.iconColor,
         color: this._getIconColor(),
       },
       iconWhenMini: {

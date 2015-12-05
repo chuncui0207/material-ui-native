@@ -156,7 +156,7 @@ const RefreshIndicator = React.createClass({
         strokeLinecap: 'round',
         opacity: p1,
         strokeWidth: circle.strokeWidth * p1,
-       // TODO: fill: 'none',
+        fill: 'none',
       },
       attr: {
         cx: circle.originX,
@@ -180,7 +180,7 @@ const RefreshIndicator = React.createClass({
     const theme = this._getTheme();
     return {
       style: {
-       // TODO: fill: this.props.percentage === 100 ? (this.props.loadingColor || theme.loadingStrokeColor) : (this.props.color || theme.strokeColor),
+        fill: this.props.percentage === 100 ? (this.props.loadingColor || theme.loadingStrokeColor) : (this.props.color || theme.strokeColor),
         transform: `rotate(${endDeg}deg)`,
         transformOrigin: `${circle.originX}px ${circle.originY}px`,
         opacity: p1,

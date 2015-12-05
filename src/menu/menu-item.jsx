@@ -109,8 +109,7 @@ const MenuItem = React.createClass({
     let styles = StyleSheet.create({
       root: {
        // TODO: userSelect: 'none',
-        //TODO: cursor: 'pointer',
-        lineHeight: this.getTheme().height,
+          lineHeight: this.getTheme().height,
         paddingLeft: this.getTheme().padding,
         paddingRight: this.getTheme().padding,
         color: this.state.muiTheme.rawTheme.palette.textColor,
@@ -155,8 +154,7 @@ const MenuItem = React.createClass({
         color: this.getTheme().selectedTextColor,
       },
       rootWhenDisabled: {
-        //TODO: cursor: 'default',
-        color: this.state.muiTheme.rawTheme.palette.disabledColor,
+          color: this.state.muiTheme.rawTheme.palette.disabledColor,
       },
     });
 

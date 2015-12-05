@@ -103,7 +103,7 @@ const Tooltip = React.createClass({
           horizontalPosition === 'left' ? '100%' : '0%',
         top: verticalPosition === 'bottom' ? 0 : '100%',
         transform: 'translate(-50%, -50%)',
-        //TODO: borderRadius: '50%',
+        borderRadius: 50,
         backgroundColor: 'transparent',
         //transition:
         //  Transitions.easeOut('0ms', 'width', '450ms') + ',' +

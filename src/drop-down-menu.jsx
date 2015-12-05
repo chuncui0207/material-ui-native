@@ -108,8 +108,7 @@ const DropDownMenu = React.createClass({
         //TODO: outline:: 'none',
       },
       control: {
-        //TODO: cursor: disabled ? 'not-allowed' : 'pointer',
-        position: 'static',
+          position: 'static',
         //height: '100%',
       },
       controlBg: {
@@ -123,7 +122,7 @@ const DropDownMenu = React.createClass({
         position: 'absolute',
         top: ((spacing.desktopToolbarHeight - 24) / 2),
         right: spacing.desktopGutterLess,
-       // TODO: fill: this.state.muiTheme.dropDownMenu.accentColor,
+        fill: this.state.muiTheme.dropDownMenu.accentColor,
       },
       label: {
         //transition: Transitions.easeOut(),

@@ -171,13 +171,13 @@ const ListItem = React.createClass({
 
       leftIcon: {
         color: Colors.grey600,
-       // TODO: fill: Colors.grey600,
+        fill: Colors.grey600,
         left: 4,
       },
 
       rightIcon: {
         color: Colors.grey400,
-       // TODO: fill: Colors.grey400,
+        fill: Colors.grey400,
         right: 4,
       },
 
@@ -187,8 +187,7 @@ const ListItem = React.createClass({
       },
 
       label: {
-        //TODO: cursor: 'pointer',
-      },
+        },
 
       leftAvatar: {
         left: 16,

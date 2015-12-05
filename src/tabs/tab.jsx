@@ -69,7 +69,6 @@ const Tab = React.createClass({
     } = this.props;
     let styles = this.prepareStyles({
       //display: 'table-cell',
-      //TODO: cursor: 'pointer',
       textAlign: 'center',
      // TODO: verticalAlign: 'middle',
       height: 48,

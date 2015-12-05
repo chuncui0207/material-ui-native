@@ -82,8 +82,7 @@ const DropDownIcon = React.createClass({
         position: 'relative',
         height: spacing.desktopToolbarHeight,
         fontSize: spacing.desktopDropDownMenuFontSize,
-        //TODO: cursor: 'pointer',
-      },
+        },
       menu: {
         //transition: Transitions.easeOut(),
         right: '-14px !important',

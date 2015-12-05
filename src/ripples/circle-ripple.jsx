@@ -65,7 +65,7 @@ const CircleRipple = React.createClass({
       left: 0,
       //height: '100%',
       //width: '100%',
-      //TODO: borderRadius: '50%',
+      borderRadius: 50,
       backgroundColor: color,
     }, style);
 

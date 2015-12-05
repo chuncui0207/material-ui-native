@@ -91,7 +91,7 @@ const DayButton = React.createClass({
         width: 36,
         top: 2,
         opacity: 0,
-        //TODO: borderRadius: '50%',
+        borderRadius: 50,
         transform: 'scale(0)',
         //transition: Transition.easeOut(),
         backgroundColor: this.getTheme().selectColor,

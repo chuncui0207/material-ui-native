@@ -84,7 +84,7 @@ const FocusRipple = React.createClass({
       position: 'absolute',
       //height: '100%',
       //width: '100%',
-      //TODO: borderRadius: '50%',
+      borderRadius: 50,
       opacity: opacity ? opacity : 0.16,
       backgroundColor: color,
       //transition: Transitions.easeOut(pulsateDuration + 'ms', 'transform', null, Transitions.easeInOutFunction),

@@ -136,8 +136,7 @@ const Slider = React.createClass({
       root: {
         touchCallout: 'none',
        // TODO: userSelect: 'none',
-        //TODO: cursor: 'default',
-        height: this.getTheme().handleSizeActive,
+          height: this.getTheme().handleSizeActive,
         position: 'relative',
         marginTop: 24,
         marginBottom: 48,
@@ -158,8 +157,7 @@ const Slider = React.createClass({
       handle: {
         //boxSizing:: 'border-box',
         position: 'absolute',
-        //TODO: cursor: 'pointer',
-        pointerEvents: 'inherit',
+          pointerEvents: 'inherit',
         top: 0,
         left: '0%',
         //zIndex: 1,
@@ -169,7 +167,7 @@ const Slider = React.createClass({
         backgroundColor: this.getTheme().selectionColor,
         backgroundClip: 'padding-box',
         //TODO: border: '0px solid transparent',
-        //TODO: borderRadius: '50%',
+        borderRadius: 50,
         transform: 'translate(-50%, -50%)',
         //transition:
         //  Transitions.easeOut('450ms', 'background') + ',' +
@@ -180,8 +178,7 @@ const Slider = React.createClass({
       },
       handleWhenDisabled: {
         //boxSizing:: 'content-box',
-        //TODO: cursor: 'not-allowed',
-        backgroundColor: this.getTheme().trackColor,
+          backgroundColor: this.getTheme().trackColor,
         width: this.getTheme().handleSizeDisabled,
         height: this.getTheme().handleSizeDisabled,
         //TODO: border: 'none',
@@ -192,8 +189,7 @@ const Slider = React.createClass({
         //boxShadow: 'none',
       },
       handleWhenPercentZeroAndDisabled: {
-        //TODO: cursor: 'not-allowed',
-        width: this.getTheme().handleSizeDisabled,
+          width: this.getTheme().handleSizeDisabled,
         height: this.getTheme().handleSizeDisabled,
       },
       //handleWhenPercentZeroAndFocused: {

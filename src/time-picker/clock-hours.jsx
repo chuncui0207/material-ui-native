@@ -199,7 +199,7 @@ const ClockHours = React.createClass({
       root: {
         //height: '100%',
         //width: '100%',
-        //TODO: borderRadius: '100%',
+        borderRadius: 100,
         position: 'relative',
         pointerEvents: 'none',
         //boxSizing:: 'border-box',

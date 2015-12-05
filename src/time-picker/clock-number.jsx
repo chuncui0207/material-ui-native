@@ -107,7 +107,7 @@ const ClockNumber = React.createClass({
         position: 'absolute',
         width: 32,
         height: 32,
-        //TODO: borderRadius: '100%',
+        borderRadius: 100,
         left: 'calc(50% - 16px)',
         top: 10,
         textAlign: 'center',

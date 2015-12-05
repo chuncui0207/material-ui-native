@@ -214,8 +214,7 @@ const TextField = React.createClass({
         //width: '100%',
         overflow: 'hidden',
        // TODO: userSelect: 'none',
-        //TODO: cursor: 'default',
-        bottom: 8,
+          bottom: 8,
         borderBottom: 'dotted 2px ' + disabledTextColor,
       },
       underlineFocus: {
@@ -236,7 +235,6 @@ const TextField = React.createClass({
       bottom: 'none',
       opacity: 1,
       //zIndex: 1, // Needed to display label above Chrome's autocomplete field background
-      //TODO: cursor: 'text',
       transform: 'scale(1) translate3d(0, 0, 0)',
       transformOrigin: 'left top',
     });

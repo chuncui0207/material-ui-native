@@ -90,7 +90,7 @@ export default React.createClass({
         fontSize: radius,
         width: radius2x,
         height: radius2x,
-        //TODO: borderRadius: '50%',
+        borderRadius: 50,
         backgroundColor: badgeBackgroundColor,
         color: badgeTextColor,
       },
