@@ -123,7 +123,7 @@ const Calendar = React.createClass({
       },
       weekTitle: {
         padding: '0 14px',
-        lineHeight: '12px',
+        lineHeight: 12,
         opacity: '0.5',
         height: 12,
         fontWeight: '500',

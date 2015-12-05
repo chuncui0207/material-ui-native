@@ -90,12 +90,12 @@ const NestedMenuItem = React.createClass({
       root: {
        // TODO: userSelect: 'none',
         //TODO: cursor: 'pointer',
-        lineHeight: this.getTheme().height + 'px',
+        lineHeight: this.getTheme().height,
         color: this.state.muiTheme.rawTheme.palette.textColor,
       },
       icon: {
         float: 'left',
-        lineHeight: this.getTheme().height + 'px',
+        lineHeight: this.getTheme().height,
         marginRight: this.getSpacing().desktopGutter,
       },
       toggle: {

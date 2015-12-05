@@ -21,7 +21,7 @@ const styles = {
   title: {
     position: 'absolute',
     top: 17,
-    lineHeight: '14px',
+    lineHeight: 14,
     fontSize: 14,
     height: 14,
     //width: '100%',

@@ -164,7 +164,7 @@ const FlatButton = React.createClass({
       position: 'relative',
       overflow: 'hidden',
       backgroundColor: hovered ? buttonHoverColor : buttonBackgroundColor,
-      lineHeight: buttonHeight + 'px',
+      lineHeight: buttonHeight,
       //minWidth: buttonMinWidth,
       padding: 0,
       margin: 0,

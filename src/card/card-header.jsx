@@ -69,13 +69,13 @@ const CardHeader = React.createClass({
       root: {
         height: 72,
         padding: 16,
-        fontWeight: Styles.Typography.fontWeightMedium,
         //boxSizing:: 'border-box',
         position: 'relative',
       },
       text: {
+        fontWeight: Styles.Typography.fontWeightMedium,
         //display: 'inline-block',
-        verticalAlign: 'top',
+       // TODO: verticalAlign: 'top',
       },
       avatar: {
         marginRight: 16,
@@ -111,10 +111,8 @@ const CardHeader = React.createClass({
     return (
       <View {...this.props} style={rootStyle}>
         {avatar}
-        <View style={textStyle}>
-          <Text style={titleStyle}>{this.props.title}</Text>
-          <Text style={subtitleStyle}>{this.props.subtitle}</Text>
-        </View>
+        <Text style={[textStyle, titleStyle]}>{this.props.title}</Text>
+        <Text style={[textStyle, subtitleStyle]}>{this.props.subtitle}</Text>
         {this.props.children}
       </View>
     );

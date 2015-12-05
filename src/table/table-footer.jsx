@@ -56,7 +56,7 @@ const TableFooter = React.createClass({
     const styles = {
       cell: {
         borderTop: '1px solid ' + this.getTheme().borderColor,
-        verticalAlign: 'bottom',
+       // TODO: verticalAlign: 'bottom',
         padding: 20,
         textAlign: 'left',
         whiteSpace: 'nowrap',

@@ -71,7 +71,7 @@ const Tab = React.createClass({
       //display: 'table-cell',
       //TODO: cursor: 'pointer',
       textAlign: 'center',
-      verticalAlign: 'middle',
+     // TODO: verticalAlign: 'middle',
       height: 48,
       color: selected ? this.state.muiTheme.tabs.selectedTextColor : this.state.muiTheme.tabs.textColor,
       //TODO: outline:: 'none',
@@ -84,12 +84,12 @@ const Tab = React.createClass({
     }, style);
 
     return (
-      <View
+      <Text
         {...other}
         style={styles}
         onTouchTap={this._handleTouchTap}>
         {label}
-      </View>
+      </Text>
     );
   },
 

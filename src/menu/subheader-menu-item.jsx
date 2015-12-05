@@ -63,12 +63,12 @@ const SubheaderMenuItem = React.createClass({
     let styles = StyleSheet.create({
       root: {
         //boxSizing:: 'border-box',
-        fontSize: '13px',
+        fontSize: 13,
         letterSpacing: 0,
         fontWeight: Typography.fontWeightMedium,
         margin: 0,
         height: subheaderHeight + gutterMini,
-        lineHeight: subheaderHeight + 'px',
+        lineHeight: subheaderHeight,
         color: this.getTheme().textColor,
         borderTop: 'solid 1px ' + this.getTheme().borderColor,
         paddingTop: gutterMini,

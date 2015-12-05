@@ -100,13 +100,13 @@ const GridTile = React.createClass({
         overflow: 'hidden',
       },
       title: {
-        fontSize: '16px',
+        fontSize: 16,
         textOverflow: 'ellipsis',
         overflow: 'hidden',
         whiteSpace: 'nowrap',
       },
       subtitle: {
-        fontSize: '12px',
+        fontSize: 12,
         textOverflow: 'ellipsis',
         overflow: 'hidden',
         whiteSpace: 'nowrap',

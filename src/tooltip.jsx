@@ -76,8 +76,8 @@ const Tooltip = React.createClass({
       root: {
         position: 'absolute',
         //fontFamily: this.state.muiTheme.rawTheme.fontFamily,
-        fontSize: '10px',
-        lineHeight: '22px',
+        fontSize: 10,
+        lineHeight: 22,
         padding: '0 8px',
         color: Colors.white,
         overflow: 'hidden',
@@ -121,8 +121,8 @@ const Tooltip = React.createClass({
         //  Transitions.easeOut('450ms', 'opacity', '0ms'),
       },
       rootWhenTouched: {
-        fontSize: '14px',
-        lineHeight: '32px',
+        fontSize: 14,
+        lineHeight: 32,
         padding: '0 16px',
       },
       rippleWhenShown: {

@@ -131,7 +131,7 @@ const FloatingActionButton = React.createClass({
         backgroundColor: this._getBackgroundColor(),
         //TODO: borderRadius: '50%',
         textAlign: 'center',
-        verticalAlign: 'bottom',
+       // TODO: verticalAlign: 'bottom',
         //This is need so that ripples do not bleed
         //past border radius.
         //See: http://stackoverflow.com/questions/17298739/css-overflow-hidden-not-working-in-chrome-when-parent-has-border-radius-and-chil
@@ -150,13 +150,13 @@ const FloatingActionButton = React.createClass({
       },
       icon: {
         height: themeVariables.buttonSize,
-        lineHeight: themeVariables.buttonSize + 'px',
+        lineHeight: themeVariables.buttonSize,
        // TODO: fill: themeVariables.iconColor,
         color: this._getIconColor(),
       },
       iconWhenMini: {
         height: themeVariables.miniSize,
-        lineHeight: themeVariables.miniSize + 'px',
+        lineHeight: themeVariables.miniSize,
       },
     });
     return styles;

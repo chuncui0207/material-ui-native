@@ -96,7 +96,7 @@ const ToolbarGroup = React.createClass({
           float: 'left',
           //TODO: cursor: 'pointer',
           color: this.getTheme().iconColor,
-          lineHeight: this.getTheme().height + 'px',
+          lineHeight: this.getTheme().height,
           paddingLeft: this.getSpacing(),
         },
         hover: {
@@ -106,7 +106,7 @@ const ToolbarGroup = React.createClass({
       span: {
         float: 'left',
         color: this.getTheme().iconColor,
-        lineHeight: this.getTheme().height + 'px',
+        lineHeight: this.getTheme().height,
       },
     });
 

@@ -93,7 +93,7 @@ const DropDownIcon = React.createClass({
       menuItem: { // similair to drop down menu's menu item styles
         paddingRight: (spacing.iconSize + (spacing.desktopGutterLess * 2)),
         height: spacing.desktopDropDownMenuItemHeight,
-        lineHeight: spacing.desktopDropDownMenuItemHeight + 'px',
+        lineHeight: spacing.desktopDropDownMenuItemHeight,
       },
     });
     return styles;

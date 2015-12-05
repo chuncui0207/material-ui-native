@@ -132,40 +132,49 @@ const RaisedButton = React.createClass({
         //display: 'inline-block',
         //minWidth: this.props.fullWidth ? '100%' : this.getThemeButton().minWidth,
         height: this.getThemeButton().height,
-        ////transition: Transitions.easeOut(),
+        // TODO: transition: Transitions.easeOut(),
       },
       container: {
-        //position: 'relative',
-        //height: '100%',
-        //width: '100%',
+        //position: 'relative', this is default in react-native
+
+        // height: '100%', replaced by top and bottom
+        top: 0, 
+        bottom: 0,
+
+        //width: '100%', replaced by left and right
+        left: 0,
+        right: 0,
+
         padding: 0,
         overflow: 'hidden',
-        //TODO: borderRadius: 2,
-        ////transition: Transitions.easeOut(),
+
+        borderRadius: 2,
+        
+        //transition: Transitions.easeOut(),
         backgroundColor: this._getBackgroundColor(),
 
         //This is need so that ripples do not bleed
         //past border radius.
         //See: http://stackoverflow.com/questions/17298739/css-overflow-hidden-not-working-in-chrome-when-parent-has-border-radius-and-chil
-        //transform: 'translate3d(0, 0, 0)',
+        // TODO: transform: 'translate3d(0, 0, 0)',
       },
       label: {
         //position: 'relative',
         opacity: 1,
-        //fontSize: 14,
-        //letterSpacing: 0,
+        fontSize: 14,
+        letterSpacing: 0,
         //textTransform: this.getTheme().textTransform ? this.getTheme().textTransform :
         //            (this.getThemeButton().textTransform ? this.getThemeButton().textTransform : 'uppercase'),
-        //fontWeight: Typography.fontWeightMedium,
+        fontWeight: Typography.fontWeightMedium,
         margin: 0,
-        //padding: '0px ' + this.state.muiTheme.rawTheme.spacing.desktopGutterLess + 'px',
+        padding: 0, //+ this.state.muiTheme.rawTheme.spacing.desktopGutterLess,
         //userSelect: 'none',
         //lineHeight: (this.props.style && this.props.style.height) ?
         // this.props.style.height : this.getThemeButton().height + 'px',
-        //color:  this._getLabelColor(),
+        color:  this._getLabelColor(),
       },
       overlay: {
-        ////transition: Transitions.easeOut(),
+        // TODO: transition: Transitions.easeOut(),
         top: 0,
       },
       overlayWhenHovered: {

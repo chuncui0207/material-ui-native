@@ -90,7 +90,7 @@ const Toggle = React.createClass({
         left: 0,
         width: toggleSize,
         height: toggleSize,
-        lineHeight: '24px',
+        lineHeight: 24,
         //TODO: borderRadius: '50%',
         backgroundColor: this.getTheme().thumbOffColor,
       },

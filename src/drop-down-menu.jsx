@@ -127,7 +127,7 @@ const DropDownMenu = React.createClass({
       },
       label: {
         //transition: Transitions.easeOut(),
-        lineHeight: spacing.desktopToolbarHeight + 'px',
+        lineHeight: spacing.desktopToolbarHeight,
         position: 'absolute',
         paddingLeft: spacing.desktopGutter,
         top: 0,
@@ -143,7 +143,7 @@ const DropDownMenu = React.createClass({
                       spacing.desktopGutterLess +
                       spacing.desktopGutterMini,
         height: spacing.desktopDropDownMenuItemHeight,
-        lineHeight: spacing.desktopDropDownMenuItemHeight + 'px',
+        lineHeight: spacing.desktopDropDownMenuItemHeight,
         whiteSpace: 'nowrap',
       },
       rootWhenOpen: {

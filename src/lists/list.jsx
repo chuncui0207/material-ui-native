@@ -79,7 +79,7 @@ const List = React.createClass({
         color: Typography.textLightBlack,
         fontSize: 14,
         fontWeight: Typography.fontWeightMedium,
-        lineHeight: '48px',
+        lineHeight: 48,
         paddingLeft: insetSubheader ? 72 : 16,
       },
     };

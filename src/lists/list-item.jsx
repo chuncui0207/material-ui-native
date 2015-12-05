@@ -145,7 +145,7 @@ const ListItem = React.createClass({
         color: textColor,
         //display: 'block',
         fontSize: 16,
-        lineHeight: '16px',
+        lineHeight: 16,
         position: 'relative',
         //transition: Transitions.easeOut(),
       },

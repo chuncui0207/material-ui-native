@@ -196,7 +196,7 @@ const DialogInline = React.createClass({
       padding: gutter + gutter + '0 ' + gutter,
       color: this.state.muiTheme.rawTheme.palette.textColor,
       fontSize: 24,
-      lineHeight: '32px',
+      lineHeight: 32,
       fontWeight: '400',
     };
 

@@ -97,7 +97,7 @@ const Avatar = React.createClass({
       styles.root = this.mergeStyles(styles.root, {
         backgroundColor: backgroundColor,
         textAlign: 'center',
-        lineHeight: size + 'px',
+        lineHeight: size,
         fontSize: size / 2 + 4,
         color: color,
       });

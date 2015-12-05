@@ -34,7 +34,7 @@ const CalendarYear = React.createClass({
     let styles = StyleSheet.create({
       position: 'relative',
       height: 'inherit',
-      lineHeight: '36px',
+      lineHeight: 36,
       textAlign: 'center',
       padding: '8px 14px 0 14px',
       backgroundColor: Colors.white,

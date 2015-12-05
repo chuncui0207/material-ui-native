@@ -161,7 +161,7 @@ const TextField = React.createClass({
     let styles = StyleSheet.create({
       root: {
         fontSize: 16,
-        lineHeight: '24px',
+        lineHeight: 24,
         width: props.fullWidth ? '100%' : 256,
         height: (props.rows - 1) * 24 + (props.floatingLabelText ? 72 : 48),
         //display: 'inline-block',
@@ -174,13 +174,13 @@ const TextField = React.createClass({
         position: 'relative',
         bottom: 5,
         fontSize: 12,
-        lineHeight: '12px',
+        lineHeight: 12,
         color: errorColor,
         //transition: Transitions.easeOut(),
       },
       hint: {
         position: 'absolute',
-        lineHeight: '22px',
+        lineHeight: 22,
         opacity: 1,
         color: hintColor,
         //transition: Transitions.easeOut(),
@@ -231,7 +231,7 @@ const TextField = React.createClass({
     styles.underlineAfter = this.mergeAndPrefix(styles.underlineAfter, props.underlineDisabledStyle);
 
     styles.floatingLabel = this.mergeStyles(styles.hint, {
-      lineHeight: '22px',
+      lineHeight: 22,
       top: 38,
       bottom: 'none',
       opacity: 1,

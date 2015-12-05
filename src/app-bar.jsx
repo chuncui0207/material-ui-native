@@ -113,7 +113,7 @@ const AppBar = React.createClass({
         fontSize: 24,
         fontWeight: Typography.fontWeightNormal,
         color: themeVariables.textColor,
-        lineHeight: themeVariables.height + 'px',
+        lineHeight: themeVariables.height,
       },
       mainElement: {
         boxFlex: 1,
@@ -171,7 +171,7 @@ const AppBar = React.createClass({
       // If not, just use it as a node.
       titleElement = typeof title === 'string' || title instanceof String ?
         <Text onTouchTap={this._onTitleTouchTap} style={this.prepareStyles(styles.title, styles.mainElement, titleStyle)}>{title}</Text> :
-        <View onTouchTap={this._onTitleTouchTap} style={this.prepareStyles(styles.title, styles.mainElement, titleStyle)}>{title}</View>;
+        <Text onTouchTap={this._onTitleTouchTap} style={this.prepareStyles(styles.title, styles.mainElement, titleStyle)}>{title}</Text>;
     }
 
     if (showMenuIconButton) {

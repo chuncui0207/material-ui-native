@@ -51,7 +51,7 @@ const CardText = React.createClass({
     return {
       root: {
         padding: 16,
-        fontSize: '14px',
+        fontSize: 14,
         color: this.props.color ? this.props.color : themeVariables.textColor,
       },
     };

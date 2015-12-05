@@ -186,7 +186,7 @@ const Snackbar = React.createClass({
         backgroundColor: backgroundColor,
         padding: '0 ' + desktopGutter + 'px',
         height: desktopSubheaderHeight,
-        lineHeight: desktopSubheaderHeight + 'px',
+        lineHeight: desktopSubheaderHeight,
         //TODO: borderRadius: isSmall ? 0 : 2,
         //maxWidth: isSmall ? 'inherit' : 568,
         //minWidth: isSmall ? 'inherit' : 288,

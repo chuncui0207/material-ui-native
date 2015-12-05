@@ -110,7 +110,7 @@ const MenuItem = React.createClass({
       root: {
        // TODO: userSelect: 'none',
         //TODO: cursor: 'pointer',
-        lineHeight: this.getTheme().height + 'px',
+        lineHeight: this.getTheme().height,
         paddingLeft: this.getTheme().padding,
         paddingRight: this.getTheme().padding,
         color: this.state.muiTheme.rawTheme.palette.textColor,
@@ -124,20 +124,20 @@ const MenuItem = React.createClass({
         float: right,
       },
       iconRight: {
-        lineHeight: this.getTheme().height + 'px',
+        lineHeight: this.getTheme().height,
         float: right,
       },
       icon: {
         float: left,
-        lineHeight: this.getTheme().height + 'px',
+        lineHeight: this.getTheme().height,
         [marginRight]: this.getSpacing().desktopGutter,
       },
       data: {
         //display: 'block',
         [paddingLeft]: this.getSpacing().desktopGutter * 2,
-        lineHeight: this.getTheme().dataHeight + 'px',
+        lineHeight: this.getTheme().dataHeight,
         height: this.getTheme().dataHeight + 'px',
-        verticalAlign: 'top',
+       // TODO: verticalAlign: 'top',
         top: -12,
         position: 'relative',
         fontWeight: 300,

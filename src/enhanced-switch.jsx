@@ -167,7 +167,7 @@ const EnhancedSwitch = React.createClass({
         position: 'relative',
         //display: 'block',
         width: labelWidth,
-        lineHeight: '24px',
+        lineHeight: 24,
         color: this.getTheme().textColor,
       },
       wrap: {

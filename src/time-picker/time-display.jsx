@@ -98,9 +98,9 @@ const TimeDisplay = React.createClass({
 
       time: {
         margin: '6px 0',
-        lineHeight: '58px',
+        lineHeight: 58,
         height: 58,
-        fontSize: '58px',
+        fontSize: 58,
       },
 
       box: {
