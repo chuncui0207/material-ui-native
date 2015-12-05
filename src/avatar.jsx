@@ -54,6 +54,7 @@ const Avatar = React.createClass({
 
   getDefaultProps() {
     return {
+      flex: 1,
       backgroundColor: Colors.grey400,
       color: Colors.white,
       size: 40,
@@ -73,6 +74,7 @@ const Avatar = React.createClass({
 
     let styles = {
       root: {
+        flex: 1,
         height: size,
         width: size,
           borderRadius: 50,
@@ -85,6 +87,7 @@ const Avatar = React.createClass({
 
       if (borderColor) {
         styles.root = this.mergeStyles(styles.root, {
+          flex: 1,
           height: size - 2,
           width: size - 2,
           //TODO: border: 'solid 1px ' + borderColor,
@@ -94,6 +97,7 @@ const Avatar = React.createClass({
       return <Image {...other} source={src} style={this.prepareStyles(styles.root, style)} />;
     } else {
       styles.root = this.mergeStyles(styles.root, {
+        flex: 1,
         backgroundColor: backgroundColor,
         textAlign: 'center',
         lineHeight: size,
@@ -106,6 +110,7 @@ const Avatar = React.createClass({
       };
 
       const iconElement = icon ? React.cloneElement(icon, {
+        flex: 1,
         color: color,
         style: this.mergeStyles(styleIcon, icon.props.style),
       }) : null;

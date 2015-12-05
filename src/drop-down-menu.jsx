@@ -12,6 +12,7 @@ import ThemeManager from './styles/theme-manager';
 
 const {
   View,
+  Text,
 } = React;
 
 const DropDownMenu = React.createClass({
@@ -234,9 +235,9 @@ const DropDownMenu = React.createClass({
 
           <ClearFix style={this.mergeStyles(styles.control)} onTouchTap={this._onControlClick}>
             <Paper style={this.mergeStyles(styles.controlBg)} zDepth={0} />
-            <View style={this.prepareStyles(styles.label, this.state.open && styles.labelWhenOpen, labelStyle)}>
+            <Text style={this.prepareStyles(styles.label, this.state.open && styles.labelWhenOpen, labelStyle)}>
               {displayValue}
-            </View>
+            </Text>
             <View style={this.prepareStyles(styles.underline, underlineStyle)}/>
           </ClearFix>
 

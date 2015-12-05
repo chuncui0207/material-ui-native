@@ -10,6 +10,7 @@ import PropTypes from './utils/prop-types';
 
 const {
   View,
+  Text,
   StyleSheet,
 } = React;
 
@@ -98,6 +99,7 @@ const AppBar = React.createClass({
         //zIndex: 5,
         //width: '100%',
         //display: 'flex',
+        flex: 1,
         minHeight: themeVariables.height,
         backgroundColor: themeVariables.color,
         paddingLeft: spacing.desktopGutter,
@@ -185,9 +187,9 @@ const AppBar = React.createClass({
         }
 
         menuElementLeft = (
-          <View style={this.prepareStyles(styles.iconButton.style)}>
+          <Text style={this.prepareStyles(styles.iconButton.style)}>
             {iconElementLeft}
-          </View>
+          </Text>
         );
       } else {
         let child = '';//iconClassNameLeft ? '' : <NavigationMenu style={this.mergeStyles(styles.iconButton.iconStyle)}/>;
@@ -220,9 +222,9 @@ const AppBar = React.createClass({
       }
 
       menuElementRight = (
-        <View style={this.prepareStyles(iconRightStyle)}>
+        <Text style={this.prepareStyles(iconRightStyle)}>
           {iconElementRight}
-        </View>
+        </Text>
       );
     } else if (iconClassNameRight) {
       menuElementRight = (

@@ -54,9 +54,11 @@ const CardMedia = React.createClass({
   getStyles() {
     return {
       root: {
+        flex: 1,
         position: 'relative',
       },
       overlayContainer: {
+        flex: 1,
         position: 'absolute',
         top: 0,
         bottom: 0,
@@ -64,23 +66,26 @@ const CardMedia = React.createClass({
         left: 0,
       },
       overlay: {
-        //height: '100%',
+        flex: 1,//height: '100%',
         position: 'relative',
       },
       overlayContent: {
+        flex: 1,
         position: 'absolute',
         bottom: 0,
         right: 0,
         left: 0,
         paddingTop: 8,
-        //TODO: background: Styles.Colors.lightBlack,
+        backgroundColor: Styles.Colors.lightBlack,
       },
-      media: {},
+      media: {
+        flex: 1,
+      },
       mediaChild: {
+        flex: 1,
        // TODO: verticalAlign: 'top',
         //maxWidth: '100%',
         //minWidth: '100%',
-        //width:'100%',
       },
     };
   },
