@@ -11,6 +11,7 @@ import ContextPure from './mixins/context-pure';
 
 const {
   View,
+  Text,
   TextInput,
 } = React;
 
@@ -160,10 +161,11 @@ const TextField = React.createClass({
 
     let styles = {
       root: {
-        fontSize: 16,
-        lineHeight: 24,
-        width: props.fullWidth ? '100%' : 256,
-        height: (props.rows - 1) * 24 + (props.floatingLabelText ? 72 : 48),
+        //fontSize: 16,
+        //lineHeight: 24,
+        flex: 1,
+        // width: props.fullWidth ? '100%' : 256,
+        // height: (props.rows - 1) * 24 + (props.floatingLabelText ? 72 : 48),
         //display: 'inline-block',
         position: 'relative',
         backgroundColor: backgroundColor,
@@ -305,20 +307,20 @@ const TextField = React.createClass({
     let inputId = id || this._uniqueId;
 
     let errorTextElement = this.state.errorText ? (
-      <View style={this.prepareStyles(styles.error)}>{this.state.errorText}</View>
+      <Text style={this.prepareStyles(styles.error)}>{this.state.errorText}</Text>
     ) : null;
 
     let hintTextElement = hintText ? (
-      <View style={this.prepareStyles(styles.hint, hintStyle)}>{hintText}</View>
+      <Text style={this.prepareStyles(styles.hint, hintStyle)}>{hintText}</Text>
     ) : null;
 
     let floatingLabelTextElement = floatingLabelText ? (
-      <label
+      <Text
         style={this.prepareStyles(styles.floatingLabel, this.props.floatingLabelStyle)}
         htmlFor={inputId}
         onTouchTap={this.focus}>
         {floatingLabelText}
-      </label>
+      </Text>
     ) : null;
 
     let inputProps;
